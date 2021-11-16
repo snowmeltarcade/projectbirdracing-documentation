@@ -4,7 +4,7 @@ var build_8py =
     [ "configure_arguments", "build_8py.html#a674b020fc45e8c55bc524f8c4ce7379b", null ],
     [ "copy_dir", "build_8py.html#acec8092311a8659f4b48e347ec70c19b", null ],
     [ "do_install", "build_8py.html#a47cd8afb63b86d13420872ef8e6b6a29", null ],
-    [ "do_make", "build_8py.html#ae5d385246f4ad5701e62ecb0286396d7", null ],
+    [ "do_make", "build_8py.html#af7618997e0df1849e017a694a95ab916", null ],
     [ "get_platform_name", "build_8py.html#aec5133b70bf786cd6bb6b38c36c4edb7", null ],
     [ "get_project_version", "build_8py.html#a362a525049800ac25b4ee30ef9094552", null ],
     [ "install_dependencies", "build_8py.html#a82450f0940b2159352e816c48fa47d32", null ],
