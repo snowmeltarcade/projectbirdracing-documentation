@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['logging_2ecpp_24',['logging.cpp',['../apis_2logging_2logging_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2logging_2logging_8cpp.html',1,'(Global Namespace)']]],
-  ['logging_2eh_25',['logging.h',['../logging_8h.html',1,'']]]
+  ['key_30',['key',['../structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a69aa7276595ddf7a84b57f9321333863',1,'pbr::shared::memory::memory_block_header']]]
 ];

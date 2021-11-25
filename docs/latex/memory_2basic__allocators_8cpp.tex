@@ -1,0 +1,100 @@
+\hypertarget{memory_2basic__allocators_8cpp}{}\doxysection{src/shared/memory/basic\+\_\+allocators.cpp File Reference}
+\label{memory_2basic__allocators_8cpp}\index{src/shared/memory/basic\_allocators.cpp@{src/shared/memory/basic\_allocators.cpp}}
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include \char`\"{}basic\+\_\+allocators.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1memory}{pbr\+::shared\+::memory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::pair$<$ void $\ast$, size\+\_\+t $>$ \mbox{\hyperlink{memory_2basic__allocators_8cpp_a0339ed803bdd0122612c2b0337613d57}{allocate\+\_\+with\+\_\+header}} (size\+\_\+t size)
+\item 
+std\+::pair$<$ void $\ast$, size\+\_\+t $>$ \mbox{\hyperlink{memory_2basic__allocators_8cpp_a06b8b73b0baaf1d34fda6700926aa706}{get\+\_\+ptr\+\_\+to\+\_\+free}} (void $\ast$ptr)
+\item 
+void $\ast$ \mbox{\hyperlink{memory_2basic__allocators_8cpp_a205ed048fdf5259c2e8e0cb60ee8f719}{operator new}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{memory_2basic__allocators_8cpp_afa145befcf5e7b83424408ca503c8637}{operator delete}} (void $\ast$ptr) noexcept
+\item 
+uint64\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1memory_a6227e3dde6309e58e3acfcf6ebd95128}{pbr\+::shared\+::memory\+::get\+\_\+number\+\_\+of\+\_\+allocated\+\_\+bytes}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{memory_2basic__allocators_8cpp_a0339ed803bdd0122612c2b0337613d57}\label{memory_2basic__allocators_8cpp_a0339ed803bdd0122612c2b0337613d57}} 
+\index{basic\_allocators.cpp@{basic\_allocators.cpp}!allocate\_with\_header@{allocate\_with\_header}}
+\index{allocate\_with\_header@{allocate\_with\_header}!basic\_allocators.cpp@{basic\_allocators.cpp}}
+\doxysubsubsection{\texorpdfstring{allocate\_with\_header()}{allocate\_with\_header()}}
+{\footnotesize\ttfamily std\+::pair$<$void$\ast$, size\+\_\+t$>$ allocate\+\_\+with\+\_\+header (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Allocates a block of memory with the header 
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the block to allocate, not including the header size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the usable block of memory and the total allocated size, including the size of the header 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file basic\+\_\+allocators.\+cpp.
+
+\mbox{\Hypertarget{memory_2basic__allocators_8cpp_a06b8b73b0baaf1d34fda6700926aa706}\label{memory_2basic__allocators_8cpp_a06b8b73b0baaf1d34fda6700926aa706}} 
+\index{basic\_allocators.cpp@{basic\_allocators.cpp}!get\_ptr\_to\_free@{get\_ptr\_to\_free}}
+\index{get\_ptr\_to\_free@{get\_ptr\_to\_free}!basic\_allocators.cpp@{basic\_allocators.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_ptr\_to\_free()}{get\_ptr\_to\_free()}}
+{\footnotesize\ttfamily std\+::pair$<$void$\ast$, size\+\_\+t$>$ get\+\_\+ptr\+\_\+to\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+Returns the starting address of the block of memory to free. If the memory was allocated by us, it returns the address of the header, else it returns the passed address 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & The pointer to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pointer to free and the size of the allocated block of memory. If the memory was not allocated by us, {\ttfamily 0} is returned. 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file basic\+\_\+allocators.\+cpp.
+
+\mbox{\Hypertarget{memory_2basic__allocators_8cpp_afa145befcf5e7b83424408ca503c8637}\label{memory_2basic__allocators_8cpp_afa145befcf5e7b83424408ca503c8637}} 
+\index{basic\_allocators.cpp@{basic\_allocators.cpp}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!basic\_allocators.cpp@{basic\_allocators.cpp}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily void operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Overrides the default {\ttfamily delete} operator. This will decrease the total number of allocated bytes. This is thread safe. If {\ttfamily ptr} was not allocated with the overridden {\ttfamily new} above, the result is undefined behavior. 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & The pointer to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file basic\+\_\+allocators.\+cpp.
+
+\mbox{\Hypertarget{memory_2basic__allocators_8cpp_a205ed048fdf5259c2e8e0cb60ee8f719}\label{memory_2basic__allocators_8cpp_a205ed048fdf5259c2e8e0cb60ee8f719}} 
+\index{basic\_allocators.cpp@{basic\_allocators.cpp}!operator new@{operator new}}
+\index{operator new@{operator new}!basic\_allocators.cpp@{basic\_allocators.cpp}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void$\ast$ operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Overrides the default {\ttfamily new} operator. This will keep track of the total number of allocated bytes. This is thread safe. 
+\begin{DoxyParams}{Parameters}
+{\em size} & The number of bytes to allocate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the allocated memory. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file basic\+\_\+allocators.\+cpp.
+

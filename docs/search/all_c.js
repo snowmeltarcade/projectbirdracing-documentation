@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['test_5fcase_34',['TEST_CASE',['../client_2tests_2main_8cpp.html#a16fbc1c71cc2ab88c506102e8f594c85',1,'TEST_CASE(&quot;test&quot;, &quot;[client/test]&quot;):&#160;main.cpp'],['../server_2tests_2main_8cpp.html#ac27f6aa8ebd4e46786ee9757ee037f3d',1,'TEST_CASE(&quot;test&quot;, &quot;[server/test]&quot;):&#160;main.cpp'],['../tests_2apis_2logging_2logging_8cpp.html#a8d3654593912cb92e134f7107a75f903',1,'TEST_CASE(&quot;test&quot;, &quot;[shared/apis/logging]&quot;):&#160;logging.cpp']]]
+  ['memory_40',['memory',['../namespacepbr_1_1shared_1_1memory.html',1,'pbr::shared']]],
+  ['pbr_41',['pbr',['../namespacepbr.html',1,'']]],
+  ['python3_5fpath_42',['python3_path',['../namespacebuild.html#a94c17946bb998792ac4ef86d64b5ee9c',1,'build']]],
+  ['shared_43',['shared',['../namespacepbr_1_1shared.html',1,'pbr']]]
 ];

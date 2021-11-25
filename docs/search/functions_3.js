@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['f_48',['f',['../apis_2logging_2logging_8cpp.html#ad1351d85ffec3c1176dc31d8e8f8e28a',1,'f():&#160;logging.cpp'],['../logging_8h.html#ad1351d85ffec3c1176dc31d8e8f8e28a',1,'f():&#160;logging.cpp']]]
+  ['do_5finstall_67',['do_install',['../namespacebuild.html#a47cd8afb63b86d13420872ef8e6b6a29',1,'build']]],
+  ['do_5fmake_68',['do_make',['../namespacebuild.html#af7618997e0df1849e017a694a95ab916',1,'build']]]
 ];

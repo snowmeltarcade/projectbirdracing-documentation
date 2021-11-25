@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['python3_5fpath_69',['python3_path',['../namespacebuild.html#a94c17946bb998792ac4ef86d64b5ee9c',1,'build']]]
+  ['ninja_5fpath_95',['ninja_path',['../namespacebuild.html#a363ad799792fff63450c6875396e2d55',1,'build']]]
 ];

@@ -1,0 +1,62 @@
+\hypertarget{basic__allocators_8h}{}\doxysection{src/shared/memory/basic\+\_\+allocators.h File Reference}
+\label{basic__allocators_8h}\index{src/shared/memory/basic\_allocators.h@{src/shared/memory/basic\_allocators.h}}
+{\ttfamily \#include $<$new$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1memory_1_1memory__block__header}{pbr\+::shared\+::memory\+::memory\+\_\+block\+\_\+header}}
+\begin{DoxyCompactList}\small\item\em The header of an allocated memory block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1memory}{pbr\+::shared\+::memory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{basic__allocators_8h_a205ed048fdf5259c2e8e0cb60ee8f719}{operator new}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{basic__allocators_8h_afa145befcf5e7b83424408ca503c8637}{operator delete}} (void $\ast$ptr) noexcept
+\item 
+uint64\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1memory_a6227e3dde6309e58e3acfcf6ebd95128}{pbr\+::shared\+::memory\+::get\+\_\+number\+\_\+of\+\_\+allocated\+\_\+bytes}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{basic__allocators_8h_afa145befcf5e7b83424408ca503c8637}\label{basic__allocators_8h_afa145befcf5e7b83424408ca503c8637}} 
+\index{basic\_allocators.h@{basic\_allocators.h}!operator delete@{operator delete}}
+\index{operator delete@{operator delete}!basic\_allocators.h@{basic\_allocators.h}}
+\doxysubsubsection{\texorpdfstring{operator delete()}{operator delete()}}
+{\footnotesize\ttfamily void operator delete (\begin{DoxyParamCaption}\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Overrides the default {\ttfamily delete} operator. This will decrease the total number of allocated bytes. This is thread safe. If {\ttfamily ptr} was not allocated with the overridden {\ttfamily new} above, the result is undefined behavior. 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & The pointer to delete. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file basic\+\_\+allocators.\+cpp.
+
+\mbox{\Hypertarget{basic__allocators_8h_a205ed048fdf5259c2e8e0cb60ee8f719}\label{basic__allocators_8h_a205ed048fdf5259c2e8e0cb60ee8f719}} 
+\index{basic\_allocators.h@{basic\_allocators.h}!operator new@{operator new}}
+\index{operator new@{operator new}!basic\_allocators.h@{basic\_allocators.h}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void$\ast$ operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+Overrides the default {\ttfamily new} operator. This will keep track of the total number of allocated bytes. This is thread safe. 
+\begin{DoxyParams}{Parameters}
+{\em size} & The number of bytes to allocate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the allocated memory. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file basic\+\_\+allocators.\+cpp.
+

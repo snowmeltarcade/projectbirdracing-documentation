@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['test_5fcase_57',['TEST_CASE',['../client_2tests_2main_8cpp.html#a16fbc1c71cc2ab88c506102e8f594c85',1,'TEST_CASE(&quot;test&quot;, &quot;[client/test]&quot;):&#160;main.cpp'],['../server_2tests_2main_8cpp.html#ac27f6aa8ebd4e46786ee9757ee037f3d',1,'TEST_CASE(&quot;test&quot;, &quot;[server/test]&quot;):&#160;main.cpp'],['../tests_2apis_2logging_2logging_8cpp.html#a8d3654593912cb92e134f7107a75f903',1,'TEST_CASE(&quot;test&quot;, &quot;[shared/apis/logging]&quot;):&#160;logging.cpp']]]
+  ['operator_20delete_77',['operator delete',['../memory_2basic__allocators_8cpp.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp']]],
+  ['operator_20new_78',['operator new',['../memory_2basic__allocators_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp']]]
 ];

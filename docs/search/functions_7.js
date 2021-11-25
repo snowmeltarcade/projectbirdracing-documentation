@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['remove_5fdir_54',['remove_dir',['../namespacebuild.html#a2950ffbef7908b8d0d609d3c21855717',1,'build']]],
-  ['run_5fcmd_55',['run_cmd',['../namespacebuild.html#a24c08818dd7e33b15551b16aaa46b175',1,'build.run_cmd()'],['../namespacebuild__documentation.html#a7cb42361ca471374fd82921f139eb997',1,'build_documentation.run_cmd()']]],
-  ['run_5fcmd_5fenv_56',['run_cmd_env',['../namespacebuild.html#ac3be647b7a7f2f6b9f6ea0ee1ca39985',1,'build']]]
+  ['main_75',['main',['../client_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac',1,'main(int argv, char *args[]):&#160;main.cpp'],['../client_2tests_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac',1,'main(int argv, char *args[]):&#160;main.cpp'],['../server_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac',1,'main(int argv, char *args[]):&#160;main.cpp'],['../server_2tests_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac',1,'main(int argv, char *args[]):&#160;main.cpp'],['../shared_2tests_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac',1,'main(int argv, char *args[]):&#160;main.cpp']]],
+  ['make_5fdir_76',['make_dir',['../namespacebuild.html#ae9bb7733ecaf60d8cc5846e5a91a1311',1,'build']]]
 ];
