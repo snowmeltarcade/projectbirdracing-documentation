@@ -1,0 +1,66 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{}\doxysection{pbr\+::shared\+::apis\+::logging\+::endpoint Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}\index{pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}}
+
+
+{\ttfamily \#include $<$endpoint.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::endpoint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_ad5ad6a861c5b8f1a9e07be806e22f1d1}{endpoint}} ()=default
+\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_a21c15c9afc6cc4991022026c442e21ef}{$\sim$endpoint}} ()=default
+\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}{log}} (std\+::string\+\_\+view message) noexcept=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An interface to a logging endpoint. The implementations are not required to be thread safe as the logging system itself will handle that 
+
+Definition at line 8 of file endpoint.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_ad5ad6a861c5b8f1a9e07be806e22f1d1}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_ad5ad6a861c5b8f1a9e07be806e22f1d1}} 
+\index{pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}!endpoint@{endpoint}}
+\index{endpoint@{endpoint}!pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}}
+\doxysubsubsection{\texorpdfstring{endpoint()}{endpoint()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::endpoint\+::endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_a21c15c9afc6cc4991022026c442e21ef}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_a21c15c9afc6cc4991022026c442e21ef}} 
+\index{pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}!````~endpoint@{$\sim$endpoint}}
+\index{````~endpoint@{$\sim$endpoint}!pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$endpoint()}{~endpoint()}}
+{\footnotesize\ttfamily virtual pbr\+::shared\+::apis\+::logging\+::endpoint\+::$\sim$endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}} 
+\index{pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}!log@{log}}
+\index{log@{log}!pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::endpoint\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Logs a message to this endpoint 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}{test\+\_\+endpoint}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a77ae781d5e351d725cd6a4c2fd51a7c8}{pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/logging/\mbox{\hyperlink{endpoint_8h}{endpoint.\+h}}\end{DoxyCompactItemize}

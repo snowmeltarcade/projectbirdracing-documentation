@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['allocate_5fwith_5fheader_0',['allocate_with_header',['../memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57',1,'basic_allocators.cpp']]],
-  ['args_1',['args',['../namespacebuild.html#a5b89d46152b389e188fbf659e279655a',1,'build']]]
+  ['_5flog_5fcall_5fcount_0',['_log_call_count',['../classtest__endpoint.html#a79bbff579f39a896936357ae4c28ae87',1,'test_endpoint']]],
+  ['_5flogged_5fmessage_1',['_logged_message',['../classtest__endpoint.html#a1b37ea00c6bd0585dd5f51aea3e9836e',1,'test_endpoint']]]
 ];

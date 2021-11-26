@@ -1,0 +1,305 @@
+\hypertarget{namespacepbr_1_1shared_1_1utils}{}\doxysection{pbr\+::shared\+::utils Namespace Reference}
+\label{namespacepbr_1_1shared_1_1utils}\index{pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}{get\+\_\+characters\+\_\+to\+\_\+trim}} (char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a9526d3a7dd16b2ada210e2488d134825}{trim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ae7f5f545aa4e7468472fe839c64dff7e}{trim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ab03afcc9bea96a03c8236a41c9d357af}{ltrim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a1eb88898c4d18fa13428df849bbd49cc}{ltrim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aaa9c523b9ae1448db3e7eb49ccad320a}{rtrim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a9444bd0f20ea9f0b3d3d9f1c32e0cb37}{rtrim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}{to\+\_\+lower}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}{to\+\_\+upper}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a1977b1f5131908fe89033f8c1f9e58ca}{split}} (std\+::string\+\_\+view divisor, const std\+::string \&string\+\_\+to\+\_\+split) noexcept
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aff48a812205589f14da85ea0eb12ac73}{starts\+\_\+with}} (std\+::string\+\_\+view string\+\_\+to\+\_\+check, std\+::string\+\_\+view starts\+\_\+with) noexcept
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}{ends\+\_\+with}} (std\+::string\+\_\+view string\+\_\+to\+\_\+check, std\+::string\+\_\+view ends\+\_\+with) noexcept
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::array$<$ uint8\+\_\+t, N $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ab51a4ab92758c5a6dab649d17943bedf}{to\+\_\+array}} (std\+::string\+\_\+view s) noexcept
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a8bff7cd79b2c0975bc78af059cee3da0}{from\+\_\+array}} (const std\+::array$<$ uint8\+\_\+t, N $>$ \&a) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}{get\+\_\+characters\+\_\+to\+\_\+trim}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}\label{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!ends\_with@{ends\_with}}
+\index{ends\_with@{ends\_with}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{ends\_with()}{ends\_with()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::utils\+::ends\+\_\+with (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{string\+\_\+to\+\_\+check,  }\item[{std\+::string\+\_\+view}]{ends\+\_\+with }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns true if the passed string ends with {\ttfamily ends\+\_\+with} 
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+check} & The string to check \\
+\hline
+{\em ends\+\_\+with} & The value to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the passed string ends with {\ttfamily ends\+\_\+with}, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a8bff7cd79b2c0975bc78af059cee3da0}\label{namespacepbr_1_1shared_1_1utils_a8bff7cd79b2c0975bc78af059cee3da0}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!from\_array@{from\_array}}
+\index{from\_array@{from\_array}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{from\_array()}{from\_array()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+std\+::string pbr\+::shared\+::utils\+::from\+\_\+array (\begin{DoxyParamCaption}\item[{const std\+::array$<$ uint8\+\_\+t, N $>$ \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts the passed array to a {\ttfamily std\+::string} 
+\begin{DoxyParams}{Parameters}
+{\em a} & The array to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string converted to from the passed array 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file strings.\+h.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}\label{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!get\_characters\_to\_trim@{get\_characters\_to\_trim}}
+\index{get\_characters\_to\_trim@{get\_characters\_to\_trim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{get\_characters\_to\_trim()}{get\_characters\_to\_trim()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::get\+\_\+characters\+\_\+to\+\_\+trim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the default characters that are trimmed \begin{DoxyReturn}{Returns}
+The default characters that are trimmed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}\label{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!get\_characters\_to\_trim@{get\_characters\_to\_trim}}
+\index{get\_characters\_to\_trim@{get\_characters\_to\_trim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{get\_characters\_to\_trim()}{get\_characters\_to\_trim()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::get\+\_\+characters\+\_\+to\+\_\+trim (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line 6 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ab03afcc9bea96a03c8236a41c9d357af}\label{namespacepbr_1_1shared_1_1utils_ab03afcc9bea96a03c8236a41c9d357af}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!ltrim@{ltrim}}
+\index{ltrim@{ltrim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{ltrim()}{ltrim()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::ltrim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims whitespace from the beginning of the passed string. The whitespace characters are defined in {\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}{get\+\_\+characters\+\_\+to\+\_\+trim()}}} 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a1eb88898c4d18fa13428df849bbd49cc}\label{namespacepbr_1_1shared_1_1utils_a1eb88898c4d18fa13428df849bbd49cc}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!ltrim@{ltrim}}
+\index{ltrim@{ltrim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{ltrim()}{ltrim()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::ltrim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims the character {\ttfamily c} from the beginning of the passed string 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+{\em c} & The character to trim from {\ttfamily s} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_aaa9c523b9ae1448db3e7eb49ccad320a}\label{namespacepbr_1_1shared_1_1utils_aaa9c523b9ae1448db3e7eb49ccad320a}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!rtrim@{rtrim}}
+\index{rtrim@{rtrim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{rtrim()}{rtrim()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::rtrim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims whitespace from the end of the passed string. The whitespace characters are defined in {\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}{get\+\_\+characters\+\_\+to\+\_\+trim()}}} 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a9444bd0f20ea9f0b3d3d9f1c32e0cb37}\label{namespacepbr_1_1shared_1_1utils_a9444bd0f20ea9f0b3d3d9f1c32e0cb37}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!rtrim@{rtrim}}
+\index{rtrim@{rtrim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{rtrim()}{rtrim()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::rtrim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims the character {\ttfamily c} from the end of the passed string 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+{\em c} & The character to trim from {\ttfamily s} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a1977b1f5131908fe89033f8c1f9e58ca}\label{namespacepbr_1_1shared_1_1utils_a1977b1f5131908fe89033f8c1f9e58ca}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!split@{split}}
+\index{split@{split}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ pbr\+::shared\+::utils\+::split (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{divisor,  }\item[{const std\+::string \&}]{string\+\_\+to\+\_\+split }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Splits the passed string by the passed divisor. If the divisor is not found in the passed string, the return value will contain the passed string 
+\begin{DoxyParams}{Parameters}
+{\em divisor} & The divisor to split the string by \\
+\hline
+{\em string\+\_\+to\+\_\+split} & The string to split \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the parts of the split string 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_aff48a812205589f14da85ea0eb12ac73}\label{namespacepbr_1_1shared_1_1utils_aff48a812205589f14da85ea0eb12ac73}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!starts\_with@{starts\_with}}
+\index{starts\_with@{starts\_with}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{starts\_with()}{starts\_with()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::utils\+::starts\+\_\+with (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{string\+\_\+to\+\_\+check,  }\item[{std\+::string\+\_\+view}]{starts\+\_\+with }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns true if the passed string starts with {\ttfamily starts\+\_\+with} 
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+check} & The string to check \\
+\hline
+{\em starts\+\_\+with} & The value to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the passed string starts with {\ttfamily starts\+\_\+with}, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ab51a4ab92758c5a6dab649d17943bedf}\label{namespacepbr_1_1shared_1_1utils_ab51a4ab92758c5a6dab649d17943bedf}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_array@{to\_array}}
+\index{to\_array@{to\_array}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_array()}{to\_array()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+std\+::array$<$uint8\+\_\+t, N$>$ pbr\+::shared\+::utils\+::to\+\_\+array (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts the passed string to an {\ttfamily std\+::array$<$$>$} 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An array converted to from the passed string 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file strings.\+h.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}\label{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_lower@{to\_lower}}
+\index{to\_lower@{to\_lower}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_lower()}{to\_lower()}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+lower (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the passed string with all characters in lower case 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The passed string with all characters in lower case 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}\label{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_upper@{to\_upper}}
+\index{to\_upper@{to\_upper}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_upper()}{to\_upper()}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+upper (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the passed string with all characters in upper case 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to process \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The passed string with all characters in upper case 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a9526d3a7dd16b2ada210e2488d134825}\label{namespacepbr_1_1shared_1_1utils_a9526d3a7dd16b2ada210e2488d134825}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!trim@{trim}}
+\index{trim@{trim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::trim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims whitespace from both the beginning and end of the passed string. The whitespace characters are defined in {\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}{get\+\_\+characters\+\_\+to\+\_\+trim()}}} 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ae7f5f545aa4e7468472fe839c64dff7e}\label{namespacepbr_1_1shared_1_1utils_ae7f5f545aa4e7468472fe839c64dff7e}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!trim@{trim}}
+\index{trim@{trim}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::trim (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s,  }\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Trims the character {\ttfamily c} from both the beginning and end of the passed string 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to trim \\
+\hline
+{\em c} & The character to trim from {\ttfamily s} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file strings.\+cpp.
+

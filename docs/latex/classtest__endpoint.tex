@@ -1,0 +1,116 @@
+\hypertarget{classtest__endpoint}{}\doxysection{test\+\_\+endpoint Class Reference}
+\label{classtest__endpoint}\index{test\_endpoint@{test\_endpoint}}
+
+
+A test endpoint for testing.  
+
+
+Inheritance diagram for test\+\_\+endpoint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__endpoint}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__endpoint_a72d1df485884e3d0612c013ee6445db6}{test\+\_\+endpoint}} ()
+\item 
+\mbox{\hyperlink{classtest__endpoint_ace4d6f5894228c9454e70562e1bba0f3}{$\sim$test\+\_\+endpoint}} () override=default
+\item 
+void \mbox{\hyperlink{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}{log}} (std\+::string\+\_\+view message) noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classtest__endpoint_a1b37ea00c6bd0585dd5f51aea3e9836e}{\+\_\+logged\+\_\+message}}
+\begin{DoxyCompactList}\small\item\em The message that was logged. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{classtest__endpoint_a79bbff579f39a896936357ae4c28ae87}{\+\_\+log\+\_\+call\+\_\+count}} \{0u\}
+\begin{DoxyCompactList}\small\item\em The number of times {\ttfamily \mbox{\hyperlink{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}{log()}}} is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A test endpoint for testing. 
+
+Definition at line 11 of file log\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtest__endpoint_a72d1df485884e3d0612c013ee6445db6}\label{classtest__endpoint_a72d1df485884e3d0612c013ee6445db6}} 
+\index{test\_endpoint@{test\_endpoint}!test\_endpoint@{test\_endpoint}}
+\index{test\_endpoint@{test\_endpoint}!test\_endpoint@{test\_endpoint}}
+\doxysubsubsection{\texorpdfstring{test\_endpoint()}{test\_endpoint()}}
+{\footnotesize\ttfamily test\+\_\+endpoint\+::test\+\_\+endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 13 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__endpoint_ace4d6f5894228c9454e70562e1bba0f3}\label{classtest__endpoint_ace4d6f5894228c9454e70562e1bba0f3}} 
+\index{test\_endpoint@{test\_endpoint}!````~test\_endpoint@{$\sim$test\_endpoint}}
+\index{````~test\_endpoint@{$\sim$test\_endpoint}!test\_endpoint@{test\_endpoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$test\_endpoint()}{~test\_endpoint()}}
+{\footnotesize\ttfamily test\+\_\+endpoint\+::$\sim$test\+\_\+endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}\label{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}} 
+\index{test\_endpoint@{test\_endpoint}!log@{log}}
+\index{log@{log}!test\_endpoint@{test\_endpoint}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void test\+\_\+endpoint\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Logs a test message 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}{pbr\+::shared\+::apis\+::logging\+::endpoint}}.
+
+
+
+Definition at line 27 of file log\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtest__endpoint_a79bbff579f39a896936357ae4c28ae87}\label{classtest__endpoint_a79bbff579f39a896936357ae4c28ae87}} 
+\index{test\_endpoint@{test\_endpoint}!\_log\_call\_count@{\_log\_call\_count}}
+\index{\_log\_call\_count@{\_log\_call\_count}!test\_endpoint@{test\_endpoint}}
+\doxysubsubsection{\texorpdfstring{\_log\_call\_count}{\_log\_call\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t test\+\_\+endpoint\+::\+\_\+log\+\_\+call\+\_\+count \{0u\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The number of times {\ttfamily \mbox{\hyperlink{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}{log()}}} is called. 
+
+
+
+Definition at line 20 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__endpoint_a1b37ea00c6bd0585dd5f51aea3e9836e}\label{classtest__endpoint_a1b37ea00c6bd0585dd5f51aea3e9836e}} 
+\index{test\_endpoint@{test\_endpoint}!\_logged\_message@{\_logged\_message}}
+\index{\_logged\_message@{\_logged\_message}!test\_endpoint@{test\_endpoint}}
+\doxysubsubsection{\texorpdfstring{\_logged\_message}{\_logged\_message}}
+{\footnotesize\ttfamily std\+::string test\+\_\+endpoint\+::\+\_\+logged\+\_\+message}
+
+
+
+The message that was logged. 
+
+
+
+Definition at line 23 of file log\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/tests/apis/logging/\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp}{log\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

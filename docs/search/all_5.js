@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['get_5fnumber_5fof_5fallocated_5fbytes_21',['get_number_of_allocated_bytes',['../namespacepbr_1_1shared_1_1memory.html#a6227e3dde6309e58e3acfcf6ebd95128',1,'pbr::shared::memory']]],
-  ['get_5fplatform_5fname_22',['get_platform_name',['../namespacebuild.html#aec5133b70bf786cd6bb6b38c36c4edb7',1,'build']]],
-  ['get_5fproject_5fversion_23',['get_project_version',['../namespacebuild.html#a362a525049800ac25b4ee30ef9094552',1,'build']]],
-  ['get_5fptr_5fto_5ffree_24',['get_ptr_to_free',['../memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706',1,'basic_allocators.cpp']]],
-  ['git_5fpath_25',['git_path',['../namespacebuild.html#af7f60ed87f6da7e29458a65e5ffc4503',1,'build']]]
+  ['endpoint_29',['endpoint',['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html',1,'pbr::shared::apis::logging::endpoint'],['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#ad5ad6a861c5b8f1a9e07be806e22f1d1',1,'pbr::shared::apis::logging::endpoint::endpoint()']]],
+  ['endpoint_2eh_30',['endpoint.h',['../endpoint_8h.html',1,'']]],
+  ['ends_5fwith_31',['ends_with',['../namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7',1,'pbr::shared::utils']]],
+  ['error_32',['error',['../namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282',1,'pbr::shared::apis::logging']]]
 ];

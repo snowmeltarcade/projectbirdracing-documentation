@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['catch_5fconfig_5frunner_10',['CATCH_CONFIG_RUNNER',['../client_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../server_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../shared_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp']]],
-  ['cleanup_5fenvironment_11',['cleanup_environment',['../namespacebuild.html#a25f644a8678539c570e64490995fe6a5',1,'build']]],
-  ['cmake_5fpath_12',['cmake_path',['../namespacebuild.html#adef5bc99b0592e3a4cf7bb328b2fe302',1,'build']]],
-  ['configure_5farguments_13',['configure_arguments',['../namespacebuild.html#a674b020fc45e8c55bc524f8c4ce7379b',1,'build']]],
-  ['copy_5fdir_14',['copy_dir',['../namespacebuild.html#acec8092311a8659f4b48e347ec70c19b',1,'build']]],
-  ['ctest_5fpath_15',['ctest_path',['../namespacebuild.html#a03fe07a36843838a802e3eed731b7108',1,'build']]],
-  ['cwd_16',['cwd',['../namespacebuild.html#a81ea2fe5aea12e92ed242d6c15eef090',1,'build']]]
+  ['basic_5fallocators_2ecpp_5',['basic_allocators.cpp',['../memory_2basic__allocators_8cpp.html',1,'(Global Namespace)'],['../tests_2memory_2basic__allocators_8cpp.html',1,'(Global Namespace)']]],
+  ['basic_5fallocators_2eh_6',['basic_allocators.h',['../basic__allocators_8h.html',1,'']]],
+  ['build_7',['build',['../namespacebuild.html',1,'']]],
+  ['build_2epy_8',['build.py',['../build_8py.html',1,'']]],
+  ['build_5fdir_9',['build_dir',['../namespacebuild.html#adf112f0302c0888cc0a682655aec24f0',1,'build']]],
+  ['build_5fdir_5fname_10',['build_dir_name',['../namespacebuild.html#a916deb46096c80415282f6ee6e5101e4',1,'build']]],
+  ['build_5fdocumentation_11',['build_documentation',['../namespacebuild__documentation.html',1,'build_documentation'],['../namespacebuild__documentation.html#a3a38d9031f6e79d9bd23d136684aa830',1,'build_documentation.build_documentation()']]],
+  ['build_5fdocumentation_2epy_12',['build_documentation.py',['../build__documentation_8py.html',1,'']]],
+  ['bytes_13',['bytes',['../classpbr_1_1shared_1_1memory_1_1bytes.html',1,'pbr::shared::memory::bytes'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#aabd423ee6767e0d54472091b653f773f',1,'pbr::shared::memory::bytes::bytes(type value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a02603926d8a070c6f8bfd8ea6c5a0bf8',1,'pbr::shared::memory::bytes::bytes(kilobytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a3339418f32ace2b56b51b372a58cba6a',1,'pbr::shared::memory::bytes::bytes(megabytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a4b3cebc36234263e2c08402473faa22d',1,'pbr::shared::memory::bytes::bytes(gigabytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a5827d522a0e46324a98adc78ba377da3',1,'pbr::shared::memory::bytes::bytes(const bytes &amp;)=default'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a1b08aa4f9745051b380398dff44c7bf3',1,'pbr::shared::memory::bytes::bytes(bytes &amp;&amp;)=default']]],
+  ['bytes_2ecpp_14',['bytes.cpp',['../memory_2bytes_8cpp.html',1,'(Global Namespace)'],['../tests_2memory_2bytes_8cpp.html',1,'(Global Namespace)']]],
+  ['bytes_2eh_15',['bytes.h',['../bytes_8h.html',1,'']]]
 ];

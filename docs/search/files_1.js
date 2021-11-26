@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logging_2ecpp_59',['logging.cpp',['../apis_2logging_2logging_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2logging_2logging_8cpp.html',1,'(Global Namespace)']]],
-  ['logging_2eh_60',['logging.h',['../logging_8h.html',1,'']]]
+  ['datetime_5fmanager_2ecpp_146',['datetime_manager.cpp',['../apis_2datetime_2datetime__manager_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2datetime_2datetime__manager_8cpp.html',1,'(Global Namespace)']]],
+  ['datetime_5fmanager_2eh_147',['datetime_manager.h',['../datetime__manager_8h.html',1,'']]]
 ];

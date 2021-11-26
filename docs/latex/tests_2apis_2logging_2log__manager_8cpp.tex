@@ -1,0 +1,157 @@
+\hypertarget{tests_2apis_2logging_2log__manager_8cpp}{}\doxysection{src/shared/tests/apis/logging/log\+\_\+manager.cpp File Reference}
+\label{tests_2apis_2logging_2log__manager_8cpp}\index{src/shared/tests/apis/logging/log\_manager.cpp@{src/shared/tests/apis/logging/log\_manager.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/utils/strings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__endpoint}{test\+\_\+endpoint}}
+\begin{DoxyCompactList}\small\item\em A test endpoint for testing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_a67223c94028bcdd934d1d2785a39959e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}add\+\_\+endpoint -\/ null \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em add\+\_\+endpoint \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_ad2cb02aba044624d4607e671d8c4efa6}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}add\+\_\+endpoint -\/ valid \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ returns true\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_acfd5b1eb7dfa8c622605b0e758134f16}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}add\+\_\+endpoint -\/ valid \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ adds \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_ae9c71ab5e63374e377fad02999f1b351}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+endpoints -\/ returns added endpoints\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+endpoints \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_afe2b29543858d2ee4d5a2712ebe517e7}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}set\+\_\+log\+\_\+level -\/ log level -\/ sets the log level\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em set\+\_\+log\+\_\+level \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_a0318430d4e93f21a599090b690463135}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+log\+\_\+level -\/ gets the log level\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+log\+\_\+level \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_ace254eed3d959dfd9fa76ab49ed676f9}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}log\+\_\+message -\/ valid message and level -\/ logs the message to all endpoints\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em log\+\_\+message \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_a531d97834766c2afe6f40ac714efe6ed}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}log\+\_\+message -\/ high log level -\/ ignores messages from lower levels\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_ad1bf6962f5521a2931a2bfa498d87f88}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}log\+\_\+message -\/ single thread -\/ passes log message to all endpoints\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2logging_2log__manager_8cpp_a2ede22a09db4e38a4f5ee5c41850933d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}log\+\_\+message -\/ multiple threads -\/ passes log message to all endpoints\char`\"{}, \char`\"{}\mbox{[}shared/apis/logging\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a67223c94028bcdd934d1d2785a39959e}\label{tests_2apis_2logging_2log__manager_8cpp_a67223c94028bcdd934d1d2785a39959e}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}add\+\_\+endpoint -\/ null \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+add\+\_\+endpoint 
+
+
+
+Definition at line 40 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_acfd5b1eb7dfa8c622605b0e758134f16}\label{tests_2apis_2logging_2log__manager_8cpp_acfd5b1eb7dfa8c622605b0e758134f16}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}add\+\_\+endpoint -\/ valid \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ adds \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ad2cb02aba044624d4607e671d8c4efa6}\label{tests_2apis_2logging_2log__manager_8cpp_ad2cb02aba044624d4607e671d8c4efa6}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}add\+\_\+endpoint -\/ valid \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} -\/ returns true\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ae9c71ab5e63374e377fad02999f1b351}\label{tests_2apis_2logging_2log__manager_8cpp_ae9c71ab5e63374e377fad02999f1b351}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+endpoints -\/ returns added endpoints\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+endpoints 
+
+
+
+Definition at line 72 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a0318430d4e93f21a599090b690463135}\label{tests_2apis_2logging_2log__manager_8cpp_a0318430d4e93f21a599090b690463135}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+log\+\_\+level -\/ gets the log level\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+log\+\_\+level 
+
+
+
+Definition at line 112 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a531d97834766c2afe6f40ac714efe6ed}\label{tests_2apis_2logging_2log__manager_8cpp_a531d97834766c2afe6f40ac714efe6ed}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}log\+\_\+message -\/ high log level -\/ ignores messages from lower levels\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a2ede22a09db4e38a4f5ee5c41850933d}\label{tests_2apis_2logging_2log__manager_8cpp_a2ede22a09db4e38a4f5ee5c41850933d}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}log\+\_\+message -\/ multiple threads -\/ passes log message to all endpoints\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ad1bf6962f5521a2931a2bfa498d87f88}\label{tests_2apis_2logging_2log__manager_8cpp_ad1bf6962f5521a2931a2bfa498d87f88}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}log\+\_\+message -\/ single thread -\/ passes log message to all endpoints\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ace254eed3d959dfd9fa76ab49ed676f9}\label{tests_2apis_2logging_2log__manager_8cpp_ace254eed3d959dfd9fa76ab49ed676f9}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}log\+\_\+message -\/ valid message and level -\/ logs the message to all endpoints\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+log\+\_\+message 
+
+
+
+Definition at line 126 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_afe2b29543858d2ee4d5a2712ebe517e7}\label{tests_2apis_2logging_2log__manager_8cpp_afe2b29543858d2ee4d5a2712ebe517e7}} 
+\index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!log\_manager.cpp@{log\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}set\+\_\+log\+\_\+level -\/ log level -\/ sets the log level\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/logging\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+set\+\_\+log\+\_\+level 
+
+
+
+Definition at line 98 of file log\+\_\+manager.\+cpp.
+

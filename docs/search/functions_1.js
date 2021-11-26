@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['build_5fdocumentation_63',['build_documentation',['../namespacebuild__documentation.html#a3a38d9031f6e79d9bd23d136684aa830',1,'build_documentation']]]
+  ['build_5fdocumentation_167',['build_documentation',['../namespacebuild__documentation.html#a3a38d9031f6e79d9bd23d136684aa830',1,'build_documentation']]],
+  ['bytes_168',['bytes',['../classpbr_1_1shared_1_1memory_1_1bytes.html#aabd423ee6767e0d54472091b653f773f',1,'pbr::shared::memory::bytes::bytes(type value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a02603926d8a070c6f8bfd8ea6c5a0bf8',1,'pbr::shared::memory::bytes::bytes(kilobytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a3339418f32ace2b56b51b372a58cba6a',1,'pbr::shared::memory::bytes::bytes(megabytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a4b3cebc36234263e2c08402473faa22d',1,'pbr::shared::memory::bytes::bytes(gigabytes value)'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a5827d522a0e46324a98adc78ba377da3',1,'pbr::shared::memory::bytes::bytes(const bytes &amp;)=default'],['../classpbr_1_1shared_1_1memory_1_1bytes.html#a1b08aa4f9745051b380398dff44c7bf3',1,'pbr::shared::memory::bytes::bytes(bytes &amp;&amp;)=default']]]
 ];

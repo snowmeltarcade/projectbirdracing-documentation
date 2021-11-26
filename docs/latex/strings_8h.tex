@@ -1,0 +1,47 @@
+\hypertarget{strings_8h}{}\doxysection{src/shared/utils/strings.h File Reference}
+\label{strings_8h}\index{src/shared/utils/strings.h@{src/shared/utils/strings.h}}
+{\ttfamily \#include \char`\"{}shared/memory/basic\+\_\+allocators.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils}{pbr\+::shared\+::utils}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a9526d3a7dd16b2ada210e2488d134825}{pbr\+::shared\+::utils\+::trim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ab03afcc9bea96a03c8236a41c9d357af}{pbr\+::shared\+::utils\+::ltrim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aaa9c523b9ae1448db3e7eb49ccad320a}{pbr\+::shared\+::utils\+::rtrim}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ae7f5f545aa4e7468472fe839c64dff7e}{pbr\+::shared\+::utils\+::trim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a1eb88898c4d18fa13428df849bbd49cc}{pbr\+::shared\+::utils\+::ltrim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a9444bd0f20ea9f0b3d3d9f1c32e0cb37}{pbr\+::shared\+::utils\+::rtrim}} (std\+::string\+\_\+view s, char c) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}{pbr\+::shared\+::utils\+::to\+\_\+lower}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}{pbr\+::shared\+::utils\+::to\+\_\+upper}} (std\+::string\+\_\+view s) noexcept
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::array$<$ uint8\+\_\+t, N $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ab51a4ab92758c5a6dab649d17943bedf}{pbr\+::shared\+::utils\+::to\+\_\+array}} (std\+::string\+\_\+view s) noexcept
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a8bff7cd79b2c0975bc78af059cee3da0}{pbr\+::shared\+::utils\+::from\+\_\+array}} (const std\+::array$<$ uint8\+\_\+t, N $>$ \&a) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}{pbr\+::shared\+::utils\+::get\+\_\+characters\+\_\+to\+\_\+trim}} () noexcept
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a1977b1f5131908fe89033f8c1f9e58ca}{pbr\+::shared\+::utils\+::split}} (std\+::string\+\_\+view divisor, const std\+::string \&string\+\_\+to\+\_\+split) noexcept
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aff48a812205589f14da85ea0eb12ac73}{pbr\+::shared\+::utils\+::starts\+\_\+with}} (std\+::string\+\_\+view string\+\_\+to\+\_\+check, std\+::string\+\_\+view starts\+\_\+with) noexcept
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}{pbr\+::shared\+::utils\+::ends\+\_\+with}} (std\+::string\+\_\+view string\+\_\+to\+\_\+check, std\+::string\+\_\+view ends\+\_\+with) noexcept
+\end{DoxyCompactItemize}

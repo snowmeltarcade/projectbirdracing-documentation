@@ -1,0 +1,164 @@
+\hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging}{}\doxysection{pbr\+::shared\+::apis\+::logging Namespace Reference}
+\label{namespacepbr_1_1shared_1_1apis_1_1logging}\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_1_1endpoints}{endpoints}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \+: char \{ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c}{log\+\_\+levels\+::info}}, 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09a7b83d3f08fa392b79e3f553b585971cd}{log\+\_\+levels\+::warning}}, 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282}{log\+\_\+levels\+::error}}, 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09adf6402fd9ecc60f5a2159fdf45711cd4}{log\+\_\+levels\+::fatal}}
+ \}
+\begin{DoxyCompactList}\small\item\em The levels to log against. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a19df0e1939c094b5c0958cb9eab58b6c}{to\+\_\+string}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the passed log level. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_ae1dcb2bb7a9792ff94c0e457fbc27954}{add\+\_\+endpoint}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}) noexcept
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ $>$ \& \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a2ed94998d765214f326b367837824b25}{get\+\_\+endpoints}} () noexcept
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a6e2e775f11d83495395cac6b18557802}{set\+\_\+log\+\_\+level}} (const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a4f0b6cb2da55dc0f408c2b94b538cd6b}{get\+\_\+log\+\_\+level}} () noexcept
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a8efc4728e60433b5f0e10991d0de2a60}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!log\_levels@{log\_levels}}
+\index{log\_levels@{log\_levels}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{log\_levels}{log\_levels}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+levels}} \+: char\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The levels to log against. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{info@{info}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!info@{info}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c}} 
+info&For informational messages. This is the default log level. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{warning@{warning}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!warning@{warning}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09a7b83d3f08fa392b79e3f553b585971cd}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09a7b83d3f08fa392b79e3f553b585971cd}} 
+warning&For messages that require attention, but are not considered an error. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{error@{error}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!error@{error}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282}} 
+error&For recoverable errors that require attention. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fatal@{fatal}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!fatal@{fatal}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09adf6402fd9ecc60f5a2159fdf45711cd4}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09adf6402fd9ecc60f5a2159fdf45711cd4}} 
+fatal&For unrecoverable errors that require a system halt. It is the responsibility of the caller to halt the system \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 9 of file log\+\_\+levels.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_ae1dcb2bb7a9792ff94c0e457fbc27954}\label{namespacepbr_1_1shared_1_1apis_1_1logging_ae1dcb2bb7a9792ff94c0e457fbc27954}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!add\_endpoint@{add\_endpoint}}
+\index{add\_endpoint@{add\_endpoint}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{add\_endpoint()}{add\_endpoint()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::logging\+::add\+\_\+endpoint (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Adds a logging endpoint 
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & A pointer to the endpoint to add. If nullptr, {\ttfamily false} will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a2ed94998d765214f326b367837824b25}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a2ed94998d765214f326b367837824b25}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!get\_endpoints@{get\_endpoints}}
+\index{get\_endpoints@{get\_endpoints}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{get\_endpoints()}{get\_endpoints()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ $>$ \& pbr\+::shared\+::apis\+::logging\+::get\+\_\+endpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the added endpoints \begin{DoxyReturn}{Returns}
+The added endpoints 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a4f0b6cb2da55dc0f408c2b94b538cd6b}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a4f0b6cb2da55dc0f408c2b94b538cd6b}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!get\_log\_level@{get\_log\_level}}
+\index{get\_log\_level@{get\_log\_level}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{get\_log\_level()}{get\_log\_level()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} pbr\+::shared\+::apis\+::logging\+::get\+\_\+log\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the current log level \begin{DoxyReturn}{Returns}
+The current log level 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a8efc4728e60433b5f0e10991d0de2a60}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a8efc4728e60433b5f0e10991d0de2a60}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!log\_message@{log\_message}}
+\index{log\_message@{log\_message}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Logs a message to all added endpoints. If the set log level is less than the passed level, the message will not be logged. The level, current date and time in U\+TC will be prefixed to the message 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log \\
+\hline
+{\em level} & The logging level to log against \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 50 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a6e2e775f11d83495395cac6b18557802}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a6e2e775f11d83495395cac6b18557802}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!set\_log\_level@{set\_log\_level}}
+\index{set\_log\_level@{set\_log\_level}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{set\_log\_level()}{set\_log\_level()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::set\+\_\+log\+\_\+level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the log level to log against. Any messages that are logged with a level below this will be ignored 
+\begin{DoxyParams}{Parameters}
+{\em level} & The log level to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1logging_a19df0e1939c094b5c0958cb9eab58b6c}\label{namespacepbr_1_1shared_1_1apis_1_1logging_a19df0e1939c094b5c0958cb9eab58b6c}} 
+\index{pbr::shared::apis::logging@{pbr::shared::apis::logging}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::apis::logging@{pbr::shared::apis::logging}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::apis\+::logging\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Returns a string representation of the passed log level. 
+
+
+
+Definition at line 4 of file log\+\_\+levels.\+cpp.
+
