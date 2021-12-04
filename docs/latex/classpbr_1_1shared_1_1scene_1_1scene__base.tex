@@ -1,0 +1,145 @@
+\hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base}{}\doxysection{pbr\+::shared\+::scene\+::scene\+\_\+base Class Reference}
+\label{classpbr_1_1shared_1_1scene_1_1scene__base}\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+
+
+Provides the base functionality of a scene. This manages the E\+CS, UI, physics and world.  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+base.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::scene\+::scene\+\_\+base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.888889cm]{classpbr_1_1shared_1_1scene_1_1scene__base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_aca090b75668b143fcedf265e3864706b}{scene\+\_\+base}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_af730ae1fca6126988478a66bd7956f8f}{$\sim$scene\+\_\+base}} ()=default
+\item 
+virtual \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a43e5199e1e1ee43bc969a717393ce5e7}{get\+\_\+scene\+\_\+type}} () const noexcept=0
+\item 
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_aeebe9522af03ff26d2ec748fb41dc206}{load}} () noexcept=0
+\item 
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a5a5f50963f7f87c0660cbaa7399ee010}{run}} () noexcept=0
+\item 
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a0efdb9c4f3fa2db60236e3e40724167c}{should\+\_\+quit}} () const noexcept=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_afa54166c89404312b5d990bcfbbae642}{\+\_\+log\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em The log manager to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides the base functionality of a scene. This manages the E\+CS, UI, physics and world. 
+
+Definition at line 11 of file scene\+\_\+base.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_aca090b75668b143fcedf265e3864706b}\label{classpbr_1_1shared_1_1scene_1_1scene__base_aca090b75668b143fcedf265e3864706b}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!scene\_base@{scene\_base}}
+\index{scene\_base@{scene\_base}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{scene\_base()}{scene\_base()}}
+{\footnotesize\ttfamily pbr\+::shared\+::scene\+::scene\+\_\+base\+::scene\+\_\+base (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs the base scene 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file scene\+\_\+base.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_af730ae1fca6126988478a66bd7956f8f}\label{classpbr_1_1shared_1_1scene_1_1scene__base_af730ae1fca6126988478a66bd7956f8f}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!````~scene\_base@{$\sim$scene\_base}}
+\index{````~scene\_base@{$\sim$scene\_base}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{$\sim$scene\_base()}{~scene\_base()}}
+{\footnotesize\ttfamily virtual pbr\+::shared\+::scene\+::scene\+\_\+base\+::$\sim$scene\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_a43e5199e1e1ee43bc969a717393ce5e7}\label{classpbr_1_1shared_1_1scene_1_1scene__base_a43e5199e1e1ee43bc969a717393ce5e7}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!get\_scene\_type@{get\_scene\_type}}
+\index{get\_scene\_type@{get\_scene\_type}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{get\_scene\_type()}{get\_scene\_type()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} pbr\+::shared\+::scene\+::scene\+\_\+base\+::get\+\_\+scene\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the type of this scene \begin{DoxyReturn}{Returns}
+The type of this scene 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__scene_a7a3729f9c5654fbcf2a6759590fcff92}{test\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1loading__scene_a2041ea0249e6b6962814dc1998d9f6af}{pbr\+::shared\+::scene\+::scenes\+::loading\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1splash__screen__scene_aa537a8ceef9a1e6423a987792f3c3898}{pbr\+::shared\+::scene\+::scenes\+::splash\+\_\+screen\+\_\+scene}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene_a7a4c5203a33943763267627ddb4bc1bc}{pbr\+::shared\+::scene\+::scenes\+::world\+\_\+generation\+\_\+scene}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_aeebe9522af03ff26d2ec748fb41dc206}\label{classpbr_1_1shared_1_1scene_1_1scene__base_aeebe9522af03ff26d2ec748fb41dc206}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!load@{load}}
+\index{load@{load}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::scene\+::scene\+\_\+base\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Loads the scene \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__scene_a88eda567584cc98525d1df5788e1f5d8}{test\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1loading__scene_ab853b2b02ea958e22dcc4bc0cbd45350}{pbr\+::shared\+::scene\+::scenes\+::loading\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1splash__screen__scene_a0443ebd0d7e471b60f0c5227a70c8631}{pbr\+::shared\+::scene\+::scenes\+::splash\+\_\+screen\+\_\+scene}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene_a3dcc0e7a7644f93b6c8443cec7a88124}{pbr\+::shared\+::scene\+::scenes\+::world\+\_\+generation\+\_\+scene}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_a5a5f50963f7f87c0660cbaa7399ee010}\label{classpbr_1_1shared_1_1scene_1_1scene__base_a5a5f50963f7f87c0660cbaa7399ee010}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!run@{run}}
+\index{run@{run}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::scene\+::scene\+\_\+base\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Runs the scene \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__scene_a29511f59bb0555baba8d33afdd612961}{test\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1loading__scene_af8f426da773b461cf40d40f20697525a}{pbr\+::shared\+::scene\+::scenes\+::loading\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1splash__screen__scene_a337a5533fba0ebe87e5d1a5d5e059e2d}{pbr\+::shared\+::scene\+::scenes\+::splash\+\_\+screen\+\_\+scene}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene_ab7b40dd5c2feb99497e574b7f240372b}{pbr\+::shared\+::scene\+::scenes\+::world\+\_\+generation\+\_\+scene}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_a0efdb9c4f3fa2db60236e3e40724167c}\label{classpbr_1_1shared_1_1scene_1_1scene__base_a0efdb9c4f3fa2db60236e3e40724167c}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!should\_quit@{should\_quit}}
+\index{should\_quit@{should\_quit}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{should\_quit()}{should\_quit()}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::scene\+::scene\+\_\+base\+::should\+\_\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns {\ttfamily true} if this scene should quit, else {\ttfamily false} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this scene should quit, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__scene_a496c1be3f1727fc0f8e0d1cf962ac997}{test\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1loading__scene_a78b916bb8bfe068bd5d979a38c09ca15}{pbr\+::shared\+::scene\+::scenes\+::loading\+\_\+scene}}, \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1splash__screen__scene_ad5e3120bba52170038845f3cc8860bfc}{pbr\+::shared\+::scene\+::scenes\+::splash\+\_\+screen\+\_\+scene}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene_abdbff08d40ebc074bff19fe15a5ed894}{pbr\+::shared\+::scene\+::scenes\+::world\+\_\+generation\+\_\+scene}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__base_afa54166c89404312b5d990bcfbbae642}\label{classpbr_1_1shared_1_1scene_1_1scene__base_afa54166c89404312b5d990bcfbbae642}} 
+\index{pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}!\_log\_manager@{\_log\_manager}}
+\index{\_log\_manager@{\_log\_manager}!pbr::shared::scene::scene\_base@{pbr::shared::scene::scene\_base}}
+\doxysubsubsection{\texorpdfstring{\_log\_manager}{\_log\_manager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}}$>$ pbr\+::shared\+::scene\+::scene\+\_\+base\+::\+\_\+log\+\_\+manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The log manager to use. 
+
+
+
+Definition at line 43 of file scene\+\_\+base.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/scene/\mbox{\hyperlink{scene__base_8h}{scene\+\_\+base.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{classtest__scene__factory}{}\doxysection{test\+\_\+scene\+\_\+factory Class Reference}
+\label{classtest__scene__factory}\index{test\_scene\_factory@{test\_scene\_factory}}
+Inheritance diagram for test\+\_\+scene\+\_\+factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__scene__factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$ \mbox{\hyperlink{classtest__scene__factory_ace33ca6db846c9e1aa205d405d840098}{create\+\_\+scene}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} type) noexcept override
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} $>$ \mbox{\hyperlink{classtest__scene__factory_adf1201de5ef238f59401f6f42290e064}{get\+\_\+next\+\_\+scenes}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$$>$ \&scenes) noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 76 of file scene\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__scene__factory_ace33ca6db846c9e1aa205d405d840098}\label{classtest__scene__factory_ace33ca6db846c9e1aa205d405d840098}} 
+\index{test\_scene\_factory@{test\_scene\_factory}!create\_scene@{create\_scene}}
+\index{create\_scene@{create\_scene}!test\_scene\_factory@{test\_scene\_factory}}
+\doxysubsubsection{\texorpdfstring{create\_scene()}{create\_scene()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}}$>$ test\+\_\+scene\+\_\+factory\+::create\+\_\+scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Creates a scene of the passed type 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of scene to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created scene, else {\ttfamily nullptr} if the type is not supported 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_a4e9736ccb51e95fe097750a38ec326f2}{pbr\+::shared\+::scene\+::iscene\+\_\+factory}}.
+
+
+
+Definition at line 78 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene__factory_adf1201de5ef238f59401f6f42290e064}\label{classtest__scene__factory_adf1201de5ef238f59401f6f42290e064}} 
+\index{test\_scene\_factory@{test\_scene\_factory}!get\_next\_scenes@{get\_next\_scenes}}
+\index{get\_next\_scenes@{get\_next\_scenes}!test\_scene\_factory@{test\_scene\_factory}}
+\doxysubsubsection{\texorpdfstring{get\_next\_scenes()}{get\_next\_scenes()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$ test\+\_\+scene\+\_\+factory\+::get\+\_\+next\+\_\+scenes (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$$>$ \&}]{current\+\_\+scenes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Get the next scenes to load based on the passed scenes 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+scenes} & The currently running scenes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next scene types to load (can contain duplicate scene types) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_a912adde0e4f50bca0106884f0ae0616e}{pbr\+::shared\+::scene\+::iscene\+\_\+factory}}.
+
+
+
+Definition at line 92 of file scene\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/tests/scene/\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

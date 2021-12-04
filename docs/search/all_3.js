@@ -1,10 +1,21 @@
 var searchData=
 [
-  ['catch_5fconfig_5frunner_16',['CATCH_CONFIG_RUNNER',['../client_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../server_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../shared_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp']]],
-  ['cleanup_5fenvironment_17',['cleanup_environment',['../namespacebuild.html#a25f644a8678539c570e64490995fe6a5',1,'build']]],
-  ['cmake_5fpath_18',['cmake_path',['../namespacebuild.html#adef5bc99b0592e3a4cf7bb328b2fe302',1,'build']]],
-  ['configure_5farguments_19',['configure_arguments',['../namespacebuild.html#a674b020fc45e8c55bc524f8c4ce7379b',1,'build']]],
-  ['copy_5fdir_20',['copy_dir',['../namespacebuild.html#acec8092311a8659f4b48e347ec70c19b',1,'build']]],
-  ['ctest_5fpath_21',['ctest_path',['../namespacebuild.html#a03fe07a36843838a802e3eed731b7108',1,'build']]],
-  ['cwd_22',['cwd',['../namespacebuild.html#a81ea2fe5aea12e92ed242d6c15eef090',1,'build']]]
+  ['catch_5fconfig_5frunner_21',['CATCH_CONFIG_RUNNER',['../client_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../server_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp'],['../shared_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902',1,'CATCH_CONFIG_RUNNER():&#160;main.cpp']]],
+  ['cleanup_5fenvironment_22',['cleanup_environment',['../namespacebuild.html#a25f644a8678539c570e64490995fe6a5',1,'build']]],
+  ['cmake_5fpath_23',['cmake_path',['../namespacebuild.html#adef5bc99b0592e3a4cf7bb328b2fe302',1,'build']]],
+  ['configure_5farguments_24',['configure_arguments',['../namespacebuild.html#a674b020fc45e8c55bc524f8c4ce7379b',1,'build']]],
+  ['console_5fwindow_25',['console_window',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window.html',1,'pbr::shared::apis::windowing::console_window'],['../classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window.html#adceb322bf93492575f6b06588894363a',1,'pbr::shared::apis::windowing::console_window::console_window()']]],
+  ['console_5fwindow_2ecpp_26',['console_window.cpp',['../console__window_8cpp.html',1,'']]],
+  ['console_5fwindow_2eh_27',['console_window.h',['../console__window_8h.html',1,'']]],
+  ['copy_5fdir_28',['copy_dir',['../namespacebuild.html#acec8092311a8659f4b48e347ec70c19b',1,'build']]],
+  ['create_5fapplication_5fwindow_29',['create_application_window',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a8a0aaf7d8ef622d0efc694a8b42f4d42',1,'pbr::shared::apis::windowing::iwindow_manager::create_application_window()'],['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a920dc0612bf9124b4bdbc610fc45b6d0',1,'pbr::shared::apis::windowing::window_manager::create_application_window()'],['../classtest__window__manager.html#ab4895cfd3000b9a9ad6161debe7b663e',1,'test_window_manager::create_application_window()']]],
+  ['create_5fapplication_5fwindow_5fcalled_30',['create_application_window_called',['../classtest__window__manager.html#ac7c596871e9dff7d1608e3ffd05b9ee4',1,'test_window_manager']]],
+  ['create_5fapplication_5fwindow_5fresult_31',['create_application_window_result',['../classtest__window__manager.html#a15275bb52a86cc5b11a85317e3d39375',1,'test_window_manager']]],
+  ['create_5fconsole_5fwindow_32',['create_console_window',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a735ee3b10eb1d798f1887bacfd9c5674',1,'pbr::shared::apis::windowing::iwindow_manager::create_console_window()'],['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a3b20770563f654029d0f0eb7eaf4bf98',1,'pbr::shared::apis::windowing::window_manager::create_console_window()'],['../classtest__window__manager.html#a847b5e6c5b0a20f4597abacae183af36',1,'test_window_manager::create_console_window()']]],
+  ['create_5fgame_5fmanager_33',['create_game_manager',['../server_2main_8cpp.html#acfecff82da4df2899f841b007dac4810',1,'create_game_manager():&#160;main.cpp'],['../tests_2game_2game__manager_8cpp.html#aac40c4b0a435772a243269acdfcb8311',1,'create_game_manager():&#160;game_manager.cpp']]],
+  ['create_5fscene_34',['create_scene',['../classpbr_1_1server_1_1scene_1_1scene__factory.html#aaeff8f48cc4b74b9b2afc1048dbed2cc',1,'pbr::server::scene::scene_factory::create_scene()'],['../classpbr_1_1shared_1_1scene_1_1iscene__factory.html#a4e9736ccb51e95fe097750a38ec326f2',1,'pbr::shared::scene::iscene_factory::create_scene()'],['../classtest__scene__factory.html#ace33ca6db846c9e1aa205d405d840098',1,'test_scene_factory::create_scene()']]],
+  ['create_5fscene_5ffactory_35',['create_scene_factory',['../scene_8cpp.html#abd4f170f6f0f275abef764f8ad7eb666',1,'scene.cpp']]],
+  ['create_5fscene_5fmanager_36',['create_scene_manager',['../tests_2scene_2scene__manager_8cpp.html#a8d50208b16c1714190feb3a1463e3679',1,'scene_manager.cpp']]],
+  ['ctest_5fpath_37',['ctest_path',['../namespacebuild.html#a03fe07a36843838a802e3eed731b7108',1,'build']]],
+  ['cwd_38',['cwd',['../namespacebuild.html#a81ea2fe5aea12e92ed242d6c15eef090',1,'build']]]
 ];

@@ -1,5 +1,6 @@
 var dir_fcf2ab54597ce6a2a4ed87ec69e18031 =
 [
     [ "datetime", "dir_056759aa9e9f2b73068311194296ee08.html", "dir_056759aa9e9f2b73068311194296ee08" ],
-    [ "logging", "dir_7682555af14035d651866ee07990e6d0.html", "dir_7682555af14035d651866ee07990e6d0" ]
+    [ "logging", "dir_7682555af14035d651866ee07990e6d0.html", "dir_7682555af14035d651866ee07990e6d0" ],
+    [ "windowing", "dir_9525b293e8636cc07719c4b9bd58b16b.html", "dir_9525b293e8636cc07719c4b9bd58b16b" ]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['test_5fendpoint_129',['test_endpoint',['../classtest__endpoint.html',1,'']]]
+  ['loading_5fscene_253',['loading_scene',['../classpbr_1_1shared_1_1scene_1_1scenes_1_1loading__scene.html',1,'pbr::shared::scene::scenes']]],
+  ['log_5fmanager_254',['log_manager',['../classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager.html',1,'pbr::shared::apis::logging']]]
 ];

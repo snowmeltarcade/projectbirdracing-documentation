@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['stdout_2ecpp_161',['stdout.cpp',['../stdout_8cpp.html',1,'']]],
-  ['stdout_2eh_162',['stdout.h',['../stdout_8h.html',1,'']]],
-  ['strings_2ecpp_163',['strings.cpp',['../tests_2utils_2strings_8cpp.html',1,'(Global Namespace)'],['../utils_2strings_8cpp.html',1,'(Global Namespace)']]],
-  ['strings_2eh_164',['strings.h',['../strings_8h.html',1,'']]]
+  ['loading_5fscene_2ecpp_311',['loading_scene.cpp',['../loading__scene_8cpp.html',1,'']]],
+  ['loading_5fscene_2eh_312',['loading_scene.h',['../loading__scene_8h.html',1,'']]],
+  ['log_5flevels_2ecpp_313',['log_levels.cpp',['../apis_2logging_2log__levels_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2logging_2log__levels_8cpp.html',1,'(Global Namespace)']]],
+  ['log_5flevels_2eh_314',['log_levels.h',['../log__levels_8h.html',1,'']]],
+  ['log_5fmanager_2ecpp_315',['log_manager.cpp',['../apis_2logging_2log__manager_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2logging_2log__manager_8cpp.html',1,'(Global Namespace)']]],
+  ['log_5fmanager_2eh_316',['log_manager.h',['../log__manager_8h.html',1,'']]]
 ];

@@ -1,0 +1,301 @@
+\hypertarget{tests_2scene_2scene__manager_8cpp}{}\doxysection{src/shared/tests/scene/scene\+\_\+manager.cpp File Reference}
+\label{tests_2scene_2scene__manager_8cpp}\index{src/shared/tests/scene/scene\_manager.cpp@{src/shared/tests/scene/scene\_manager.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/scene/scene\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__scene}{test\+\_\+scene}}
+\item 
+class \mbox{\hyperlink{classtest__scene__factory}{test\+\_\+scene\+\_\+factory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__manager}{scene\+\_\+manager}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a8d50208b16c1714190feb3a1463e3679}{create\+\_\+scene\+\_\+manager}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} scene\+\_\+type=scene\+\_\+types\+::loading)
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a0b1ffbc6f42a981b220da56a92117626}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ returns true\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em run \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a1db26b113b7decf5e4fff526b658acc9}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ unknown loading scene type -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a1df58b5b3c1f3f74a06b1bc88b7e8c1c}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ after initialization -\/ runs all scenes from scene factory\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_aa80fdf83b7cbf61c7f6b2c34c4e008e1}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ load loading scenes fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_ae1046f26c4af5340311fb06419e7ab96}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} loading scenes fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a1b4cd38879eadf2c96f86beaac81ab98}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ load test scene 1 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a304e5d7b01fad2a00f39468685452f5b}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 1 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a514b2e66cbd86ba5e5a2c31ce5f56639}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ load test scene 2 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a003ed795e596550af3432bb3dd55574d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 2 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a124d9cee24cbd5cd8b4e3b3a53df7c85}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ load test scene 3 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a13c4930e934772bacb4e036f95ff4978}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 3 fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/scene\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_adc7c2a7f6d34c0c13debedef6d579ec2}{test\+\_\+scene\+\_\+type\+\_\+1}} = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 1)
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_aaea7f2f78b2a653180f98d73bb99b338}{test\+\_\+scene\+\_\+type\+\_\+2}} = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 2)
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a0e69f214c86fdcaded10b60e8d238108}{test\+\_\+scene\+\_\+type\+\_\+3}} = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 3)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_afc678e9d94edc3912313cd5ba08c46a1}{g\+\_\+scene\+\_\+load\+\_\+order}}
+\begin{DoxyCompactList}\small\item\em Records the order that the scenes loaded. \end{DoxyCompactList}\item 
+std\+::atomic\+\_\+bool \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a2eeb482007733cb51ccac7cfc746b170}{g\+\_\+have\+\_\+all\+\_\+scenes\+\_\+loaded}} \{false\}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene}{test\+\_\+scene}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a3dfa029251e39fff7a2697ff810e1167}{g\+\_\+test\+\_\+scene\+\_\+loading}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene}{test\+\_\+scene}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a2e7b570c36efdf71f37fff9547af739c}{g\+\_\+test\+\_\+scene\+\_\+1}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene}{test\+\_\+scene}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_af098f170e8005a9917d9d093d6b9a4a7}{g\+\_\+test\+\_\+scene\+\_\+2}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene}{test\+\_\+scene}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a9e12512951683deeb3849300adefee57}{g\+\_\+test\+\_\+scene\+\_\+3}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene__factory}{test\+\_\+scene\+\_\+factory}} $>$ \mbox{\hyperlink{tests_2scene_2scene__manager_8cpp_a6e1a2f780fbbdb834d5869a20f30274d}{g\+\_\+test\+\_\+scene\+\_\+factory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a8d50208b16c1714190feb3a1463e3679}\label{tests_2scene_2scene__manager_8cpp_a8d50208b16c1714190feb3a1463e3679}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!create\_scene\_manager@{create\_scene\_manager}}
+\index{create\_scene\_manager@{create\_scene\_manager}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{create\_scene\_manager()}{create\_scene\_manager()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__manager}{scene\+\_\+manager}}$>$ create\+\_\+scene\+\_\+manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}}]{scene\+\_\+type = {\ttfamily scene\+\_\+types\+:\+:loading} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a1df58b5b3c1f3f74a06b1bc88b7e8c1c}\label{tests_2scene_2scene__manager_8cpp_a1df58b5b3c1f3f74a06b1bc88b7e8c1c}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ after initialization -\/ runs all scenes from scene factory\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_aa80fdf83b7cbf61c7f6b2c34c4e008e1}\label{tests_2scene_2scene__manager_8cpp_aa80fdf83b7cbf61c7f6b2c34c4e008e1}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ load loading scenes fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 183 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a1b4cd38879eadf2c96f86beaac81ab98}\label{tests_2scene_2scene__manager_8cpp_a1b4cd38879eadf2c96f86beaac81ab98}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ load test scene 1 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a514b2e66cbd86ba5e5a2c31ce5f56639}\label{tests_2scene_2scene__manager_8cpp_a514b2e66cbd86ba5e5a2c31ce5f56639}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ load test scene 2 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 251 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a124d9cee24cbd5cd8b4e3b3a53df7c85}\label{tests_2scene_2scene__manager_8cpp_a124d9cee24cbd5cd8b4e3b3a53df7c85}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ load test scene 3 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 291 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a0b1ffbc6f42a981b220da56a92117626}\label{tests_2scene_2scene__manager_8cpp_a0b1ffbc6f42a981b220da56a92117626}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ returns true\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+run 
+
+
+
+Definition at line 136 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_ae1046f26c4af5340311fb06419e7ab96}\label{tests_2scene_2scene__manager_8cpp_ae1046f26c4af5340311fb06419e7ab96}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} loading scenes fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a304e5d7b01fad2a00f39468685452f5b}\label{tests_2scene_2scene__manager_8cpp_a304e5d7b01fad2a00f39468685452f5b}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 1 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 231 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a003ed795e596550af3432bb3dd55574d}\label{tests_2scene_2scene__manager_8cpp_a003ed795e596550af3432bb3dd55574d}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 2 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 271 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a13c4930e934772bacb4e036f95ff4978}\label{tests_2scene_2scene__manager_8cpp_a13c4930e934772bacb4e036f95ff4978}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} test scene 3 fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 311 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a1db26b113b7decf5e4fff526b658acc9}\label{tests_2scene_2scene__manager_8cpp_a1db26b113b7decf5e4fff526b658acc9}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ unknown loading scene type -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/scene\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 143 of file scene\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a2eeb482007733cb51ccac7cfc746b170}\label{tests_2scene_2scene__manager_8cpp_a2eeb482007733cb51ccac7cfc746b170}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_have\_all\_scenes\_loaded@{g\_have\_all\_scenes\_loaded}}
+\index{g\_have\_all\_scenes\_loaded@{g\_have\_all\_scenes\_loaded}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_have\_all\_scenes\_loaded}{g\_have\_all\_scenes\_loaded}}
+{\footnotesize\ttfamily std\+::atomic\+\_\+bool g\+\_\+have\+\_\+all\+\_\+scenes\+\_\+loaded \{false\}}
+
+
+
+Definition at line 21 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_afc678e9d94edc3912313cd5ba08c46a1}\label{tests_2scene_2scene__manager_8cpp_afc678e9d94edc3912313cd5ba08c46a1}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_scene\_load\_order@{g\_scene\_load\_order}}
+\index{g\_scene\_load\_order@{g\_scene\_load\_order}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_scene\_load\_order}{g\_scene\_load\_order}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$ g\+\_\+scene\+\_\+load\+\_\+order}
+
+
+
+Records the order that the scenes loaded. 
+
+
+
+Definition at line 19 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a2e7b570c36efdf71f37fff9547af739c}\label{tests_2scene_2scene__manager_8cpp_a2e7b570c36efdf71f37fff9547af739c}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_test\_scene\_1@{g\_test\_scene\_1}}
+\index{g\_test\_scene\_1@{g\_test\_scene\_1}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_test\_scene\_1}{g\_test\_scene\_1}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__scene}{test\+\_\+scene}}$>$ g\+\_\+test\+\_\+scene\+\_\+1}
+
+
+
+Definition at line 72 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_af098f170e8005a9917d9d093d6b9a4a7}\label{tests_2scene_2scene__manager_8cpp_af098f170e8005a9917d9d093d6b9a4a7}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_test\_scene\_2@{g\_test\_scene\_2}}
+\index{g\_test\_scene\_2@{g\_test\_scene\_2}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_test\_scene\_2}{g\_test\_scene\_2}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__scene}{test\+\_\+scene}}$>$ g\+\_\+test\+\_\+scene\+\_\+2}
+
+
+
+Definition at line 73 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a9e12512951683deeb3849300adefee57}\label{tests_2scene_2scene__manager_8cpp_a9e12512951683deeb3849300adefee57}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_test\_scene\_3@{g\_test\_scene\_3}}
+\index{g\_test\_scene\_3@{g\_test\_scene\_3}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_test\_scene\_3}{g\_test\_scene\_3}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__scene}{test\+\_\+scene}}$>$ g\+\_\+test\+\_\+scene\+\_\+3}
+
+
+
+Definition at line 74 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a6e1a2f780fbbdb834d5869a20f30274d}\label{tests_2scene_2scene__manager_8cpp_a6e1a2f780fbbdb834d5869a20f30274d}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_test\_scene\_factory@{g\_test\_scene\_factory}}
+\index{g\_test\_scene\_factory@{g\_test\_scene\_factory}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_test\_scene\_factory}{g\_test\_scene\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__scene__factory}{test\+\_\+scene\+\_\+factory}}$>$ g\+\_\+test\+\_\+scene\+\_\+factory}
+
+
+
+Definition at line 111 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a3dfa029251e39fff7a2697ff810e1167}\label{tests_2scene_2scene__manager_8cpp_a3dfa029251e39fff7a2697ff810e1167}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!g\_test\_scene\_loading@{g\_test\_scene\_loading}}
+\index{g\_test\_scene\_loading@{g\_test\_scene\_loading}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_test\_scene\_loading}{g\_test\_scene\_loading}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__scene}{test\+\_\+scene}}$>$ g\+\_\+test\+\_\+scene\+\_\+loading}
+
+
+
+Definition at line 71 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_adc7c2a7f6d34c0c13debedef6d579ec2}\label{tests_2scene_2scene__manager_8cpp_adc7c2a7f6d34c0c13debedef6d579ec2}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!test\_scene\_type\_1@{test\_scene\_type\_1}}
+\index{test\_scene\_type\_1@{test\_scene\_type\_1}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_scene\_type\_1}{test\_scene\_type\_1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} test\+\_\+scene\+\_\+type\+\_\+1 = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 1)}
+
+
+
+Definition at line 14 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_aaea7f2f78b2a653180f98d73bb99b338}\label{tests_2scene_2scene__manager_8cpp_aaea7f2f78b2a653180f98d73bb99b338}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!test\_scene\_type\_2@{test\_scene\_type\_2}}
+\index{test\_scene\_type\_2@{test\_scene\_type\_2}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_scene\_type\_2}{test\_scene\_type\_2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} test\+\_\+scene\+\_\+type\+\_\+2 = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 2)}
+
+
+
+Definition at line 15 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2scene_2scene__manager_8cpp_a0e69f214c86fdcaded10b60e8d238108}\label{tests_2scene_2scene__manager_8cpp_a0e69f214c86fdcaded10b60e8d238108}} 
+\index{scene\_manager.cpp@{scene\_manager.cpp}!test\_scene\_type\_3@{test\_scene\_type\_3}}
+\index{test\_scene\_type\_3@{test\_scene\_type\_3}!scene\_manager.cpp@{scene\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_scene\_type\_3}{test\_scene\_type\_3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} test\+\_\+scene\+\_\+type\+\_\+3 = static\+\_\+cast$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$(static\+\_\+cast$<$int$>$(scene\+\_\+types\+::loading) + 3)}
+
+
+
+Definition at line 16 of file scene\+\_\+manager.\+cpp.
+

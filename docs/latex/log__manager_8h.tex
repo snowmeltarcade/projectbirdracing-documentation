@@ -1,10 +1,15 @@
 \hypertarget{log__manager_8h}{}\doxysection{src/shared/apis/logging/log\+\_\+manager.h File Reference}
 \label{log__manager_8h}\index{src/shared/apis/logging/log\_manager.h@{src/shared/apis/logging/log\_manager.h}}
 {\ttfamily \#include \char`\"{}shared/memory/basic\+\_\+allocators.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}log\+\_\+levels.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}endpoint.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$memory$>$}\newline
-{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}ilog\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/idatetime\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -15,17 +20,4 @@
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
 \item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging}{pbr\+::shared\+::apis\+::logging}}
-\end{DoxyCompactItemize}
-\doxysubsection*{Functions}
-\begin{DoxyCompactItemize}
-\item 
-bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_ae1dcb2bb7a9792ff94c0e457fbc27954}{pbr\+::shared\+::apis\+::logging\+::add\+\_\+endpoint}} (const std\+::shared\+\_\+ptr$<$ endpoint $>$ \&endpoint) noexcept
-\item 
-const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ endpoint $>$ $>$ \& \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a2ed94998d765214f326b367837824b25}{pbr\+::shared\+::apis\+::logging\+::get\+\_\+endpoints}} () noexcept
-\item 
-void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a6e2e775f11d83495395cac6b18557802}{pbr\+::shared\+::apis\+::logging\+::set\+\_\+log\+\_\+level}} (const log\+\_\+levels level) noexcept
-\item 
-log\+\_\+levels \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a4f0b6cb2da55dc0f408c2b94b538cd6b}{pbr\+::shared\+::apis\+::logging\+::get\+\_\+log\+\_\+level}} () noexcept
-\item 
-void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a8efc4728e60433b5f0e10991d0de2a60}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+message}} (std\+::string\+\_\+view message, const log\+\_\+levels level) noexcept
 \end{DoxyCompactItemize}

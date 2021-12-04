@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gigabytes_123',['gigabytes',['../classpbr_1_1shared_1_1memory_1_1gigabytes.html',1,'pbr::shared::memory']]]
+  ['datetime_5fmanager_241',['datetime_manager',['../classpbr_1_1shared_1_1apis_1_1datetime_1_1datetime__manager.html',1,'pbr::shared::apis::datetime']]]
 ];

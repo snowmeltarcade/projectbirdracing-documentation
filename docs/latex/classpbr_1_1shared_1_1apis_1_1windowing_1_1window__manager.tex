@@ -1,0 +1,158 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager}{}\doxysection{pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager}\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+
+
+This manager creates and manages both console and application windows.  
+
+
+
+
+{\ttfamily \#include $<$window\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a9c022d9d8a26788923f1d76809f431b5}{window\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a304b54ee08a1c5ff6120c9387201a2ff}{$\sim$window\+\_\+manager}} () override
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3149edc839cf9b4c49995f5e4cfa149b}{initialize}} () noexcept override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window}{iconsole\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}{create\+\_\+console\+\_\+window}} () noexcept override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a920dc0612bf9124b4bdbc610fc45b6d0}{create\+\_\+application\+\_\+window}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}{update}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_aaeccb30c57cfde63e887d71ccfc4ff5d}{should\+\_\+quit}} () const noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This manager creates and manages both console and application windows. 
+
+Definition at line 10 of file window\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a9c022d9d8a26788923f1d76809f431b5}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a9c022d9d8a26788923f1d76809f431b5}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!window\_manager@{window\_manager}}
+\index{window\_manager@{window\_manager}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{window\_manager()}{window\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::window\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 12 of file window\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a304b54ee08a1c5ff6120c9387201a2ff}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a304b54ee08a1c5ff6120c9387201a2ff}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!````~window\_manager@{$\sim$window\_manager}}
+\index{````~window\_manager@{$\sim$window\_manager}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$window\_manager()}{~window\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::$\sim$window\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Definition at line 15 of file window\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a920dc0612bf9124b4bdbc610fc45b6d0}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a920dc0612bf9124b4bdbc610fc45b6d0}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!create\_application\_window@{create\_application\_window}}
+\index{create\_application\_window@{create\_application\_window}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_application\_window()}{create\_application\_window()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::create\+\_\+application\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Creates an application window \begin{DoxyReturn}{Returns}
+The created application window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a8a0aaf7d8ef622d0efc694a8b42f4d42}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 23 of file window\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!create\_console\_window@{create\_console\_window}}
+\index{create\_console\_window@{create\_console\_window}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_console\_window()}{create\_console\_window()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window}{iconsole\+\_\+window}} $>$ pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::create\+\_\+console\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Creates a console window \begin{DoxyReturn}{Returns}
+The created console window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a735ee3b10eb1d798f1887bacfd9c5674}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 19 of file window\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3149edc839cf9b4c49995f5e4cfa149b}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3149edc839cf9b4c49995f5e4cfa149b}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!initialize@{initialize}}
+\index{initialize@{initialize}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Initializes the window manager \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aab31a17b7f382f61ddffb232ceffe0dd}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 7 of file window\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_aaeccb30c57cfde63e887d71ccfc4ff5d}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_aaeccb30c57cfde63e887d71ccfc4ff5d}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!should\_quit@{should\_quit}}
+\index{should\_quit@{should\_quit}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{should\_quit()}{should\_quit()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::should\+\_\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns true if the windowing system has a quit event \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the windowing system has a quit event, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a71aa7efa248d92c190ba6fabe7588664}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 44 of file window\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!update@{update}}
+\index{update@{update}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Updates the windowing system \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a08712ca77a98246e7dd9490cd5a31a42}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 31 of file window\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/windowing/\mbox{\hyperlink{window__manager_8h}{window\+\_\+manager.\+h}}\item 
+src/shared/apis/windowing/\mbox{\hyperlink{window__manager_8cpp}{window\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

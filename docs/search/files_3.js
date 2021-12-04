@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gigabytes_2ecpp_149',['gigabytes.cpp',['../memory_2gigabytes_8cpp.html',1,'(Global Namespace)'],['../tests_2memory_2gigabytes_8cpp.html',1,'(Global Namespace)']]],
-  ['gigabytes_2eh_150',['gigabytes.h',['../gigabytes_8h.html',1,'']]]
+  ['datetime_5fmanager_2ecpp_295',['datetime_manager.cpp',['../apis_2datetime_2datetime__manager_8cpp.html',1,'(Global Namespace)'],['../tests_2apis_2datetime_2datetime__manager_8cpp.html',1,'(Global Namespace)']]],
+  ['datetime_5fmanager_2eh_296',['datetime_manager.h',['../datetime__manager_8h.html',1,'']]]
 ];

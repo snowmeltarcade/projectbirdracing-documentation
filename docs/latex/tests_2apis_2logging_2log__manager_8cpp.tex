@@ -2,8 +2,10 @@
 \label{tests_2apis_2logging_2log__manager_8cpp}\index{src/shared/tests/apis/logging/log\_manager.cpp@{src/shared/tests/apis/logging/log\_manager.cpp}}
 {\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/utils/strings.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,7 +49,7 @@ add\+\_\+endpoint
 
 
 
-Definition at line 40 of file log\+\_\+manager.\+cpp.
+Definition at line 42 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_acfd5b1eb7dfa8c622605b0e758134f16}\label{tests_2apis_2logging_2log__manager_8cpp_acfd5b1eb7dfa8c622605b0e758134f16}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -57,7 +59,7 @@ Definition at line 40 of file log\+\_\+manager.\+cpp.
 
 
 
-Definition at line 54 of file log\+\_\+manager.\+cpp.
+Definition at line 62 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ad2cb02aba044624d4607e671d8c4efa6}\label{tests_2apis_2logging_2log__manager_8cpp_ad2cb02aba044624d4607e671d8c4efa6}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -67,7 +69,7 @@ Definition at line 54 of file log\+\_\+manager.\+cpp.
 
 
 
-Definition at line 46 of file log\+\_\+manager.\+cpp.
+Definition at line 51 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ae9c71ab5e63374e377fad02999f1b351}\label{tests_2apis_2logging_2log__manager_8cpp_ae9c71ab5e63374e377fad02999f1b351}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -81,7 +83,7 @@ get\+\_\+endpoints
 
 
 
-Definition at line 72 of file log\+\_\+manager.\+cpp.
+Definition at line 83 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a0318430d4e93f21a599090b690463135}\label{tests_2apis_2logging_2log__manager_8cpp_a0318430d4e93f21a599090b690463135}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -95,7 +97,7 @@ get\+\_\+log\+\_\+level
 
 
 
-Definition at line 112 of file log\+\_\+manager.\+cpp.
+Definition at line 129 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a531d97834766c2afe6f40ac714efe6ed}\label{tests_2apis_2logging_2log__manager_8cpp_a531d97834766c2afe6f40ac714efe6ed}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -105,7 +107,7 @@ Definition at line 112 of file log\+\_\+manager.\+cpp.
 
 
 
-Definition at line 148 of file log\+\_\+manager.\+cpp.
+Definition at line 171 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_a2ede22a09db4e38a4f5ee5c41850933d}\label{tests_2apis_2logging_2log__manager_8cpp_a2ede22a09db4e38a4f5ee5c41850933d}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -115,7 +117,7 @@ Definition at line 148 of file log\+\_\+manager.\+cpp.
 
 
 
-Definition at line 195 of file log\+\_\+manager.\+cpp.
+Definition at line 224 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ad1bf6962f5521a2931a2bfa498d87f88}\label{tests_2apis_2logging_2log__manager_8cpp_ad1bf6962f5521a2931a2bfa498d87f88}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -125,7 +127,7 @@ Definition at line 195 of file log\+\_\+manager.\+cpp.
 
 
 
-Definition at line 173 of file log\+\_\+manager.\+cpp.
+Definition at line 199 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_ace254eed3d959dfd9fa76ab49ed676f9}\label{tests_2apis_2logging_2log__manager_8cpp_ace254eed3d959dfd9fa76ab49ed676f9}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -139,7 +141,7 @@ log\+\_\+message
 
 
 
-Definition at line 126 of file log\+\_\+manager.\+cpp.
+Definition at line 146 of file log\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2apis_2logging_2log__manager_8cpp_afe2b29543858d2ee4d5a2712ebe517e7}\label{tests_2apis_2logging_2log__manager_8cpp_afe2b29543858d2ee4d5a2712ebe517e7}} 
 \index{log\_manager.cpp@{log\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
@@ -153,5 +155,5 @@ set\+\_\+log\+\_\+level
 
 
 
-Definition at line 98 of file log\+\_\+manager.\+cpp.
+Definition at line 112 of file log\+\_\+manager.\+cpp.
 

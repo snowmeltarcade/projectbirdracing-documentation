@@ -1,0 +1,118 @@
+\hypertarget{classpbr_1_1shared_1_1game_1_1game__manager}{}\doxysection{pbr\+::shared\+::game\+::game\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1game_1_1game__manager}\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+
+
+{\ttfamily \#include $<$game\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}{game\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$ window\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$ scene\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}{$\sim$game\+\_\+manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructs this manager. The game will be shutdown here. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}{game\+\_\+manager}} (\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+\_\+manager}} \&\&other)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}{game\+\_\+manager}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+\_\+manager}} \&)=delete
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a7e6217f6bd995bc1fb3b4b242743e32f}{initialize}} () noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708bef9b1bbaa434962f3a}{run}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides the skeleton of the game. The managers to be used are first configured and then added to this manager. Both the client and server will use this manager. The game loop and threads are all handled here. 
+
+Definition at line 17 of file game\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}\label{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
+\index{game\_manager@{game\_manager}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{game\_manager()}{game\_manager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::game\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$}]{window\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$}]{scene\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this manager 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+{\em window\+\_\+manager} & The window manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file game\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}\label{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!````~game\_manager@{$\sim$game\_manager}}
+\index{````~game\_manager@{$\sim$game\_manager}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$game\_manager()}{~game\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::$\sim$game\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructs this manager. The game will be shutdown here. 
+
+
+
+Definition at line 34 of file game\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}\label{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
+\index{game\_manager@{game\_manager}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{game\_manager()}{game\_manager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::game\+\_\+manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+\_\+manager}} \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Move constructor 
+\begin{DoxyParams}{Parameters}
+{\em The} & other game manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file game\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}\label{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
+\index{game\_manager@{game\_manager}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{game\_manager()}{game\_manager()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::game\+\_\+manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+\_\+manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a7e6217f6bd995bc1fb3b4b242743e32f}\label{classpbr_1_1shared_1_1game_1_1game__manager_a7e6217f6bd995bc1fb3b4b242743e32f}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!initialize@{initialize}}
+\index{initialize@{initialize}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::game\+::game\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Initializes the game \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 4 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708bef9b1bbaa434962f3a}\label{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708bef9b1bbaa434962f3a}} 
+\index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!run@{run}}
+\index{run@{run}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::game\+::game\+\_\+manager\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Runs the game. This is a blocking function. It will exit when the game exits \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file game\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/game/\mbox{\hyperlink{game__manager_8h}{game\+\_\+manager.\+h}}\item 
+src/shared/game/\mbox{\hyperlink{game_2game__manager_8cpp}{game\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

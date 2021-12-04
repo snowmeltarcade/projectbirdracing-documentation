@@ -1,0 +1,91 @@
+\hypertarget{classpbr_1_1shared_1_1scene_1_1scene__manager}{}\doxysection{pbr\+::shared\+::scene\+::scene\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1scene_1_1scene__manager}\index{pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}}
+
+
+Manages loading, destroying and running scenes.  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::scene\+::scene\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1scene_1_1scene__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__manager_aa1d69c513b903224ccf102dc7b52d612}{scene\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory}{iscene\+\_\+factory}} $>$ scene\+\_\+factory, \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} loading\+\_\+scene\+\_\+type, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__manager_a7955684a74d38bccff7843c28905a567}{$\sim$scene\+\_\+manager}} () override
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__manager_adea67ced9c781d0384374cfadbb76225}{run}} () noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages loading, destroying and running scenes. 
+
+Definition at line 15 of file scene\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__manager_aa1d69c513b903224ccf102dc7b52d612}\label{classpbr_1_1shared_1_1scene_1_1scene__manager_aa1d69c513b903224ccf102dc7b52d612}} 
+\index{pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}!scene\_manager@{scene\_manager}}
+\index{scene\_manager@{scene\_manager}!pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}}
+\doxysubsubsection{\texorpdfstring{scene\_manager()}{scene\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::scene\+::scene\+\_\+manager\+::scene\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory}{iscene\+\_\+factory}} $>$}]{scene\+\_\+factory,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}}]{loading\+\_\+scene\+\_\+type,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this scene manager 
+\begin{DoxyParams}{Parameters}
+{\em scene\+\_\+factory} & The scene factory to use \\
+\hline
+{\em loading\+\_\+scene\+\_\+type} & The type to use as the loading scene. This will be loaded using the passed scene factory \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file scene\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__manager_a7955684a74d38bccff7843c28905a567}\label{classpbr_1_1shared_1_1scene_1_1scene__manager_a7955684a74d38bccff7843c28905a567}} 
+\index{pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}!````~scene\_manager@{$\sim$scene\_manager}}
+\index{````~scene\_manager@{$\sim$scene\_manager}!pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$scene\_manager()}{~scene\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::scene\+::scene\+\_\+manager\+::$\sim$scene\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Definition at line 30 of file scene\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1scene__manager_adea67ced9c781d0384374cfadbb76225}\label{classpbr_1_1shared_1_1scene_1_1scene__manager_adea67ced9c781d0384374cfadbb76225}} 
+\index{pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}!run@{run}}
+\index{run@{run}!pbr::shared::scene::scene\_manager@{pbr::shared::scene::scene\_manager}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::scene\+::scene\+\_\+manager\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Runs the scene manager \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager_a29ec70c6948c0998ca46d244e20798cc}{pbr\+::shared\+::scene\+::iscene\+\_\+manager}}.
+
+
+
+Definition at line 4 of file scene\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/scene/\mbox{\hyperlink{scene__manager_8h}{scene\+\_\+manager.\+h}}\item 
+src/shared/scene/\mbox{\hyperlink{scene_2scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

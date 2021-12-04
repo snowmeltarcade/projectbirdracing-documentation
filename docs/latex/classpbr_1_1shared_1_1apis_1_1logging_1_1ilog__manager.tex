@@ -1,0 +1,135 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{}\doxysection{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+
+
+{\ttfamily \#include $<$ilog\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a28e5671e1bea3d7de6b81f86ddfaa8e3}{ilog\+\_\+manager}} ()=default
+\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ada37135335c4f8ed345334dbbfd07898}{$\sim$ilog\+\_\+manager}} ()=default
+\item 
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ae252f9296689a1c1756acec9b87d8a60}{add\+\_\+endpoint}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}) noexcept=0
+\item 
+virtual const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ $>$ \& \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a991189a94dca0a3b2a0764defbf05b30}{get\+\_\+endpoints}} () const noexcept=0
+\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}{set\+\_\+log\+\_\+level}} (const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept=0
+\item 
+virtual \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a32fbf8bc963517d11ef4acd6e76decac}{get\+\_\+log\+\_\+level}} () const noexcept=0
+\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an interface to the log manager. This manager allows you to add logging endpoints which will be output a log message to that endpoint. These endpoints could be {\ttfamily stdout}, or a file for instance. 
+
+Definition at line 14 of file ilog\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a28e5671e1bea3d7de6b81f86ddfaa8e3}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a28e5671e1bea3d7de6b81f86ddfaa8e3}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!ilog\_manager@{ilog\_manager}}
+\index{ilog\_manager@{ilog\_manager}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{ilog\_manager()}{ilog\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::ilog\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ada37135335c4f8ed345334dbbfd07898}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ada37135335c4f8ed345334dbbfd07898}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!````~ilog\_manager@{$\sim$ilog\_manager}}
+\index{````~ilog\_manager@{$\sim$ilog\_manager}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ilog\_manager()}{~ilog\_manager()}}
+{\footnotesize\ttfamily virtual pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::$\sim$ilog\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ae252f9296689a1c1756acec9b87d8a60}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ae252f9296689a1c1756acec9b87d8a60}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!add\_endpoint@{add\_endpoint}}
+\index{add\_endpoint@{add\_endpoint}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{add\_endpoint()}{add\_endpoint()}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::add\+\_\+endpoint (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Adds a logging endpoint 
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & A pointer to the endpoint to add. If nullptr, {\ttfamily false} will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a0af9155c3bc9d41aa7b0bcd990130ccf}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a991189a94dca0a3b2a0764defbf05b30}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a991189a94dca0a3b2a0764defbf05b30}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!get\_endpoints@{get\_endpoints}}
+\index{get\_endpoints@{get\_endpoints}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_endpoints()}{get\_endpoints()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}$>$ $>$\& pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::get\+\_\+endpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the added endpoints \begin{DoxyReturn}{Returns}
+The added endpoints 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a347c94401dbe2b7a790adc82945a451a}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a32fbf8bc963517d11ef4acd6e76decac}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a32fbf8bc963517d11ef4acd6e76decac}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!get\_log\_level@{get\_log\_level}}
+\index{get\_log\_level@{get\_log\_level}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_log\_level()}{get\_log\_level()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::get\+\_\+log\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the current log level \begin{DoxyReturn}{Returns}
+The current log level 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!log\_message@{log\_message}}
+\index{log\_message@{log\_message}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Logs a message to all added endpoints. If the set log level is less than the passed level, the message will not be logged. The level, current date and time in U\+TC will be prefixed to the message 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log \\
+\hline
+{\em level} & The logging level to log against \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}} 
+\index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!set\_log\_level@{set\_log\_level}}
+\index{set\_log\_level@{set\_log\_level}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
+\doxysubsubsection{\texorpdfstring{set\_log\_level()}{set\_log\_level()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::set\+\_\+log\+\_\+level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Sets the log level to log against. Any messages that are logged with a level below this will be ignored 
+\begin{DoxyParams}{Parameters}
+{\em level} & The log level to set \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ac795c49d2bff1d3e06631ccf3514f37a}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/logging/\mbox{\hyperlink{ilog__manager_8h}{ilog\+\_\+manager.\+h}}\end{DoxyCompactItemize}

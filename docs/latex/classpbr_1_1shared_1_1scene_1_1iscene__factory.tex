@@ -1,0 +1,94 @@
+\hypertarget{classpbr_1_1shared_1_1scene_1_1iscene__factory}{}\doxysection{pbr\+::shared\+::scene\+::iscene\+\_\+factory Class Reference}
+\label{classpbr_1_1shared_1_1scene_1_1iscene__factory}\index{pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}}
+
+
+Provides an interface to a scene factory. A scene factory allows the creation of a scene by an id.  
+
+
+
+
+{\ttfamily \#include $<$iscene\+\_\+factory.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::scene\+::iscene\+\_\+factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1scene_1_1iscene__factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_a99f8b9e39320627959fa50a4d7f84b62}{iscene\+\_\+factory}} ()=default
+\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_afce65e4fe7c630c64f91054d09b8808f}{$\sim$iscene\+\_\+factory}} ()=default
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_a4e9736ccb51e95fe097750a38ec326f2}{create\+\_\+scene}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} type) noexcept=0
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__factory_a912adde0e4f50bca0106884f0ae0616e}{get\+\_\+next\+\_\+scenes}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$$>$ \&current\+\_\+scenes) noexcept=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an interface to a scene factory. A scene factory allows the creation of a scene by an id. 
+
+Definition at line 11 of file iscene\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1iscene__factory_a99f8b9e39320627959fa50a4d7f84b62}\label{classpbr_1_1shared_1_1scene_1_1iscene__factory_a99f8b9e39320627959fa50a4d7f84b62}} 
+\index{pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}!iscene\_factory@{iscene\_factory}}
+\index{iscene\_factory@{iscene\_factory}!pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}}
+\doxysubsubsection{\texorpdfstring{iscene\_factory()}{iscene\_factory()}}
+{\footnotesize\ttfamily pbr\+::shared\+::scene\+::iscene\+\_\+factory\+::iscene\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1iscene__factory_afce65e4fe7c630c64f91054d09b8808f}\label{classpbr_1_1shared_1_1scene_1_1iscene__factory_afce65e4fe7c630c64f91054d09b8808f}} 
+\index{pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}!````~iscene\_factory@{$\sim$iscene\_factory}}
+\index{````~iscene\_factory@{$\sim$iscene\_factory}!pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}}
+\doxysubsubsection{\texorpdfstring{$\sim$iscene\_factory()}{~iscene\_factory()}}
+{\footnotesize\ttfamily virtual pbr\+::shared\+::scene\+::iscene\+\_\+factory\+::$\sim$iscene\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1iscene__factory_a4e9736ccb51e95fe097750a38ec326f2}\label{classpbr_1_1shared_1_1scene_1_1iscene__factory_a4e9736ccb51e95fe097750a38ec326f2}} 
+\index{pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}!create\_scene@{create\_scene}}
+\index{create\_scene@{create\_scene}!pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}}
+\doxysubsubsection{\texorpdfstring{create\_scene()}{create\_scene()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}}$>$ pbr\+::shared\+::scene\+::iscene\+\_\+factory\+::create\+\_\+scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Creates a scene of the passed type 
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of scene to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created scene, else {\ttfamily nullptr} if the type is not supported 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1server_1_1scene_1_1scene__factory_aaeff8f48cc4b74b9b2afc1048dbed2cc}{pbr\+::server\+::scene\+::scene\+\_\+factory}}, and \mbox{\hyperlink{classtest__scene__factory_ace33ca6db846c9e1aa205d405d840098}{test\+\_\+scene\+\_\+factory}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1scene_1_1iscene__factory_a912adde0e4f50bca0106884f0ae0616e}\label{classpbr_1_1shared_1_1scene_1_1iscene__factory_a912adde0e4f50bca0106884f0ae0616e}} 
+\index{pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}!get\_next\_scenes@{get\_next\_scenes}}
+\index{get\_next\_scenes@{get\_next\_scenes}!pbr::shared::scene::iscene\_factory@{pbr::shared::scene::iscene\_factory}}
+\doxysubsubsection{\texorpdfstring{get\_next\_scenes()}{get\_next\_scenes()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}$>$ pbr\+::shared\+::scene\+::iscene\+\_\+factory\+::get\+\_\+next\+\_\+scenes (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base}{scene\+\_\+base}} $>$$>$ \&}]{current\+\_\+scenes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Get the next scenes to load based on the passed scenes 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+scenes} & The currently running scenes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next scene types to load (can contain duplicate scene types) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__scene__factory_adf1201de5ef238f59401f6f42290e064}{test\+\_\+scene\+\_\+factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/scene/\mbox{\hyperlink{iscene__factory_8h}{iscene\+\_\+factory.\+h}}\end{DoxyCompactItemize}

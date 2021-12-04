@@ -90,8 +90,10 @@ $(document).ready(function(){initNavTree('tests_2apis_2logging_2log__manager_8cp
 <div class="contents">
 <div class="textblock"><code>#include &quot;catch2/catch.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="log__manager_8h_source.html">shared/apis/logging/log_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="datetime__manager_8h_source.html">shared/apis/datetime/datetime_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="strings_8h_source.html">shared/utils/strings.h</a>&quot;</code><br />
 <code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div>
 <p><a href="tests_2apis_2logging_2log__manager_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -158,7 +160,7 @@ Functions</h2></td></tr>
 
 <p>add_endpoint </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00040">40</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00042">42</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -188,7 +190,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00054">54</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00062">62</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -218,7 +220,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00046">46</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00051">51</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +252,7 @@ Functions</h2></td></tr>
 
 <p>get_endpoints </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00072">72</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00083">83</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,7 +284,7 @@ Functions</h2></td></tr>
 
 <p>get_log_level </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00112">112</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00129">129</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +314,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00148">148</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00171">171</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -342,7 +344,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00195">195</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00224">224</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -372,7 +374,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00173">173</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00199">199</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -404,7 +406,7 @@ Functions</h2></td></tr>
 
 <p>log_message </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00126">126</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00146">146</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +438,7 @@ Functions</h2></td></tr>
 
 <p>set_log_level </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00098">98</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00112">112</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
 </div>
 </div>

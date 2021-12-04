@@ -1,16 +1,41 @@
 \hypertarget{server_2main_8cpp}{}\doxysection{src/server/main.cpp File Reference}
 \label{server_2main_8cpp}\index{src/server/main.cpp@{src/server/main.cpp}}
+{\ttfamily \#include \char`\"{}shared/memory/basic\+\_\+allocators.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/game/game\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/endpoints/stdout.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/windowing/window\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/scene/scene\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scene/scene\+\_\+factory.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include \char`\"{}version.\+h\char`\"{}}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+::game\+\_\+manager}} \mbox{\hyperlink{server_2main_8cpp_acfecff82da4df2899f841b007dac4810}{create\+\_\+game\+\_\+manager}} ()
+\item 
+void \mbox{\hyperlink{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}{run}} ()
+\begin{DoxyCompactList}\small\item\em Sets up and runs the game. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}{main}} (int argv, char $\ast$args\mbox{[}$\,$\mbox{]})
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_2main_8cpp_acfecff82da4df2899f841b007dac4810}\label{server_2main_8cpp_acfecff82da4df2899f841b007dac4810}} 
+\index{main.cpp@{main.cpp}!create\_game\_manager@{create\_game\_manager}}
+\index{create\_game\_manager@{create\_game\_manager}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{create\_game\_manager()}{create\_game\_manager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+::game\+\_\+manager}} create\+\_\+game\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the game manager \begin{DoxyReturn}{Returns}
+The created game manager 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file main.\+cpp.
+
 \mbox{\Hypertarget{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}\label{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}} 
 \index{main.cpp@{main.cpp}!main@{main}}
 \index{main@{main}!main.cpp@{main.cpp}}
@@ -29,5 +54,19 @@ Will always return {\ttfamily 0}
 \end{DoxyReturn}
 
 
-Definition at line 10 of file main.\+cpp.
+Definition at line 60 of file main.\+cpp.
+
+\mbox{\Hypertarget{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}\label{server_2main_8cpp_a13a43e6d814de94978c515cb084873b1}} 
+\index{main.cpp@{main.cpp}!run@{run}}
+\index{run@{run}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up and runs the game. 
+
+
+
+Definition at line 42 of file main.\+cpp.
 

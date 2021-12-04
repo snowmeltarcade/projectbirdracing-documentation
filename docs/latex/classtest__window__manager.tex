@@ -1,0 +1,211 @@
+\hypertarget{classtest__window__manager}{}\doxysection{test\+\_\+window\+\_\+manager Class Reference}
+\label{classtest__window__manager}\index{test\_window\_manager@{test\_window\_manager}}
+Inheritance diagram for test\+\_\+window\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__window__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_a92cba7b9aa2bd6c7a2eab6fb3bb0e381}{initialize}} () noexcept override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window}{apis\+::windowing\+::iconsole\+\_\+window}} $>$ \mbox{\hyperlink{classtest__window__manager_a847b5e6c5b0a20f4597abacae183af36}{create\+\_\+console\+\_\+window}} () noexcept override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{apis\+::windowing\+::iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classtest__window__manager_ab4895cfd3000b9a9ad6161debe7b663e}{create\+\_\+application\+\_\+window}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_a81083b132115b4f4b40ca2196a0914d6}{update}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_ab2f109c62ccff0b26c4142dbac059a38}{should\+\_\+quit}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_a52e669da82604937b28b1052fd689f51}{initialize\+\_\+called}} \{false\}
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_a14832a6cf39d3c8655a0fb36c2bab09e}{initialize\+\_\+result}} \{true\}
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_ac7c596871e9dff7d1608e3ffd05b9ee4}{create\+\_\+application\+\_\+window\+\_\+called}} \{false\}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{apis\+::windowing\+::iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classtest__window__manager_a15275bb52a86cc5b11a85317e3d39375}{create\+\_\+application\+\_\+window\+\_\+result}} = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classtest__application__window}{test\+\_\+application\+\_\+window}}$>$()
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_a7916710132f6d63d8a983b95fa1214f4}{update\+\_\+called}} \{false\}
+\item 
+bool \mbox{\hyperlink{classtest__window__manager_ad2d218268735410857ac6c00810e4da9}{update\+\_\+result}} \{true\}
+\item 
+int \mbox{\hyperlink{classtest__window__manager_aa79ae14fd9fa5562db9e6598d732b8d9}{frames\+\_\+to\+\_\+run\+\_\+before\+\_\+quit}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 19 of file game\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__window__manager_ab4895cfd3000b9a9ad6161debe7b663e}\label{classtest__window__manager_ab4895cfd3000b9a9ad6161debe7b663e}} 
+\index{test\_window\_manager@{test\_window\_manager}!create\_application\_window@{create\_application\_window}}
+\index{create\_application\_window@{create\_application\_window}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_application\_window()}{create\_application\_window()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{apis\+::windowing\+::iapplication\+\_\+window}}$>$ test\+\_\+window\+\_\+manager\+::create\+\_\+application\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Creates an application window \begin{DoxyReturn}{Returns}
+The created application window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a8a0aaf7d8ef622d0efc694a8b42f4d42}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 37 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a847b5e6c5b0a20f4597abacae183af36}\label{classtest__window__manager_a847b5e6c5b0a20f4597abacae183af36}} 
+\index{test\_window\_manager@{test\_window\_manager}!create\_console\_window@{create\_console\_window}}
+\index{create\_console\_window@{create\_console\_window}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_console\_window()}{create\_console\_window()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window}{apis\+::windowing\+::iconsole\+\_\+window}}$>$ test\+\_\+window\+\_\+manager\+::create\+\_\+console\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Creates a console window \begin{DoxyReturn}{Returns}
+The created console window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a735ee3b10eb1d798f1887bacfd9c5674}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 29 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a92cba7b9aa2bd6c7a2eab6fb3bb0e381}\label{classtest__window__manager_a92cba7b9aa2bd6c7a2eab6fb3bb0e381}} 
+\index{test\_window\_manager@{test\_window\_manager}!initialize@{initialize}}
+\index{initialize@{initialize}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Initializes the window manager \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aab31a17b7f382f61ddffb232ceffe0dd}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 24 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_ab2f109c62ccff0b26c4142dbac059a38}\label{classtest__window__manager_ab2f109c62ccff0b26c4142dbac059a38}} 
+\index{test\_window\_manager@{test\_window\_manager}!should\_quit@{should\_quit}}
+\index{should\_quit@{should\_quit}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{should\_quit()}{should\_quit()}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::should\+\_\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns true if the windowing system has a quit event \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the windowing system has a quit event, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a71aa7efa248d92c190ba6fabe7588664}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 53 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a81083b132115b4f4b40ca2196a0914d6}\label{classtest__window__manager_a81083b132115b4f4b40ca2196a0914d6}} 
+\index{test\_window\_manager@{test\_window\_manager}!update@{update}}
+\index{update@{update}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Updates the windowing system \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a08712ca77a98246e7dd9490cd5a31a42}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 45 of file game\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtest__window__manager_ac7c596871e9dff7d1608e3ffd05b9ee4}\label{classtest__window__manager_ac7c596871e9dff7d1608e3ffd05b9ee4}} 
+\index{test\_window\_manager@{test\_window\_manager}!create\_application\_window\_called@{create\_application\_window\_called}}
+\index{create\_application\_window\_called@{create\_application\_window\_called}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_application\_window\_called}{create\_application\_window\_called}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::create\+\_\+application\+\_\+window\+\_\+called \{false\}}
+
+
+
+Definition at line 33 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a15275bb52a86cc5b11a85317e3d39375}\label{classtest__window__manager_a15275bb52a86cc5b11a85317e3d39375}} 
+\index{test\_window\_manager@{test\_window\_manager}!create\_application\_window\_result@{create\_application\_window\_result}}
+\index{create\_application\_window\_result@{create\_application\_window\_result}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{create\_application\_window\_result}{create\_application\_window\_result}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{apis\+::windowing\+::iapplication\+\_\+window}}$>$ test\+\_\+window\+\_\+manager\+::create\+\_\+application\+\_\+window\+\_\+result = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classtest__application__window}{test\+\_\+application\+\_\+window}}$>$()}
+
+
+
+Definition at line 35 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_aa79ae14fd9fa5562db9e6598d732b8d9}\label{classtest__window__manager_aa79ae14fd9fa5562db9e6598d732b8d9}} 
+\index{test\_window\_manager@{test\_window\_manager}!frames\_to\_run\_before\_quit@{frames\_to\_run\_before\_quit}}
+\index{frames\_to\_run\_before\_quit@{frames\_to\_run\_before\_quit}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{frames\_to\_run\_before\_quit}{frames\_to\_run\_before\_quit}}
+{\footnotesize\ttfamily int test\+\_\+window\+\_\+manager\+::frames\+\_\+to\+\_\+run\+\_\+before\+\_\+quit = 1}
+
+
+
+Definition at line 51 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a52e669da82604937b28b1052fd689f51}\label{classtest__window__manager_a52e669da82604937b28b1052fd689f51}} 
+\index{test\_window\_manager@{test\_window\_manager}!initialize\_called@{initialize\_called}}
+\index{initialize\_called@{initialize\_called}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize\_called}{initialize\_called}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::initialize\+\_\+called \{false\}}
+
+
+
+Definition at line 21 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a14832a6cf39d3c8655a0fb36c2bab09e}\label{classtest__window__manager_a14832a6cf39d3c8655a0fb36c2bab09e}} 
+\index{test\_window\_manager@{test\_window\_manager}!initialize\_result@{initialize\_result}}
+\index{initialize\_result@{initialize\_result}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize\_result}{initialize\_result}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::initialize\+\_\+result \{true\}}
+
+
+
+Definition at line 22 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_a7916710132f6d63d8a983b95fa1214f4}\label{classtest__window__manager_a7916710132f6d63d8a983b95fa1214f4}} 
+\index{test\_window\_manager@{test\_window\_manager}!update\_called@{update\_called}}
+\index{update\_called@{update\_called}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{update\_called}{update\_called}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::update\+\_\+called \{false\}}
+
+
+
+Definition at line 42 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__window__manager_ad2d218268735410857ac6c00810e4da9}\label{classtest__window__manager_ad2d218268735410857ac6c00810e4da9}} 
+\index{test\_window\_manager@{test\_window\_manager}!update\_result@{update\_result}}
+\index{update\_result@{update\_result}!test\_window\_manager@{test\_window\_manager}}
+\doxysubsubsection{\texorpdfstring{update\_result}{update\_result}}
+{\footnotesize\ttfamily bool test\+\_\+window\+\_\+manager\+::update\+\_\+result \{true\}}
+
+
+
+Definition at line 43 of file game\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/tests/game/\mbox{\hyperlink{tests_2game_2game__manager_8cpp}{game\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

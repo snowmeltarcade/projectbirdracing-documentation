@@ -1,0 +1,165 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}{}\doxysection{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+
+
+{\ttfamily \#include $<$log\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a69c3a92ecbbbf439acbe4338154938d0}{log\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1datetime_1_1idatetime__manager}{datetime\+::idatetime\+\_\+manager}} $>$ datetime\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ab69db048ddcd23479a97eac976bd5ea6}{$\sim$log\+\_\+manager}} () override=default
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a0af9155c3bc9d41aa7b0bcd990130ccf}{add\+\_\+endpoint}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}}) noexcept override
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ $>$ \& \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a347c94401dbe2b7a790adc82945a451a}{get\+\_\+endpoints}} () const noexcept override
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ac795c49d2bff1d3e06631ccf3514f37a}{set\+\_\+log\+\_\+level}} (const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept override
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}{get\+\_\+log\+\_\+level}} () const noexcept override
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The log manager allows you to add logging endpoints which will be output a log message to that endpoint. These endpoints could be {\ttfamily stdout}, or a file for instance. 
+
+Definition at line 13 of file log\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a69c3a92ecbbbf439acbe4338154938d0}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a69c3a92ecbbbf439acbe4338154938d0}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!log\_manager@{log\_manager}}
+\index{log\_manager@{log\_manager}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{log\_manager()}{log\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::log\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1datetime_1_1idatetime__manager}{datetime\+::idatetime\+\_\+manager}} $>$}]{datetime\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs the log manager 
+\begin{DoxyParams}{Parameters}
+{\em datetime\+\_\+manager} & The datetime manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file log\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ab69db048ddcd23479a97eac976bd5ea6}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ab69db048ddcd23479a97eac976bd5ea6}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!````~log\_manager@{$\sim$log\_manager}}
+\index{````~log\_manager@{$\sim$log\_manager}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$log\_manager()}{~log\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::$\sim$log\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a0af9155c3bc9d41aa7b0bcd990130ccf}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a0af9155c3bc9d41aa7b0bcd990130ccf}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!add\_endpoint@{add\_endpoint}}
+\index{add\_endpoint@{add\_endpoint}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{add\_endpoint()}{add\_endpoint()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::add\+\_\+endpoint (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ \&}]{endpoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Adds a logging endpoint 
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & A pointer to the endpoint to add. If nullptr, {\ttfamily false} will be returned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} on success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ae252f9296689a1c1756acec9b87d8a60}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+
+
+
+Definition at line 6 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a347c94401dbe2b7a790adc82945a451a}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a347c94401dbe2b7a790adc82945a451a}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!get\_endpoints@{get\_endpoints}}
+\index{get\_endpoints@{get\_endpoints}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_endpoints()}{get\_endpoints()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}{endpoint}} $>$ $>$ \& pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::get\+\_\+endpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the added endpoints \begin{DoxyReturn}{Returns}
+The added endpoints 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a991189a94dca0a3b2a0764defbf05b30}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+
+
+
+Definition at line 18 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!get\_log\_level@{get\_log\_level}}
+\index{get\_log\_level@{get\_log\_level}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_log\_level()}{get\_log\_level()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::get\+\_\+log\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the current log level \begin{DoxyReturn}{Returns}
+The current log level 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a32fbf8bc963517d11ef4acd6e76decac}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+
+
+
+Definition at line 30 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!log\_message@{log\_message}}
+\index{log\_message@{log\_message}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Logs a message to all added endpoints. If the set log level is less than the passed level, the message will not be logged. The level, current date and time in U\+TC will be prefixed to the message 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log \\
+\hline
+{\em level} & The logging level to log against \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+
+
+
+Definition at line 36 of file log\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ac795c49d2bff1d3e06631ccf3514f37a}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ac795c49d2bff1d3e06631ccf3514f37a}} 
+\index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!set\_log\_level@{set\_log\_level}}
+\index{set\_log\_level@{set\_log\_level}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
+\doxysubsubsection{\texorpdfstring{set\_log\_level()}{set\_log\_level()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::set\+\_\+log\+\_\+level (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Sets the log level to log against. Any messages that are logged with a level below this will be ignored 
+\begin{DoxyParams}{Parameters}
+{\em level} & The log level to set \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+
+
+
+Definition at line 24 of file log\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/logging/\mbox{\hyperlink{log__manager_8h}{log\+\_\+manager.\+h}}\item 
+src/shared/apis/logging/\mbox{\hyperlink{apis_2logging_2log__manager_8cpp}{log\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

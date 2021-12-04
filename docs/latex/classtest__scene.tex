@@ -1,0 +1,208 @@
+\hypertarget{classtest__scene}{}\doxysection{test\+\_\+scene Class Reference}
+\label{classtest__scene}\index{test\_scene@{test\_scene}}
+Inheritance diagram for test\+\_\+scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__scene_a10dd544751496314ced710f282446a06}{test\+\_\+scene}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} scene\+\_\+type)
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{classtest__scene_a7a3729f9c5654fbcf2a6759590fcff92}{get\+\_\+scene\+\_\+type}} () const noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__scene_a88eda567584cc98525d1df5788e1f5d8}{load}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__scene_a29511f59bb0555baba8d33afdd612961}{run}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__scene_a496c1be3f1727fc0f8e0d1cf962ac997}{should\+\_\+quit}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} \mbox{\hyperlink{classtest__scene_a887e2b6b3955d104e66efc2cb9198ade}{\+\_\+scene\+\_\+type}}
+\item 
+bool \mbox{\hyperlink{classtest__scene_a8ba884c1703117230aff1ad67d1acd66}{load\+\_\+called}} \{false\}
+\item 
+bool \mbox{\hyperlink{classtest__scene_a4531a086e2c788d15fe6adfa54cce105}{load\+\_\+result}} \{true\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classtest__scene_ab55711f76ae2bfcaaba1b0d85ee8bc80}{load\+\_\+call\+\_\+count}} \{0u\}
+\item 
+bool \mbox{\hyperlink{classtest__scene_a180e68071c92d6eb5bc56cf25dd5f7bc}{run\+\_\+called}} \{false\}
+\item 
+bool \mbox{\hyperlink{classtest__scene_ab8e620d5e86f753faddbe70e75a500ae}{run\+\_\+result}} \{true\}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classtest__scene_a5a6c81c475b7247aa6bd7d1c146b0758}{run\+\_\+call\+\_\+count}} \{0u\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 23 of file scene\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtest__scene_a10dd544751496314ced710f282446a06}\label{classtest__scene_a10dd544751496314ced710f282446a06}} 
+\index{test\_scene@{test\_scene}!test\_scene@{test\_scene}}
+\index{test\_scene@{test\_scene}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{test\_scene()}{test\_scene()}}
+{\footnotesize\ttfamily test\+\_\+scene\+::test\+\_\+scene (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}}}]{scene\+\_\+type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 25 of file scene\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__scene_a7a3729f9c5654fbcf2a6759590fcff92}\label{classtest__scene_a7a3729f9c5654fbcf2a6759590fcff92}} 
+\index{test\_scene@{test\_scene}!get\_scene\_type@{get\_scene\_type}}
+\index{get\_scene\_type@{get\_scene\_type}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{get\_scene\_type()}{get\_scene\_type()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} test\+\_\+scene\+::get\+\_\+scene\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the type of this scene \begin{DoxyReturn}{Returns}
+The type of this scene 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a43e5199e1e1ee43bc969a717393ce5e7}{pbr\+::shared\+::scene\+::scene\+\_\+base}}.
+
+
+
+Definition at line 33 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a88eda567584cc98525d1df5788e1f5d8}\label{classtest__scene_a88eda567584cc98525d1df5788e1f5d8}} 
+\index{test\_scene@{test\_scene}!load@{load}}
+\index{load@{load}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Loads the scene \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_aeebe9522af03ff26d2ec748fb41dc206}{pbr\+::shared\+::scene\+::scene\+\_\+base}}.
+
+
+
+Definition at line 41 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a29511f59bb0555baba8d33afdd612961}\label{classtest__scene_a29511f59bb0555baba8d33afdd612961}} 
+\index{test\_scene@{test\_scene}!run@{run}}
+\index{run@{run}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Runs the scene \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a5a5f50963f7f87c0660cbaa7399ee010}{pbr\+::shared\+::scene\+::scene\+\_\+base}}.
+
+
+
+Definition at line 59 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a496c1be3f1727fc0f8e0d1cf962ac997}\label{classtest__scene_a496c1be3f1727fc0f8e0d1cf962ac997}} 
+\index{test\_scene@{test\_scene}!should\_quit@{should\_quit}}
+\index{should\_quit@{should\_quit}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{should\_quit()}{should\_quit()}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::should\+\_\+quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns {\ttfamily true} if this scene should quit, else {\ttfamily false} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this scene should quit, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1scene__base_a0efdb9c4f3fa2db60236e3e40724167c}{pbr\+::shared\+::scene\+::scene\+\_\+base}}.
+
+
+
+Definition at line 65 of file scene\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtest__scene_a887e2b6b3955d104e66efc2cb9198ade}\label{classtest__scene_a887e2b6b3955d104e66efc2cb9198ade}} 
+\index{test\_scene@{test\_scene}!\_scene\_type@{\_scene\_type}}
+\index{\_scene\_type@{\_scene\_type}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{\_scene\_type}{\_scene\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1scene_a509645a6a89c92e6e576ed62647478b0}{scene\+\_\+types}} test\+\_\+scene\+::\+\_\+scene\+\_\+type}
+
+
+
+Definition at line 31 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_ab55711f76ae2bfcaaba1b0d85ee8bc80}\label{classtest__scene_ab55711f76ae2bfcaaba1b0d85ee8bc80}} 
+\index{test\_scene@{test\_scene}!load\_call\_count@{load\_call\_count}}
+\index{load\_call\_count@{load\_call\_count}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{load\_call\_count}{load\_call\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t test\+\_\+scene\+::load\+\_\+call\+\_\+count \{0u\}}
+
+
+
+Definition at line 39 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a8ba884c1703117230aff1ad67d1acd66}\label{classtest__scene_a8ba884c1703117230aff1ad67d1acd66}} 
+\index{test\_scene@{test\_scene}!load\_called@{load\_called}}
+\index{load\_called@{load\_called}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{load\_called}{load\_called}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::load\+\_\+called \{false\}}
+
+
+
+Definition at line 37 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a4531a086e2c788d15fe6adfa54cce105}\label{classtest__scene_a4531a086e2c788d15fe6adfa54cce105}} 
+\index{test\_scene@{test\_scene}!load\_result@{load\_result}}
+\index{load\_result@{load\_result}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{load\_result}{load\_result}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::load\+\_\+result \{true\}}
+
+
+
+Definition at line 38 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a5a6c81c475b7247aa6bd7d1c146b0758}\label{classtest__scene_a5a6c81c475b7247aa6bd7d1c146b0758}} 
+\index{test\_scene@{test\_scene}!run\_call\_count@{run\_call\_count}}
+\index{run\_call\_count@{run\_call\_count}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{run\_call\_count}{run\_call\_count}}
+{\footnotesize\ttfamily uint32\+\_\+t test\+\_\+scene\+::run\+\_\+call\+\_\+count \{0u\}}
+
+
+
+Definition at line 57 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_a180e68071c92d6eb5bc56cf25dd5f7bc}\label{classtest__scene_a180e68071c92d6eb5bc56cf25dd5f7bc}} 
+\index{test\_scene@{test\_scene}!run\_called@{run\_called}}
+\index{run\_called@{run\_called}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{run\_called}{run\_called}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::run\+\_\+called \{false\}}
+
+
+
+Definition at line 55 of file scene\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__scene_ab8e620d5e86f753faddbe70e75a500ae}\label{classtest__scene_ab8e620d5e86f753faddbe70e75a500ae}} 
+\index{test\_scene@{test\_scene}!run\_result@{run\_result}}
+\index{run\_result@{run\_result}!test\_scene@{test\_scene}}
+\doxysubsubsection{\texorpdfstring{run\_result}{run\_result}}
+{\footnotesize\ttfamily bool test\+\_\+scene\+::run\+\_\+result \{true\}}
+
+
+
+Definition at line 56 of file scene\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/tests/scene/\mbox{\hyperlink{tests_2scene_2scene__manager_8cpp}{scene\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

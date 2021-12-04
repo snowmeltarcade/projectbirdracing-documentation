@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['_7ebytes_113',['~bytes',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a5d4bafab334273fe5e314cab0351cf7a',1,'pbr::shared::memory::bytes']]],
-  ['_7eendpoint_114',['~endpoint',['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#a21c15c9afc6cc4991022026c442e21ef',1,'pbr::shared::apis::logging::endpoint']]],
-  ['_7egigabytes_115',['~gigabytes',['../classpbr_1_1shared_1_1memory_1_1gigabytes.html#a41fb0713e5c45eb7bfcd0e1b5a4e9944',1,'pbr::shared::memory::gigabytes']]],
-  ['_7ekilobytes_116',['~kilobytes',['../classpbr_1_1shared_1_1memory_1_1kilobytes.html#a52f8b51b15e56d9df0ba12d4479bb2b0',1,'pbr::shared::memory::kilobytes']]],
-  ['_7emegabytes_117',['~megabytes',['../classpbr_1_1shared_1_1memory_1_1megabytes.html#a980e1125e54e96e89ce910be88d617b7',1,'pbr::shared::memory::megabytes']]],
-  ['_7estdout_118',['~stdout',['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout.html#a888b4bc8647ddf3409aec16696abcded',1,'pbr::shared::apis::logging::endpoints::stdout']]],
-  ['_7etest_5fendpoint_119',['~test_endpoint',['../classtest__endpoint.html#ace4d6f5894228c9454e70562e1bba0f3',1,'test_endpoint']]]
+  ['warning_204',['warning',['../namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09a7b83d3f08fa392b79e3f553b585971cd',1,'pbr::shared::apis::logging']]],
+  ['window_5fmanager_205',['window_manager',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html',1,'pbr::shared::apis::windowing::window_manager'],['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a9c022d9d8a26788923f1d76809f431b5',1,'pbr::shared::apis::windowing::window_manager::window_manager()']]],
+  ['window_5fmanager_2ecpp_206',['window_manager.cpp',['../window__manager_8cpp.html',1,'']]],
+  ['window_5fmanager_2eh_207',['window_manager.h',['../window__manager_8h.html',1,'']]],
+  ['world_5fgeneration_208',['world_generation',['../namespacepbr_1_1shared_1_1scene.html#a509645a6a89c92e6e576ed62647478b0a963afc450976c04d9a9ca08108d658ca',1,'pbr::shared::scene']]],
+  ['world_5fgeneration_5fscene_209',['world_generation_scene',['../classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene.html',1,'pbr::shared::scene::scenes::world_generation_scene'],['../classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene.html#a5910b06fdee3d2f5c04a8bb5f6d17d81',1,'pbr::shared::scene::scenes::world_generation_scene::world_generation_scene()']]],
+  ['world_5fgeneration_5fscene_2ecpp_210',['world_generation_scene.cpp',['../world__generation__scene_8cpp.html',1,'']]],
+  ['world_5fgeneration_5fscene_2eh_211',['world_generation_scene.h',['../world__generation__scene_8h.html',1,'']]]
 ];

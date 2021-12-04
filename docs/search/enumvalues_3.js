@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning_246',['warning',['../namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09a7b83d3f08fa392b79e3f553b585971cd',1,'pbr::shared::apis::logging']]]
+  ['loading_499',['loading',['../namespacepbr_1_1shared_1_1scene.html#a509645a6a89c92e6e576ed62647478b0aa14fa2166ed698f3d04061f57e5ab9b9',1,'pbr::shared::scene']]]
 ];

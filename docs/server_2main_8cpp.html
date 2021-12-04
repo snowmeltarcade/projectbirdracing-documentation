@@ -87,7 +87,15 @@ $(document).ready(function(){initNavTree('server_2main_8cpp.html',''); initResiz
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="basic__allocators_8h_source.html">shared/memory/basic_allocators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="game__manager_8h_source.html">shared/game/game_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="datetime__manager_8h_source.html">shared/apis/datetime/datetime_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log__manager_8h_source.html">shared/apis/logging/log_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdout_8h_source.html">shared/apis/logging/endpoints/stdout.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="window__manager_8h_source.html">shared/apis/windowing/window_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="scene__manager_8h_source.html">shared/scene/scene_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="scene__factory_8h_source.html">scene/scene_factory.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;version.h&quot;</code><br />
 </div>
@@ -95,10 +103,35 @@ $(document).ready(function(){initNavTree('server_2main_8cpp.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acfecff82da4df2899f841b007dac4810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game::game_manager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#acfecff82da4df2899f841b007dac4810">create_game_manager</a> ()</td></tr>
+<tr class="separator:acfecff82da4df2899f841b007dac4810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a43e6d814de94978c515cb084873b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#a13a43e6d814de94978c515cb084873b1">run</a> ()</td></tr>
+<tr class="memdesc:a13a43e6d814de94978c515cb084873b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up and runs the game.  <a href="server_2main_8cpp.html#a13a43e6d814de94978c515cb084873b1">More...</a><br /></td></tr>
+<tr class="separator:a13a43e6d814de94978c515cb084873b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148e510f1af548e3fa6a929b9f2371ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">main</a> (int argv, char *args[])</td></tr>
 <tr class="separator:a148e510f1af548e3fa6a929b9f2371ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="acfecff82da4df2899f841b007dac4810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfecff82da4df2899f841b007dac4810">&#9670;&nbsp;</a></span>create_game_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game::game_manager</a> create_game_manager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates the game manager </p><dl class="section return"><dt>Returns</dt><dd>The created game manager </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00019">19</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a148e510f1af548e3fa6a929b9f2371ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a148e510f1af548e3fa6a929b9f2371ac">&#9670;&nbsp;</a></span>main()</h2>
 
@@ -133,7 +166,28 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Will always return <code>0</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00010">10</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00060">60</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a13a43e6d814de94978c515cb084873b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a43e6d814de94978c515cb084873b1">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets up and runs the game. </p>
+
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00042">42</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
