@@ -16,7 +16,9 @@ Inheritance diagram for pbr\+::shared\+::apis\+::windowing\+::application\+\_\+w
 \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window_a8c55dbe1bf621ed54655a67d6e7328d9}{application\+\_\+window}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::string\+\_\+view title, uint32\+\_\+t w, uint32\+\_\+t h)
 \item 
 \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window_ae258cb123b461b80e6f0391789831e05}{$\sim$application\+\_\+window}} () override
-\begin{DoxyCompactList}\small\item\em Destroys this window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Destroys this window. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window_a9e1f8f2f965563b571dbc4fbbc3d7d8d}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -60,7 +62,23 @@ Destroys this window.
 
 
 
-Definition at line 36 of file application\+\_\+window.\+h.
+Definition at line 38 of file application\+\_\+window.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window_a9e1f8f2f965563b571dbc4fbbc3d7d8d}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window_a9e1f8f2f965563b571dbc4fbbc3d7d8d}} 
+\index{pbr::shared::apis::windowing::application\_window@{pbr::shared::apis::windowing::application\_window}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::windowing::application\_window@{pbr::shared::apis::windowing::application\_window}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ pbr\+::shared\+::apis\+::windowing\+::application\+\_\+window\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native window handle \begin{DoxyReturn}{Returns}
+The native window handle 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file application\+\_\+window.\+h.
 
 
 

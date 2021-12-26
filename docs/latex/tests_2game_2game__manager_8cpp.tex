@@ -5,6 +5,7 @@
 {\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/windowing/iwindow\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/igraphics\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/windowing/iconsole\+\_\+window.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/scene/iscene\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$thread$>$}\newline
@@ -16,6 +17,8 @@ class \mbox{\hyperlink{classtest__application__window}{test\+\_\+application\+\_
 \item 
 class \mbox{\hyperlink{classtest__window__manager}{test\+\_\+window\+\_\+manager}}
 \item 
+class \mbox{\hyperlink{classtest__graphics__manager}{test\+\_\+graphics\+\_\+manager}}
+\item 
 class \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+scene\+\_\+manager}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
@@ -25,6 +28,10 @@ class \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+scene\+\_\+manager}}
 \item 
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_ad529175a8901049de90646a17fc4536e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ successfully initializes game -\/ returns true\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
 \begin{DoxyCompactList}\small\item\em initialize \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2game_2game__manager_8cpp_a4a9c8f9638eb6347936ccfc7ea8f879e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ loads graphics api\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2game_2game__manager_8cpp_a2652f937182ff994b96b37c86bde4d93}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ load graphics api fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
+\item 
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_a92c24378e9fbfba69578b5488bea7474}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ initializes window manager\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
 \item 
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_ae4633ad931b080e97cb76a0704e23d0e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ initialize window manager fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
@@ -32,6 +39,10 @@ class \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+scene\+\_\+manager}}
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_ae5b03258f5a3341992cf1c64b98c081b}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ creates application window\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
 \item 
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_a9e435dbd24a28d1630c06b28193ebdec}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ create application window fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2game_2game__manager_8cpp_a549b936f9127eb24e68f63757d7fa839}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ initializes graphics manager\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2game_2game__manager_8cpp_ad9e514aeb1c21415818895f2672630a7}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}initialize -\/ initialize graphics manager fails -\/ returns false\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
 \item 
 \mbox{\hyperlink{tests_2game_2game__manager_8cpp_a6bb54b4ed6a9edea836d09ed88822e5d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}run -\/ runs one frame -\/ returns true\char`\"{}, \char`\"{}\mbox{[}shared/game\mbox{]}\char`\"{})
 \begin{DoxyCompactList}\small\item\em run \end{DoxyCompactList}\item 
@@ -50,6 +61,8 @@ class \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+scene\+\_\+manager}}
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__window__manager}{test\+\_\+window\+\_\+manager}} $>$ \mbox{\hyperlink{tests_2game_2game__manager_8cpp_acd36d63997675d3d33e168721bef8cf3}{g\+\_\+window\+\_\+manager}}
 \item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__graphics__manager}{test\+\_\+graphics\+\_\+manager}} $>$ \mbox{\hyperlink{tests_2game_2game__manager_8cpp_af97f5381f19a0e0855bd39d26b0f7a54}{g\+\_\+graphics\+\_\+manager}}
+\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+scene\+\_\+manager}} $>$ \mbox{\hyperlink{tests_2game_2game__manager_8cpp_ab7808d85a6f74fe90aedd363a9735404}{g\+\_\+scene\+\_\+manager}}
 \end{DoxyCompactItemize}
 
@@ -63,52 +76,92 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtest__scene__manager}{test\+\_\+
 
 
 
-Definition at line 72 of file game\+\_\+manager.\+cpp.
+Definition at line 97 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a9e435dbd24a28d1630c06b28193ebdec}\label{tests_2game_2game__manager_8cpp_a9e435dbd24a28d1630c06b28193ebdec}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ create application window fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 170 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ae5b03258f5a3341992cf1c64b98c081b}\label{tests_2game_2game__manager_8cpp_ae5b03258f5a3341992cf1c64b98c081b}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ creates application window\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 161 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ad9e514aeb1c21415818895f2672630a7}\label{tests_2game_2game__manager_8cpp_ad9e514aeb1c21415818895f2672630a7}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initialize graphics manager fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 188 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ae4633ad931b080e97cb76a0704e23d0e}\label{tests_2game_2game__manager_8cpp_ae4633ad931b080e97cb76a0704e23d0e}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initialize window manager fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a549b936f9127eb24e68f63757d7fa839}\label{tests_2game_2game__manager_8cpp_a549b936f9127eb24e68f63757d7fa839}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initializes graphics manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a92c24378e9fbfba69578b5488bea7474}\label{tests_2game_2game__manager_8cpp_a92c24378e9fbfba69578b5488bea7474}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initializes window manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 143 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a2652f937182ff994b96b37c86bde4d93}\label{tests_2game_2game__manager_8cpp_a2652f937182ff994b96b37c86bde4d93}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ load graphics api fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 134 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a4a9c8f9638eb6347936ccfc7ea8f879e}\label{tests_2game_2game__manager_8cpp_a4a9c8f9638eb6347936ccfc7ea8f879e}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/15]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ loads graphics api\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
 Definition at line 125 of file game\+\_\+manager.\+cpp.
 
-\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ae5b03258f5a3341992cf1c64b98c081b}\label{tests_2game_2game__manager_8cpp_ae5b03258f5a3341992cf1c64b98c081b}} 
-\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
-\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/11]}}
-{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ creates application window\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
-
-
-
-Definition at line 116 of file game\+\_\+manager.\+cpp.
-
-\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ae4633ad931b080e97cb76a0704e23d0e}\label{tests_2game_2game__manager_8cpp_ae4633ad931b080e97cb76a0704e23d0e}} 
-\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
-\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/11]}}
-{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initialize window manager fails -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
-
-
-
-Definition at line 107 of file game\+\_\+manager.\+cpp.
-
-\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a92c24378e9fbfba69578b5488bea7474}\label{tests_2game_2game__manager_8cpp_a92c24378e9fbfba69578b5488bea7474}} 
-\index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
-\index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/11]}}
-{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ initializes window manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
-
-
-
-Definition at line 98 of file game\+\_\+manager.\+cpp.
-
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ad529175a8901049de90646a17fc4536e}\label{tests_2game_2game__manager_8cpp_ad529175a8901049de90646a17fc4536e}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}initialize -\/ successfully initializes game -\/ returns true\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
@@ -117,22 +170,22 @@ initialize
 
 
 
-Definition at line 90 of file game\+\_\+manager.\+cpp.
+Definition at line 117 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ae5599b094f35d8d6c650b42df179b9f2}\label{tests_2game_2game__manager_8cpp_ae5599b094f35d8d6c650b42df179b9f2}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ running scene manager returns false -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 192 of file game\+\_\+manager.\+cpp.
+Definition at line 255 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a6bb54b4ed6a9edea836d09ed88822e5d}\label{tests_2game_2game__manager_8cpp_a6bb54b4ed6a9edea836d09ed88822e5d}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ runs one frame -\/ returns true\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
@@ -141,51 +194,61 @@ run
 
 
 
-Definition at line 138 of file game\+\_\+manager.\+cpp.
+Definition at line 201 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a10bbf18d5dbacafad2947e4692b8ece6}\label{tests_2game_2game__manager_8cpp_a10bbf18d5dbacafad2947e4692b8ece6}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [12/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ runs one frame -\/ runs scene manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 181 of file game\+\_\+manager.\+cpp.
+Definition at line 244 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_af5f94d18666344d1da3c88771b766c3e}\label{tests_2game_2game__manager_8cpp_af5f94d18666344d1da3c88771b766c3e}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [13/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ runs one frame -\/ updates window manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 148 of file game\+\_\+manager.\+cpp.
+Definition at line 211 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_a3a8f5a776d51b68920cbbc6c16534363}\label{tests_2game_2game__manager_8cpp_a3a8f5a776d51b68920cbbc6c16534363}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [14/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ update window manager returns false -\/ returns false\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 159 of file game\+\_\+manager.\+cpp.
+Definition at line 222 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_afaa1ef43552a00f3a0fa59cb54cb95b3}\label{tests_2game_2game__manager_8cpp_afaa1ef43552a00f3a0fa59cb54cb95b3}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
 \index{TEST\_CASE@{TEST\_CASE}!game\_manager.cpp@{game\_manager.cpp}}
-\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/11]}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [15/15]}}
 {\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}run -\/ window manager requests quit -\/ returns true\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/game\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 170 of file game\+\_\+manager.\+cpp.
+Definition at line 233 of file game\+\_\+manager.\+cpp.
 
 
 
 \doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{tests_2game_2game__manager_8cpp_af97f5381f19a0e0855bd39d26b0f7a54}\label{tests_2game_2game__manager_8cpp_af97f5381f19a0e0855bd39d26b0f7a54}} 
+\index{game\_manager.cpp@{game\_manager.cpp}!g\_graphics\_manager@{g\_graphics\_manager}}
+\index{g\_graphics\_manager@{g\_graphics\_manager}!game\_manager.cpp@{game\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_graphics\_manager}{g\_graphics\_manager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtest__graphics__manager}{test\+\_\+graphics\+\_\+manager}}$>$ g\+\_\+graphics\+\_\+manager}
+
+
+
+Definition at line 94 of file game\+\_\+manager.\+cpp.
+
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_ab7808d85a6f74fe90aedd363a9735404}\label{tests_2game_2game__manager_8cpp_ab7808d85a6f74fe90aedd363a9735404}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!g\_scene\_manager@{g\_scene\_manager}}
 \index{g\_scene\_manager@{g\_scene\_manager}!game\_manager.cpp@{game\_manager.cpp}}
@@ -194,7 +257,7 @@ Definition at line 170 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 70 of file game\+\_\+manager.\+cpp.
+Definition at line 95 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{tests_2game_2game__manager_8cpp_acd36d63997675d3d33e168721bef8cf3}\label{tests_2game_2game__manager_8cpp_acd36d63997675d3d33e168721bef8cf3}} 
 \index{game\_manager.cpp@{game\_manager.cpp}!g\_window\_manager@{g\_window\_manager}}
@@ -204,5 +267,5 @@ Definition at line 70 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 69 of file game\+\_\+manager.\+cpp.
+Definition at line 93 of file game\+\_\+manager.\+cpp.
 

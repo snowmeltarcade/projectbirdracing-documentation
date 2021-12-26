@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::device Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}\index{pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}}
+
+
+A logical device.  
+
+
+
+
+{\ttfamily \#include $<$device.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa0fff3e425e149b2b60798e872e973ab}{device}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_a99420442314f5d173f991db4813737d1}{$\sim$device}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this device. \end{DoxyCompactList}\item 
+Vk\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa67c2785344e400597f2855fc4e6d8f4}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A logical device. 
+
+Definition at line 12 of file device.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa0fff3e425e149b2b60798e872e973ab}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa0fff3e425e149b2b60798e872e973ab}} 
+\index{pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}!device@{device}}
+\index{device@{device}!pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}}
+\doxysubsubsection{\texorpdfstring{device()}{device()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::device\+::device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{instance,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&}]{physical\+\_\+device,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this device 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}} & The physical device \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file device.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_a99420442314f5d173f991db4813737d1}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_a99420442314f5d173f991db4813737d1}} 
+\index{pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}!````~device@{$\sim$device}}
+\index{````~device@{$\sim$device}!pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}}
+\doxysubsubsection{\texorpdfstring{$\sim$device()}{~device()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::device\+::$\sim$device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this device. 
+
+
+
+Definition at line 108 of file device.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa67c2785344e400597f2855fc4e6d8f4}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device_aa67c2785344e400597f2855fc4e6d8f4}} 
+\index{pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::device@{pbr::shared::apis::graphics::vulkan::device}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Device pbr\+::shared\+::apis\+::graphics\+::vulkan\+::device\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this device \begin{DoxyReturn}{Returns}
+The native handle to this device 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file device.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{device_8h}{device.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{device_8cpp}{device.\+cpp}}\end{DoxyCompactItemize}

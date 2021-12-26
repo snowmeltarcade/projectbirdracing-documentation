@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}\index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}}
+
+
+Manages the lifetime of the command pool.  
+
+
+
+
+{\ttfamily \#include $<$command\+\_\+pool.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}{command\+\_\+pool}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, uint32\+\_\+t queue\+\_\+index, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}{$\sim$command\+\_\+pool}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this command pool. \end{DoxyCompactList}\item 
+Vk\+Command\+Pool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af8f77995419240a4d30678462bf80e02}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the lifetime of the command pool. 
+
+Definition at line 12 of file command\+\_\+pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}!command\_pool@{command\_pool}}
+\index{command\_pool@{command\_pool}!pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}}
+\doxysubsubsection{\texorpdfstring{command\_pool()}{command\_pool()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool\+::command\+\_\+pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{uint32\+\_\+t}]{queue\+\_\+index,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this command pool 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em queue\+\_\+index} & The queue for this command pool \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file command\+\_\+pool.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}!````~command\_pool@{$\sim$command\_pool}}
+\index{````~command\_pool@{$\sim$command\_pool}!pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}}
+\doxysubsubsection{\texorpdfstring{$\sim$command\_pool()}{~command\_pool()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool\+::$\sim$command\+\_\+pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this command pool. 
+
+
+
+Definition at line 38 of file command\+\_\+pool.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af8f77995419240a4d30678462bf80e02}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af8f77995419240a4d30678462bf80e02}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Command\+Pool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this command pool \begin{DoxyReturn}{Returns}
+The native handle to this command pool 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file command\+\_\+pool.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{command__pool_8h}{command\+\_\+pool.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{command__pool_8cpp}{command\+\_\+pool.\+cpp}}\end{DoxyCompactItemize}

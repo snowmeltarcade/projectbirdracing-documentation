@@ -1,0 +1,120 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+
+
+Manages creating and destroying the physical graphics device.  
+
+
+
+
+{\ttfamily \#include $<$physical\+\_\+device.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{queue\+\_\+family\+\_\+indexes}}
+\begin{DoxyCompactList}\small\item\em Holds the indexes of the queue families for a physical device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_aaf44d03f25201748d4bae9fcf17dba8e}{physical\+\_\+device}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a85ef8116f2b4e074c027282519c3f1f7}{$\sim$physical\+\_\+device}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this physical device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{queue\+\_\+family\+\_\+indexes}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a72bebd48ea0f5a7396a13057c7419ca6}{get\+\_\+queue\+\_\+family\+\_\+indexes}} () const noexcept
+\item 
+Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_af0df9069d29aefa275136996e9ab8fb5}{get\+\_\+max\+\_\+msaa\+\_\+samples}} () const noexcept
+\item 
+Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_ab77926e4b2c64eaf564a031b3b422743}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages creating and destroying the physical graphics device. 
+
+Definition at line 10 of file physical\+\_\+device.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_aaf44d03f25201748d4bae9fcf17dba8e}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_aaf44d03f25201748d4bae9fcf17dba8e}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!physical\_device@{physical\_device}}
+\index{physical\_device@{physical\_device}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{physical\_device()}{physical\_device()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::physical\+\_\+device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{instance,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{window\+\_\+surface,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this physical device 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}}} & The window surface \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 172 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a85ef8116f2b4e074c027282519c3f1f7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a85ef8116f2b4e074c027282519c3f1f7}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!````~physical\_device@{$\sim$physical\_device}}
+\index{````~physical\_device@{$\sim$physical\_device}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{$\sim$physical\_device()}{~physical\_device()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::$\sim$physical\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this physical device. 
+
+
+
+Definition at line 211 of file physical\+\_\+device.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_af0df9069d29aefa275136996e9ab8fb5}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_af0df9069d29aefa275136996e9ab8fb5}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!get\_max\_msaa\_samples@{get\_max\_msaa\_samples}}
+\index{get\_max\_msaa\_samples@{get\_max\_msaa\_samples}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{get\_max\_msaa\_samples()}{get\_max\_msaa\_samples()}}
+{\footnotesize\ttfamily Vk\+Sample\+Count\+Flag\+Bits pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::get\+\_\+max\+\_\+msaa\+\_\+samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the maximum M\+S\+AA samples supported by this physical device \begin{DoxyReturn}{Returns}
+The maximum M\+S\+AA samples supported by this physical device 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file physical\+\_\+device.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_ab77926e4b2c64eaf564a031b3b422743}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_ab77926e4b2c64eaf564a031b3b422743}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Physical\+Device pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this physical device \begin{DoxyReturn}{Returns}
+The native handle to this physical device 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file physical\+\_\+device.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a72bebd48ea0f5a7396a13057c7419ca6}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a72bebd48ea0f5a7396a13057c7419ca6}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!get\_queue\_family\_indexes@{get\_queue\_family\_indexes}}
+\index{get\_queue\_family\_indexes@{get\_queue\_family\_indexes}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{get\_queue\_family\_indexes()}{get\_queue\_family\_indexes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{queue\+\_\+family\+\_\+indexes}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::get\+\_\+queue\+\_\+family\+\_\+indexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the queue family indexes for this physical device \begin{DoxyReturn}{Returns}
+The queue family indexes for this physical device 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file physical\+\_\+device.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{physical__device_8h}{physical\+\_\+device.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{physical__device_8cpp}{physical\+\_\+device.\+cpp}}\end{DoxyCompactItemize}

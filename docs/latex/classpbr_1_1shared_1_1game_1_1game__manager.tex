@@ -7,7 +7,7 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}{game\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$ window\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$ scene\+\_\+manager)
+\mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_aedc4c8d12eb7ac8100f25033970ff4c7}{game\+\_\+manager}} (std\+::filesystem\+::path executable\+\_\+path, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$ window\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{apis\+::graphics\+::igraphics\+\_\+manager}} $>$ graphics\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$ scene\+\_\+manager)
 \item 
 \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}{$\sim$game\+\_\+manager}} ()
 \begin{DoxyCompactList}\small\item\em Destructs this manager. The game will be shutdown here. \end{DoxyCompactList}\item 
@@ -24,27 +24,33 @@ bool \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708
 \doxysubsection{Detailed Description}
 Provides the skeleton of the game. The managers to be used are first configured and then added to this manager. Both the client and server will use this manager. The game loop and threads are all handled here. 
 
-Definition at line 17 of file game\+\_\+manager.\+h.
+Definition at line 19 of file game\+\_\+manager.\+h.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}\label{classpbr_1_1shared_1_1game_1_1game__manager_a0695b4c29351817bbd5a67ee3f751c3c}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_aedc4c8d12eb7ac8100f25033970ff4c7}\label{classpbr_1_1shared_1_1game_1_1game__manager_aedc4c8d12eb7ac8100f25033970ff4c7}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
 \index{game\_manager@{game\_manager}!pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}}
 \doxysubsubsection{\texorpdfstring{game\_manager()}{game\_manager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::game\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$}]{window\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$}]{scene\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily pbr\+::shared\+::game\+::game\+\_\+manager\+::game\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{executable\+\_\+path,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$}]{window\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{apis\+::graphics\+::igraphics\+\_\+manager}} $>$}]{graphics\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1scene_1_1iscene__manager}{scene\+::iscene\+\_\+manager}} $>$}]{scene\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 Constructs this manager 
 \begin{DoxyParams}{Parameters}
+{\em executable\+\_\+path} & The path of the main executable \\
+\hline
 {\em log\+\_\+manager} & The log manager to use \\
 \hline
 {\em window\+\_\+manager} & The window manager to use \\
 \hline
+{\em graphics\+\_\+manager} & The graphics manager to use \\
+\hline
+{\em scene\+\_\+manager} & The scene manager to use \\
+\hline
 \end{DoxyParams}
 
 
-Definition at line 22 of file game\+\_\+manager.\+h.
+Definition at line 27 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}\label{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!````~game\_manager@{$\sim$game\_manager}}
@@ -58,7 +64,7 @@ Destructs this manager. The game will be shutdown here.
 
 
 
-Definition at line 34 of file game\+\_\+manager.\+h.
+Definition at line 44 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}\label{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
@@ -73,7 +79,7 @@ Move constructor
 \end{DoxyParams}
 
 
-Definition at line 42 of file game\+\_\+manager.\+h.
+Definition at line 54 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}\label{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
@@ -108,7 +114,7 @@ Runs the game. This is a blocking function. It will exit when the game exits \be
 \end{DoxyReturn}
 
 
-Definition at line 23 of file game\+\_\+manager.\+cpp.
+Definition at line 45 of file game\+\_\+manager.\+cpp.
 
 
 

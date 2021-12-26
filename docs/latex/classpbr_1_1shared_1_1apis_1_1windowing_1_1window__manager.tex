@@ -28,6 +28,8 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowi
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a920dc0612bf9124b4bdbc610fc45b6d0}{create\+\_\+application\+\_\+window}} () noexcept override
 \item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a0b6c7e524ece8b55bb60c7117069f755}{get\+\_\+main\+\_\+application\+\_\+window}} () const noexcept override
+\item 
 bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}{update}} () noexcept override
 \item 
 bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_aaeccb30c57cfde63e887d71ccfc4ff5d}{should\+\_\+quit}} () const noexcept override
@@ -80,7 +82,7 @@ Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__
 
 
 
-Definition at line 23 of file window\+\_\+manager.\+cpp.
+Definition at line 29 of file window\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}} 
 \index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!create\_console\_window@{create\_console\_window}}
@@ -97,7 +99,24 @@ Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__
 
 
 
-Definition at line 19 of file window\+\_\+manager.\+cpp.
+Definition at line 25 of file window\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a0b6c7e524ece8b55bb60c7117069f755}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a0b6c7e524ece8b55bb60c7117069f755}} 
+\index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!get\_main\_application\_window@{get\_main\_application\_window}}
+\index{get\_main\_application\_window@{get\_main\_application\_window}!pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_main\_application\_window()}{get\_main\_application\_window()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}}$>$ pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager\+::get\+\_\+main\+\_\+application\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the main application window \begin{DoxyReturn}{Returns}
+The main application window, else {\ttfamily nullptr} is no application window has been created 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aee10a4ab9efcd3bb8548240c58437476}{pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager}}.
+
+
+
+Definition at line 41 of file window\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3149edc839cf9b4c49995f5e4cfa149b}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3149edc839cf9b4c49995f5e4cfa149b}} 
 \index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!initialize@{initialize}}
@@ -131,7 +150,7 @@ Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__
 
 
 
-Definition at line 44 of file window\+\_\+manager.\+h.
+Definition at line 53 of file window\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3051f8d722f1d246b485eb679efb4a02}} 
 \index{pbr::shared::apis::windowing::window\_manager@{pbr::shared::apis::windowing::window\_manager}!update@{update}}
@@ -148,7 +167,7 @@ Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__
 
 
 
-Definition at line 31 of file window\+\_\+manager.\+cpp.
+Definition at line 39 of file window\+\_\+manager.\+cpp.
 
 
 

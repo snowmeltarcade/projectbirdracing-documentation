@@ -87,25 +87,29 @@ $(document).ready(function(){initNavTree('endpoint_8h_source.html',''); initResi
 <div class="contents">
 <a href="endpoint_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log__levels_8h.html">log_levels.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1logging.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html">pbr::shared::apis::logging</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">endpoint</a> {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#ad5ad6a861c5b8f1a9e07be806e22f1d1">endpoint</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#a21c15c9afc6cc4991022026c442e21ef">~endpoint</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="comment">// to this message</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#abf3336ee274ae006ea27a2cb70b016eb">log</a>(std::string_view message) noexcept = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1logging.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html">pbr::shared::apis::logging</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">endpoint</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#ad5ad6a861c5b8f1a9e07be806e22f1d1">endpoint</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#a21c15c9afc6cc4991022026c442e21ef">~endpoint</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">// to this message</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#adc0f1b5fe8a9af5cc88499db35b936d8">log</a>(std::string_view message, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a> level) noexcept = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html_a542f57ec5157568ea7ee664caa308b09"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">pbr::shared::apis::logging::log_levels</a></div><div class="ttdeci">log_levels</div><div class="ttdoc">The levels to log against.</div><div class="ttdef"><b>Definition:</b> <a href="log__levels_8h_source.html#l00009">log_levels.h:9</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html_ad5ad6a861c5b8f1a9e07be806e22f1d1"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#ad5ad6a861c5b8f1a9e07be806e22f1d1">pbr::shared::apis::logging::endpoint::endpoint</a></div><div class="ttdeci">endpoint()=default</div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html_abf3336ee274ae006ea27a2cb70b016eb"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#abf3336ee274ae006ea27a2cb70b016eb">pbr::shared::apis::logging::endpoint::log</a></div><div class="ttdeci">virtual void log(std::string_view message) noexcept=0</div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html">pbr::shared::apis::logging</a></div><div class="ttdef"><b>Definition:</b> <a href="endpoint_8h_source.html#l00005">endpoint.h:5</a></div></div>
+<div class="ttc" id="alog__levels_8h_html"><div class="ttname"><a href="log__levels_8h.html">log_levels.h</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html">pbr::shared::apis::logging</a></div><div class="ttdef"><b>Definition:</b> <a href="endpoint_8h_source.html#l00007">endpoint.h:7</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html_a21c15c9afc6cc4991022026c442e21ef"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#a21c15c9afc6cc4991022026c442e21ef">pbr::shared::apis::logging::endpoint::~endpoint</a></div><div class="ttdeci">virtual ~endpoint()=default</div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">pbr::shared::apis::logging::endpoint</a></div><div class="ttdef"><b>Definition:</b> <a href="endpoint_8h_source.html#l00008">endpoint.h:8</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">pbr::shared::apis::logging::endpoint</a></div><div class="ttdef"><b>Definition:</b> <a href="endpoint_8h_source.html#l00010">endpoint.h:10</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1logging_1_1endpoint_html_adc0f1b5fe8a9af5cc88499db35b936d8"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#adc0f1b5fe8a9af5cc88499db35b936d8">pbr::shared::apis::logging::endpoint::log</a></div><div class="ttdeci">virtual void log(std::string_view message, log_levels level) noexcept=0</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

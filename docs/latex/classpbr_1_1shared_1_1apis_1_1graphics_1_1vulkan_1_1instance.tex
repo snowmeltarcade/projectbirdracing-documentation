@@ -1,0 +1,130 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+
+
+A Vulkan instance.  
+
+
+
+
+{\ttfamily \#include $<$instance.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a43cd63ccb3248279c79164474bd60400}{instance}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\begin{DoxyCompactList}\small\item\em Constructs this instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a4e2b9feaf87dda6abf7ac30bd7853544}{$\sim$instance}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a521ce7e653589d58302e56d9170d4790}{instance}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&)=delete
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a3a32fadbfd46e0a697f1c85081f2cef0}{instance}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\&)=delete
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a1bd7fe35c34730ea52b85790fe9fa8f2}{initialize}} (S\+D\+L\+\_\+\+Window $\ast$window, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}} \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}) noexcept
+\item 
+const Vk\+Instance \& \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a094c3b6193bf9f7d19f3563c5e21ec68}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+const std\+::vector$<$ const char $\ast$ $>$ \& \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_acdf7b27e0a7e332992f40caefe9655b7}{get\+\_\+validation\+\_\+layers}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Vulkan instance. 
+
+Definition at line 18 of file instance.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a43cd63ccb3248279c79164474bd60400}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a43cd63ccb3248279c79164474bd60400}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!instance@{instance}}
+\index{instance@{instance}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::instance (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs this instance. 
+
+
+
+Definition at line 21 of file instance.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a4e2b9feaf87dda6abf7ac30bd7853544}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a4e2b9feaf87dda6abf7ac30bd7853544}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!````~instance@{$\sim$instance}}
+\index{````~instance@{$\sim$instance}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{$\sim$instance()}{~instance()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::$\sim$instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys this instance. 
+
+
+
+Definition at line 28 of file instance.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a521ce7e653589d58302e56d9170d4790}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a521ce7e653589d58302e56d9170d4790}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!instance@{instance}}
+\index{instance@{instance}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::instance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a3a32fadbfd46e0a697f1c85081f2cef0}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a3a32fadbfd46e0a697f1c85081f2cef0}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!instance@{instance}}
+\index{instance@{instance}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a094c3b6193bf9f7d19f3563c5e21ec68}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a094c3b6193bf9f7d19f3563c5e21ec68}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily const Vk\+Instance\& pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native Vulkan instance handle \begin{DoxyReturn}{Returns}
+The native Vulkan instance handle 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file instance.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_acdf7b27e0a7e332992f40caefe9655b7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_acdf7b27e0a7e332992f40caefe9655b7}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!get\_validation\_layers@{get\_validation\_layers}}
+\index{get\_validation\_layers@{get\_validation\_layers}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{get\_validation\_layers()}{get\_validation\_layers()}}
+{\footnotesize\ttfamily const std\+::vector$<$const char$\ast$$>$\& pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::get\+\_\+validation\+\_\+layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the validation layers this instance requested \begin{DoxyReturn}{Returns}
+The validation layers this instance requested 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file instance.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a1bd7fe35c34730ea52b85790fe9fa8f2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_a1bd7fe35c34730ea52b85790fe9fa8f2}} 
+\index{pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}!initialize@{initialize}}
+\index{initialize@{initialize}!pbr::shared::apis::graphics::vulkan::instance@{pbr::shared::apis::graphics::vulkan::instance}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::instance\+::initialize (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Window $\ast$}]{window,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}}]{application\+\_\+information }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Initializes this Vulkan instance 
+\begin{DoxyParams}{Parameters}
+{\em window} & The S\+DL window to present to \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}} & Needed application information \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file instance.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{instance_8h}{instance.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{instance_8cpp}{instance.\+cpp}}\end{DoxyCompactItemize}

@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab37ffb9a76481834e770d53cbc10f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32fbf8bc963517d11ef4acd6e76decac"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager.html#a32fbf8bc963517d11ef4acd6e76decac">get_log_level</a> () const noexcept=0</td></tr>
 <tr class="separator:a32fbf8bc963517d11ef4acd6e76decac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4652255034be51e0f279801aeb0efbb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager.html#ac4652255034be51e0f279801aeb0efbb">log_message</a> (std::string_view message, const <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a> level) noexcept=0</td></tr>
-<tr class="separator:ac4652255034be51e0f279801aeb0efbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80be2d37d124681edab571fa517a0e61"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager.html#a80be2d37d124681edab571fa517a0e61">log_message</a> (std::string_view message, const <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a> level, std::string_view prefix=&quot;&quot;) noexcept=0</td></tr>
+<tr class="separator:a80be2d37d124681edab571fa517a0e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface to the log manager. This manager allows you to add logging endpoints which will be output a log message to that endpoint. These endpoints could be <code>stdout</code>, or a file for instance. </p>
@@ -264,8 +264,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4652255034be51e0f279801aeb0efbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4652255034be51e0f279801aeb0efbb">&#9670;&nbsp;</a></span>log_message()</h2>
+<a id="a80be2d37d124681edab571fa517a0e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80be2d37d124681edab571fa517a0e61">&#9670;&nbsp;</a></span>log_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +283,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a>&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>prefix</em> = <code>&quot;&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -301,11 +307,12 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">message</td><td>The message to log </td></tr>
     <tr><td class="paramname">level</td><td>The logging level to log against </td></tr>
+    <tr><td class="paramname">key</td><td>A prefix to the message </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager.html#a6ecffad60c16e42c9ff2451918b12a1d">pbr::shared::apis::logging::log_manager</a>.</p>
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager.html#a4d82bd60c64e346f50354063e8ba2510">pbr::shared::apis::logging::log_manager</a>.</p>
 
 </div>
 </div>

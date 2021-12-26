@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['window_5fmanager_268',['window_manager',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html',1,'pbr::shared::apis::windowing']]],
-  ['world_5fgeneration_5fscene_269',['world_generation_scene',['../classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene.html',1,'pbr::shared::scene::scenes']]]
+  ['queue_354',['queue',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue.html',1,'pbr::shared::apis::graphics::vulkan']]],
+  ['queue_5ffamily_5findexes_355',['queue_family_indexes',['../structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes.html',1,'pbr::shared::apis::graphics::vulkan::physical_device']]]
 ];

@@ -25,7 +25,7 @@ virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__man
 \item 
 virtual \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a32fbf8bc963517d11ef4acd6e76decac}{get\+\_\+log\+\_\+level}} () const noexcept=0
 \item 
-virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept=0
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a80be2d37d124681edab571fa517a0e61}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level, std\+::string\+\_\+view prefix=\char`\"{}\char`\"{}) noexcept=0
 \end{DoxyCompactItemize}
 
 
@@ -96,11 +96,11 @@ The current log level
 
 Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
 
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a80be2d37d124681edab571fa517a0e61}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a80be2d37d124681edab571fa517a0e61}} 
 \index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!log\_message@{log\_message}}
 \index{log\_message@{log\_message}!pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}}
 \doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
-{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level,  }\item[{std\+::string\+\_\+view}]{prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
 
 Logs a message to all added endpoints. If the set log level is less than the passed level, the message will not be logged. The level, current date and time in U\+TC will be prefixed to the message 
 \begin{DoxyParams}{Parameters}
@@ -108,10 +108,12 @@ Logs a message to all added endpoints. If the set log level is less than the pas
 \hline
 {\em level} & The logging level to log against \\
 \hline
+{\em key} & A prefix to the message \\
+\hline
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a4d82bd60c64e346f50354063e8ba2510}{pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager}}.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ab37ffb9a76481834e770d53cbc10f7c5}} 
 \index{pbr::shared::apis::logging::ilog\_manager@{pbr::shared::apis::logging::ilog\_manager}!set\_log\_level@{set\_log\_level}}

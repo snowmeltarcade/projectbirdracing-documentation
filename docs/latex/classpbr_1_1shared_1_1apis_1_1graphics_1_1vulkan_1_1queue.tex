@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::queue Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}\index{pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}}
+
+
+A queue -\/ e.\+g. graphics, presentation etc...  
+
+
+
+
+{\ttfamily \#include $<$queue.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a486e7811264cec560d0a163323a88c70}{queue}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, uint32\+\_\+t index, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_ac466aa2b52bdcd013f356c697ee1d958}{$\sim$queue}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this queue. \end{DoxyCompactList}\item 
+Vk\+Queue \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a3c6876aed1fd3e38bc7bd0a2bf2999ee}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A queue -\/ e.\+g. graphics, presentation etc... 
+
+Definition at line 10 of file queue.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a486e7811264cec560d0a163323a88c70}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a486e7811264cec560d0a163323a88c70}} 
+\index{pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}!queue@{queue}}
+\index{queue@{queue}!pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::queue\+::queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{uint32\+\_\+t}]{index,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this queue 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em index} & The queue family index \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file queue.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_ac466aa2b52bdcd013f356c697ee1d958}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_ac466aa2b52bdcd013f356c697ee1d958}} 
+\index{pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}!````~queue@{$\sim$queue}}
+\index{````~queue@{$\sim$queue}!pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}}
+\doxysubsubsection{\texorpdfstring{$\sim$queue()}{~queue()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::queue\+::$\sim$queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this queue. 
+
+
+
+Definition at line 20 of file queue.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a3c6876aed1fd3e38bc7bd0a2bf2999ee}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue_a3c6876aed1fd3e38bc7bd0a2bf2999ee}} 
+\index{pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::queue@{pbr::shared::apis::graphics::vulkan::queue}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Queue pbr\+::shared\+::apis\+::graphics\+::vulkan\+::queue\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this queue \begin{DoxyReturn}{Returns}
+The native handle to this queue 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file queue.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{queue_8h}{queue.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{queue_8cpp}{queue.\+cpp}}\end{DoxyCompactItemize}

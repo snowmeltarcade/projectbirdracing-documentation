@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72d1df485884e3d0612c013ee6445db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace4d6f5894228c9454e70562e1bba0f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__endpoint.html#ace4d6f5894228c9454e70562e1bba0f3">~test_endpoint</a> () override=default</td></tr>
 <tr class="separator:ace4d6f5894228c9454e70562e1bba0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97bcee7cb0a18b7763de6109367f9bb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__endpoint.html#a97bcee7cb0a18b7763de6109367f9bb3">log</a> (std::string_view message) noexcept override</td></tr>
-<tr class="separator:a97bcee7cb0a18b7763de6109367f9bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e3777b1cbaf5717227cee228515049"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__endpoint.html#ab0e3777b1cbaf5717227cee228515049">log</a> (std::string_view message, <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a>) noexcept override</td></tr>
+<tr class="separator:ab0e3777b1cbaf5717227cee228515049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html">pbr::shared::apis::logging::endpoint</a></td></tr>
 <tr class="memitem:ad5ad6a861c5b8f1a9e07be806e22f1d1 inherit pub_methods_classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#ad5ad6a861c5b8f1a9e07be806e22f1d1">endpoint</a> ()=default</td></tr>
 <tr class="separator:ad5ad6a861c5b8f1a9e07be806e22f1d1 inherit pub_methods_classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,7 +126,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a79bbff579f39a896936357ae4c28ae87"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__endpoint.html#a79bbff579f39a896936357ae4c28ae87">_log_call_count</a> {0u}</td></tr>
-<tr class="memdesc:a79bbff579f39a896936357ae4c28ae87"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of times <code><a class="el" href="classtest__endpoint.html#a97bcee7cb0a18b7763de6109367f9bb3">log()</a></code> is called.  <a href="classtest__endpoint.html#a79bbff579f39a896936357ae4c28ae87">More...</a><br /></td></tr>
+<tr class="memdesc:a79bbff579f39a896936357ae4c28ae87"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of times <code><a class="el" href="classtest__endpoint.html#ab0e3777b1cbaf5717227cee228515049">log()</a></code> is called.  <a href="classtest__endpoint.html#a79bbff579f39a896936357ae4c28ae87">More...</a><br /></td></tr>
 <tr class="separator:a79bbff579f39a896936357ae4c28ae87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -187,8 +187,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a97bcee7cb0a18b7763de6109367f9bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97bcee7cb0a18b7763de6109367f9bb3">&#9670;&nbsp;</a></span>log()</h2>
+<a id="ab0e3777b1cbaf5717227cee228515049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0e3777b1cbaf5717227cee228515049">&#9670;&nbsp;</a></span>log()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,8 +200,18 @@ Static Public Attributes</h2></td></tr>
           <td class="memname">void test_endpoint::log </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09">log_levels</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -217,7 +227,7 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#abf3336ee274ae006ea27a2cb70b016eb">pbr::shared::apis::logging::endpoint</a>.</p>
+<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html#adc0f1b5fe8a9af5cc88499db35b936d8">pbr::shared::apis::logging::endpoint</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00029">29</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 
@@ -244,7 +254,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The number of times <code><a class="el" href="classtest__endpoint.html#a97bcee7cb0a18b7763de6109367f9bb3">log()</a></code> is called. </p>
+<p>The number of times <code><a class="el" href="classtest__endpoint.html#ab0e3777b1cbaf5717227cee228515049">log()</a></code> is called. </p>
 
 <p class="definition">Definition at line <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html#l00022">22</a> of file <a class="el" href="tests_2apis_2logging_2log__manager_8cpp_source.html">log_manager.cpp</a>.</p>
 

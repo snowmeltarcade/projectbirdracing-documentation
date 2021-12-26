@@ -90,82 +90,100 @@ $(document).ready(function(){initNavTree('game__manager_8h_source.html',''); ini
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basic__allocators_8h.html">shared/memory/basic_allocators.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ilog__manager_8h.html">shared/apis/logging/ilog_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iwindow__manager_8h.html">shared/apis/windowing/iwindow_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iapplication__window_8h.html">shared/apis/windowing/iapplication_window.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iscene__manager_8h.html">shared/scene/iscene_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1game.html">pbr::shared::game</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a0695b4c29351817bbd5a67ee3f751c3c">   22</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a0695b4c29351817bbd5a67ee3f751c3c">game_manager</a>(std::shared_ptr&lt;apis::logging::ilog_manager&gt; log_manager,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                     std::shared_ptr&lt;apis::windowing::iwindow_manager&gt; window_manager,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                     std::shared_ptr&lt;scene::iscene_manager&gt; scene_manager)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            : _log_manager(log_manager),</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;              _window_manager(window_manager),</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              _scene_manager(scene_manager) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            assert((this-&gt;_log_manager));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            assert((this-&gt;_window_manager));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            assert((this-&gt;_scene_manager));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">   34</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">~game_manager</a>() {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;shutdown()) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to shutdown game manager.&quot;</span>, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">   42</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">game_manager</a>(<a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a>&amp;&amp; other) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            this-&gt;_log_manager = std::move(other._log_manager);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            this-&gt;_window_manager = std::move(other._window_manager);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;_has_exit_been_requested = other._has_exit_been_requested.load();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a0695b4c29351817bbd5a67ee3f751c3c">game_manager</a>(<span class="keyword">const</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        [[nodiscard]]</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a7e6217f6bd995bc1fb3b4b242743e32f">initialize</a>() noexcept;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        [[nodiscard]]</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a8b3aae50f7708bef9b1bbaa434962f3a">run</a>() noexcept;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    private:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::shared_ptr&lt;apis::logging::ilog_manager&gt; _log_manager;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::shared_ptr&lt;apis::windowing::iwindow_manager&gt; _window_manager;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::shared_ptr&lt;apis::windowing::iapplication_window&gt; _application_window;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::shared_ptr&lt;scene::iscene_manager&gt; _scene_manager;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="igraphics__manager_8h.html">shared/apis/graphics/igraphics_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iapplication__window_8h.html">shared/apis/windowing/iapplication_window.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iscene__manager_8h.html">shared/scene/iscene_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1game.html">pbr::shared::game</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aedc4c8d12eb7ac8100f25033970ff4c7">   27</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aedc4c8d12eb7ac8100f25033970ff4c7">game_manager</a>(std::filesystem::path executable_path,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                     std::shared_ptr&lt;apis::logging::ilog_manager&gt; log_manager,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     std::shared_ptr&lt;apis::windowing::iwindow_manager&gt; window_manager,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     std::shared_ptr&lt;apis::graphics::igraphics_manager&gt; graphics_manager,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                     std::shared_ptr&lt;scene::iscene_manager&gt; scene_manager)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            : _executable_path(executable_path),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              _log_manager(log_manager),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;              _window_manager(window_manager),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;              _graphics_manager(graphics_manager),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              _scene_manager(scene_manager) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            assert((this-&gt;_log_manager));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            assert((this-&gt;_window_manager));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            assert((this-&gt;_graphics_manager));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            assert((this-&gt;_scene_manager));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">   44</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">~game_manager</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (!this-&gt;shutdown()) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to shutdown game manager.&quot;</span>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                <span class="stringliteral">&quot;Game&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">   54</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">game_manager</a>(<a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a>&amp;&amp; other) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            this-&gt;_log_manager = std::move(other._log_manager);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            this-&gt;_window_manager = std::move(other._window_manager);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this-&gt;_graphics_manager = std::move(other._graphics_manager);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            this-&gt;_has_exit_been_requested = other._has_exit_been_requested.load();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#aedc4c8d12eb7ac8100f25033970ff4c7">game_manager</a>(<span class="keyword">const</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game_manager</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        [[nodiscard]]</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a7e6217f6bd995bc1fb3b4b242743e32f">initialize</a>() noexcept;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        [[nodiscard]]</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a8b3aae50f7708bef9b1bbaa434962f3a">run</a>() noexcept;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        std::atomic_bool _has_exit_been_requested {<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        [[nodiscard]]</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">bool</span> shutdown() noexcept;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> request_exit() noexcept {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Requesting exit from game manager...&quot;</span>, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this-&gt;_has_exit_been_requested = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    private:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::filesystem::path _executable_path;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        std::shared_ptr&lt;apis::logging::ilog_manager&gt; _log_manager;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::shared_ptr&lt;apis::windowing::iwindow_manager&gt; _window_manager;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::shared_ptr&lt;apis::graphics::igraphics_manager&gt; _graphics_manager;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::shared_ptr&lt;apis::windowing::iapplication_window&gt; _application_window;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::shared_ptr&lt;scene::iscene_manager&gt; _scene_manager;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        std::atomic_bool _has_exit_been_requested {<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        [[nodiscard]]</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> shutdown() noexcept;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> request_exit() noexcept {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Requesting exit from game manager...&quot;</span>,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                            <span class="stringliteral">&quot;Game&quot;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            this-&gt;_has_exit_been_requested = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    };</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacepbr_1_1shared_1_1game_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1game.html">pbr::shared::game</a></div><div class="ttdef"><b>Definition:</b> <a href="game_2game__manager_8cpp_source.html#l00003">game_manager.cpp:3</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a0695b4c29351817bbd5a67ee3f751c3c"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a0695b4c29351817bbd5a67ee3f751c3c">pbr::shared::game::game_manager::game_manager</a></div><div class="ttdeci">game_manager(std::shared_ptr&lt; apis::logging::ilog_manager &gt; log_manager, std::shared_ptr&lt; apis::windowing::iwindow_manager &gt; window_manager, std::shared_ptr&lt; scene::iscene_manager &gt; scene_manager)</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00022">game_manager.h:22</a></div></div>
+<div class="ttc" id="aigraphics__manager_8h_html"><div class="ttname"><a href="igraphics__manager_8h.html">igraphics_manager.h</a></div></div>
 <div class="ttc" id="aiscene__manager_8h_html"><div class="ttname"><a href="iscene__manager_8h.html">iscene_manager.h</a></div></div>
 <div class="ttc" id="ailog__manager_8h_html"><div class="ttname"><a href="ilog__manager_8h.html">ilog_manager.h</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a601c1f390231483bbaf4cddb296c8a4e"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">pbr::shared::game::game_manager::~game_manager</a></div><div class="ttdeci">~game_manager()</div><div class="ttdoc">Destructs this manager. The game will be shutdown here.</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00034">game_manager.h:34</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a601c1f390231483bbaf4cddb296c8a4e"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">pbr::shared::game::game_manager::~game_manager</a></div><div class="ttdeci">~game_manager()</div><div class="ttdoc">Destructs this manager. The game will be shutdown here.</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00044">game_manager.h:44</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html_a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">pbr::shared::apis::logging::log_levels::error</a></div><div class="ttdeci">@ error</div><div class="ttdoc">For recoverable errors that require attention.</div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_aedc4c8d12eb7ac8100f25033970ff4c7"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#aedc4c8d12eb7ac8100f25033970ff4c7">pbr::shared::game::game_manager::game_manager</a></div><div class="ttdeci">game_manager(std::filesystem::path executable_path, std::shared_ptr&lt; apis::logging::ilog_manager &gt; log_manager, std::shared_ptr&lt; apis::windowing::iwindow_manager &gt; window_manager, std::shared_ptr&lt; apis::graphics::igraphics_manager &gt; graphics_manager, std::shared_ptr&lt; scene::iscene_manager &gt; scene_manager)</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00027">game_manager.h:27</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a7e6217f6bd995bc1fb3b4b242743e32f"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a7e6217f6bd995bc1fb3b4b242743e32f">pbr::shared::game::game_manager::initialize</a></div><div class="ttdeci">bool initialize() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="game_2game__manager_8cpp_source.html#l00004">game_manager.cpp:4</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a8b3aae50f7708bef9b1bbaa434962f3a"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a8b3aae50f7708bef9b1bbaa434962f3a">pbr::shared::game::game_manager::run</a></div><div class="ttdeci">bool run() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="game_2game__manager_8cpp_source.html#l00023">game_manager.cpp:23</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_a8b3aae50f7708bef9b1bbaa434962f3a"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#a8b3aae50f7708bef9b1bbaa434962f3a">pbr::shared::game::game_manager::run</a></div><div class="ttdeci">bool run() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="game_2game__manager_8cpp_source.html#l00045">game_manager.cpp:45</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html_a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">pbr::shared::apis::logging::log_levels::info</a></div><div class="ttdeci">@ info</div><div class="ttdoc">For informational messages. This is the default log level.</div></div>
 <div class="ttc" id="aiwindow__manager_8h_html"><div class="ttname"><a href="iwindow__manager_8h.html">iwindow_manager.h</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html">pbr::shared::game::game_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00017">game_manager.h:17</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html">pbr::shared::game::game_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00019">game_manager.h:19</a></div></div>
 <div class="ttc" id="aiapplication__window_8h_html"><div class="ttname"><a href="iapplication__window_8h.html">iapplication_window.h</a></div></div>
 <div class="ttc" id="abasic__allocators_8h_html"><div class="ttname"><a href="basic__allocators_8h.html">basic_allocators.h</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_aec97ccc9e695ba7061b1acf04d83dfe0"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">pbr::shared::game::game_manager::game_manager</a></div><div class="ttdeci">game_manager(game_manager &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00042">game_manager.h:42</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html_aec97ccc9e695ba7061b1acf04d83dfe0"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html#aec97ccc9e695ba7061b1acf04d83dfe0">pbr::shared::game::game_manager::game_manager</a></div><div class="ttdeci">game_manager(game_manager &amp;&amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00054">game_manager.h:54</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

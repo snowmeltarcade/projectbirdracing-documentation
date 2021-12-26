@@ -107,28 +107,35 @@ $(document).ready(function(){initNavTree('application__window_8h_source.html',''
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                              SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                              w, h)) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">auto</span> message = <span class="stringliteral">&quot;Failed to create application window.&quot;</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                this-&gt;_log_manager-&gt;log_message(message, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09adf6402fd9ecc60f5a2159fdf45711cd4">apis::logging::log_levels::fatal</a>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">throw</span> std::logic_error(message);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">   36</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">~application_window</a>()<span class="keyword"> override </span>{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            this-&gt;shutdown();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::shared_ptr&lt;apis::logging::ilog_manager&gt; _log_manager;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        SDL_Window* _window {<span class="keyword">nullptr</span>};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        [[nodiscard]]</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">bool</span> create(std::string_view title,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    uint32_t x, uint32_t y,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    uint32_t w, uint32_t h) noexcept;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> shutdown() noexcept;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                this-&gt;_log_manager-&gt;log_message(message,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09adf6402fd9ecc60f5a2159fdf45711cd4">apis::logging::log_levels::fatal</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                <span class="stringliteral">&quot;Windowing&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">throw</span> std::logic_error(message);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">   38</a></span>&#160;        <a class="code" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">~application_window</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            this-&gt;shutdown();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        [[nodiscard]]</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a9e1f8f2f965563b571dbc4fbbc3d7d8d">   45</a></span>&#160;        SDL_Window* <a class="code" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a9e1f8f2f965563b571dbc4fbbc3d7d8d">get_native_handle</a>() const noexcept {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> this-&gt;_window;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::shared_ptr&lt;apis::logging::ilog_manager&gt; _log_manager;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        SDL_Window* _window {<span class="keyword">nullptr</span>};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        [[nodiscard]]</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> create(std::string_view title,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    uint32_t x, uint32_t y,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    uint32_t w, uint32_t h) noexcept;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> shutdown() noexcept;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1windowing_1_1application__window_html_a8c55dbe1bf621ed54655a67d6e7328d9"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a8c55dbe1bf621ed54655a67d6e7328d9">pbr::shared::apis::windowing::application_window::application_window</a></div><div class="ttdeci">application_window(std::shared_ptr&lt; apis::logging::ilog_manager &gt; log_manager, std::string_view title, uint32_t w, uint32_t h)</div><div class="ttdef"><b>Definition:</b> <a href="application__window_8h_source.html#l00020">application_window.h:20</a></div></div>
@@ -138,7 +145,8 @@ $(document).ready(function(){initNavTree('application__window_8h_source.html',''
 <div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1windowing_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1windowing.html">pbr::shared::apis::windowing</a></div><div class="ttdef"><b>Definition:</b> <a href="application__window_8cpp_source.html#l00003">application_window.cpp:3</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1windowing_1_1application__window_html"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html">pbr::shared::apis::windowing::application_window</a></div><div class="ttdef"><b>Definition:</b> <a href="application__window_8h_source.html#l00013">application_window.h:13</a></div></div>
 <div class="ttc" id="aiapplication__window_8h_html"><div class="ttname"><a href="iapplication__window_8h.html">iapplication_window.h</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1windowing_1_1application__window_html_ae258cb123b461b80e6f0391789831e05"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">pbr::shared::apis::windowing::application_window::~application_window</a></div><div class="ttdeci">~application_window() override</div><div class="ttdoc">Destroys this window.</div><div class="ttdef"><b>Definition:</b> <a href="application__window_8h_source.html#l00036">application_window.h:36</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1windowing_1_1application__window_html_ae258cb123b461b80e6f0391789831e05"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">pbr::shared::apis::windowing::application_window::~application_window</a></div><div class="ttdeci">~application_window() override</div><div class="ttdoc">Destroys this window.</div><div class="ttdef"><b>Definition:</b> <a href="application__window_8h_source.html#l00038">application_window.h:38</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1windowing_1_1application__window_html_a9e1f8f2f965563b571dbc4fbbc3d7d8d"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a9e1f8f2f965563b571dbc4fbbc3d7d8d">pbr::shared::apis::windowing::application_window::get_native_handle</a></div><div class="ttdeci">SDL_Window * get_native_handle() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="application__window_8h_source.html#l00045">application_window.h:45</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

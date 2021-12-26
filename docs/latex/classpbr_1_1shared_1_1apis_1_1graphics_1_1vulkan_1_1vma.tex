@@ -1,0 +1,69 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::vma Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}\index{pbr::shared::apis::graphics::vulkan::vma@{pbr::shared::apis::graphics::vulkan::vma}}
+
+
+Manages the setup and lifetime of the Vulkan Memory Allocator.  
+
+
+
+
+{\ttfamily \#include $<$vma.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a1b7cb1341075573fc246f5862694b928}{vma}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a609bf9110f26539068f7123e9807eb15}{$\sim$vma}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this allocator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the setup and lifetime of the Vulkan Memory Allocator. 
+
+Definition at line 12 of file vma.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a1b7cb1341075573fc246f5862694b928}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a1b7cb1341075573fc246f5862694b928}} 
+\index{pbr::shared::apis::graphics::vulkan::vma@{pbr::shared::apis::graphics::vulkan::vma}!vma@{vma}}
+\index{vma@{vma}!pbr::shared::apis::graphics::vulkan::vma@{pbr::shared::apis::graphics::vulkan::vma}}
+\doxysubsubsection{\texorpdfstring{vma()}{vma()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::vma\+::vma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{instance,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&}]{physical\+\_\+device,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this allocator 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}} & The physical device \\
+\hline
+{\em device} & The logical device \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file vma.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a609bf9110f26539068f7123e9807eb15}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma_a609bf9110f26539068f7123e9807eb15}} 
+\index{pbr::shared::apis::graphics::vulkan::vma@{pbr::shared::apis::graphics::vulkan::vma}!````~vma@{$\sim$vma}}
+\index{````~vma@{$\sim$vma}!pbr::shared::apis::graphics::vulkan::vma@{pbr::shared::apis::graphics::vulkan::vma}}
+\doxysubsubsection{\texorpdfstring{$\sim$vma()}{~vma()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::vma\+::$\sim$vma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this allocator. 
+
+
+
+Definition at line 28 of file vma.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{vma_8h}{vma.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{vma_8cpp}{vma.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,261 @@
+\hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan Namespace Reference}
+\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}
+\begin{DoxyCompactList}\small\item\em Manages the lifetime of the command pool. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}
+\begin{DoxyCompactList}\small\item\em Handles Vulkan debug messages. This is a static class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}
+\begin{DoxyCompactList}\small\item\em A logical device. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}
+\begin{DoxyCompactList}\small\item\em A Vulkan instance. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}
+\begin{DoxyCompactList}\small\item\em Manages creating and destroying the physical graphics device. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}}
+\begin{DoxyCompactList}\small\item\em A queue -\/ e.\+g. graphics, presentation etc... \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details}{swap\+\_\+chain\+\_\+support\+\_\+details}}
+\begin{DoxyCompactList}\small\item\em Details about how a swap chain is supported. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}}
+\begin{DoxyCompactList}\small\item\em Manages the setup and lifetime of the Vulkan Memory Allocator. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}}
+\begin{DoxyCompactList}\small\item\em A renderable surface created from a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vk\+Command\+Pool\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}{create\+\_\+command\+\_\+pool\+\_\+create\+\_\+info}} (uint32\+\_\+t queue\+\_\+index) noexcept
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{apis\+::logging\+::log\+\_\+levels}} \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a5723f1f66045a0d159a41dafe94437e1}{to\+\_\+log\+\_\+level}} (Vk\+Debug\+Utils\+Message\+Severity\+Flag\+Bits\+E\+XT severity)
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_af11fadde3aad7d32107286b383a818b7}{to\+\_\+string}} (Vk\+Debug\+Utils\+Message\+Severity\+Flag\+Bits\+E\+XT severity)
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7c8dc1a48b4e65086c03322ee5546d1d}{to\+\_\+string}} (Vk\+Debug\+Utils\+Message\+Type\+Flags\+E\+XT type)
+\item 
+std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a903ecf4f009703a2c3aa9ea4a0afc094}{create\+\_\+queue\+\_\+create\+\_\+infos}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}} \&indexes, const float \&queue\+\_\+priority)
+\item 
+Vk\+Physical\+Device\+Features \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}{create\+\_\+physical\+\_\+device\+\_\+features}} ()
+\item 
+Vk\+Device\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8979971246b3f843c1d0da5eb56c6c9}{create\+\_\+device\+\_\+create\+\_\+info}} (const Vk\+Physical\+Device\+Features \&device\+\_\+features, const std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \&queue\+\_\+create\+\_\+infos)
+\item 
+Vk\+Result \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}{create\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext}} (Vk\+Instance \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, const Vk\+Debug\+Utils\+Messenger\+Create\+Info\+E\+XT $\ast$create\+\_\+info, const Vk\+Allocation\+Callbacks $\ast$allocator, Vk\+Debug\+Utils\+Messenger\+E\+XT $\ast$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}})
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}{destroy\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext}} (Vk\+Instance \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, Vk\+Debug\+Utils\+Messenger\+E\+XT \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}, const Vk\+Allocation\+Callbacks $\ast$allocator)
+\item 
+\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details}{swap\+\_\+chain\+\_\+support\+\_\+details}} \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a272123abf5b8622052e1d2806290e909}{query\+\_\+swap\+\_\+chain\+\_\+support}} (Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&surface)
+\item 
+\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}} \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a24d1cc50fd090e9076b6d460914fde7c}{query\+\_\+queue\+\_\+family\+\_\+indexes}} (const Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&surface)
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}{is\+\_\+physical\+\_\+device\+\_\+compatible}} (const Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&surface)
+\item 
+Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_afa1ab528fba07747685c77a11f728a1b}{query\+\_\+max\+\_\+msaa\+\_\+samples}} (Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_command\_pool\_create\_info@{create\_command\_pool\_create\_info}}
+\index{create\_command\_pool\_create\_info@{create\_command\_pool\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_command\_pool\_create\_info()}{create\_command\_pool\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Command\+Pool\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+command\+\_\+pool\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{queue\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line 8 of file command\+\_\+pool.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_debug\_utils\_messenger\_ext@{create\_debug\_utils\_messenger\_ext}}
+\index{create\_debug\_utils\_messenger\_ext@{create\_debug\_utils\_messenger\_ext}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_debug\_utils\_messenger\_ext()}{create\_debug\_utils\_messenger\_ext()}}
+{\footnotesize\ttfamily Vk\+Result pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext (\begin{DoxyParamCaption}\item[{Vk\+Instance}]{instance,  }\item[{const Vk\+Debug\+Utils\+Messenger\+Create\+Info\+E\+XT $\ast$}]{create\+\_\+info,  }\item[{const Vk\+Allocation\+Callbacks $\ast$}]{allocator,  }\item[{Vk\+Debug\+Utils\+Messenger\+E\+XT $\ast$}]{debug\+\_\+messenger }\end{DoxyParamCaption})}
+
+Create the debug messenger for the instance. This is needed because the {\ttfamily vk\+Create\+Debug\+Utils\+Messenger\+E\+XT} function is not exposed by default 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em create\+\_\+info} & The create info \\
+\hline
+{\em allocator} & An optional allocator \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}} & The debug messenger to create \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 13 of file instance.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8979971246b3f843c1d0da5eb56c6c9}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8979971246b3f843c1d0da5eb56c6c9}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_device\_create\_info@{create\_device\_create\_info}}
+\index{create\_device\_create\_info@{create\_device\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_device\_create\_info()}{create\_device\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Device\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+device\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{const Vk\+Physical\+Device\+Features \&}]{device\+\_\+features,  }\item[{const std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \&}]{queue\+\_\+create\+\_\+infos }\end{DoxyParamCaption})}
+
+Creates the device create info 
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+features} & The desired physical device features \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device created info 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_physical\_device\_features@{create\_physical\_device\_features}}
+\index{create\_physical\_device\_features@{create\_physical\_device\_features}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_physical\_device\_features()}{create\_physical\_device\_features()}}
+{\footnotesize\ttfamily Vk\+Physical\+Device\+Features pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+physical\+\_\+device\+\_\+features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates the desired physical device features \begin{DoxyReturn}{Returns}
+The desired features 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a903ecf4f009703a2c3aa9ea4a0afc094}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a903ecf4f009703a2c3aa9ea4a0afc094}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_queue\_create\_infos@{create\_queue\_create\_infos}}
+\index{create\_queue\_create\_infos@{create\_queue\_create\_infos}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_queue\_create\_infos()}{create\_queue\_create\_infos()}}
+{\footnotesize\ttfamily std\+::vector$<$Vk\+Device\+Queue\+Create\+Info$>$ pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+queue\+\_\+create\+\_\+infos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}} \&}]{indexes,  }\item[{const float \&}]{queue\+\_\+priority }\end{DoxyParamCaption})}
+
+Creates a list of queue create information 
+\begin{DoxyParams}{Parameters}
+{\em indexes} & The indexes of the queues \\
+\hline
+{\em queue\+\_\+priority} & The priority of the queues -\/ all queues will share the same priority for the time being \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The queue create information 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!destroy\_debug\_utils\_messenger\_ext@{destroy\_debug\_utils\_messenger\_ext}}
+\index{destroy\_debug\_utils\_messenger\_ext@{destroy\_debug\_utils\_messenger\_ext}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{destroy\_debug\_utils\_messenger\_ext()}{destroy\_debug\_utils\_messenger\_ext()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::vulkan\+::destroy\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext (\begin{DoxyParamCaption}\item[{Vk\+Instance}]{instance,  }\item[{Vk\+Debug\+Utils\+Messenger\+E\+XT}]{debug\+\_\+messenger,  }\item[{const Vk\+Allocation\+Callbacks $\ast$}]{allocator }\end{DoxyParamCaption})}
+
+Destroys the passed debug messenger. This is needed because the {\ttfamily vk\+Destroy\+Debug\+Utils\+Messenger\+E\+XT} function is not natively exposed. 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}} & The debug messenger to destroy \\
+\hline
+{\em allocator} & An optional allocator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file instance.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!is\_physical\_device\_compatible@{is\_physical\_device\_compatible}}
+\index{is\_physical\_device\_compatible@{is\_physical\_device\_compatible}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{is\_physical\_device\_compatible()}{is\_physical\_device\_compatible()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::is\+\_\+physical\+\_\+device\+\_\+compatible (\begin{DoxyParamCaption}\item[{const Vk\+Physical\+Device}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{surface }\end{DoxyParamCaption})}
+
+Determines if a physical device is usable 
+\begin{DoxyParams}{Parameters}
+{\em device} & The physical device to check \\
+\hline
+{\em surface} & The window surface to render to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_afa1ab528fba07747685c77a11f728a1b}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_afa1ab528fba07747685c77a11f728a1b}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!query\_max\_msaa\_samples@{query\_max\_msaa\_samples}}
+\index{query\_max\_msaa\_samples@{query\_max\_msaa\_samples}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{query\_max\_msaa\_samples()}{query\_max\_msaa\_samples()}}
+{\footnotesize\ttfamily Vk\+Sample\+Count\+Flag\+Bits pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+max\+\_\+msaa\+\_\+samples (\begin{DoxyParamCaption}\item[{Vk\+Physical\+Device}]{device }\end{DoxyParamCaption})}
+
+Returns the maximum supported M\+S\+AA samples for the passed device 
+\begin{DoxyParams}{Parameters}
+{\em device} & The physical device to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The maximum supported M\+S\+AA samples for the passed device 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a24d1cc50fd090e9076b6d460914fde7c}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a24d1cc50fd090e9076b6d460914fde7c}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!query\_queue\_family\_indexes@{query\_queue\_family\_indexes}}
+\index{query\_queue\_family\_indexes@{query\_queue\_family\_indexes}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{query\_queue\_family\_indexes()}{query\_queue\_family\_indexes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+queue\+\_\+family\+\_\+indexes (\begin{DoxyParamCaption}\item[{const Vk\+Physical\+Device}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{surface }\end{DoxyParamCaption})}
+
+Gets the queue family indexes for the passed physical device 
+\begin{DoxyParams}{Parameters}
+{\em device} & The physical device to query \\
+\hline
+{\em surface} & The window surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The queue family indexes 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a272123abf5b8622052e1d2806290e909}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a272123abf5b8622052e1d2806290e909}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!query\_swap\_chain\_support@{query\_swap\_chain\_support}}
+\index{query\_swap\_chain\_support@{query\_swap\_chain\_support}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{query\_swap\_chain\_support()}{query\_swap\_chain\_support()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details}{swap\+\_\+chain\+\_\+support\+\_\+details}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+swap\+\_\+chain\+\_\+support (\begin{DoxyParamCaption}\item[{Vk\+Physical\+Device}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{surface }\end{DoxyParamCaption})}
+
+Returns the swap chain support details for the passed device and surface 
+\begin{DoxyParams}{Parameters}
+{\em device} & The physical device to query \\
+\hline
+{\em surface} & The window surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The swap chain support details 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a5723f1f66045a0d159a41dafe94437e1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a5723f1f66045a0d159a41dafe94437e1}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!to\_log\_level@{to\_log\_level}}
+\index{to\_log\_level@{to\_log\_level}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{to\_log\_level()}{to\_log\_level()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{apis\+::logging\+::log\+\_\+levels}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::to\+\_\+log\+\_\+level (\begin{DoxyParamCaption}\item[{Vk\+Debug\+Utils\+Message\+Severity\+Flag\+Bits\+E\+XT}]{severity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file debug\+\_\+messenger.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_af11fadde3aad7d32107286b383a818b7}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_af11fadde3aad7d32107286b383a818b7}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::apis\+::graphics\+::vulkan\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{Vk\+Debug\+Utils\+Message\+Severity\+Flag\+Bits\+E\+XT}]{severity }\end{DoxyParamCaption})}
+
+
+
+Definition at line 49 of file debug\+\_\+messenger.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7c8dc1a48b4e65086c03322ee5546d1d}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7c8dc1a48b4e65086c03322ee5546d1d}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::apis\+::graphics\+::vulkan\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{Vk\+Debug\+Utils\+Message\+Type\+Flags\+E\+XT}]{type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file debug\+\_\+messenger.\+cpp.
+

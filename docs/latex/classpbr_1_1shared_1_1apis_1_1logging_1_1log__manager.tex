@@ -25,14 +25,14 @@ void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ac79
 \item 
 \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a143cf7821eb5eaa8efaf574d208663fa}{get\+\_\+log\+\_\+level}} () const noexcept override
 \item 
-void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept override
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a4d82bd60c64e346f50354063e8ba2510}{log\+\_\+message}} (std\+::string\+\_\+view message, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level, std\+::string\+\_\+view prefix=\char`\"{}\char`\"{}) noexcept override
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The log manager allows you to add logging endpoints which will be output a log message to that endpoint. These endpoints could be {\ttfamily stdout}, or a file for instance. 
 
-Definition at line 13 of file log\+\_\+manager.\+h.
+Definition at line 14 of file log\+\_\+manager.\+h.
 
 
 
@@ -50,7 +50,7 @@ Constructs the log manager
 \end{DoxyParams}
 
 
-Definition at line 17 of file log\+\_\+manager.\+h.
+Definition at line 18 of file log\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ab69db048ddcd23479a97eac976bd5ea6}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_ab69db048ddcd23479a97eac976bd5ea6}} 
 \index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!````~log\_manager@{$\sim$log\_manager}}
@@ -117,11 +117,11 @@ Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manag
 
 Definition at line 30 of file log\+\_\+manager.\+cpp.
 
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a6ecffad60c16e42c9ff2451918b12a1d}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a4d82bd60c64e346f50354063e8ba2510}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager_a4d82bd60c64e346f50354063e8ba2510}} 
 \index{pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}!log\_message@{log\_message}}
 \index{log\_message@{log\_message}!pbr::shared::apis::logging::log\_manager@{pbr::shared::apis::logging::log\_manager}}
 \doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
-{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::log\+\_\+manager\+::log\+\_\+message (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level,  }\item[{std\+::string\+\_\+view}]{prefix = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 Logs a message to all added endpoints. If the set log level is less than the passed level, the message will not be logged. The level, current date and time in U\+TC will be prefixed to the message 
 \begin{DoxyParams}{Parameters}
@@ -129,10 +129,12 @@ Logs a message to all added endpoints. If the set log level is less than the pas
 \hline
 {\em level} & The logging level to log against \\
 \hline
+{\em key} & A prefix to the message \\
+\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_ac4652255034be51e0f279801aeb0efbb}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager_a80be2d37d124681edab571fa517a0e61}{pbr\+::shared\+::apis\+::logging\+::ilog\+\_\+manager}}.
 
 
 

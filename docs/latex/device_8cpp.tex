@@ -1,0 +1,50 @@
+\hypertarget{device_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/device.cpp File Reference}
+\label{device_8cpp}\index{src/shared/apis/graphics/vulkan/device.cpp@{src/shared/apis/graphics/vulkan/device.cpp}}
+{\ttfamily \#include \char`\"{}device.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$set$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{device_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a903ecf4f009703a2c3aa9ea4a0afc094}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+queue\+\_\+create\+\_\+infos}} (const physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes \&indexes, const float \&queue\+\_\+priority)
+\item 
+Vk\+Physical\+Device\+Features \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+physical\+\_\+device\+\_\+features}} ()
+\item 
+Vk\+Device\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8979971246b3f843c1d0da5eb56c6c9}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+device\+\_\+create\+\_\+info}} (const Vk\+Physical\+Device\+Features \&device\+\_\+features, const std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \&queue\+\_\+create\+\_\+infos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{device_8cpp_ad4df3c571770b813b3c1a57a262140d1}\label{device_8cpp_ad4df3c571770b813b3c1a57a262140d1}} 
+\index{device.cpp@{device.cpp}!FATAL\_ERROR@{FATAL\_ERROR}}
+\index{FATAL\_ERROR@{FATAL\_ERROR}!device.cpp@{device.cpp}}
+\doxysubsubsection{\texorpdfstring{FATAL\_ERROR}{FATAL\_ERROR}}
+{\footnotesize\ttfamily \#define F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal); \(\backslash\)}
+\DoxyCodeLine{    throw std::runtime\_error(message);}
+
+\end{DoxyCode}
+
+
+Definition at line 5 of file device.\+cpp.
+

@@ -22,7 +22,7 @@ Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout\
 \item 
 \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a888b4bc8647ddf3409aec16696abcded}{$\sim$stdout}} () override=default
 \item 
-void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a77ae781d5e351d725cd6a4c2fd51a7c8}{log}} (std\+::string\+\_\+view message) noexcept override
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a840ad562fe848bc067fe540564313548}{log}} (std\+::string\+\_\+view message, \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept override
 \end{DoxyCompactItemize}
 
 
@@ -49,20 +49,22 @@ Definition at line 8 of file stdout.\+h.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a77ae781d5e351d725cd6a4c2fd51a7c8}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a77ae781d5e351d725cd6a4c2fd51a7c8}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a840ad562fe848bc067fe540564313548}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a840ad562fe848bc067fe540564313548}} 
 \index{pbr::shared::apis::logging::endpoints::stdout@{pbr::shared::apis::logging::endpoints::stdout}!log@{log}}
 \index{log@{log}!pbr::shared::apis::logging::endpoints::stdout@{pbr::shared::apis::logging::endpoints::stdout}}
 \doxysubsubsection{\texorpdfstring{log()}{log()}}
-{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 Logs a message to this endpoint 
 \begin{DoxyParams}{Parameters}
-{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information \\
+{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information\\
+\hline
+{\em level} & The log level \\
 \hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}{pbr\+::shared\+::apis\+::logging\+::endpoint}}.
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_adc0f1b5fe8a9af5cc88499db35b936d8}{pbr\+::shared\+::apis\+::logging\+::endpoint}}.
 
 
 

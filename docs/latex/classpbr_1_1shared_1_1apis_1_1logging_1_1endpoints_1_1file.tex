@@ -1,0 +1,93 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file}{}\doxysection{pbr\+::shared\+::apis\+::logging\+::endpoints\+::file Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file}\index{pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}}
+
+
+Logs messages to a file.  
+
+
+
+
+{\ttfamily \#include $<$file.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::endpoints\+::file\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_a28c2615746f531215957011a37cf7777}{file}} (const std\+::filesystem\+::path \&path, bool overwrite=false)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_ab092d7b86b2ec67f1d9a46cc47d93748}{$\sim$file}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructs this endpoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_af09746232fcd4d4f6ab33a6375941047}{log}} (std\+::string\+\_\+view message, \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logs messages to a file. 
+
+Definition at line 12 of file file.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_a28c2615746f531215957011a37cf7777}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_a28c2615746f531215957011a37cf7777}} 
+\index{pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}!file@{file}}
+\index{file@{file}!pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::endpoints\+::file\+::file (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path,  }\item[{bool}]{overwrite = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this endpoint 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the file \\
+\hline
+{\em overwrite} & {\ttfamily true} to overwrite the file (delete the file in this constructor), {\ttfamily false} to append \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file file.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_ab092d7b86b2ec67f1d9a46cc47d93748}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_ab092d7b86b2ec67f1d9a46cc47d93748}} 
+\index{pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}!````~file@{$\sim$file}}
+\index{````~file@{$\sim$file}!pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}}
+\doxysubsubsection{\texorpdfstring{$\sim$file()}{~file()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::logging\+::endpoints\+::file\+::$\sim$file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destructs this endpoint. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_af09746232fcd4d4f6ab33a6375941047}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_af09746232fcd4d4f6ab33a6375941047}} 
+\index{pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}!log@{log}}
+\index{log@{log}!pbr::shared::apis::logging::endpoints::file@{pbr::shared::apis::logging::endpoints::file}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::logging\+::endpoints\+::file\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Logs a message to this endpoint 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information\\
+\hline
+{\em level} & The log level \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_adc0f1b5fe8a9af5cc88499db35b936d8}{pbr\+::shared\+::apis\+::logging\+::endpoint}}.
+
+
+
+Definition at line 8 of file file.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/logging/endpoints/\mbox{\hyperlink{file_8h}{file.\+h}}\item 
+src/shared/apis/logging/endpoints/\mbox{\hyperlink{file_8cpp}{file.\+cpp}}\end{DoxyCompactItemize}

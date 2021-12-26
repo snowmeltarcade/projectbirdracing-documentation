@@ -2,6 +2,7 @@ var classtest__window__manager =
 [
     [ "create_application_window", "classtest__window__manager.html#ab4895cfd3000b9a9ad6161debe7b663e", null ],
     [ "create_console_window", "classtest__window__manager.html#a847b5e6c5b0a20f4597abacae183af36", null ],
+    [ "get_main_application_window", "classtest__window__manager.html#a08004c7a48635da4c7eadabd8daf2cc8", null ],
     [ "initialize", "classtest__window__manager.html#a92cba7b9aa2bd6c7a2eab6fb3bb0e381", null ],
     [ "should_quit", "classtest__window__manager.html#ab2f109c62ccff0b26c4142dbac059a38", null ],
     [ "update", "classtest__window__manager.html#a81083b132115b4f4b40ca2196a0914d6", null ],

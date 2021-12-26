@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b20770563f654029d0f0eb7eaf4bf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a920dc0612bf9124b4bdbc610fc45b6d0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a920dc0612bf9124b4bdbc610fc45b6d0">create_application_window</a> () noexcept override</td></tr>
 <tr class="separator:a920dc0612bf9124b4bdbc610fc45b6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b6c7e524ece8b55bb60c7117069f755"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a0b6c7e524ece8b55bb60c7117069f755">get_main_application_window</a> () const noexcept override</td></tr>
+<tr class="separator:a0b6c7e524ece8b55bb60c7117069f755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3051f8d722f1d246b485eb679efb4a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a3051f8d722f1d246b485eb679efb4a02">update</a> () noexcept override</td></tr>
 <tr class="separator:a3051f8d722f1d246b485eb679efb4a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeccb30c57cfde63e887d71ccfc4ff5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#aaeccb30c57cfde63e887d71ccfc4ff5d">should_quit</a> () const noexcept override</td></tr>
@@ -212,7 +214,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a8a0aaf7d8ef622d0efc694a8b42f4d42">pbr::shared::apis::windowing::iwindow_manager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00023">23</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00029">29</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -242,7 +244,37 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a735ee3b10eb1d798f1887bacfd9c5674">pbr::shared::apis::windowing::iwindow_manager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00019">19</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00025">25</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b6c7e524ece8b55bb60c7117069f755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b6c7e524ece8b55bb60c7117069f755">&#9670;&nbsp;</a></span>get_main_application_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a>&gt; pbr::shared::apis::windowing::window_manager::get_main_application_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the main application window </p><dl class="section return"><dt>Returns</dt><dd>The main application window, else <code>nullptr</code> is no application window has been created </dd></dl>
+
+<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#aee10a4ab9efcd3bb8548240c58437476">pbr::shared::apis::windowing::iwindow_manager</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="window__manager_8h_source.html#l00041">41</a> of file <a class="el" href="window__manager_8h_source.html">window_manager.h</a>.</p>
 
 </div>
 </div>
@@ -302,7 +334,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a71aa7efa248d92c190ba6fabe7588664">pbr::shared::apis::windowing::iwindow_manager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="window__manager_8h_source.html#l00044">44</a> of file <a class="el" href="window__manager_8h_source.html">window_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__manager_8h_source.html#l00053">53</a> of file <a class="el" href="window__manager_8h_source.html">window_manager.h</a>.</p>
 
 </div>
 </div>
@@ -332,7 +364,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a08712ca77a98246e7dd9490cd5a31a42">pbr::shared::apis::windowing::iwindow_manager</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00031">31</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="window__manager_8cpp_source.html#l00039">39</a> of file <a class="el" href="window__manager_8cpp_source.html">window_manager.cpp</a>.</p>
 
 </div>
 </div>

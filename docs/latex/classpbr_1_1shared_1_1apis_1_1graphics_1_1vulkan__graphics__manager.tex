@@ -1,0 +1,119 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager}\index{pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}}
+
+
+Handles the Vulkan graphics A\+PI and rendering processes.  
+
+
+
+
+{\ttfamily \#include $<$vulkan\+\_\+graphics\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_aa7e629440d0c7516389293d66a4604f6}{vulkan\+\_\+graphics\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$ window\+\_\+manager, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}} \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}})
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a663f1d0bdbcc2a49d8f11a7d57d003af}{$\sim$vulkan\+\_\+graphics\+\_\+manager}} () override
+\begin{DoxyCompactList}\small\item\em Destroys this manager. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a2f953094084c03bbcbedb4bbd239110a}{load\+\_\+api}} (const std\+::filesystem\+::path \&executable\+\_\+path) override
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a92c39f1a2ee7185248e886f31bfd446b}{initialize}} () override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the Vulkan graphics A\+PI and rendering processes. 
+
+Definition at line 20 of file vulkan\+\_\+graphics\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_aa7e629440d0c7516389293d66a4604f6}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_aa7e629440d0c7516389293d66a4604f6}} 
+\index{pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}!vulkan\_graphics\_manager@{vulkan\_graphics\_manager}}
+\index{vulkan\_graphics\_manager@{vulkan\_graphics\_manager}!pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{vulkan\_graphics\_manager()}{vulkan\_graphics\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager\+::vulkan\+\_\+graphics\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{apis\+::windowing\+::iwindow\+\_\+manager}} $>$}]{window\+\_\+manager,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}}]{application\+\_\+information }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this manager 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+{\em window\+\_\+manager} & The window manager \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}} & Needed application information \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file vulkan\+\_\+graphics\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a663f1d0bdbcc2a49d8f11a7d57d003af}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a663f1d0bdbcc2a49d8f11a7d57d003af}} 
+\index{pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}!````~vulkan\_graphics\_manager@{$\sim$vulkan\_graphics\_manager}}
+\index{````~vulkan\_graphics\_manager@{$\sim$vulkan\_graphics\_manager}!pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$vulkan\_graphics\_manager()}{~vulkan\_graphics\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager\+::$\sim$vulkan\+\_\+graphics\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Destroys this manager. 
+
+
+
+Definition at line 36 of file vulkan\+\_\+graphics\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a92c39f1a2ee7185248e886f31bfd446b}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a92c39f1a2ee7185248e886f31bfd446b}} 
+\index{pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}!initialize@{initialize}}
+\index{initialize@{initialize}!pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initializes this manager \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a218154924b1a0fe40b3826956564f1e3}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+
+
+
+Definition at line 49 of file vulkan\+\_\+graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a2f953094084c03bbcbedb4bbd239110a}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a2f953094084c03bbcbedb4bbd239110a}} 
+\index{pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}!load\_api@{load\_api}}
+\index{load\_api@{load\_api}!pbr::shared::apis::graphics::vulkan\_graphics\_manager@{pbr::shared::apis::graphics::vulkan\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{load\_api()}{load\_api()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager\+::load\+\_\+api (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Loads any needed dependencies or libraries required by the graphics api 
+\begin{DoxyParams}{Parameters}
+{\em executable\+\_\+path} & The path of the main executable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_afb3bcb9a45b27d4ecfb06a42058cc860}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+
+
+
+Definition at line 10 of file vulkan\+\_\+graphics\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/\mbox{\hyperlink{vulkan__graphics__manager_8h}{vulkan\+\_\+graphics\+\_\+manager.\+h}}\item 
+src/shared/apis/graphics/\mbox{\hyperlink{vulkan__graphics__manager_8cpp}{vulkan\+\_\+graphics\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

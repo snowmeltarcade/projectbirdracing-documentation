@@ -23,6 +23,8 @@ virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_
 \item 
 virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a8a0aaf7d8ef622d0efc694a8b42f4d42}{create\+\_\+application\+\_\+window}} () noexcept=0
 \item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aee10a4ab9efcd3bb8548240c58437476}{get\+\_\+main\+\_\+application\+\_\+window}} () const noexcept=0
+\item 
 virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a08712ca77a98246e7dd9490cd5a31a42}{update}} () noexcept=0
 \item 
 virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_a71aa7efa248d92c190ba6fabe7588664}{should\+\_\+quit}} () const noexcept=0
@@ -77,6 +79,19 @@ The created console window
 
 
 Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a3b20770563f654029d0f0eb7eaf4bf98}{pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager}}, and \mbox{\hyperlink{classtest__window__manager_a847b5e6c5b0a20f4597abacae183af36}{test\+\_\+window\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aee10a4ab9efcd3bb8548240c58437476}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aee10a4ab9efcd3bb8548240c58437476}} 
+\index{pbr::shared::apis::windowing::iwindow\_manager@{pbr::shared::apis::windowing::iwindow\_manager}!get\_main\_application\_window@{get\_main\_application\_window}}
+\index{get\_main\_application\_window@{get\_main\_application\_window}!pbr::shared::apis::windowing::iwindow\_manager@{pbr::shared::apis::windowing::iwindow\_manager}}
+\doxysubsubsection{\texorpdfstring{get\_main\_application\_window()}{get\_main\_application\_window()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}}$>$ pbr\+::shared\+::apis\+::windowing\+::iwindow\+\_\+manager\+::get\+\_\+main\+\_\+application\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the main application window \begin{DoxyReturn}{Returns}
+The main application window, else {\ttfamily nullptr} is no application window has been created 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager_a0b6c7e524ece8b55bb60c7117069f755}{pbr\+::shared\+::apis\+::windowing\+::window\+\_\+manager}}, and \mbox{\hyperlink{classtest__window__manager_a08004c7a48635da4c7eadabd8daf2cc8}{test\+\_\+window\+\_\+manager}}.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aab31a17b7f382f61ddffb232ceffe0dd}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager_aab31a17b7f382f61ddffb232ceffe0dd}} 
 \index{pbr::shared::apis::windowing::iwindow\_manager@{pbr::shared::apis::windowing::iwindow\_manager}!initialize@{initialize}}

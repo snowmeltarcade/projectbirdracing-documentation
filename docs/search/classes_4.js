@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['endpoint_242',['endpoint',['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html',1,'pbr::shared::apis::logging']]]
+  ['endpoint_334',['endpoint',['../classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html',1,'pbr::shared::apis::logging']]]
 ];

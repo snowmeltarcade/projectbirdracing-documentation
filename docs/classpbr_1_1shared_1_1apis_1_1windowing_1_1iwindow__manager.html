@@ -113,6 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a735ee3b10eb1d798f1887bacfd9c5674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0aaf7d8ef622d0efc694a8b42f4d42"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a8a0aaf7d8ef622d0efc694a8b42f4d42">create_application_window</a> () noexcept=0</td></tr>
 <tr class="separator:a8a0aaf7d8ef622d0efc694a8b42f4d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee10a4ab9efcd3bb8548240c58437476"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#aee10a4ab9efcd3bb8548240c58437476">get_main_application_window</a> () const noexcept=0</td></tr>
+<tr class="separator:aee10a4ab9efcd3bb8548240c58437476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08712ca77a98246e7dd9490cd5a31a42"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a08712ca77a98246e7dd9490cd5a31a42">update</a> () noexcept=0</td></tr>
 <tr class="separator:a08712ca77a98246e7dd9490cd5a31a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71aa7efa248d92c190ba6fabe7588664"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a71aa7efa248d92c190ba6fabe7588664">should_quit</a> () const noexcept=0</td></tr>
@@ -227,6 +229,34 @@ Public Member Functions</h2></td></tr>
 <p>Creates a console window </p><dl class="section return"><dt>Returns</dt><dd>The created console window </dd></dl>
 
 <p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a3b20770563f654029d0f0eb7eaf4bf98">pbr::shared::apis::windowing::window_manager</a>, and <a class="el" href="classtest__window__manager.html#a847b5e6c5b0a20f4597abacae183af36">test_window_manager</a>.</p>
+
+</div>
+</div>
+<a id="aee10a4ab9efcd3bb8548240c58437476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee10a4ab9efcd3bb8548240c58437476">&#9670;&nbsp;</a></span>get_main_application_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;<a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">iapplication_window</a>&gt; pbr::shared::apis::windowing::iwindow_manager::get_main_application_window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the main application window </p><dl class="section return"><dt>Returns</dt><dd>The main application window, else <code>nullptr</code> is no application window has been created </dd></dl>
+
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a0b6c7e524ece8b55bb60c7117069f755">pbr::shared::apis::windowing::window_manager</a>, and <a class="el" href="classtest__window__manager.html#a08004c7a48635da4c7eadabd8daf2cc8">test_window_manager</a>.</p>
 
 </div>
 </div>

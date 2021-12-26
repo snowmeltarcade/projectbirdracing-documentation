@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::window\+\_\+surface Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}\index{pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}}
+
+
+A renderable surface created from a window.  
+
+
+
+
+{\ttfamily \#include $<$window\+\_\+surface.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a9a4bf3bb71b2dc11571c9378a20ddec6}{window\+\_\+surface}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window}{windowing\+::application\+\_\+window}} $>$ window, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_ad7e3bc37f6e94042f6f90828b30d5396}{$\sim$window\+\_\+surface}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this surface. \end{DoxyCompactList}\item 
+Vk\+Surface\+K\+HR \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a7eddc367af5bc4a8b156440da78472de}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A renderable surface created from a window. 
+
+Definition at line 13 of file window\+\_\+surface.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a9a4bf3bb71b2dc11571c9378a20ddec6}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a9a4bf3bb71b2dc11571c9378a20ddec6}} 
+\index{pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}!window\_surface@{window\_surface}}
+\index{window\_surface@{window\_surface}!pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}}
+\doxysubsubsection{\texorpdfstring{window\_surface()}{window\_surface()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::window\+\_\+surface\+::window\+\_\+surface (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{instance,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window}{windowing\+::application\+\_\+window}} $>$}]{window,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this surface 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em window} & The window to create the surface from \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file window\+\_\+surface.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_ad7e3bc37f6e94042f6f90828b30d5396}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_ad7e3bc37f6e94042f6f90828b30d5396}} 
+\index{pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}!````~window\_surface@{$\sim$window\_surface}}
+\index{````~window\_surface@{$\sim$window\_surface}!pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}}
+\doxysubsubsection{\texorpdfstring{$\sim$window\_surface()}{~window\_surface()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::window\+\_\+surface\+::$\sim$window\+\_\+surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this surface. 
+
+
+
+Definition at line 24 of file window\+\_\+surface.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a7eddc367af5bc4a8b156440da78472de}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface_a7eddc367af5bc4a8b156440da78472de}} 
+\index{pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::window\_surface@{pbr::shared::apis::graphics::vulkan::window\_surface}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Surface\+K\+HR pbr\+::shared\+::apis\+::graphics\+::vulkan\+::window\+\_\+surface\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this surface \begin{DoxyReturn}{Returns}
+The native handle to this surface 
+\end{DoxyReturn}
+
+
+Definition at line 29 of file window\+\_\+surface.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{window__surface_8h}{window\+\_\+surface.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{window__surface_8cpp}{window\+\_\+surface.\+cpp}}\end{DoxyCompactItemize}

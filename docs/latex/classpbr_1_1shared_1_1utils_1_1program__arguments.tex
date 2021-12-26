@@ -1,0 +1,60 @@
+\hypertarget{classpbr_1_1shared_1_1utils_1_1program__arguments}{}\doxysection{pbr\+::shared\+::utils\+::program\+\_\+arguments Class Reference}
+\label{classpbr_1_1shared_1_1utils_1_1program__arguments}\index{pbr::shared::utils::program\_arguments@{pbr::shared::utils::program\_arguments}}
+
+
+{\ttfamily \#include $<$program\+\_\+arguments.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1program__arguments_a6157a546f14769750e2067e175e5859f}{program\+\_\+arguments}} (std\+::vector$<$ std\+::string $>$ arguments)
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1program__arguments_af2aa9108185083b810d7eb54cc75fa10}{get\+\_\+executable\+\_\+path}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helps extract and validate program arguments Currently, we only support returning the executable\textquotesingle{}s path 
+
+Definition at line 12 of file program\+\_\+arguments.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1utils_1_1program__arguments_a6157a546f14769750e2067e175e5859f}\label{classpbr_1_1shared_1_1utils_1_1program__arguments_a6157a546f14769750e2067e175e5859f}} 
+\index{pbr::shared::utils::program\_arguments@{pbr::shared::utils::program\_arguments}!program\_arguments@{program\_arguments}}
+\index{program\_arguments@{program\_arguments}!pbr::shared::utils::program\_arguments@{pbr::shared::utils::program\_arguments}}
+\doxysubsubsection{\texorpdfstring{program\_arguments()}{program\_arguments()}}
+{\footnotesize\ttfamily pbr\+::shared\+::utils\+::program\+\_\+arguments\+::program\+\_\+arguments (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs the program arguments The first argument is taken as the executable\textquotesingle{}s path Any further arguments should take the form\+: {\ttfamily -\/arg=value} 
+\begin{DoxyParams}{Parameters}
+{\em arguments} & The program arguments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file program\+\_\+arguments.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1utils_1_1program__arguments_af2aa9108185083b810d7eb54cc75fa10}\label{classpbr_1_1shared_1_1utils_1_1program__arguments_af2aa9108185083b810d7eb54cc75fa10}} 
+\index{pbr::shared::utils::program\_arguments@{pbr::shared::utils::program\_arguments}!get\_executable\_path@{get\_executable\_path}}
+\index{get\_executable\_path@{get\_executable\_path}!pbr::shared::utils::program\_arguments@{pbr::shared::utils::program\_arguments}}
+\doxysubsubsection{\texorpdfstring{get\_executable\_path()}{get\_executable\_path()}}
+{\footnotesize\ttfamily std\+::filesystem\+::path pbr\+::shared\+::utils\+::program\+\_\+arguments\+::get\+\_\+executable\+\_\+path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the executable\textquotesingle{}s path \begin{DoxyReturn}{Returns}
+The executable\textquotesingle{}s path 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file program\+\_\+arguments.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/utils/\mbox{\hyperlink{program__arguments_8h}{program\+\_\+arguments.\+h}}\item 
+src/shared/utils/\mbox{\hyperlink{utils_2program__arguments_8cpp}{program\+\_\+arguments.\+cpp}}\end{DoxyCompactItemize}

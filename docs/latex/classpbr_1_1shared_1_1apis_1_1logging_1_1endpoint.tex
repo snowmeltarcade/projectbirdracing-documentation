@@ -7,7 +7,7 @@
 Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::endpoint\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}
+\includegraphics[height=1.441442cm]{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -17,14 +17,14 @@ Inheritance diagram for pbr\+::shared\+::apis\+::logging\+::endpoint\+:\begin{fi
 \item 
 virtual \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_a21c15c9afc6cc4991022026c442e21ef}{$\sim$endpoint}} ()=default
 \item 
-virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}{log}} (std\+::string\+\_\+view message) noexcept=0
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_adc0f1b5fe8a9af5cc88499db35b936d8}{log}} (std\+::string\+\_\+view message, \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}} level) noexcept=0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 An interface to a logging endpoint. The implementations are not required to be thread safe as the logging system itself will handle that 
 
-Definition at line 8 of file endpoint.\+h.
+Definition at line 10 of file endpoint.\+h.
 
 
 
@@ -44,20 +44,22 @@ Definition at line 8 of file endpoint.\+h.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_abf3336ee274ae006ea27a2cb70b016eb}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_adc0f1b5fe8a9af5cc88499db35b936d8}\label{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint_adc0f1b5fe8a9af5cc88499db35b936d8}} 
 \index{pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}!log@{log}}
 \index{log@{log}!pbr::shared::apis::logging::endpoint@{pbr::shared::apis::logging::endpoint}}
 \doxysubsubsection{\texorpdfstring{log()}{log()}}
-{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::endpoint\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::logging\+::endpoint\+::log (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{message,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1logging_a542f57ec5157568ea7ee664caa308b09}{log\+\_\+levels}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
 
 Logs a message to this endpoint 
 \begin{DoxyParams}{Parameters}
-{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information \\
+{\em message} & The message to log. It is up to the caller to add any date, time or id etc... information\\
+\hline
+{\em level} & The log level \\
 \hline
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classtest__endpoint_a97bcee7cb0a18b7763de6109367f9bb3}{test\+\_\+endpoint}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a77ae781d5e351d725cd6a4c2fd51a7c8}{pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout}}.
+Implemented in \mbox{\hyperlink{classtest__endpoint_ab0e3777b1cbaf5717227cee228515049}{test\+\_\+endpoint}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file_af09746232fcd4d4f6ab33a6375941047}{pbr\+::shared\+::apis\+::logging\+::endpoints\+::file}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout_a840ad562fe848bc067fe540564313548}{pbr\+::shared\+::apis\+::logging\+::endpoints\+::stdout}}.
 
 
 

@@ -1,0 +1,40 @@
+\hypertarget{vma_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/vma.cpp File Reference}
+\label{vma_8cpp}\index{src/shared/apis/graphics/vulkan/vma.cpp@{src/shared/apis/graphics/vulkan/vma.cpp}}
+{\ttfamily \#include \char`\"{}vma.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vma_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vma_8cpp_ad4df3c571770b813b3c1a57a262140d1}\label{vma_8cpp_ad4df3c571770b813b3c1a57a262140d1}} 
+\index{vma.cpp@{vma.cpp}!FATAL\_ERROR@{FATAL\_ERROR}}
+\index{FATAL\_ERROR@{FATAL\_ERROR}!vma.cpp@{vma.cpp}}
+\doxysubsubsection{\texorpdfstring{FATAL\_ERROR}{FATAL\_ERROR}}
+{\footnotesize\ttfamily \#define F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal); \(\backslash\)}
+\DoxyCodeLine{    throw std::runtime\_error(message);}
+
+\end{DoxyCode}
+
+
+Definition at line 3 of file vma.\+cpp.
+
