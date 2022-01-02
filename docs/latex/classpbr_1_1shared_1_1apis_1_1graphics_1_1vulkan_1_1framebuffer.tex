@@ -1,0 +1,93 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::framebuffer Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer}\index{pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}}
+
+
+{\ttfamily \#include $<$framebuffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a9ed9099fd2e08b40c3f68256dd8701c2}{framebuffer}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{render\+\_\+pass}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{render\+\_\+pass}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{swap\+\_\+chain}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{swap\+\_\+chain}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&graphics\+\_\+queue, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a07ba41431be4bb61c59407f8bae073cd}{$\sim$framebuffer}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this framebuffer. \end{DoxyCompactList}\item 
+Vk\+Framebuffer \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_af9e6c3fa86906a0c8b55df26fb70d478}{get\+\_\+native\+\_\+handle}} (uint32\+\_\+t index) const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A framebuffer. This will implement the render pass object. The backing images are contained and managed in this class. Internally, this will contain one framebuffer per swap chain image 
+
+Definition at line 18 of file framebuffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a9ed9099fd2e08b40c3f68256dd8701c2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a9ed9099fd2e08b40c3f68256dd8701c2}} 
+\index{pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}!framebuffer@{framebuffer}}
+\index{framebuffer@{framebuffer}!pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}}
+\doxysubsubsection{\texorpdfstring{framebuffer()}{framebuffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::framebuffer\+::framebuffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&}]{vma,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{render\+\_\+pass}} \&}]{render\+\_\+pass,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{swap\+\_\+chain}} \&}]{swap\+\_\+chain,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&}]{command\+\_\+pool,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&}]{graphics\+\_\+queue,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this framebuffer 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em vma} & The memory allocator \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{render\+\_\+pass}}} & The render pass to base this framebuffer on \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{swap\+\_\+chain}}} & The swap chain \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}} & The command pool \\
+\hline
+{\em graphics\+\_\+queue} & The graphics queue to submit image transition commands to \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 27 of file framebuffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a07ba41431be4bb61c59407f8bae073cd}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_a07ba41431be4bb61c59407f8bae073cd}} 
+\index{pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}!````~framebuffer@{$\sim$framebuffer}}
+\index{````~framebuffer@{$\sim$framebuffer}!pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$framebuffer()}{~framebuffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::framebuffer\+::$\sim$framebuffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this framebuffer. 
+
+
+
+Definition at line 71 of file framebuffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_af9e6c3fa86906a0c8b55df26fb70d478}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer_af9e6c3fa86906a0c8b55df26fb70d478}} 
+\index{pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::framebuffer@{pbr::shared::apis::graphics::vulkan::framebuffer}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Framebuffer pbr\+::shared\+::apis\+::graphics\+::vulkan\+::framebuffer\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this framebuffer 
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the framebuffer to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The native handle to this framebuffer 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file framebuffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{framebuffer_8h}{framebuffer.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{framebuffer_8cpp}{framebuffer.\+cpp}}\end{DoxyCompactItemize}

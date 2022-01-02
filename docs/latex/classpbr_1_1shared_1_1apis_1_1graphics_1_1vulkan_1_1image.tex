@@ -1,0 +1,131 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}\index{pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}}
+
+
+An image. This will also contain the image view.  
+
+
+
+
+{\ttfamily \#include $<$image.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1d99026dbf6da94155ba35702ddda938}{image}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}}, uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t mip\+\_\+levels, Vk\+Sample\+Count\+Flag\+Bits samples\+\_\+count, Vk\+Format format, Vk\+Image\+Aspect\+Flags aspect, Vk\+Image\+Tiling tiling, Vk\+Image\+Usage\+Flags usage, Vma\+Memory\+Usage memory\+\_\+usage, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1b45933ae1113fb2769ba3d1ddd942cc}{$\sim$image}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this image. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_acc378a1e15d7b7f5864b16875fc84e33}{transition\+\_\+layout}} (Vk\+Image\+Layout old\+\_\+layout, Vk\+Image\+Layout new\+\_\+layout, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&graphics\+\_\+queue) noexcept
+\item 
+Vk\+Image\+View \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a5f96ef2b32ba1df527329fb8600e0a9f}{get\+\_\+view\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An image. This will also contain the image view. 
+
+Definition at line 14 of file image.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1d99026dbf6da94155ba35702ddda938}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1d99026dbf6da94155ba35702ddda938}} 
+\index{pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}!image@{image}}
+\index{image@{image}!pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+::image (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&}]{vma,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{mip\+\_\+levels,  }\item[{Vk\+Sample\+Count\+Flag\+Bits}]{samples\+\_\+count,  }\item[{Vk\+Format}]{format,  }\item[{Vk\+Image\+Aspect\+Flags}]{aspect,  }\item[{Vk\+Image\+Tiling}]{tiling,  }\item[{Vk\+Image\+Usage\+Flags}]{usage,  }\item[{Vma\+Memory\+Usage}]{memory\+\_\+usage,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this image 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em vma} & The memory allocator \\
+\hline
+{\em image} & The image to create this view from \\
+\hline
+{\em width} & The image width in pixels \\
+\hline
+{\em height} & The image height in pixels \\
+\hline
+{\em mip\+\_\+levels} & The number of mip map levels to generate \\
+\hline
+{\em samples\+\_\+count} & The number of samples this image should have \\
+\hline
+{\em format} & The image format \\
+\hline
+{\em aspect} & What aspect this view should have -\/ color or depth for example \\
+\hline
+{\em tiling} & How to tile this image \\
+\hline
+{\em usage} & How this image will be used \\
+\hline
+{\em memory\+\_\+usage} & How the image memory will be used \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file image.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1b45933ae1113fb2769ba3d1ddd942cc}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a1b45933ae1113fb2769ba3d1ddd942cc}} 
+\index{pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}!````~image@{$\sim$image}}
+\index{````~image@{$\sim$image}!pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}}
+\doxysubsubsection{\texorpdfstring{$\sim$image()}{~image()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+::$\sim$image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this image. 
+
+
+
+Definition at line 87 of file image.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a5f96ef2b32ba1df527329fb8600e0a9f}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_a5f96ef2b32ba1df527329fb8600e0a9f}} 
+\index{pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}!get\_view\_native\_handle@{get\_view\_native\_handle}}
+\index{get\_view\_native\_handle@{get\_view\_native\_handle}!pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}}
+\doxysubsubsection{\texorpdfstring{get\_view\_native\_handle()}{get\_view\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Image\+View pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+::get\+\_\+view\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this image\textquotesingle{}s view \begin{DoxyReturn}{Returns}
+The native handle to this image\textquotesingle{}s view 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file image.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_acc378a1e15d7b7f5864b16875fc84e33}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image_acc378a1e15d7b7f5864b16875fc84e33}} 
+\index{pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}!transition\_layout@{transition\_layout}}
+\index{transition\_layout@{transition\_layout}!pbr::shared::apis::graphics::vulkan::image@{pbr::shared::apis::graphics::vulkan::image}}
+\doxysubsubsection{\texorpdfstring{transition\_layout()}{transition\_layout()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+::transition\+\_\+layout (\begin{DoxyParamCaption}\item[{Vk\+Image\+Layout}]{old\+\_\+layout,  }\item[{Vk\+Image\+Layout}]{new\+\_\+layout,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&}]{command\+\_\+pool,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&}]{graphics\+\_\+queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Transitions this image from the old layout to the new layout 
+\begin{DoxyParams}{Parameters}
+{\em old\+\_\+layout} & The old image layout \\
+\hline
+{\em new\+\_\+layout} & The new image layout \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}} & The command pool \\
+\hline
+{\em graphics\+\_\+queue} & The graphics queue to submit the transition commands to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file image.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{image_8h}{image.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{image_8cpp}{image.\+cpp}}\end{DoxyCompactItemize}

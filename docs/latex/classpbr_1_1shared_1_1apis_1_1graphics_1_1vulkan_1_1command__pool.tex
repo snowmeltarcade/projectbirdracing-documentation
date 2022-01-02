@@ -12,7 +12,7 @@ Manages the lifetime of the command pool.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}{command\+\_\+pool}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, uint32\+\_\+t queue\+\_\+index, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a594e0194903695e55ba381924f455d24}{command\+\_\+pool}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, uint32\+\_\+t queue\+\_\+index, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
 \item 
 \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}{$\sim$command\+\_\+pool}} ()
 \begin{DoxyCompactList}\small\item\em Destroys this command pool. \end{DoxyCompactList}\item 
@@ -23,16 +23,16 @@ Vk\+Command\+Pool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vul
 \doxysubsection{Detailed Description}
 Manages the lifetime of the command pool. 
 
-Definition at line 12 of file command\+\_\+pool.\+h.
+Definition at line 14 of file command\+\_\+pool.\+h.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_af22dfb135d50abcdaf3e5e7eb29c5fa7}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a594e0194903695e55ba381924f455d24}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a594e0194903695e55ba381924f455d24}} 
 \index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}!command\_pool@{command\_pool}}
 \index{command\_pool@{command\_pool}!pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}}
 \doxysubsubsection{\texorpdfstring{command\_pool()}{command\_pool()}}
-{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool\+::command\+\_\+pool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{uint32\+\_\+t}]{queue\+\_\+index,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+pool\+::command\+\_\+pool (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{uint32\+\_\+t}]{queue\+\_\+index,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
 
 Constructs this command pool 
 \begin{DoxyParams}{Parameters}
@@ -45,7 +45,7 @@ Constructs this command pool
 \end{DoxyParams}
 
 
-Definition at line 17 of file command\+\_\+pool.\+cpp.
+Definition at line 18 of file command\+\_\+pool.\+cpp.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool_a43ca5834cbf08fff86a749690ac7fb4c}} 
 \index{pbr::shared::apis::graphics::vulkan::command\_pool@{pbr::shared::apis::graphics::vulkan::command\_pool}!````~command\_pool@{$\sim$command\_pool}}
@@ -59,7 +59,7 @@ Destroys this command pool.
 
 
 
-Definition at line 38 of file command\+\_\+pool.\+cpp.
+Definition at line 41 of file command\+\_\+pool.\+cpp.
 
 
 
@@ -75,7 +75,7 @@ The native handle to this command pool
 \end{DoxyReturn}
 
 
-Definition at line 28 of file command\+\_\+pool.\+h.
+Definition at line 30 of file command\+\_\+pool.\+h.
 
 
 

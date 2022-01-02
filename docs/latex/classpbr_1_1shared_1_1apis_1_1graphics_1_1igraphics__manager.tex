@@ -17,16 +17,22 @@ Inheritance diagram for pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+mana
 \begin{DoxyCompactList}\small\item\em Constructs this manager. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_af4cc132f3d028b9b264da6dce6fc60cf}{$\sim$igraphics\+\_\+manager}} ()=default
 \begin{DoxyCompactList}\small\item\em Destroys this manager. \end{DoxyCompactList}\item 
-virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_afb3bcb9a45b27d4ecfb06a42058cc860}{load\+\_\+api}} (const std\+::filesystem\+::path \&executable\+\_\+path)=0
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a13da7abb902ce7dae4bc36a3cbf6425a}{load\+\_\+api}} (const std\+::filesystem\+::path \&executable\+\_\+path) noexcept=0
 \item 
-virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a218154924b1a0fe40b3826956564f1e3}{initialize}} ()=0
-\end{DoxyCompactItemize}
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ae8a61e720d1dde674cbbd8ded822e9bb}{initialize}} () noexcept=0
+\item 
+virtual bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ace53fb74618ec40b4b158b98941477a0}{refresh\+\_\+resources}} () noexcept=0
+\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ac587305b292faca7b2d26918c7b956ab}{submit\+\_\+renderable\+\_\+entities}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}}) noexcept=0
+\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a601a249cd1babc2a0c2e6bd6e36cd516}{submit\+\_\+frame\+\_\+for\+\_\+render}} () noexcept=0
+\begin{DoxyCompactList}\small\item\em Submits a frame for rendering. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Provides an interface to the graphics manager. This manages the graphics A\+PI instance and rendering processes. 
 
-Definition at line 8 of file igraphics\+\_\+manager.\+h.
+Definition at line 10 of file igraphics\+\_\+manager.\+h.
 
 
 
@@ -54,24 +60,24 @@ Destroys this manager.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a218154924b1a0fe40b3826956564f1e3}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a218154924b1a0fe40b3826956564f1e3}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ae8a61e720d1dde674cbbd8ded822e9bb}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ae8a61e720d1dde674cbbd8ded822e9bb}} 
 \index{pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}!initialize@{initialize}}
 \index{initialize@{initialize}!pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}}
 \doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
 
 Initializes this manager \begin{DoxyReturn}{Returns}
 {\ttfamily true} upon success, else {\ttfamily false} 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classtest__graphics__manager_adfe43217e95c9ed97c86d76171d49c00}{test\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a92c39f1a2ee7185248e886f31bfd446b}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}.
+Implemented in \mbox{\hyperlink{classtest__graphics__manager_a46674962c641e393740d3a3a6808b667}{test\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a1a7d9988d9eac0e3bc9b17626bc05114}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}.
 
-\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_afb3bcb9a45b27d4ecfb06a42058cc860}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_afb3bcb9a45b27d4ecfb06a42058cc860}} 
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a13da7abb902ce7dae4bc36a3cbf6425a}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a13da7abb902ce7dae4bc36a3cbf6425a}} 
 \index{pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}!load\_api@{load\_api}}
 \index{load\_api@{load\_api}!pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}}
 \doxysubsubsection{\texorpdfstring{load\_api()}{load\_api()}}
-{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::load\+\_\+api (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::load\+\_\+api (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
 
 Loads any needed dependencies or libraries required by the graphics api 
 \begin{DoxyParams}{Parameters}
@@ -83,7 +89,49 @@ Loads any needed dependencies or libraries required by the graphics api
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a2f953094084c03bbcbedb4bbd239110a}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classtest__graphics__manager_aedc7ad82c151931eff7cc9e4487f02d8}{test\+\_\+graphics\+\_\+manager}}.
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_ac33766a9cd366a3a249ad3cd643ab2e6}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classtest__graphics__manager_a3514ca5750dac3081451bf9bb57de379}{test\+\_\+graphics\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ace53fb74618ec40b4b158b98941477a0}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ace53fb74618ec40b4b158b98941477a0}} 
+\index{pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}!refresh\_resources@{refresh\_resources}}
+\index{refresh\_resources@{refresh\_resources}!pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}}
+\doxysubsubsection{\texorpdfstring{refresh\_resources()}{refresh\_resources()}}
+{\footnotesize\ttfamily virtual bool pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::refresh\+\_\+resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Refreshes any dynamic resources, such as swap chains, frame buffers etc... This is called both during initialization and when the window surface size changes \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__graphics__manager_a38bf258994c56db73459385ae6283b08}{test\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a44c69da9e6b4b7dd861aa7f2bcb520e2}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a601a249cd1babc2a0c2e6bd6e36cd516}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a601a249cd1babc2a0c2e6bd6e36cd516}} 
+\index{pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}!submit\_frame\_for\_render@{submit\_frame\_for\_render}}
+\index{submit\_frame\_for\_render@{submit\_frame\_for\_render}!pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}}
+\doxysubsubsection{\texorpdfstring{submit\_frame\_for\_render()}{submit\_frame\_for\_render()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::submit\+\_\+frame\+\_\+for\+\_\+render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Submits a frame for rendering. 
+
+
+
+Implemented in \mbox{\hyperlink{classtest__graphics__manager_a3d30142bf39af1b5b49bcba75a0e8193}{test\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_ae6d5360dcb51969112e8143f2d7c74af}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ac587305b292faca7b2d26918c7b956ab}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ac587305b292faca7b2d26918c7b956ab}} 
+\index{pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}!submit\_renderable\_entities@{submit\_renderable\_entities}}
+\index{submit\_renderable\_entities@{submit\_renderable\_entities}!pbr::shared::apis::graphics::igraphics\_manager@{pbr::shared::apis::graphics::igraphics\_manager}}
+\doxysubsubsection{\texorpdfstring{submit\_renderable\_entities()}{submit\_renderable\_entities()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager\+::submit\+\_\+renderable\+\_\+entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}}}]{renderable\+\_\+entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Submits the passed entities to be rendered by this frame 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}}} & The entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager_a4184bbb1204e21bcb2d6a3c855cb1dbd}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+\_\+graphics\+\_\+manager}}, and \mbox{\hyperlink{classtest__graphics__manager_a2e101cb6419be32c03a341ef87ba4835}{test\+\_\+graphics\+\_\+manager}}.
 
 
 

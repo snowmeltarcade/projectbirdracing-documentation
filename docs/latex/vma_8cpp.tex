@@ -11,13 +11,18 @@
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
 \item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
-\item 
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{vma_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vma\+Allocator\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6dea5b60103e862b036cdeb26e73580}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+allocator\+\_\+create\+\_\+info}} (const instance \&instance, const physical\+\_\+device \&physical\+\_\+device, const device \&device) noexcept
 \end{DoxyCompactItemize}
 
 
@@ -30,7 +35,7 @@
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal); \(\backslash\)}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
 \DoxyCodeLine{    throw std::runtime\_error(message);}
 
 \end{DoxyCode}

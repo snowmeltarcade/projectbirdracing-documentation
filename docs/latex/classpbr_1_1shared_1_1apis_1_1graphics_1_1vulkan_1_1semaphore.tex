@@ -1,0 +1,83 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::semaphore Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore}\index{pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}}
+
+
+Manages the lifecycle of a {\ttfamily Vk\+Semaphore}  
+
+
+
+
+{\ttfamily \#include $<$semaphore.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a94ad0cca68d6f919ea8ca34f405fb301}{semaphore}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_ab5c27f7ad34773de889722ff1e6ec2ac}{$\sim$semaphore}} ()
+\begin{DoxyCompactList}\small\item\em Destructs this semaphore. \end{DoxyCompactList}\item 
+Vk\+Semaphore \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a2b3b3c2518a0cf37a1dbb2cd74258911}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the lifecycle of a {\ttfamily Vk\+Semaphore} 
+
+Definition at line 10 of file semaphore.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a94ad0cca68d6f919ea8ca34f405fb301}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a94ad0cca68d6f919ea8ca34f405fb301}} 
+\index{pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}!semaphore@{semaphore}}
+\index{semaphore@{semaphore}!pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}}
+\doxysubsubsection{\texorpdfstring{semaphore()}{semaphore()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::semaphore\+::semaphore (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this semaphore 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file semaphore.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_ab5c27f7ad34773de889722ff1e6ec2ac}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_ab5c27f7ad34773de889722ff1e6ec2ac}} 
+\index{pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}!````~semaphore@{$\sim$semaphore}}
+\index{````~semaphore@{$\sim$semaphore}!pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}}
+\doxysubsubsection{\texorpdfstring{$\sim$semaphore()}{~semaphore()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::semaphore\+::$\sim$semaphore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructs this semaphore. 
+
+
+
+Definition at line 31 of file semaphore.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a2b3b3c2518a0cf37a1dbb2cd74258911}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore_a2b3b3c2518a0cf37a1dbb2cd74258911}} 
+\index{pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::semaphore@{pbr::shared::apis::graphics::vulkan::semaphore}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Semaphore pbr\+::shared\+::apis\+::graphics\+::vulkan\+::semaphore\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this semaphore \begin{DoxyReturn}{Returns}
+The native handle to this semaphore 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file semaphore.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{semaphore_8h}{semaphore.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{semaphore_8cpp}{semaphore.\+cpp}}\end{DoxyCompactItemize}

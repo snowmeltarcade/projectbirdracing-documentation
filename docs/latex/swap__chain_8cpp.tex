@@ -1,0 +1,60 @@
+\hypertarget{swap__chain_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/swap\+\_\+chain.cpp File Reference}
+\label{swap__chain_8cpp}\index{src/shared/apis/graphics/vulkan/swap\_chain.cpp@{src/shared/apis/graphics/vulkan/swap\_chain.cpp}}
+{\ttfamily \#include \char`\"{}swap\+\_\+chain.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+\_\+supported\+\_\+details}}
+\begin{DoxyCompactList}\small\item\em Contains the supported swap chain details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{swap__chain_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+swap\+\_\+chain\+\_\+supported\+\_\+details \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_add147accbdb6172efa14e43556d8742a}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+swap\+\_\+chain\+\_\+support}} (Vk\+Physical\+Device device, Vk\+Surface\+K\+HR surface) noexcept
+\item 
+Vk\+Surface\+Format\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a011f0f6718fbcb4efe837e1ae3d6db56}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::choose\+\_\+surface\+\_\+format}} (const std\+::vector$<$ Vk\+Surface\+Format\+K\+HR $>$ \&formats) noexcept
+\item 
+Vk\+Present\+Mode\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad0738c0d1e377d00641633631a3c6235}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::choose\+\_\+present\+\_\+mode}} (const std\+::vector$<$ Vk\+Present\+Mode\+K\+HR $>$ \&modes, bool prefer\+\_\+vsync) noexcept
+\item 
+Vk\+Extent2D \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ade1006496c1042b2a8a1ecae6989fae0}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::select\+\_\+swap\+\_\+chain\+\_\+extent}} (const Vk\+Surface\+Capabilities\+K\+HR \&capabilities, const std\+::shared\+\_\+ptr$<$ windowing\+::iapplication\+\_\+window $>$ \&window) noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0a1055fb924b590ba34ccec3d77e0d7b}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::get\+\_\+number\+\_\+of\+\_\+images}} (const swap\+\_\+chain\+\_\+supported\+\_\+details \&details) noexcept
+\item 
+Vk\+Swapchain\+Create\+Info\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0dda55883195b87f68e47f9e727af324}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+swap\+\_\+chain\+\_\+create\+\_\+info}} (Vk\+Surface\+K\+HR surface, uint32\+\_\+t image\+\_\+count, Vk\+Format surface\+\_\+format, Vk\+Color\+Space\+K\+HR color\+\_\+space, Vk\+Present\+Mode\+K\+HR present\+\_\+mode, Vk\+Extent2D extent, Vk\+Swapchain\+K\+HR old\+\_\+swap\+\_\+chain, physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes queue\+\_\+indexes, swap\+\_\+chain\+\_\+supported\+\_\+details swap\+\_\+chain\+\_\+details)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{swap__chain_8cpp_ad4df3c571770b813b3c1a57a262140d1}\label{swap__chain_8cpp_ad4df3c571770b813b3c1a57a262140d1}} 
+\index{swap\_chain.cpp@{swap\_chain.cpp}!FATAL\_ERROR@{FATAL\_ERROR}}
+\index{FATAL\_ERROR@{FATAL\_ERROR}!swap\_chain.cpp@{swap\_chain.cpp}}
+\doxysubsubsection{\texorpdfstring{FATAL\_ERROR}{FATAL\_ERROR}}
+{\footnotesize\ttfamily \#define F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
+\DoxyCodeLine{    throw std::runtime\_error(message);}
+
+\end{DoxyCode}
+
+
+Definition at line 3 of file swap\+\_\+chain.\+cpp.
+

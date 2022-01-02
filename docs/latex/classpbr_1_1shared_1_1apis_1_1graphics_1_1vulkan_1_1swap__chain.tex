@@ -1,0 +1,138 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+
+
+Manages the swap chain.  
+
+
+
+
+{\ttfamily \#include $<$swap\+\_\+chain.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a46777864291a36e8e4ce020fad919cee}{swap\+\_\+chain}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}, \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&surface, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{windowing\+::iapplication\+\_\+window}} $>$ application\+\_\+window, Vk\+Swapchain\+K\+HR old\+\_\+swap\+\_\+chain\+\_\+handle, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5932b3fc96c55a7d961f8e6d3ef360d6}{$\sim$swap\+\_\+chain}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this swap chain. \end{DoxyCompactList}\item 
+Vk\+Swapchain\+K\+HR \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a50620dd01b4e9980392972b1a534c9de}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+Vk\+Format \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5754b874c65c3d3fea958bb9ee227838}{get\+\_\+image\+\_\+format}} () const noexcept
+\item 
+Vk\+Extent2D \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a06c8ddf93ebf95cf3c7140b2c74f5dcc}{get\+\_\+extent}} () const noexcept
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}{image\+\_\+view}} $>$ \& \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_ad7ff896d5e8edf4a6b21662956b5a68c}{get\+\_\+image\+\_\+views}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the swap chain. 
+
+Definition at line 15 of file swap\+\_\+chain.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a46777864291a36e8e4ce020fad919cee}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a46777864291a36e8e4ce020fad919cee}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!swap\_chain@{swap\_chain}}
+\index{swap\_chain@{swap\_chain}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{swap\_chain()}{swap\_chain()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::swap\+\_\+chain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&}]{physical\+\_\+device,  }\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{surface,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}}]{performance\+\_\+settings,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{windowing\+::iapplication\+\_\+window}} $>$}]{application\+\_\+window,  }\item[{Vk\+Swapchain\+K\+HR}]{old\+\_\+swap\+\_\+chain\+\_\+handle,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this swap chain 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}} & The physical device \\
+\hline
+{\em surface} & The window surface \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} & The performance settings to use \\
+\hline
+{\em application\+\_\+window} & The application window to setup against \\
+\hline
+{\em old\+\_\+swap\+\_\+chain\+\_\+handle} & A handle to the previous swap chain if the swap chain is being recreated \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5932b3fc96c55a7d961f8e6d3ef360d6}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5932b3fc96c55a7d961f8e6d3ef360d6}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!````~swap\_chain@{$\sim$swap\_chain}}
+\index{````~swap\_chain@{$\sim$swap\_chain}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{$\sim$swap\_chain()}{~swap\_chain()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::$\sim$swap\+\_\+chain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this swap chain. 
+
+
+
+Definition at line 250 of file swap\+\_\+chain.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a06c8ddf93ebf95cf3c7140b2c74f5dcc}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a06c8ddf93ebf95cf3c7140b2c74f5dcc}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!get\_extent@{get\_extent}}
+\index{get\_extent@{get\_extent}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{get\_extent()}{get\_extent()}}
+{\footnotesize\ttfamily Vk\+Extent2D pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::get\+\_\+extent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the extent \begin{DoxyReturn}{Returns}
+The extent 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file swap\+\_\+chain.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5754b874c65c3d3fea958bb9ee227838}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a5754b874c65c3d3fea958bb9ee227838}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!get\_image\_format@{get\_image\_format}}
+\index{get\_image\_format@{get\_image\_format}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{get\_image\_format()}{get\_image\_format()}}
+{\footnotesize\ttfamily Vk\+Format pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::get\+\_\+image\+\_\+format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the image format \begin{DoxyReturn}{Returns}
+The image format 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file swap\+\_\+chain.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_ad7ff896d5e8edf4a6b21662956b5a68c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_ad7ff896d5e8edf4a6b21662956b5a68c}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!get\_image\_views@{get\_image\_views}}
+\index{get\_image\_views@{get\_image\_views}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{get\_image\_views()}{get\_image\_views()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}{image\+\_\+view}}$>$\& pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::get\+\_\+image\+\_\+views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the image views \begin{DoxyReturn}{Returns}
+The image views 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file swap\+\_\+chain.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a50620dd01b4e9980392972b1a534c9de}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain_a50620dd01b4e9980392972b1a534c9de}} 
+\index{pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::swap\_chain@{pbr::shared::apis::graphics::vulkan::swap\_chain}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Swapchain\+K\+HR pbr\+::shared\+::apis\+::graphics\+::vulkan\+::swap\+\_\+chain\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this swap chain \begin{DoxyReturn}{Returns}
+The native handle to this swap chain 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file swap\+\_\+chain.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{swap__chain_8h}{swap\+\_\+chain.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{swap__chain_8cpp}{swap\+\_\+chain.\+cpp}}\end{DoxyCompactItemize}

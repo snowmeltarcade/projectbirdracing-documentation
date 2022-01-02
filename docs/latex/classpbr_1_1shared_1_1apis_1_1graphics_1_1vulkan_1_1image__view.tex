@@ -1,0 +1,91 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+\_\+view Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}\index{pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}}
+
+
+Provides a view into a {\ttfamily Vk\+Image}  
+
+
+
+
+{\ttfamily \#include $<$image\+\_\+view.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a69047f81a23ab71bc4d7b8333dd1a34e}{image\+\_\+view}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, Vk\+Image \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}{image}}, Vk\+Format format, Vk\+Image\+Aspect\+Flags aspect, uint32\+\_\+t mip\+\_\+levels, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a8df043185c5db2295ec212dd81edeb52}{$\sim$image\+\_\+view}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this image view. \end{DoxyCompactList}\item 
+Vk\+Image\+View \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_abb959b6cc2a365e984e594861736c320}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a view into a {\ttfamily Vk\+Image} 
+
+Definition at line 10 of file image\+\_\+view.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a69047f81a23ab71bc4d7b8333dd1a34e}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a69047f81a23ab71bc4d7b8333dd1a34e}} 
+\index{pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}!image\_view@{image\_view}}
+\index{image\_view@{image\_view}!pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}}
+\doxysubsubsection{\texorpdfstring{image\_view()}{image\_view()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+\_\+view\+::image\+\_\+view (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{Vk\+Image}]{image,  }\item[{Vk\+Format}]{format,  }\item[{Vk\+Image\+Aspect\+Flags}]{aspect,  }\item[{uint32\+\_\+t}]{mip\+\_\+levels,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this image view 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em image} & The image to create this view from \\
+\hline
+{\em format} & The format this view should take on \\
+\hline
+{\em aspect} & What aspect this view should have -\/ color or depth for example \\
+\hline
+{\em mip\+\_\+levels} & The number of mip map levels to generate \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file image\+\_\+view.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a8df043185c5db2295ec212dd81edeb52}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_a8df043185c5db2295ec212dd81edeb52}} 
+\index{pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}!````~image\_view@{$\sim$image\_view}}
+\index{````~image\_view@{$\sim$image\_view}!pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}}
+\doxysubsubsection{\texorpdfstring{$\sim$image\_view()}{~image\_view()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+\_\+view\+::$\sim$image\+\_\+view (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this image view. 
+
+
+
+Definition at line 50 of file image\+\_\+view.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_abb959b6cc2a365e984e594861736c320}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view_abb959b6cc2a365e984e594861736c320}} 
+\index{pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::image\_view@{pbr::shared::apis::graphics::vulkan::image\_view}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Image\+View pbr\+::shared\+::apis\+::graphics\+::vulkan\+::image\+\_\+view\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this image view \begin{DoxyReturn}{Returns}
+The native handle to this image view 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file image\+\_\+view.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{image__view_8h}{image\+\_\+view.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{image__view_8cpp}{image\+\_\+view.\+cpp}}\end{DoxyCompactItemize}

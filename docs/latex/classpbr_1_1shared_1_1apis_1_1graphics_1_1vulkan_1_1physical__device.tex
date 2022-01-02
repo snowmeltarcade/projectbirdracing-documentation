@@ -26,6 +26,8 @@ struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1phy
 Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_af0df9069d29aefa275136996e9ab8fb5}{get\+\_\+max\+\_\+msaa\+\_\+samples}} () const noexcept
 \item 
 Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_ab77926e4b2c64eaf564a031b3b422743}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+std\+::optional$<$ Vk\+Format $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a817a86e6de5aeda68ce35b3c98bfdcfc}{query\+\_\+supported\+\_\+image\+\_\+tiling\+\_\+format}} (const std\+::vector$<$ Vk\+Format $>$ \&candidates, Vk\+Image\+Tiling tiling, Vk\+Format\+Feature\+Flags features) const noexcept
 \end{DoxyCompactItemize}
 
 
@@ -68,7 +70,7 @@ Destroys this physical device.
 
 
 
-Definition at line 211 of file physical\+\_\+device.\+cpp.
+Definition at line 232 of file physical\+\_\+device.\+cpp.
 
 
 
@@ -111,6 +113,28 @@ The queue family indexes for this physical device
 
 
 Definition at line 35 of file physical\+\_\+device.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a817a86e6de5aeda68ce35b3c98bfdcfc}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_a817a86e6de5aeda68ce35b3c98bfdcfc}} 
+\index{pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}!query\_supported\_image\_tiling\_format@{query\_supported\_image\_tiling\_format}}
+\index{query\_supported\_image\_tiling\_format@{query\_supported\_image\_tiling\_format}!pbr::shared::apis::graphics::vulkan::physical\_device@{pbr::shared::apis::graphics::vulkan::physical\_device}}
+\doxysubsubsection{\texorpdfstring{query\_supported\_image\_tiling\_format()}{query\_supported\_image\_tiling\_format()}}
+{\footnotesize\ttfamily std\+::optional$<$ Vk\+Format $>$ pbr\+::shared\+::apis\+::graphics\+::vulkan\+::physical\+\_\+device\+::query\+\_\+supported\+\_\+image\+\_\+tiling\+\_\+format (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Vk\+Format $>$ \&}]{candidates,  }\item[{Vk\+Image\+Tiling}]{tiling,  }\item[{Vk\+Format\+Feature\+Flags}]{features }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the format from {\ttfamily candidates} that satisfies the passed tiling and features 
+\begin{DoxyParams}{Parameters}
+{\em candidates} & The desired formats \\
+\hline
+{\em tiling} & The image tiling the format must support \\
+\hline
+{\em features} & The features the format must support \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected format, or empty if a format was not found 
+\end{DoxyReturn}
+
+
+Definition at line 215 of file physical\+\_\+device.\+cpp.
 
 
 

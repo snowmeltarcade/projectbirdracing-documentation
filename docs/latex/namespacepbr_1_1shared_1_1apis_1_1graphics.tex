@@ -1,5 +1,10 @@
 \hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics}{}\doxysection{pbr\+::shared\+::apis\+::graphics Namespace Reference}
 \label{namespacepbr_1_1shared_1_1apis_1_1graphics}\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}
+
+
+Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct.  
+
+
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -10,7 +15,46 @@
 \item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}
 \begin{DoxyCompactList}\small\item\em Information about the application that the graphics A\+PI needs to know. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1color}{color}}
+\begin{DoxyCompactList}\small\item\em An R\+G\+BA color. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{igraphics\+\_\+manager}}
 \item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}
+\begin{DoxyCompactList}\small\item\em The settings the graphics engine should use. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}}
+\begin{DoxyCompactList}\small\item\em Contains entities to be submitted for render. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d}{renderable\+\_\+entity\+\_\+2d}}
+\begin{DoxyCompactList}\small\item\em A 2d entity to be rendered by the 2d render system. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager}{vulkan\+\_\+graphics\+\_\+manager}}
 \begin{DoxyCompactList}\small\item\em Handles the Vulkan graphics A\+PI and rendering processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}{get\+\_\+msaa\+\_\+samples}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \&settings, Vk\+Sample\+Count\+Flag\+Bits max\+\_\+samples)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}} 
+\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!get\_msaa\_samples@{get\_msaa\_samples}}
+\index{get\_msaa\_samples@{get\_msaa\_samples}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}
+\doxysubsubsection{\texorpdfstring{get\_msaa\_samples()}{get\_msaa\_samples()}}
+{\footnotesize\ttfamily Vk\+Sample\+Count\+Flag\+Bits pbr\+::shared\+::apis\+::graphics\+::get\+\_\+msaa\+\_\+samples (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \&}]{settings,  }\item[{Vk\+Sample\+Count\+Flag\+Bits}]{max\+\_\+samples }\end{DoxyParamCaption})}
+
+Returns the M\+S\+AA samples in Vulkan units 
+\begin{DoxyParams}{Parameters}
+{\em settings} & The performance settings \\
+\hline
+{\em max\+\_\+samples} & The maximum number of samples allowed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The M\+S\+AA samples in Vulkan units 
+\end{DoxyReturn}
+
+
+Definition at line 4 of file vulkan\+\_\+performance\+\_\+settings.\+cpp.
+

@@ -9,9 +9,15 @@ Inheritance diagram for test\+\_\+graphics\+\_\+manager\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classtest__graphics__manager_aedc7ad82c151931eff7cc9e4487f02d8}{load\+\_\+api}} (const std\+::filesystem\+::path \&) override
+bool \mbox{\hyperlink{classtest__graphics__manager_a3514ca5750dac3081451bf9bb57de379}{load\+\_\+api}} (const std\+::filesystem\+::path \&) noexcept override
 \item 
-bool \mbox{\hyperlink{classtest__graphics__manager_adfe43217e95c9ed97c86d76171d49c00}{initialize}} () override
+bool \mbox{\hyperlink{classtest__graphics__manager_a46674962c641e393740d3a3a6808b667}{initialize}} () noexcept override
+\item 
+bool \mbox{\hyperlink{classtest__graphics__manager_a38bf258994c56db73459385ae6283b08}{refresh\+\_\+resources}} () noexcept override
+\item 
+void \mbox{\hyperlink{classtest__graphics__manager_a3d30142bf39af1b5b49bcba75a0e8193}{submit\+\_\+frame\+\_\+for\+\_\+render}} () noexcept override
+\begin{DoxyCompactList}\small\item\em Submits a frame for rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtest__graphics__manager_a2e101cb6419be32c03a341ef87ba4835}{submit\+\_\+renderable\+\_\+entities}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{apis\+::graphics\+::renderable\+\_\+entities}}) noexcept override
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -29,33 +35,33 @@ bool \mbox{\hyperlink{classtest__graphics__manager_a63f2b98bcf655453e23c10025e31
 \doxysubsection{Detailed Description}
 
 
-Definition at line 63 of file game\+\_\+manager.\+cpp.
+Definition at line 68 of file game\+\_\+manager.\+cpp.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classtest__graphics__manager_adfe43217e95c9ed97c86d76171d49c00}\label{classtest__graphics__manager_adfe43217e95c9ed97c86d76171d49c00}} 
+\mbox{\Hypertarget{classtest__graphics__manager_a46674962c641e393740d3a3a6808b667}\label{classtest__graphics__manager_a46674962c641e393740d3a3a6808b667}} 
 \index{test\_graphics\_manager@{test\_graphics\_manager}!initialize@{initialize}}
 \index{initialize@{initialize}!test\_graphics\_manager@{test\_graphics\_manager}}
 \doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily bool test\+\_\+graphics\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool test\+\_\+graphics\+\_\+manager\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 Initializes this manager \begin{DoxyReturn}{Returns}
 {\ttfamily true} upon success, else {\ttfamily false} 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a218154924b1a0fe40b3826956564f1e3}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ae8a61e720d1dde674cbbd8ded822e9bb}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
 
 
 
-Definition at line 76 of file game\+\_\+manager.\+cpp.
+Definition at line 81 of file game\+\_\+manager.\+cpp.
 
-\mbox{\Hypertarget{classtest__graphics__manager_aedc7ad82c151931eff7cc9e4487f02d8}\label{classtest__graphics__manager_aedc7ad82c151931eff7cc9e4487f02d8}} 
+\mbox{\Hypertarget{classtest__graphics__manager_a3514ca5750dac3081451bf9bb57de379}\label{classtest__graphics__manager_a3514ca5750dac3081451bf9bb57de379}} 
 \index{test\_graphics\_manager@{test\_graphics\_manager}!load\_api@{load\_api}}
 \index{load\_api@{load\_api}!test\_graphics\_manager@{test\_graphics\_manager}}
 \doxysubsubsection{\texorpdfstring{load\_api()}{load\_api()}}
-{\footnotesize\ttfamily bool test\+\_\+graphics\+\_\+manager\+::load\+\_\+api (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool test\+\_\+graphics\+\_\+manager\+::load\+\_\+api (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 Loads any needed dependencies or libraries required by the graphics api 
 \begin{DoxyParams}{Parameters}
@@ -67,11 +73,65 @@ Loads any needed dependencies or libraries required by the graphics api
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_afb3bcb9a45b27d4ecfb06a42058cc860}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a13da7abb902ce7dae4bc36a3cbf6425a}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
 
 
 
-Definition at line 68 of file game\+\_\+manager.\+cpp.
+Definition at line 73 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__graphics__manager_a38bf258994c56db73459385ae6283b08}\label{classtest__graphics__manager_a38bf258994c56db73459385ae6283b08}} 
+\index{test\_graphics\_manager@{test\_graphics\_manager}!refresh\_resources@{refresh\_resources}}
+\index{refresh\_resources@{refresh\_resources}!test\_graphics\_manager@{test\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{refresh\_resources()}{refresh\_resources()}}
+{\footnotesize\ttfamily bool test\+\_\+graphics\+\_\+manager\+::refresh\+\_\+resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Refreshes any dynamic resources, such as swap chains, frame buffers etc... This is called both during initialization and when the window surface size changes \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ace53fb74618ec40b4b158b98941477a0}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+
+
+
+Definition at line 86 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__graphics__manager_a3d30142bf39af1b5b49bcba75a0e8193}\label{classtest__graphics__manager_a3d30142bf39af1b5b49bcba75a0e8193}} 
+\index{test\_graphics\_manager@{test\_graphics\_manager}!submit\_frame\_for\_render@{submit\_frame\_for\_render}}
+\index{submit\_frame\_for\_render@{submit\_frame\_for\_render}!test\_graphics\_manager@{test\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{submit\_frame\_for\_render()}{submit\_frame\_for\_render()}}
+{\footnotesize\ttfamily void test\+\_\+graphics\+\_\+manager\+::submit\+\_\+frame\+\_\+for\+\_\+render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Submits a frame for rendering. 
+
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_a601a249cd1babc2a0c2e6bd6e36cd516}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+
+
+
+Definition at line 90 of file game\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__graphics__manager_a2e101cb6419be32c03a341ef87ba4835}\label{classtest__graphics__manager_a2e101cb6419be32c03a341ef87ba4835}} 
+\index{test\_graphics\_manager@{test\_graphics\_manager}!submit\_renderable\_entities@{submit\_renderable\_entities}}
+\index{submit\_renderable\_entities@{submit\_renderable\_entities}!test\_graphics\_manager@{test\_graphics\_manager}}
+\doxysubsubsection{\texorpdfstring{submit\_renderable\_entities()}{submit\_renderable\_entities()}}
+{\footnotesize\ttfamily void test\+\_\+graphics\+\_\+manager\+::submit\+\_\+renderable\+\_\+entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{apis\+::graphics\+::renderable\+\_\+entities}}}]{renderable\+\_\+entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Submits the passed entities to be rendered by this frame 
+\begin{DoxyParams}{Parameters}
+{\em renderable\+\_\+entities} & The entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager_ac587305b292faca7b2d26918c7b956ab}{pbr\+::shared\+::apis\+::graphics\+::igraphics\+\_\+manager}}.
+
+
+
+Definition at line 93 of file game\+\_\+manager.\+cpp.
 
 
 
@@ -84,7 +144,7 @@ Definition at line 68 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 73 of file game\+\_\+manager.\+cpp.
+Definition at line 78 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{classtest__graphics__manager_a63f2b98bcf655453e23c10025e311853}\label{classtest__graphics__manager_a63f2b98bcf655453e23c10025e311853}} 
 \index{test\_graphics\_manager@{test\_graphics\_manager}!initialize\_result@{initialize\_result}}
@@ -94,7 +154,7 @@ Definition at line 73 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 74 of file game\+\_\+manager.\+cpp.
+Definition at line 79 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{classtest__graphics__manager_a5d50107cd8d13f4bae9aa2ace6e1ce6e}\label{classtest__graphics__manager_a5d50107cd8d13f4bae9aa2ace6e1ce6e}} 
 \index{test\_graphics\_manager@{test\_graphics\_manager}!load\_api\_called@{load\_api\_called}}
@@ -104,7 +164,7 @@ Definition at line 74 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 65 of file game\+\_\+manager.\+cpp.
+Definition at line 70 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{classtest__graphics__manager_a8895ad04be6bf06e6f7eaaba09388ff4}\label{classtest__graphics__manager_a8895ad04be6bf06e6f7eaaba09388ff4}} 
 \index{test\_graphics\_manager@{test\_graphics\_manager}!load\_api\_result@{load\_api\_result}}
@@ -114,7 +174,7 @@ Definition at line 65 of file game\+\_\+manager.\+cpp.
 
 
 
-Definition at line 66 of file game\+\_\+manager.\+cpp.
+Definition at line 71 of file game\+\_\+manager.\+cpp.
 
 
 

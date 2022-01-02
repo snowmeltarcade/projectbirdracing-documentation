@@ -17,7 +17,7 @@ struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swa
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
 \item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
-\item 
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Macros}
@@ -47,7 +47,7 @@ Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal); \(\backslash\)}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
 \DoxyCodeLine{    throw std::runtime\_error(message);}
 
 \end{DoxyCode}

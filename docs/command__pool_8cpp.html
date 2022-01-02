@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('command__pool_8cpp.html',''); initResi
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="command__pool_8h_source.html">command_pool.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__buffer_8h_source.html">command_buffer.h</a>&quot;</code><br />
 </div>
 <p><a href="command__pool_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -102,6 +103,7 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis.html">pbr::shared::apis</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html">pbr::shared::apis::graphics</a></td></tr>
+<tr class="memdesc:namespacepbr_1_1shared_1_1apis_1_1graphics"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separate out any Vulkan specific conversions needed to use the <code><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html" title="The settings the graphics engine should use.">performance_settings</a></code> struct. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html">pbr::shared::apis::graphics::vulkan</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,10 +134,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    this-&gt;_log_manager-&gt;log_message(message, apis::logging::log_levels::fatal); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    this-&gt;_log_manager-&gt;log_message(message, apis::logging::log_levels::fatal, <span class="stringliteral">&quot;Vulkan&quot;</span>); \</div>
 <div class="line">    throw std::runtime_error(message);</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="command__pool_8cpp_source.html#l00003">3</a> of file <a class="el" href="command__pool_8cpp_source.html">command_pool.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="command__pool_8cpp_source.html#l00004">4</a> of file <a class="el" href="command__pool_8cpp_source.html">command_pool.cpp</a>.</p>
 
 </div>
 </div>

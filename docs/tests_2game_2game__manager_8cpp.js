@@ -1,6 +1,6 @@
 var tests_2game_2game__manager_8cpp =
 [
-    [ "test_application_window", "classtest__application__window.html", null ],
+    [ "test_application_window", "classtest__application__window.html", "classtest__application__window" ],
     [ "test_window_manager", "classtest__window__manager.html", "classtest__window__manager" ],
     [ "test_graphics_manager", "classtest__graphics__manager.html", "classtest__graphics__manager" ],
     [ "test_scene_manager", "classtest__scene__manager.html", "classtest__scene__manager" ],

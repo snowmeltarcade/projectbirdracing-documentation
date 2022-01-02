@@ -17,8 +17,12 @@ var dir_9525b293e8636cc07719c4b9bd58b16b =
     [ "iwindow_manager.h", "iwindow__manager_8h.html", [
       [ "iwindow_manager", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager" ]
     ] ],
+    [ "types.h", "types_8h.html", "types_8h" ],
     [ "window_manager.cpp", "window__manager_8cpp.html", null ],
     [ "window_manager.h", "window__manager_8h.html", [
       [ "window_manager", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager" ]
+    ] ],
+    [ "window_size.h", "window__size_8h.html", [
+      [ "window_size", "structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html", "structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size" ]
     ] ]
 ];

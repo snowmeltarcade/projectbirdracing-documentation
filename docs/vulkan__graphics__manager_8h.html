@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('vulkan__graphics__manager_8h.html','')
 <code>#include &quot;<a class="el" href="iwindow__manager_8h_source.html">shared/apis/windowing/iwindow_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="igraphics__manager_8h_source.html">igraphics_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="application__information_8h_source.html">application_information.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="performance__settings_8h_source.html">performance_settings.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="instance_8h_source.html">vulkan/instance.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="window__surface_8h_source.html">vulkan/window_surface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="physical__device_8h_source.html">vulkan/physical_device.h</a>&quot;</code><br />
@@ -99,8 +100,15 @@ $(document).ready(function(){initNavTree('vulkan__graphics__manager_8h.html','')
 <code>#include &quot;<a class="el" href="vma_8h_source.html">vulkan/vma.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="queue_8h_source.html">vulkan/queue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command__pool_8h_source.html">vulkan/command_pool.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__buffer_8h_source.html">vulkan/command_buffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="swap__chain_8h_source.html">vulkan/swap_chain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="render__pass_8h_source.html">vulkan/render_pass.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="framebuffer_8h_source.html">vulkan/framebuffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="semaphore_8h_source.html">vulkan/semaphore.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fence_8h_source.html">vulkan/fence.h</a>&quot;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 </div>
 <p><a href="vulkan__graphics__manager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,6 +127,7 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis.html">pbr::shared::apis</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html">pbr::shared::apis::graphics</a></td></tr>
+<tr class="memdesc:namespacepbr_1_1shared_1_1apis_1_1graphics"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separate out any Vulkan specific conversions needed to use the <code><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html" title="The settings the graphics engine should use.">performance_settings</a></code> struct. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

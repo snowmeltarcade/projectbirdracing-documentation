@@ -1,0 +1,165 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+
+
+A command buffer.  
+
+
+
+
+{\ttfamily \#include $<$command\+\_\+buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab51d9fe487347956629415f046827743}{command\+\_\+buffer}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a100717d3e4642dbc3606f2ba007c4ed4}{$\sim$command\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructs this command buffer. \end{DoxyCompactList}\item 
+Vk\+Command\+Buffer \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ad5758a12daa087911d033b48159b6041}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab6df632f874f219c8542d3af0f23a58c}{begin\+\_\+one\+\_\+time\+\_\+usage}} () noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a974ee93e3d903a7a67d5a11f64bcc0d1}{end\+\_\+one\+\_\+time\+\_\+usage}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&graphics\+\_\+queue) noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a3ea6a13b0064d73e64ad597a04756bd9}{begin\+\_\+record}} () noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab237ec68ebcf94830e733b20d803f6a3}{end\+\_\+record}} () noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a9a7b947ce98999e9d928b8752ad93988}{reset}} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command buffer. 
+
+Definition at line 11 of file command\+\_\+buffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab51d9fe487347956629415f046827743}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab51d9fe487347956629415f046827743}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!command\_buffer@{command\_buffer}}
+\index{command\_buffer@{command\_buffer}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{command\_buffer()}{command\_buffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::command\+\_\+buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}} \&}]{command\+\_\+pool,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Creates this command buffer 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}} & The command buffer to create from \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a100717d3e4642dbc3606f2ba007c4ed4}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a100717d3e4642dbc3606f2ba007c4ed4}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!````~command\_buffer@{$\sim$command\_buffer}}
+\index{````~command\_buffer@{$\sim$command\_buffer}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$command\_buffer()}{~command\_buffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::$\sim$command\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructs this command buffer. 
+
+
+
+Definition at line 33 of file command\+\_\+buffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab6df632f874f219c8542d3af0f23a58c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab6df632f874f219c8542d3af0f23a58c}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!begin\_one\_time\_usage@{begin\_one\_time\_usage}}
+\index{begin\_one\_time\_usage@{begin\_one\_time\_usage}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{begin\_one\_time\_usage()}{begin\_one\_time\_usage()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::begin\+\_\+one\+\_\+time\+\_\+usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets up this buffer to accept commands to be executed just once \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a3ea6a13b0064d73e64ad597a04756bd9}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a3ea6a13b0064d73e64ad597a04756bd9}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!begin\_record@{begin\_record}}
+\index{begin\_record@{begin\_record}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{begin\_record()}{begin\_record()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::begin\+\_\+record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets up this buffer to record for multiple executions \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a974ee93e3d903a7a67d5a11f64bcc0d1}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a974ee93e3d903a7a67d5a11f64bcc0d1}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!end\_one\_time\_usage@{end\_one\_time\_usage}}
+\index{end\_one\_time\_usage@{end\_one\_time\_usage}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{end\_one\_time\_usage()}{end\_one\_time\_usage()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::end\+\_\+one\+\_\+time\+\_\+usage (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}} \&}]{graphics\+\_\+queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Submits commands. Assumes this call was preceded by {\ttfamily \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab6df632f874f219c8542d3af0f23a58c}{begin\+\_\+one\+\_\+time\+\_\+usage()}}} 
+\begin{DoxyParams}{Parameters}
+{\em graphics\+\_\+queue} & The graphics queue to submit these commands to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab237ec68ebcf94830e733b20d803f6a3}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ab237ec68ebcf94830e733b20d803f6a3}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!end\_record@{end\_record}}
+\index{end\_record@{end\_record}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{end\_record()}{end\_record()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::end\+\_\+record (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Ends the buffer recording \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ad5758a12daa087911d033b48159b6041}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_ad5758a12daa087911d033b48159b6041}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Command\+Buffer pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this command buffer \begin{DoxyReturn}{Returns}
+The native handle to this command buffer 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file command\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a9a7b947ce98999e9d928b8752ad93988}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer_a9a7b947ce98999e9d928b8752ad93988}} 
+\index{pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}!reset@{reset}}
+\index{reset@{reset}!pbr::shared::apis::graphics::vulkan::command\_buffer@{pbr::shared::apis::graphics::vulkan::command\_buffer}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::command\+\_\+buffer\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Resets this command buffer \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file command\+\_\+buffer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{command__buffer_8h}{command\+\_\+buffer.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{command__buffer_8cpp}{command\+\_\+buffer.\+cpp}}\end{DoxyCompactItemize}

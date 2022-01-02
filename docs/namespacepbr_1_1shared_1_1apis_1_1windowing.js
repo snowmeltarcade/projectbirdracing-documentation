@@ -5,5 +5,6 @@ var namespacepbr_1_1shared_1_1apis_1_1windowing =
     [ "iapplication_window", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window" ],
     [ "iconsole_window", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__window" ],
     [ "iwindow_manager", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager" ],
-    [ "window_manager", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager" ]
+    [ "window_manager", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html", "classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager" ],
+    [ "window_size", "structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html", "structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size" ]
 ];

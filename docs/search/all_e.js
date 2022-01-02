@@ -1,27 +1,9 @@
 var searchData=
 [
-  ['apis_182',['apis',['../namespacepbr_1_1shared_1_1apis.html',1,'pbr::shared']]],
-  ['datetime_183',['datetime',['../namespacepbr_1_1shared_1_1apis_1_1datetime.html',1,'pbr::shared::apis']]],
-  ['endpoints_184',['endpoints',['../namespacepbr_1_1shared_1_1apis_1_1logging_1_1endpoints.html',1,'pbr::shared::apis::logging']]],
-  ['game_185',['game',['../namespacepbr_1_1shared_1_1game.html',1,'pbr::shared']]],
-  ['graphics_186',['graphics',['../namespacepbr_1_1shared_1_1apis_1_1graphics.html',1,'pbr::shared::apis']]],
-  ['logging_187',['logging',['../namespacepbr_1_1shared_1_1apis_1_1logging.html',1,'pbr::shared::apis']]],
-  ['memory_188',['memory',['../namespacepbr_1_1shared_1_1memory.html',1,'pbr::shared']]],
-  ['pbr_189',['pbr',['../namespacepbr.html',1,'']]],
-  ['physical_5fdevice_190',['physical_device',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device.html',1,'pbr::shared::apis::graphics::vulkan::physical_device'],['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device.html#aaf44d03f25201748d4bae9fcf17dba8e',1,'pbr::shared::apis::graphics::vulkan::physical_device::physical_device()']]],
-  ['physical_5fdevice_2ecpp_191',['physical_device.cpp',['../physical__device_8cpp.html',1,'']]],
-  ['physical_5fdevice_2eh_192',['physical_device.h',['../physical__device_8h.html',1,'']]],
-  ['present_5ffamily_5findex_193',['present_family_index',['../structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes.html#a94aff4d23883bafc5f42cbdc8cf14422',1,'pbr::shared::apis::graphics::vulkan::physical_device::queue_family_indexes']]],
-  ['present_5fmodes_194',['present_modes',['../structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details.html#ac243b43f7b60d76cf02cea7168bd9d55',1,'pbr::shared::apis::graphics::vulkan::swap_chain_support_details']]],
-  ['program_5farguments_195',['program_arguments',['../classpbr_1_1shared_1_1utils_1_1program__arguments.html',1,'pbr::shared::utils::program_arguments'],['../classpbr_1_1shared_1_1utils_1_1program__arguments.html#a6157a546f14769750e2067e175e5859f',1,'pbr::shared::utils::program_arguments::program_arguments()']]],
-  ['program_5farguments_2ecpp_196',['program_arguments.cpp',['../tests_2utils_2program__arguments_8cpp.html',1,'(Global Namespace)'],['../utils_2program__arguments_8cpp.html',1,'(Global Namespace)']]],
-  ['program_5farguments_2eh_197',['program_arguments.h',['../program__arguments_8h.html',1,'']]],
-  ['python3_5fpath_198',['python3_path',['../namespacebuild.html#a94c17946bb998792ac4ef86d64b5ee9c',1,'build']]],
-  ['scene_199',['scene',['../namespacepbr_1_1server_1_1scene.html',1,'pbr::server::scene'],['../namespacepbr_1_1shared_1_1scene.html',1,'pbr::shared::scene']]],
-  ['scenes_200',['scenes',['../namespacepbr_1_1shared_1_1scene_1_1scenes.html',1,'pbr::shared::scene']]],
-  ['server_201',['server',['../namespacepbr_1_1server.html',1,'pbr']]],
-  ['shared_202',['shared',['../namespacepbr_1_1shared.html',1,'pbr']]],
-  ['utils_203',['utils',['../namespacepbr_1_1shared_1_1utils.html',1,'pbr::shared']]],
-  ['vulkan_204',['vulkan',['../namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html',1,'pbr::shared::apis::graphics']]],
-  ['windowing_205',['windowing',['../namespacepbr_1_1shared_1_1apis_1_1windowing.html',1,'pbr::shared::apis']]]
+  ['operator_230',['operator',['../classpbr_1_1shared_1_1memory_1_1bytes.html#ad8d65b3d1e2e84b2e25cbe95cac38414',1,'pbr::shared::memory::bytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1gigabytes.html#a2bb6c81664c9bc71c3c7b368cc066619',1,'pbr::shared::memory::gigabytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1kilobytes.html#a957931b5d3905654bb52ada167da77a1',1,'pbr::shared::memory::kilobytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1megabytes.html#a9366a8ad49a1c58ac334227485230ca2',1,'pbr::shared::memory::megabytes::operator()']]],
+  ['operator_20delete_231',['operator delete',['../memory_2basic__allocators_8cpp.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp']]],
+  ['operator_20new_232',['operator new',['../memory_2basic__allocators_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp']]],
+  ['operator_2b_233',['operator+',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a46ec1ce87c6c43715b9b26c627333edc',1,'pbr::shared::memory::bytes']]],
+  ['operator_2d_234',['operator-',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a78e9843538f3eb31c8300bbf5610ab2c',1,'pbr::shared::memory::bytes']]],
+  ['orientation_235',['orientation',['../structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#ae2027f90b1add929b6cc157d2902f7e0',1,'pbr::shared::apis::graphics::renderable_entity_2d']]]
 ];

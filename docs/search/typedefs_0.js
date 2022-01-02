@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_679',['type',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a50405afdd6aeb9c760f3104c9729f5ec',1,'pbr::shared::memory::bytes::type()'],['../classpbr_1_1shared_1_1memory_1_1gigabytes.html#a8b8288c7eba4841e46340f35844bacc9',1,'pbr::shared::memory::gigabytes::type()'],['../classpbr_1_1shared_1_1memory_1_1kilobytes.html#a7385c346796000785c52d9f2b94b2137',1,'pbr::shared::memory::kilobytes::type()'],['../classpbr_1_1shared_1_1memory_1_1megabytes.html#a7126e2e77a5cf48eec2093ef99876f6c',1,'pbr::shared::memory::megabytes::type()']]]
+  ['pixels_881',['pixels',['../namespacepbr_1_1shared_1_1apis_1_1windowing.html#a1b20ffc44b2de3ca5e192cac7f72dda0',1,'pbr::shared::apis::windowing']]]
 ];

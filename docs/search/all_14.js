@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['vma_270',['vma',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma.html',1,'pbr::shared::apis::graphics::vulkan::vma'],['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma.html#a1b7cb1341075573fc246f5862694b928',1,'pbr::shared::apis::graphics::vulkan::vma::vma()']]],
-  ['vma_2ecpp_271',['vma.cpp',['../vma_8cpp.html',1,'']]],
-  ['vma_2eh_272',['vma.h',['../vma_8h.html',1,'']]],
-  ['vma_5fimplementation_273',['VMA_IMPLEMENTATION',['../vma__implementation_8cpp.html#abea80547807da765ebe9fce1c6dd6a8d',1,'vma_implementation.cpp']]],
-  ['vma_5fimplementation_2ecpp_274',['vma_implementation.cpp',['../vma__implementation_8cpp.html',1,'']]],
-  ['vulkan_5fgraphics_5fmanager_275',['vulkan_graphics_manager',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html',1,'pbr::shared::apis::graphics::vulkan_graphics_manager'],['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#aa7e629440d0c7516389293d66a4604f6',1,'pbr::shared::apis::graphics::vulkan_graphics_manager::vulkan_graphics_manager()']]],
-  ['vulkan_5fgraphics_5fmanager_2ecpp_276',['vulkan_graphics_manager.cpp',['../vulkan__graphics__manager_8cpp.html',1,'']]],
-  ['vulkan_5fgraphics_5fmanager_2eh_277',['vulkan_graphics_manager.h',['../vulkan__graphics__manager_8h.html',1,'']]]
+  ['update_352',['update',['../classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a08712ca77a98246e7dd9490cd5a31a42',1,'pbr::shared::apis::windowing::iwindow_manager::update()'],['../classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a3051f8d722f1d246b485eb679efb4a02',1,'pbr::shared::apis::windowing::window_manager::update()'],['../classtest__window__manager.html#a81083b132115b4f4b40ca2196a0914d6',1,'test_window_manager::update()']]],
+  ['update_5fcalled_353',['update_called',['../classtest__window__manager.html#a7916710132f6d63d8a983b95fa1214f4',1,'test_window_manager']]],
+  ['update_5fresult_354',['update_result',['../classtest__window__manager.html#ad2d218268735410857ac6c00810e4da9',1,'test_window_manager']]]
 ];

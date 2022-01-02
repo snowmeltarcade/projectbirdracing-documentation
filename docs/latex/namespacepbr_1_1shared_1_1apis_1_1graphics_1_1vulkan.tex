@@ -3,26 +3,46 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}{command\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em A command buffer. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}
 \begin{DoxyCompactList}\small\item\em Manages the lifetime of the command pool. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}
 \begin{DoxyCompactList}\small\item\em Handles Vulkan debug messages. This is a static class. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}
 \begin{DoxyCompactList}\small\item\em A logical device. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence}{fence}}
+\begin{DoxyCompactList}\small\item\em Manages the lifecycle of a {\ttfamily Vk\+Fence} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer}{framebuffer}}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}{image}}
+\begin{DoxyCompactList}\small\item\em An image. This will also contain the image view. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}{image\+\_\+view}}
+\begin{DoxyCompactList}\small\item\em Provides a view into a {\ttfamily Vk\+Image} \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}
 \begin{DoxyCompactList}\small\item\em A Vulkan instance. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}
 \begin{DoxyCompactList}\small\item\em Manages creating and destroying the physical graphics device. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{queue}}
 \begin{DoxyCompactList}\small\item\em A queue -\/ e.\+g. graphics, presentation etc... \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{render\+\_\+pass}}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore}{semaphore}}
+\begin{DoxyCompactList}\small\item\em Manages the lifecycle of a {\ttfamily Vk\+Semaphore} \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain}{swap\+\_\+chain}}
+\begin{DoxyCompactList}\small\item\em Manages the swap chain. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details}{swap\+\_\+chain\+\_\+support\+\_\+details}}
 \begin{DoxyCompactList}\small\item\em Details about how a swap chain is supported. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}}
+\begin{DoxyCompactList}\small\item\em Contains the supported swap chain details. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}}
 \begin{DoxyCompactList}\small\item\em Manages the setup and lifetime of the Vulkan Memory Allocator. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}}
 \begin{DoxyCompactList}\small\item\em A renderable surface created from a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+Vk\+Command\+Buffer\+Begin\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a1d97fbbc2f7720c73efce2d5925c10d1}{create\+\_\+begin\+\_\+info}} () noexcept
 \item 
 Vk\+Command\+Pool\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}{create\+\_\+command\+\_\+pool\+\_\+create\+\_\+info}} (uint32\+\_\+t queue\+\_\+index) noexcept
 \item 
@@ -38,6 +58,14 @@ Vk\+Physical\+Device\+Features \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1
 \item 
 Vk\+Device\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8979971246b3f843c1d0da5eb56c6c9}{create\+\_\+device\+\_\+create\+\_\+info}} (const Vk\+Physical\+Device\+Features \&device\+\_\+features, const std\+::vector$<$ Vk\+Device\+Queue\+Create\+Info $>$ \&queue\+\_\+create\+\_\+infos)
 \item 
+Vk\+Fence\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a57a1857adc009dd0d581ba999b067980}{create\+\_\+fence\+\_\+create\+\_\+info}} () noexcept
+\item 
+Vk\+Image\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aece7640f149549b4b30308ce315d9910}{create\+\_\+view\+\_\+create\+\_\+info}} (uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t mip\+\_\+levels, Vk\+Format format, Vk\+Image\+Tiling tiling, Vk\+Image\+Usage\+Flags usage, Vk\+Sample\+Count\+Flag\+Bits samples\+\_\+count)
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6495e800547f7ae314cf7d17f09ea85}{has\+\_\+stencil\+\_\+component}} (Vk\+Format format) noexcept
+\item 
+Vk\+Image\+View\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a17e014f4b1a53a97d0e838fb7ecffbbc}{create\+\_\+view\+\_\+create\+\_\+info}} (Vk\+Image \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}{image}}, Vk\+Format format, Vk\+Image\+Aspect\+Flags aspect, uint32\+\_\+t mip\+\_\+levels)
+\item 
 Vk\+Result \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}{create\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext}} (Vk\+Instance \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, const Vk\+Debug\+Utils\+Messenger\+Create\+Info\+E\+XT $\ast$create\+\_\+info, const Vk\+Allocation\+Callbacks $\ast$allocator, Vk\+Debug\+Utils\+Messenger\+E\+XT $\ast$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}})
 \item 
 void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}{destroy\+\_\+debug\+\_\+utils\+\_\+messenger\+\_\+ext}} (Vk\+Instance \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, Vk\+Debug\+Utils\+Messenger\+E\+XT \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger}{debug\+\_\+messenger}}, const Vk\+Allocation\+Callbacks $\ast$allocator)
@@ -49,10 +77,142 @@ void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3
 bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}{is\+\_\+physical\+\_\+device\+\_\+compatible}} (const Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&surface)
 \item 
 Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_afa1ab528fba07747685c77a11f728a1b}{query\+\_\+max\+\_\+msaa\+\_\+samples}} (Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}})
+\item 
+Vk\+Attachment\+Description \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a226fd78ca403b9e141c9fce4abc4382f}{create\+\_\+attachment\+\_\+description}} (Vk\+Format image\+\_\+format, Vk\+Sample\+Count\+Flag\+Bits msaa\+\_\+samples, Vk\+Image\+Layout image\+\_\+layout)
+\item 
+Vk\+Attachment\+Reference \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a2a6e82954e5ba700a6868b472bbf9ca6}{create\+\_\+attachment\+\_\+reference}} (uint32\+\_\+t attachment\+\_\+index, Vk\+Image\+Layout image\+\_\+layout)
+\item 
+Vk\+Subpass\+Description \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8a08447e78be3586565341e588ff18d}{create\+\_\+subpass\+\_\+description}} (const Vk\+Attachment\+Reference \&color\+\_\+attachment\+\_\+reference, const Vk\+Attachment\+Reference \&color\+\_\+resolver\+\_\+attachment\+\_\+reference, const Vk\+Attachment\+Reference \&depth\+\_\+attachment\+\_\+reference)
+\item 
+Vk\+Subpass\+Dependency \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab4445c4e79a9006e0a6165492f925e4b}{create\+\_\+subpass\+\_\+dependency}} ()
+\item 
+Vk\+Render\+Pass\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aefd0c7118ce01947409d8fbf073fed35}{create\+\_\+render\+\_\+pass\+\_\+create\+\_\+info}} (std\+::array$<$ Vk\+Attachment\+Description, 3 $>$ \&attachments, const Vk\+Attachment\+Description \&color\+\_\+attachment, const Vk\+Attachment\+Description \&color\+\_\+resolver\+\_\+attachment, const Vk\+Attachment\+Description \&depth\+\_\+attachment, const Vk\+Subpass\+Description \&subpass\+\_\+description, const Vk\+Subpass\+Dependency \&subpass\+\_\+dependency)
+\item 
+Vk\+Semaphore\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aff26522a8948d05066a51cb960a6e3db}{create\+\_\+semaphore\+\_\+create\+\_\+info}} () noexcept
+\item 
+\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}} \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_add147accbdb6172efa14e43556d8742a}{query\+\_\+swap\+\_\+chain\+\_\+support}} (Vk\+Physical\+Device \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, Vk\+Surface\+K\+HR surface) noexcept
+\item 
+Vk\+Surface\+Format\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a011f0f6718fbcb4efe837e1ae3d6db56}{choose\+\_\+surface\+\_\+format}} (const std\+::vector$<$ Vk\+Surface\+Format\+K\+HR $>$ \&formats) noexcept
+\item 
+Vk\+Present\+Mode\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad0738c0d1e377d00641633631a3c6235}{choose\+\_\+present\+\_\+mode}} (const std\+::vector$<$ Vk\+Present\+Mode\+K\+HR $>$ \&modes, bool prefer\+\_\+vsync) noexcept
+\item 
+Vk\+Extent2D \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ade1006496c1042b2a8a1ecae6989fae0}{select\+\_\+swap\+\_\+chain\+\_\+extent}} (const Vk\+Surface\+Capabilities\+K\+HR \&capabilities, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{windowing\+::iapplication\+\_\+window}} $>$ \&window) noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0a1055fb924b590ba34ccec3d77e0d7b}{get\+\_\+number\+\_\+of\+\_\+images}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}} \&details) noexcept
+\item 
+Vk\+Swapchain\+Create\+Info\+K\+HR \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0dda55883195b87f68e47f9e727af324}{create\+\_\+swap\+\_\+chain\+\_\+create\+\_\+info}} (Vk\+Surface\+K\+HR surface, uint32\+\_\+t image\+\_\+count, Vk\+Format surface\+\_\+format, Vk\+Color\+Space\+K\+HR color\+\_\+space, Vk\+Present\+Mode\+K\+HR present\+\_\+mode, Vk\+Extent2D extent, Vk\+Swapchain\+K\+HR old\+\_\+swap\+\_\+chain, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}} queue\+\_\+indexes, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}} swap\+\_\+chain\+\_\+details)
+\item 
+Vma\+Allocator\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6dea5b60103e862b036cdeb26e73580}{create\+\_\+allocator\+\_\+create\+\_\+info}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}) noexcept
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad0738c0d1e377d00641633631a3c6235}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad0738c0d1e377d00641633631a3c6235}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!choose\_present\_mode@{choose\_present\_mode}}
+\index{choose\_present\_mode@{choose\_present\_mode}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{choose\_present\_mode()}{choose\_present\_mode()}}
+{\footnotesize\ttfamily Vk\+Present\+Mode\+K\+HR pbr\+::shared\+::apis\+::graphics\+::vulkan\+::choose\+\_\+present\+\_\+mode (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Vk\+Present\+Mode\+K\+HR $>$ \&}]{modes,  }\item[{bool}]{prefer\+\_\+vsync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Selects the present mode to use -\/ prefer triple buffering, else default to F\+I\+FO 
+\begin{DoxyParams}{Parameters}
+{\em modes} & The supported present modes \\
+\hline
+{\em prefer\+\_\+vsync} & Should prefer using vsync? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected present mode 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a011f0f6718fbcb4efe837e1ae3d6db56}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a011f0f6718fbcb4efe837e1ae3d6db56}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!choose\_surface\_format@{choose\_surface\_format}}
+\index{choose\_surface\_format@{choose\_surface\_format}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{choose\_surface\_format()}{choose\_surface\_format()}}
+{\footnotesize\ttfamily Vk\+Surface\+Format\+K\+HR pbr\+::shared\+::apis\+::graphics\+::vulkan\+::choose\+\_\+surface\+\_\+format (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Vk\+Surface\+Format\+K\+HR $>$ \&}]{formats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Select the surface format to use -\/ prefer S\+R\+GB, else default to the first format in the passed formats 
+\begin{DoxyParams}{Parameters}
+{\em formats} & The supported formats \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected surface format 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6dea5b60103e862b036cdeb26e73580}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6dea5b60103e862b036cdeb26e73580}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_allocator\_create\_info@{create\_allocator\_create\_info}}
+\index{create\_allocator\_create\_info@{create\_allocator\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_allocator\_create\_info()}{create\_allocator\_create\_info()}}
+{\footnotesize\ttfamily Vma\+Allocator\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+allocator\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance}{instance}} \&}]{instance,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&}]{physical\+\_\+device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates an allocator create info struct 
+\begin{DoxyParams}{Parameters}
+{\em instance} & The Vulkan instance \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}} & The physical device to handle \\
+\hline
+{\em device} & The logical device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocator create info struct 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file vma.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a226fd78ca403b9e141c9fce4abc4382f}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a226fd78ca403b9e141c9fce4abc4382f}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_attachment\_description@{create\_attachment\_description}}
+\index{create\_attachment\_description@{create\_attachment\_description}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_attachment\_description()}{create\_attachment\_description()}}
+{\footnotesize\ttfamily Vk\+Attachment\+Description pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+attachment\+\_\+description (\begin{DoxyParamCaption}\item[{Vk\+Format}]{image\+\_\+format,  }\item[{Vk\+Sample\+Count\+Flag\+Bits}]{msaa\+\_\+samples,  }\item[{Vk\+Image\+Layout}]{image\+\_\+layout }\end{DoxyParamCaption})}
+
+Creates an attachment\textquotesingle{}s description \begin{DoxyReturn}{Returns}
+The attachment\textquotesingle{}s description 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a2a6e82954e5ba700a6868b472bbf9ca6}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a2a6e82954e5ba700a6868b472bbf9ca6}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_attachment\_reference@{create\_attachment\_reference}}
+\index{create\_attachment\_reference@{create\_attachment\_reference}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_attachment\_reference()}{create\_attachment\_reference()}}
+{\footnotesize\ttfamily Vk\+Attachment\+Reference pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+attachment\+\_\+reference (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{attachment\+\_\+index,  }\item[{Vk\+Image\+Layout}]{image\+\_\+layout }\end{DoxyParamCaption})}
+
+Creates an attachment reference 
+\begin{DoxyParams}{Parameters}
+{\em attachment\+\_\+index} & The index of the attachment \\
+\hline
+{\em image\+\_\+layout} & The image layout \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created attachment reference 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a1d97fbbc2f7720c73efce2d5925c10d1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a1d97fbbc2f7720c73efce2d5925c10d1}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_begin\_info@{create\_begin\_info}}
+\index{create\_begin\_info@{create\_begin\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_begin\_info()}{create\_begin\_info()}}
+{\footnotesize\ttfamily Vk\+Command\+Buffer\+Begin\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+begin\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a buffer begin info struct \begin{DoxyReturn}{Returns}
+The buffer begin info struct 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file command\+\_\+buffer.\+cpp.
+
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_command\_pool\_create\_info@{create\_command\_pool\_create\_info}}
 \index{create\_command\_pool\_create\_info@{create\_command\_pool\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
@@ -61,7 +221,7 @@ Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_
 
 
 
-Definition at line 8 of file command\+\_\+pool.\+cpp.
+Definition at line 9 of file command\+\_\+pool.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a02a3228944967599c5791324e442d6e4}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_debug\_utils\_messenger\_ext@{create\_debug\_utils\_messenger\_ext}}
@@ -102,6 +262,19 @@ The device created info
 
 Definition at line 51 of file device.\+cpp.
 
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a57a1857adc009dd0d581ba999b067980}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a57a1857adc009dd0d581ba999b067980}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_fence\_create\_info@{create\_fence\_create\_info}}
+\index{create\_fence\_create\_info@{create\_fence\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_fence\_create\_info()}{create\_fence\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Fence\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+fence\+\_\+create\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a fence create info struct \begin{DoxyReturn}{Returns}
+The fence create info struct 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file fence.\+cpp.
+
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a7d92b0e779b5cf3b027c0412e290b17b}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_physical\_device\_features@{create\_physical\_device\_features}}
 \index{create\_physical\_device\_features@{create\_physical\_device\_features}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
@@ -135,6 +308,170 @@ The queue create information
 
 Definition at line 14 of file device.\+cpp.
 
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aefd0c7118ce01947409d8fbf073fed35}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aefd0c7118ce01947409d8fbf073fed35}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_render\_pass\_create\_info@{create\_render\_pass\_create\_info}}
+\index{create\_render\_pass\_create\_info@{create\_render\_pass\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_render\_pass\_create\_info()}{create\_render\_pass\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Render\+Pass\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+render\+\_\+pass\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{std\+::array$<$ Vk\+Attachment\+Description, 3 $>$ \&}]{attachments,  }\item[{const Vk\+Attachment\+Description \&}]{color\+\_\+attachment,  }\item[{const Vk\+Attachment\+Description \&}]{color\+\_\+resolver\+\_\+attachment,  }\item[{const Vk\+Attachment\+Description \&}]{depth\+\_\+attachment,  }\item[{const Vk\+Subpass\+Description \&}]{subpass\+\_\+description,  }\item[{const Vk\+Subpass\+Dependency \&}]{subpass\+\_\+dependency }\end{DoxyParamCaption})}
+
+Creates the render pass create info 
+\begin{DoxyParams}{Parameters}
+{\em attachments} & An array to store the attachments \\
+\hline
+{\em color\+\_\+attachment} & The color attachment \\
+\hline
+{\em color\+\_\+resolver\+\_\+attachment} & The color resolver attachment \\
+\hline
+{\em depth\+\_\+attachment} & The depth attachment \\
+\hline
+{\em subpass\+\_\+description} & The subpass description \\
+\hline
+{\em subpass\+\_\+dependency} & The subpass dependency \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The render pass create info 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aff26522a8948d05066a51cb960a6e3db}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aff26522a8948d05066a51cb960a6e3db}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_semaphore\_create\_info@{create\_semaphore\_create\_info}}
+\index{create\_semaphore\_create\_info@{create\_semaphore\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_semaphore\_create\_info()}{create\_semaphore\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Semaphore\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+semaphore\+\_\+create\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a semaphore create info struct \begin{DoxyReturn}{Returns}
+The semaphore create info struct 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file semaphore.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab4445c4e79a9006e0a6165492f925e4b}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab4445c4e79a9006e0a6165492f925e4b}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_subpass\_dependency@{create\_subpass\_dependency}}
+\index{create\_subpass\_dependency@{create\_subpass\_dependency}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_subpass\_dependency()}{create\_subpass\_dependency()}}
+{\footnotesize\ttfamily Vk\+Subpass\+Dependency pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+subpass\+\_\+dependency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a subpass dependency \begin{DoxyReturn}{Returns}
+The subpass dependency 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8a08447e78be3586565341e588ff18d}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8a08447e78be3586565341e588ff18d}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_subpass\_description@{create\_subpass\_description}}
+\index{create\_subpass\_description@{create\_subpass\_description}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_subpass\_description()}{create\_subpass\_description()}}
+{\footnotesize\ttfamily Vk\+Subpass\+Description pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+subpass\+\_\+description (\begin{DoxyParamCaption}\item[{const Vk\+Attachment\+Reference \&}]{color\+\_\+attachment\+\_\+reference,  }\item[{const Vk\+Attachment\+Reference \&}]{color\+\_\+resolver\+\_\+attachment\+\_\+reference,  }\item[{const Vk\+Attachment\+Reference \&}]{depth\+\_\+attachment\+\_\+reference }\end{DoxyParamCaption})}
+
+Creates a subpass description 
+\begin{DoxyParams}{Parameters}
+{\em color\+\_\+attachment\+\_\+reference} & The color attachment reference \\
+\hline
+{\em color\+\_\+resolver\+\_\+attachment\+\_\+reference} & The color resolver attachment reference \\
+\hline
+{\em depth\+\_\+attachment\+\_\+reference} & The depth attachment reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The subpass description 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0dda55883195b87f68e47f9e727af324}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0dda55883195b87f68e47f9e727af324}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_swap\_chain\_create\_info@{create\_swap\_chain\_create\_info}}
+\index{create\_swap\_chain\_create\_info@{create\_swap\_chain\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_swap\_chain\_create\_info()}{create\_swap\_chain\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Swapchain\+Create\+Info\+K\+HR pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+swap\+\_\+chain\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{Vk\+Surface\+K\+HR}]{surface,  }\item[{uint32\+\_\+t}]{image\+\_\+count,  }\item[{Vk\+Format}]{surface\+\_\+format,  }\item[{Vk\+Color\+Space\+K\+HR}]{color\+\_\+space,  }\item[{Vk\+Present\+Mode\+K\+HR}]{present\+\_\+mode,  }\item[{Vk\+Extent2D}]{extent,  }\item[{Vk\+Swapchain\+K\+HR}]{old\+\_\+swap\+\_\+chain,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device_1_1queue__family__indexes}{physical\+\_\+device\+::queue\+\_\+family\+\_\+indexes}}}]{queue\+\_\+indexes,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}}}]{swap\+\_\+chain\+\_\+details }\end{DoxyParamCaption})}
+
+Creates the swap chain create info 
+\begin{DoxyParams}{Parameters}
+{\em surface} & The display surface we will use \\
+\hline
+{\em image\+\_\+count} & The number of images to use in the swap chain \\
+\hline
+{\em surface\+\_\+format} & The surface format to use \\
+\hline
+{\em color\+\_\+space} & The color format to use \\
+\hline
+{\em present\+\_\+mode} & The present mode to use \\
+\hline
+{\em extent} & The size of the images in the swap chain \\
+\hline
+{\em old\+\_\+swap\+\_\+chain} & If we are re-\/creating the swap chain, the previous swap chain to use whilst \\
+\hline
+{\em queue\+\_\+indexes} & The queue family indexes \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}}} & The supported swap chain details this new swap change is being created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The swap chain create info 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aece7640f149549b4b30308ce315d9910}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aece7640f149549b4b30308ce315d9910}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_view\_create\_info@{create\_view\_create\_info}}
+\index{create\_view\_create\_info@{create\_view\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_view\_create\_info()}{create\_view\_create\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vk\+Image\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+view\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{mip\+\_\+levels,  }\item[{Vk\+Format}]{format,  }\item[{Vk\+Image\+Tiling}]{tiling,  }\item[{Vk\+Image\+Usage\+Flags}]{usage,  }\item[{Vk\+Sample\+Count\+Flag\+Bits}]{samples\+\_\+count }\end{DoxyParamCaption})}
+
+Creates the image create info 
+\begin{DoxyParams}{Parameters}
+{\em width} & The image width in pixels \\
+\hline
+{\em height} & The image height in pixels \\
+\hline
+{\em mip\+\_\+levels} & The number of mip map levels to generate \\
+\hline
+{\em samples\+\_\+count} & The number of samples this image should have \\
+\hline
+{\em format} & The image format \\
+\hline
+{\em tiling} & How to tile this image \\
+\hline
+{\em usage} & How this image will be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image view create info 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file image.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a17e014f4b1a53a97d0e838fb7ecffbbc}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a17e014f4b1a53a97d0e838fb7ecffbbc}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_view\_create\_info@{create\_view\_create\_info}}
+\index{create\_view\_create\_info@{create\_view\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_view\_create\_info()}{create\_view\_create\_info()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vk\+Image\+View\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+view\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{Vk\+Image}]{image,  }\item[{Vk\+Format}]{format,  }\item[{Vk\+Image\+Aspect\+Flags}]{aspect,  }\item[{uint32\+\_\+t}]{mip\+\_\+levels }\end{DoxyParamCaption})}
+
+Creates the image view create info 
+\begin{DoxyParams}{Parameters}
+{\em image} & The image to create this view from \\
+\hline
+{\em format} & The format this view should take on \\
+\hline
+{\em aspect} & What aspect this view should have -\/ color or depth for example \\
+\hline
+{\em mip\+\_\+levels} & The number of mip map levels to generate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The image view create info 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file image\+\_\+view.\+cpp.
+
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a65c3a5791dc9ff1168c626171fa0c8fc}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!destroy\_debug\_utils\_messenger\_ext@{destroy\_debug\_utils\_messenger\_ext}}
 \index{destroy\_debug\_utils\_messenger\_ext@{destroy\_debug\_utils\_messenger\_ext}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
@@ -153,6 +490,37 @@ Destroys the passed debug messenger. This is needed because the {\ttfamily vk\+D
 
 
 Definition at line 30 of file instance.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0a1055fb924b590ba34ccec3d77e0d7b}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a0a1055fb924b590ba34ccec3d77e0d7b}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!get\_number\_of\_images@{get\_number\_of\_images}}
+\index{get\_number\_of\_images@{get\_number\_of\_images}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{get\_number\_of\_images()}{get\_number\_of\_images()}}
+{\footnotesize\ttfamily uint32\+\_\+t pbr\+::shared\+::apis\+::graphics\+::vulkan\+::get\+\_\+number\+\_\+of\+\_\+images (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}} \&}]{details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the number of images to use in this swap chain 
+\begin{DoxyParams}{Parameters}
+{\em details} & The supported details \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of images to use in this swap chain 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6495e800547f7ae314cf7d17f09ea85}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6495e800547f7ae314cf7d17f09ea85}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!has\_stencil\_component@{has\_stencil\_component}}
+\index{has\_stencil\_component@{has\_stencil\_component}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{has\_stencil\_component()}{has\_stencil\_component()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::vulkan\+::has\+\_\+stencil\+\_\+component (\begin{DoxyParamCaption}\item[{Vk\+Format}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns {\ttfamily true} if {\ttfamily format} has a stencil component, else {\ttfamily false} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if {\ttfamily format} has a stencil component, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file image.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aa1fbcf85f5c0abdbefd4b00926d6ef96}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!is\_physical\_device\_compatible@{is\_physical\_device\_compatible}}
@@ -212,7 +580,7 @@ Definition at line 64 of file physical\+\_\+device.\+cpp.
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a272123abf5b8622052e1d2806290e909}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a272123abf5b8622052e1d2806290e909}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!query\_swap\_chain\_support@{query\_swap\_chain\_support}}
 \index{query\_swap\_chain\_support@{query\_swap\_chain\_support}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
-\doxysubsubsection{\texorpdfstring{query\_swap\_chain\_support()}{query\_swap\_chain\_support()}}
+\doxysubsubsection{\texorpdfstring{query\_swap\_chain\_support()}{query\_swap\_chain\_support()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details}{swap\+\_\+chain\+\_\+support\+\_\+details}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+swap\+\_\+chain\+\_\+support (\begin{DoxyParamCaption}\item[{Vk\+Physical\+Device}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface}{window\+\_\+surface}} \&}]{surface }\end{DoxyParamCaption})}
 
 Returns the swap chain support details for the passed device and surface 
@@ -228,6 +596,36 @@ The swap chain support details
 
 
 Definition at line 26 of file physical\+\_\+device.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_add147accbdb6172efa14e43556d8742a}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_add147accbdb6172efa14e43556d8742a}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!query\_swap\_chain\_support@{query\_swap\_chain\_support}}
+\index{query\_swap\_chain\_support@{query\_swap\_chain\_support}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{query\_swap\_chain\_support()}{query\_swap\_chain\_support()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details}{swap\+\_\+chain\+\_\+supported\+\_\+details}} pbr\+::shared\+::apis\+::graphics\+::vulkan\+::query\+\_\+swap\+\_\+chain\+\_\+support (\begin{DoxyParamCaption}\item[{Vk\+Physical\+Device}]{device,  }\item[{Vk\+Surface\+K\+HR}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns what swap chain features etc... are supported by the passed physical device 
+\begin{DoxyParams}{Parameters}
+{\em device} & The physical device \\
+\hline
+{\em surface} & The surface we will present to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The supported details 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file swap\+\_\+chain.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ade1006496c1042b2a8a1ecae6989fae0}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ade1006496c1042b2a8a1ecae6989fae0}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!select\_swap\_chain\_extent@{select\_swap\_chain\_extent}}
+\index{select\_swap\_chain\_extent@{select\_swap\_chain\_extent}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{select\_swap\_chain\_extent()}{select\_swap\_chain\_extent()}}
+{\footnotesize\ttfamily Vk\+Extent2D pbr\+::shared\+::apis\+::graphics\+::vulkan\+::select\+\_\+swap\+\_\+chain\+\_\+extent (\begin{DoxyParamCaption}\item[{const Vk\+Surface\+Capabilities\+K\+HR \&}]{capabilities,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{windowing\+::iapplication\+\_\+window}} $>$ \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Definition at line 92 of file swap\+\_\+chain.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a5723f1f66045a0d159a41dafe94437e1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a5723f1f66045a0d159a41dafe94437e1}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!to\_log\_level@{to\_log\_level}}

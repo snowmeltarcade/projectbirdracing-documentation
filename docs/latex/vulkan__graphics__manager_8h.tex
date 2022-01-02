@@ -4,6 +4,7 @@
 {\ttfamily \#include \char`\"{}shared/apis/windowing/iwindow\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}igraphics\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}application\+\_\+information.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}performance\+\_\+settings.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}vulkan/instance.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}vulkan/window\+\_\+surface.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}vulkan/physical\+\_\+device.\+h\char`\"{}}\newline
@@ -11,8 +12,15 @@
 {\ttfamily \#include \char`\"{}vulkan/vma.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}vulkan/queue.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}vulkan/command\+\_\+pool.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/command\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/swap\+\_\+chain.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/render\+\_\+pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/framebuffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/semaphore.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vulkan/fence.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$memory$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,4 +36,4 @@ class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphic
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
 \item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\end{DoxyCompactItemize}

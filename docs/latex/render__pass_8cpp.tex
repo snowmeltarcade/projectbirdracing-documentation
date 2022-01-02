@@ -1,0 +1,54 @@
+\hypertarget{render__pass_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/render\+\_\+pass.cpp File Reference}
+\label{render__pass_8cpp}\index{src/shared/apis/graphics/vulkan/render\_pass.cpp@{src/shared/apis/graphics/vulkan/render\_pass.cpp}}
+{\ttfamily \#include \char`\"{}render\+\_\+pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/vulkan\+\_\+performance\+\_\+settings.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{render__pass_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vk\+Attachment\+Description \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a226fd78ca403b9e141c9fce4abc4382f}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+attachment\+\_\+description}} (Vk\+Format image\+\_\+format, Vk\+Sample\+Count\+Flag\+Bits msaa\+\_\+samples, Vk\+Image\+Layout image\+\_\+layout)
+\item 
+Vk\+Attachment\+Reference \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a2a6e82954e5ba700a6868b472bbf9ca6}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+attachment\+\_\+reference}} (uint32\+\_\+t attachment\+\_\+index, Vk\+Image\+Layout image\+\_\+layout)
+\item 
+Vk\+Subpass\+Description \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab8a08447e78be3586565341e588ff18d}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+subpass\+\_\+description}} (const Vk\+Attachment\+Reference \&color\+\_\+attachment\+\_\+reference, const Vk\+Attachment\+Reference \&color\+\_\+resolver\+\_\+attachment\+\_\+reference, const Vk\+Attachment\+Reference \&depth\+\_\+attachment\+\_\+reference)
+\item 
+Vk\+Subpass\+Dependency \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ab4445c4e79a9006e0a6165492f925e4b}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+subpass\+\_\+dependency}} ()
+\item 
+Vk\+Render\+Pass\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aefd0c7118ce01947409d8fbf073fed35}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+render\+\_\+pass\+\_\+create\+\_\+info}} (std\+::array$<$ Vk\+Attachment\+Description, 3 $>$ \&attachments, const Vk\+Attachment\+Description \&color\+\_\+attachment, const Vk\+Attachment\+Description \&color\+\_\+resolver\+\_\+attachment, const Vk\+Attachment\+Description \&depth\+\_\+attachment, const Vk\+Subpass\+Description \&subpass\+\_\+description, const Vk\+Subpass\+Dependency \&subpass\+\_\+dependency)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{render__pass_8cpp_ad4df3c571770b813b3c1a57a262140d1}\label{render__pass_8cpp_ad4df3c571770b813b3c1a57a262140d1}} 
+\index{render\_pass.cpp@{render\_pass.cpp}!FATAL\_ERROR@{FATAL\_ERROR}}
+\index{FATAL\_ERROR@{FATAL\_ERROR}!render\_pass.cpp@{render\_pass.cpp}}
+\doxysubsubsection{\texorpdfstring{FATAL\_ERROR}{FATAL\_ERROR}}
+{\footnotesize\ttfamily \#define F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
+\DoxyCodeLine{    throw std::runtime\_error(message);}
+
+\end{DoxyCode}
+
+
+Definition at line 4 of file render\+\_\+pass.\+cpp.
+

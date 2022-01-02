@@ -1,0 +1,83 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::fence Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence}\index{pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}}
+
+
+Manages the lifecycle of a {\ttfamily Vk\+Fence}  
+
+
+
+
+{\ttfamily \#include $<$fence.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a57c0d234acaf1259f8fa2fb995e595d7}{fence}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_ac94a53a984e830a786e2b9b9bee57941}{$\sim$fence}} ()
+\begin{DoxyCompactList}\small\item\em Destructs this fence. \end{DoxyCompactList}\item 
+Vk\+Fence \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a0cda3e1266b4980ff70aab3a3d2a54e7}{get\+\_\+native\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the lifecycle of a {\ttfamily Vk\+Fence} 
+
+Definition at line 10 of file fence.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a57c0d234acaf1259f8fa2fb995e595d7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a57c0d234acaf1259f8fa2fb995e595d7}} 
+\index{pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}!fence@{fence}}
+\index{fence@{fence}!pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}}
+\doxysubsubsection{\texorpdfstring{fence()}{fence()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::fence\+::fence (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this fence 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file fence.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_ac94a53a984e830a786e2b9b9bee57941}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_ac94a53a984e830a786e2b9b9bee57941}} 
+\index{pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}!````~fence@{$\sim$fence}}
+\index{````~fence@{$\sim$fence}!pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}}
+\doxysubsubsection{\texorpdfstring{$\sim$fence()}{~fence()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::fence\+::$\sim$fence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructs this fence. 
+
+
+
+Definition at line 32 of file fence.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a0cda3e1266b4980ff70aab3a3d2a54e7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence_a0cda3e1266b4980ff70aab3a3d2a54e7}} 
+\index{pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::fence@{pbr::shared::apis::graphics::vulkan::fence}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Fence pbr\+::shared\+::apis\+::graphics\+::vulkan\+::fence\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this fence \begin{DoxyReturn}{Returns}
+The native handle to this fence 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file fence.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{fence_8h}{fence.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{fence_8cpp}{fence.\+cpp}}\end{DoxyCompactItemize}

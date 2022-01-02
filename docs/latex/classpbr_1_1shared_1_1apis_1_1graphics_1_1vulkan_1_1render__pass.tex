@@ -1,0 +1,114 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+
+
+{\ttfamily \#include $<$render\+\_\+pass.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_aa7adf84832b9918e127b9771b35cf6c2}{render\+\_\+pass}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}}, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}, Vk\+Format image\+\_\+format, \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_af4c4ffc9a02362f1e51e18810e44a94f}{$\sim$render\+\_\+pass}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this render pass. \end{DoxyCompactList}\item 
+Vk\+Render\+Pass \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a35a498e6cb04084c2368b88d57157677}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+Vk\+Format \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a300a045982c91559e71de29fe47b0bfb}{get\+\_\+depth\+\_\+format}} () const noexcept
+\item 
+Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a58405b9435c2b1ba189de65ed12e5b37}{get\+\_\+msaa\+\_\+samples}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render pass used in a swap chain. By default, this will have one color attachment to present, one color resolver for M\+S\+AA and one depth attachment 
+
+Definition at line 14 of file render\+\_\+pass.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_aa7adf84832b9918e127b9771b35cf6c2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_aa7adf84832b9918e127b9771b35cf6c2}} 
+\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}!render\_pass@{render\_pass}}
+\index{render\_pass@{render\_pass}!pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+\doxysubsubsection{\texorpdfstring{render\_pass()}{render\_pass()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass\+::render\+\_\+pass (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{device}} \&}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}} \&}]{physical\+\_\+device,  }\item[{Vk\+Format}]{image\+\_\+format,  }\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}}]{performance\+\_\+settings,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Constructs this render pass 
+\begin{DoxyParams}{Parameters}
+{\em device} & The logical device \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device}{physical\+\_\+device}}} & The physical device \\
+\hline
+{\em image\+\_\+format} & The image format of the attachments \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} & The performance settings to use \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 101 of file render\+\_\+pass.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_af4c4ffc9a02362f1e51e18810e44a94f}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_af4c4ffc9a02362f1e51e18810e44a94f}} 
+\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}!````~render\_pass@{$\sim$render\_pass}}
+\index{````~render\_pass@{$\sim$render\_pass}!pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+\doxysubsubsection{\texorpdfstring{$\sim$render\_pass()}{~render\_pass()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass\+::$\sim$render\+\_\+pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys this render pass. 
+
+
+
+Definition at line 179 of file render\+\_\+pass.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a300a045982c91559e71de29fe47b0bfb}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a300a045982c91559e71de29fe47b0bfb}} 
+\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}!get\_depth\_format@{get\_depth\_format}}
+\index{get\_depth\_format@{get\_depth\_format}!pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+\doxysubsubsection{\texorpdfstring{get\_depth\_format()}{get\_depth\_format()}}
+{\footnotesize\ttfamily Vk\+Format pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass\+::get\+\_\+depth\+\_\+format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the format of the depth buffer \begin{DoxyReturn}{Returns}
+The format of the depth buffer 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file render\+\_\+pass.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a58405b9435c2b1ba189de65ed12e5b37}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a58405b9435c2b1ba189de65ed12e5b37}} 
+\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}!get\_msaa\_samples@{get\_msaa\_samples}}
+\index{get\_msaa\_samples@{get\_msaa\_samples}!pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+\doxysubsubsection{\texorpdfstring{get\_msaa\_samples()}{get\_msaa\_samples()}}
+{\footnotesize\ttfamily Vk\+Sample\+Count\+Flag\+Bits pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass\+::get\+\_\+msaa\+\_\+samples (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the number of M\+S\+AA samples \begin{DoxyReturn}{Returns}
+The number of M\+S\+AA samples 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file render\+\_\+pass.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a35a498e6cb04084c2368b88d57157677}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass_a35a498e6cb04084c2368b88d57157677}} 
+\index{pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::render\_pass@{pbr::shared::apis::graphics::vulkan::render\_pass}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Render\+Pass pbr\+::shared\+::apis\+::graphics\+::vulkan\+::render\+\_\+pass\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this render pass \begin{DoxyReturn}{Returns}
+The native handle to this render pass 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file render\+\_\+pass.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{render__pass_8h}{render\+\_\+pass.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{render__pass_8cpp}{render\+\_\+pass.\+cpp}}\end{DoxyCompactItemize}

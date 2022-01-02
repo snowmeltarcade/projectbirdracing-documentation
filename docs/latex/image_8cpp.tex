@@ -1,0 +1,48 @@
+\hypertarget{image_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/image.cpp File Reference}
+\label{image_8cpp}\index{src/shared/apis/graphics/vulkan/image.cpp@{src/shared/apis/graphics/vulkan/image.cpp}}
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}command\+\_\+buffer.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{pbr\+::shared\+::apis\+::graphics\+::vulkan}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{image_8cpp_ad4df3c571770b813b3c1a57a262140d1}{F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR}}(message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vk\+Image\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_aece7640f149549b4b30308ce315d9910}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+view\+\_\+create\+\_\+info}} (uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t mip\+\_\+levels, Vk\+Format format, Vk\+Image\+Tiling tiling, Vk\+Image\+Usage\+Flags usage, Vk\+Sample\+Count\+Flag\+Bits samples\+\_\+count)
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ae6495e800547f7ae314cf7d17f09ea85}{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::has\+\_\+stencil\+\_\+component}} (Vk\+Format format) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{image_8cpp_ad4df3c571770b813b3c1a57a262140d1}\label{image_8cpp_ad4df3c571770b813b3c1a57a262140d1}} 
+\index{image.cpp@{image.cpp}!FATAL\_ERROR@{FATAL\_ERROR}}
+\index{FATAL\_ERROR@{FATAL\_ERROR}!image.cpp@{image.cpp}}
+\doxysubsubsection{\texorpdfstring{FATAL\_ERROR}{FATAL\_ERROR}}
+{\footnotesize\ttfamily \#define F\+A\+T\+A\+L\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
+\DoxyCodeLine{    throw std::runtime\_error(message);}
+
+\end{DoxyCode}
+
+
+Definition at line 4 of file image.\+cpp.
+
