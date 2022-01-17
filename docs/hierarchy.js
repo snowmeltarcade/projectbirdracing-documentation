@@ -5,11 +5,12 @@ var hierarchy =
     [ "pbr::shared::apis::graphics::color", "structpbr_1_1shared_1_1apis_1_1graphics_1_1color.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::command_buffer", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::command_pool", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool.html", null ],
+    [ "pbr::shared::data::data_manager", "classpbr_1_1shared_1_1data_1_1data__manager.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::debug_messenger", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::device", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device.html", null ],
     [ "pbr::shared::apis::logging::endpoint", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html", [
       [ "pbr::shared::apis::logging::endpoints::file", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file.html", null ],
-      [ "pbr::shared::apis::logging::endpoints::stdout", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout.html", null ],
+      [ "pbr::shared::apis::logging::endpoints::std_out", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1std__out.html", null ],
       [ "test_endpoint", "classtest__endpoint.html", null ]
     ] ],
     [ "pbr::shared::apis::graphics::vulkan::fence", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence.html", null ],
@@ -25,6 +26,9 @@ var hierarchy =
     ] ],
     [ "pbr::shared::apis::datetime::idatetime_manager", "classpbr_1_1shared_1_1apis_1_1datetime_1_1idatetime__manager.html", [
       [ "pbr::shared::apis::datetime::datetime_manager", "classpbr_1_1shared_1_1apis_1_1datetime_1_1datetime__manager.html", null ]
+    ] ],
+    [ "pbr::shared::apis::file::ifile_manager", "classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager.html", [
+      [ "pbr::shared::apis::file::file_manager", "classpbr_1_1shared_1_1apis_1_1file_1_1file__manager.html", null ]
     ] ],
     [ "pbr::shared::apis::graphics::igraphics_manager", "classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html", [
       [ "pbr::shared::apis::graphics::vulkan_graphics_manager", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html", null ],
@@ -66,9 +70,11 @@ var hierarchy =
       [ "test_scene", "classtest__scene.html", null ]
     ] ],
     [ "pbr::shared::apis::graphics::vulkan::semaphore", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore.html", null ],
+    [ "pbr::shared::data::settings", "classpbr_1_1shared_1_1data_1_1settings.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::swap_chain", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::swap_chain_support_details", "structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::swap_chain_supported_details", "structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details.html", null ],
+    [ "pbr::shared::utils::uri", "structpbr_1_1shared_1_1utils_1_1uri.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::vma", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma.html", null ],
     [ "pbr::shared::apis::windowing::window_size", "structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::window_surface", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1window__surface.html", null ]

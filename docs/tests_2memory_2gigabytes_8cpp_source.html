@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('tests_2memory_2gigabytes_8cpp_source.h
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="tests_2memory_2gigabytes_8cpp.html#a6eed00d2e13a11f27dd360fb6e43f57c">   28</a></span>&#160;<a class="code" href="tests_2memory_2gigabytes_8cpp.html#a4190b7f129444383bd0a77663fdfd865">TEST_CASE</a>(<span class="stringliteral">&quot;gigabytes constructor bytes - set value - sets value&quot;</span>, <span class="stringliteral">&quot;[shared/memory]&quot;</span>) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a> b(2048 * 1024 * 1024);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a> b(2048u * 1024u * 1024u);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> expected = b.<a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html#ac964bd9a6db2cda42c4e119c7931d6cc">get_value</a>() / 1024u / 1024u / 1024u;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classpbr_1_1shared_1_1memory_1_1gigabytes.html">gigabytes</a> gb(b);</div>

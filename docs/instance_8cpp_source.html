@@ -89,223 +89,225 @@ $(document).ready(function(){initNavTree('instance_8cpp_source.html',''); initRe
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="debug__messenger_8h.html">debug_messenger.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html">pbr::shared::apis::graphics::vulkan</a> {</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">   13</a></span>&#160;    VkResult <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">create_debug_utils_messenger_ext</a>(VkInstance <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>,</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                                              <span class="keyword">const</span> VkDebugUtilsMessengerCreateInfoEXT* create_info,</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                              <span class="keyword">const</span> VkAllocationCallbacks* allocator,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                              VkDebugUtilsMessengerEXT* <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">auto</span> func = (PFN_vkCreateDebugUtilsMessengerEXT)vkGetInstanceProcAddr(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <span class="stringliteral">&quot;vkCreateDebugUtilsMessengerEXT&quot;</span>);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (func != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">return</span> func(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, create_info, allocator, <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">return</span> VK_ERROR_EXTENSION_NOT_PRESENT;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">destroy_debug_utils_messenger_ext</a>(VkInstance <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                           VkDebugUtilsMessengerEXT <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                           <span class="keyword">const</span> VkAllocationCallbacks* allocator) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">auto</span> func = (PFN_vkDestroyDebugUtilsMessengerEXT)vkGetInstanceProcAddr(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <span class="stringliteral">&quot;vkDestroyDebugUtilsMessengerEXT&quot;</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (func != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            func(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>, allocator);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">   39</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">instance::initialize</a>(SDL_Window* window,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                              <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a> <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>) noexcept {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        assert((window != <span class="keyword">nullptr</span>));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Initializing Vulkan instance...&quot;</span>,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        this-&gt;_window = window;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html">pbr::shared::apis::graphics::vulkan</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">   15</a></span>&#160;    VkResult <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">create_debug_utils_messenger_ext</a>(VkInstance <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                              <span class="keyword">const</span> VkDebugUtilsMessengerCreateInfoEXT* create_info,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                              <span class="keyword">const</span> VkAllocationCallbacks* allocator,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                              VkDebugUtilsMessengerEXT* <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">auto</span> func = (PFN_vkCreateDebugUtilsMessengerEXT)vkGetInstanceProcAddr(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <span class="stringliteral">&quot;vkCreateDebugUtilsMessengerEXT&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (func != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">return</span> func(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, create_info, allocator, <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <span class="keywordflow">return</span> VK_ERROR_EXTENSION_NOT_PRESENT;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">   32</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">destroy_debug_utils_messenger_ext</a>(VkInstance <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                           VkDebugUtilsMessengerEXT <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                           <span class="keyword">const</span> VkAllocationCallbacks* allocator) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">auto</span> func = (PFN_vkDestroyDebugUtilsMessengerEXT)vkGetInstanceProcAddr(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <span class="stringliteral">&quot;vkDestroyDebugUtilsMessengerEXT&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (func != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            func(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">instance</a>, <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">debug_messenger</a>, allocator);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">   41</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">instance::initialize</a>(SDL_Window* window,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                              <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a> <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>) noexcept {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        assert((window != <span class="keyword">nullptr</span>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Initializing Vulkan instance...&quot;</span>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">auto</span> application_info = this-&gt;construct_application_info(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        this-&gt;_window = window;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">auto</span> extensions = this-&gt;get_extensions();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">auto</span> application_info = this-&gt;construct_application_info(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">auto</span> validation_layers = this-&gt;query_validation_layers();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (!validation_layers) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Did not get required validation layers.&quot;</span>,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this-&gt;_validation_layers = *validation_layers;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">auto</span> extensions = this-&gt;get_extensions();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">auto</span> validation_layers = this-&gt;query_validation_layers();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (!validation_layers) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Did not get required validation layers.&quot;</span>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                            <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">auto</span> instance_create_info = this-&gt;construct_instance_create_info(</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            application_info,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            extensions);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::array&lt;VkValidationFeatureEnableEXT, 1&gt; enables;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        VkValidationFeaturesEXT features {};</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this-&gt;enable_best_practices_validation_layer(instance_create_info, enables, features);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">auto</span> debug_messenger_create_info = <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html#ae7f072e7e24ece79ae4991e467cc0d4c">debug_messenger::get_create_info</a>(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            this-&gt;_log_manager);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        features.pNext = &amp;debug_messenger_create_info;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span> (vkCreateInstance(&amp;instance_create_info, <span class="keyword">nullptr</span>, &amp;this-&gt;_instance) != VK_SUCCESS) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to create Vulkan instance.&quot;</span>,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                            <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">create_debug_utils_messenger_ext</a>(this-&gt;_instance,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                             &amp;debug_messenger_create_info,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                             <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                             &amp;this-&gt;_debug_messenger) != VK_SUCCESS) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to create debug messenger.&quot;</span>,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                            <span class="stringliteral">&quot;Vulkan&quot;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Initialized Vulkan instance.&quot;</span>,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    VkApplicationInfo instance::construct_application_info(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a> <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        VkApplicationInfo ai {};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        ai.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        ai.pApplicationName = std::string(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af0447e6596700da84a74333d8d0b07b3">_application_name</a>).c_str();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        ai.applicationVersion = VK_MAKE_API_VERSION(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af02fb824e5aa6bb08507f8bfc5cf120c">_version_major</a>,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                    <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ace50aaf0a1c38f83842c49948b3dee78">_version_minor</a>,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                    <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#a61be1e2eadb788af1a1c62c370d1f007">_version_build</a>, 0);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        ai.pEngineName = std::string(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ac3849aaf458b1b109b6785d068322aa5">_engine_name</a>).c_str();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        ai.engineVersion = ai.applicationVersion;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ai.apiVersion = this-&gt;get_api_version();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> ai;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::vector&lt;const char*&gt; instance::get_extensions() const noexcept {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">auto</span> extensions_count {0u};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        SDL_Vulkan_GetInstanceExtensions(this-&gt;_window, &amp;extensions_count, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        std::vector&lt;const char*&gt; extensions;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        extensions.resize(extensions_count);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        SDL_Vulkan_GetInstanceExtensions(this-&gt;_window, &amp;extensions_count, extensions.data());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this-&gt;_validation_layers = *validation_layers;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">auto</span> instance_create_info = this-&gt;construct_instance_create_info(</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            application_info,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            extensions);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::array&lt;VkValidationFeatureEnableEXT, 1&gt; enables;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        VkValidationFeaturesEXT features {};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this-&gt;enable_best_practices_validation_layer(instance_create_info, enables, features);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">auto</span> debug_messenger_create_info = <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html#ae7f072e7e24ece79ae4991e467cc0d4c">debug_messenger::get_create_info</a>(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            this-&gt;_log_manager);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        features.pNext = &amp;debug_messenger_create_info;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (vkCreateInstance(&amp;instance_create_info, <span class="keyword">nullptr</span>, &amp;this-&gt;_instance) != VK_SUCCESS) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to create Vulkan instance.&quot;</span>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                            <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">create_debug_utils_messenger_ext</a>(this-&gt;_instance,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                             &amp;debug_messenger_create_info,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                             <span class="keyword">nullptr</span>,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                             &amp;this-&gt;_debug_messenger) != VK_SUCCESS) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Failed to create debug messenger.&quot;</span>,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                            <span class="stringliteral">&quot;Vulkan&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Initialized Vulkan instance.&quot;</span>,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    VkApplicationInfo instance::construct_application_info(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a> <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        VkApplicationInfo ai {};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        ai.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        ai.pApplicationName = std::string(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af0447e6596700da84a74333d8d0b07b3">_application_name</a>).c_str();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        ai.applicationVersion = VK_MAKE_API_VERSION(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af02fb824e5aa6bb08507f8bfc5cf120c">_version_major</a>,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                    <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ace50aaf0a1c38f83842c49948b3dee78">_version_minor</a>,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                    <a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#a61be1e2eadb788af1a1c62c370d1f007">_version_build</a>, 0);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ai.pEngineName = std::string(<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">application_information</a>.<a class="code" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ac3849aaf458b1b109b6785d068322aa5">_engine_name</a>).c_str();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        ai.engineVersion = ai.applicationVersion;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        ai.apiVersion = this-&gt;get_api_version();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> ai;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;const char*&gt; instance::get_extensions() const noexcept {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">auto</span> extensions_count {0u};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        SDL_Vulkan_GetInstanceExtensions(this-&gt;_window, &amp;extensions_count, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        std::vector&lt;const char*&gt; extensions;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        extensions.resize(extensions_count);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> extensions;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    std::optional&lt;std::vector&lt;const char*&gt;&gt; instance::query_validation_layers() const noexcept {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keyword">auto</span> validation_layer_count {0u};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        vkEnumerateInstanceLayerProperties(&amp;validation_layer_count, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        std::vector&lt;VkLayerProperties&gt; available_validation_layers;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        available_validation_layers.resize(validation_layer_count);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        vkEnumerateInstanceLayerProperties(&amp;validation_layer_count, available_validation_layers.data());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        SDL_Vulkan_GetInstanceExtensions(this-&gt;_window, &amp;extensions_count, extensions.data());</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        extensions.push_back(VK_EXT_DEBUG_UTILS_EXTENSION_NAME);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> extensions;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    std::optional&lt;std::vector&lt;const char*&gt;&gt; instance::query_validation_layers() const noexcept {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">auto</span> validation_layer_count {0u};</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        vkEnumerateInstanceLayerProperties(&amp;validation_layer_count, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        std::vector&lt;VkLayerProperties&gt; available_validation_layers;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        available_validation_layers.resize(validation_layer_count);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        std::vector&lt;const char*&gt; available_validation_layers_for_compare;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; l : available_validation_layers) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            available_validation_layers_for_compare.push_back(l.layerName);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        std::vector&lt;const char*&gt; desired_validation_layers {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">// this layer is only used during debug</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="stringliteral">&quot;VK_LAYER_KHRONOS_validation&quot;</span>,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        };</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (desired_validation_layers.size() &gt; 0) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            std::sort(desired_validation_layers.begin(), desired_validation_layers.end(),</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                      [](<span class="keyword">auto</span> &amp;l, <span class="keyword">auto</span> &amp;r) { return std::string(l) &lt; std::string(r); });</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            std::sort(available_validation_layers_for_compare.begin(), available_validation_layers_for_compare.end(),</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                      [](<span class="keyword">auto</span> &amp;l, <span class="keyword">auto</span> &amp;r) { return std::string(l) &lt; std::string(r); });</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keyword">auto</span> are_desired_validation_layers_supported = std::includes(</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                available_validation_layers_for_compare.begin(), available_validation_layers_for_compare.end(),</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                desired_validation_layers.begin(), desired_validation_layers.end(),</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                [](<span class="keyword">auto</span> &amp;available_layer, <span class="keyword">auto</span> &amp;layer) {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    return std::string(available_layer) &lt; std::string(layer);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                });</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">if</span> (!are_desired_validation_layers_supported) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Requested layers are not supported.&quot;</span>,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                                <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">return</span> desired_validation_layers;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    VkInstanceCreateInfo instance::construct_instance_create_info(<span class="keyword">const</span> VkApplicationInfo&amp; application_info,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                                                  <span class="keyword">const</span> std::vector&lt;const char*&gt;&amp; extensions) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        VkInstanceCreateInfo create_info {};</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        create_info.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        create_info.pApplicationInfo = &amp;application_info;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        create_info.enabledExtensionCount = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(extensions.size());</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        create_info.ppEnabledExtensionNames = extensions.data();</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#ifdef RELEASE</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="comment">// we don&#39;t want any validation layers in release</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        create_info.enabledLayerCount = 0u;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        create_info.enabledLayerCount = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(this-&gt;_validation_layers.size());</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        create_info.ppEnabledLayerNames = this-&gt;_validation_layers.data();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> create_info;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> instance::enable_best_practices_validation_layer(VkInstanceCreateInfo&amp; info,</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                          std::array&lt;VkValidationFeatureEnableEXT, 1&gt;&amp; enables,</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                          VkValidationFeaturesEXT&amp; features) <span class="keyword">const</span> noexcept {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        enables[0] = VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        features.sType = VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        features.enabledValidationFeatureCount = enables.size();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        features.pEnabledValidationFeatures = enables.data();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">info</a>.pNext = &amp;features;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">bool</span> instance::shutdown() noexcept {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (!this-&gt;_instance) {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Shutting down Vulkan instance...&quot;</span>,</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">if</span> (this-&gt;_debug_messenger) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">destroy_debug_utils_messenger_ext</a>(this-&gt;_instance, this-&gt;_debug_messenger, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            this-&gt;_debug_messenger = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        vkDestroyInstance(this-&gt;_instance, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        this-&gt;_instance = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Shut down Vulkan instance.&quot;</span>,</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        vkEnumerateInstanceLayerProperties(&amp;validation_layer_count, available_validation_layers.data());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        std::vector&lt;const char*&gt; available_validation_layers_for_compare;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; l : available_validation_layers) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            available_validation_layers_for_compare.push_back(l.layerName);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        std::vector&lt;const char*&gt; desired_validation_layers {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="comment">// this layer is only used during debug</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="stringliteral">&quot;VK_LAYER_KHRONOS_validation&quot;</span>,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        };</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">if</span> (desired_validation_layers.size() &gt; 0) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            std::sort(desired_validation_layers.begin(), desired_validation_layers.end(),</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                      [](<span class="keyword">auto</span> &amp;l, <span class="keyword">auto</span> &amp;r) { return std::string(l) &lt; std::string(r); });</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            std::sort(available_validation_layers_for_compare.begin(), available_validation_layers_for_compare.end(),</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                      [](<span class="keyword">auto</span> &amp;l, <span class="keyword">auto</span> &amp;r) { return std::string(l) &lt; std::string(r); });</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">auto</span> are_desired_validation_layers_supported = std::includes(</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                available_validation_layers_for_compare.begin(), available_validation_layers_for_compare.end(),</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                desired_validation_layers.begin(), desired_validation_layers.end(),</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                [](<span class="keyword">auto</span> &amp;available_layer, <span class="keyword">auto</span> &amp;layer) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    return std::string(available_layer) &lt; std::string(layer);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                });</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span> (!are_desired_validation_layers_supported) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Requested layers are not supported.&quot;</span>,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                                                <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">apis::logging::log_levels::error</a>,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> desired_validation_layers;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    VkInstanceCreateInfo instance::construct_instance_create_info(<span class="keyword">const</span> VkApplicationInfo&amp; application_info,</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                                  <span class="keyword">const</span> std::vector&lt;const char*&gt;&amp; extensions) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        VkInstanceCreateInfo create_info {};</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        create_info.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        create_info.pApplicationInfo = &amp;application_info;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        create_info.enabledExtensionCount = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(extensions.size());</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        create_info.ppEnabledExtensionNames = extensions.data();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#ifdef RELEASE</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// we don&#39;t want any validation layers in release</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        create_info.enabledLayerCount = 0u;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        create_info.enabledLayerCount = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(this-&gt;_validation_layers.size());</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        create_info.ppEnabledLayerNames = this-&gt;_validation_layers.data();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> create_info;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">void</span> instance::enable_best_practices_validation_layer(VkInstanceCreateInfo&amp; info,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                                                          std::array&lt;VkValidationFeatureEnableEXT, 1&gt;&amp; enables,</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                                          VkValidationFeaturesEXT&amp; features) <span class="keyword">const</span> noexcept {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        enables[0] = VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        features.sType = VK_STRUCTURE_TYPE_VALIDATION_FEATURES_EXT;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        features.enabledValidationFeatureCount = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(enables.size());</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        features.pEnabledValidationFeatures = enables.data();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">info</a>.pNext = &amp;features;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">bool</span> instance::shutdown() noexcept {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span> (!this-&gt;_instance) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Shutting down Vulkan instance...&quot;</span>,</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span> (this-&gt;_debug_messenger) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">destroy_debug_utils_messenger_ext</a>(this-&gt;_instance, this-&gt;_debug_messenger, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            this-&gt;_debug_messenger = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        vkDestroyInstance(this-&gt;_instance, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        this-&gt;_instance = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        this-&gt;_log_manager-&gt;log_message(<span class="stringliteral">&quot;Shut down Vulkan instance.&quot;</span>,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                        <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">apis::logging::log_levels::info</a>,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                        <span class="stringliteral">&quot;Graphics&quot;</span>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ainstance_8h_html"><div class="ttname"><a href="instance_8h.html">instance.h</a></div></div>
@@ -314,15 +316,15 @@ $(document).ready(function(){initNavTree('instance_8cpp_source.html',''); initRe
 <div class="ttc" id="adebug__messenger_8h_html"><div class="ttname"><a href="debug__messenger_8h.html">debug_messenger.h</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_html"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html">pbr::shared::apis::graphics::vulkan::instance</a></div><div class="ttdoc">A Vulkan instance.</div><div class="ttdef"><b>Definition:</b> <a href="instance_8h_source.html#l00018">instance.h:18</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html_af0447e6596700da84a74333d8d0b07b3"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af0447e6596700da84a74333d8d0b07b3">pbr::shared::apis::graphics::application_information::_application_name</a></div><div class="ttdeci">std::string _application_name</div><div class="ttdoc">The name of this application.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00010">application_information.h:10</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_html_a65c3a5791dc9ff1168c626171fa0c8fc"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">pbr::shared::apis::graphics::vulkan::destroy_debug_utils_messenger_ext</a></div><div class="ttdeci">void destroy_debug_utils_messenger_ext(VkInstance instance, VkDebugUtilsMessengerEXT debug_messenger, const VkAllocationCallbacks *allocator)</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00030">instance.cpp:30</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_html_a65c3a5791dc9ff1168c626171fa0c8fc"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a65c3a5791dc9ff1168c626171fa0c8fc">pbr::shared::apis::graphics::vulkan::destroy_debug_utils_messenger_ext</a></div><div class="ttdeci">void destroy_debug_utils_messenger_ext(VkInstance instance, VkDebugUtilsMessengerEXT debug_messenger, const VkAllocationCallbacks *allocator)</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00032">instance.cpp:32</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html_a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acb5e100e5a9a3e7f6d1fd97512215282">pbr::shared::apis::logging::log_levels::error</a></div><div class="ttdeci">@ error</div><div class="ttdoc">For recoverable errors that require attention.</div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html_ace50aaf0a1c38f83842c49948b3dee78"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ace50aaf0a1c38f83842c49948b3dee78">pbr::shared::apis::graphics::application_information::_version_minor</a></div><div class="ttdeci">uint32_t _version_minor</div><div class="ttdoc">The application's minor version number.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00019">application_information.h:19</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_html_a1bd7fe35c34730ea52b85790fe9fa8f2"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">pbr::shared::apis::graphics::vulkan::instance::initialize</a></div><div class="ttdeci">bool initialize(SDL_Window *window, application_information application_information) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00039">instance.cpp:39</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance_html_a1bd7fe35c34730ea52b85790fe9fa8f2"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a1bd7fe35c34730ea52b85790fe9fa8f2">pbr::shared::apis::graphics::vulkan::instance::initialize</a></div><div class="ttdeci">bool initialize(SDL_Window *window, application_information application_information) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00041">instance.cpp:41</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html_a61be1e2eadb788af1a1c62c370d1f007"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#a61be1e2eadb788af1a1c62c370d1f007">pbr::shared::apis::graphics::application_information::_version_build</a></div><div class="ttdeci">uint32_t _version_build</div><div class="ttdoc">The application's build version number.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00022">application_information.h:22</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1logging_html_a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1logging.html#a542f57ec5157568ea7ee664caa308b09acaf9b6b99962bf5c2264824231d7a40c">pbr::shared::apis::logging::log_levels::info</a></div><div class="ttdeci">@ info</div><div class="ttdoc">For informational messages. This is the default log level.</div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">pbr::shared::apis::graphics::application_information</a></div><div class="ttdoc">Information about the application that the graphics API needs to know.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00008">application_information.h:8</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html_ac3849aaf458b1b109b6785d068322aa5"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ac3849aaf458b1b109b6785d068322aa5">pbr::shared::apis::graphics::application_information::_engine_name</a></div><div class="ttdeci">std::string _engine_name</div><div class="ttdoc">The name of this game engine.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00013">application_information.h:13</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_html_a02a3228944967599c5791324e442d6e4"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">pbr::shared::apis::graphics::vulkan::create_debug_utils_messenger_ext</a></div><div class="ttdeci">VkResult create_debug_utils_messenger_ext(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT *create_info, const VkAllocationCallbacks *allocator, VkDebugUtilsMessengerEXT *debug_messenger)</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00013">instance.cpp:13</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_html_a02a3228944967599c5791324e442d6e4"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a02a3228944967599c5791324e442d6e4">pbr::shared::apis::graphics::vulkan::create_debug_utils_messenger_ext</a></div><div class="ttdeci">VkResult create_debug_utils_messenger_ext(VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT *create_info, const VkAllocationCallbacks *allocator, VkDebugUtilsMessengerEXT *debug_messenger)</div><div class="ttdef"><b>Definition:</b> <a href="instance_8cpp_source.html#l00015">instance.cpp:15</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger_html_ae7f072e7e24ece79ae4991e467cc0d4c"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html#ae7f072e7e24ece79ae4991e467cc0d4c">pbr::shared::apis::graphics::vulkan::debug_messenger::get_create_info</a></div><div class="ttdeci">static VkDebugUtilsMessengerCreateInfoEXT get_create_info(std::shared_ptr&lt; apis::logging::ilog_manager &gt; &amp;log_manager) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="debug__messenger_8cpp_source.html#l00006">debug_messenger.cpp:6</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger_html"><div class="ttname"><a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html">pbr::shared::apis::graphics::vulkan::debug_messenger</a></div><div class="ttdoc">Handles Vulkan debug messages. This is a static class.</div><div class="ttdef"><b>Definition:</b> <a href="debug__messenger_8h_source.html#l00011">debug_messenger.h:11</a></div></div>
 <!-- start footer part -->

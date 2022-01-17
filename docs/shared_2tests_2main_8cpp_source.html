@@ -87,15 +87,20 @@ $(document).ready(function(){initNavTree('shared_2tests_2main_8cpp_source.html',
 <div class="contents">
 <a href="shared_2tests_2main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="shared_2tests_2main_8cpp.html#a34b4c3eca7342fbc4cba090d02139902">    1</a></span>&#160;<span class="preprocessor">#define CATCH_CONFIG_RUNNER</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;catch2/catch.hpp&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="shared_2tests_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">    4</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">main</a>(<span class="keywordtype">int</span> argv, <span class="keywordtype">char</span>* <a class="code" href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">args</a>[])</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    Catch::Session session;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> session.run(argv, <a class="code" href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">args</a>);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="test__utils_8h.html">test_utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="shared_2tests_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">main</a>(<span class="keywordtype">int</span> argv, <span class="keywordtype">char</span>* <a class="code" href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">args</a>[])</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    Catch::Session session;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="test__utils_8cpp.html#af91fad8f43103146526f2c5ca6a94f0c">current_working_directory</a> = <a class="code" href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">args</a>[0];</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> session.run(argv, <a class="code" href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">args</a>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="atest__utils_8h_html"><div class="ttname"><a href="test__utils_8h.html">test_utils.h</a></div></div>
+<div class="ttc" id="atest__utils_8cpp_html_af91fad8f43103146526f2c5ca6a94f0c"><div class="ttname"><a href="test__utils_8cpp.html#af91fad8f43103146526f2c5ca6a94f0c">current_working_directory</a></div><div class="ttdeci">std::filesystem::path current_working_directory</div><div class="ttdoc">The current working directory of the test executable.</div><div class="ttdef"><b>Definition:</b> <a href="test__utils_8cpp_source.html#l00003">test_utils.cpp:3</a></div></div>
 <div class="ttc" id="anamespacebuild_html_a5b89d46152b389e188fbf659e279655a"><div class="ttname"><a href="namespacebuild.html#a5b89d46152b389e188fbf659e279655a">build.args</a></div><div class="ttdeci">def args</div><div class="ttdef"><b>Definition:</b> <a href="build_8py_source.html#l00225">build.py:225</a></div></div>
 <div class="ttc" id="aclient_2main_8cpp_html_a148e510f1af548e3fa6a929b9f2371ac"><div class="ttname"><a href="client_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">main</a></div><div class="ttdeci">int main(int argv, char *args[])</div><div class="ttdef"><b>Definition:</b> <a href="client_2main_8cpp_source.html#l00010">main.cpp:10</a></div></div>
 <!-- start footer part -->

@@ -1,0 +1,315 @@
+\hypertarget{tests_2data_2settings_8cpp}{}\doxysection{src/shared/tests/data/settings.cpp File Reference}
+\label{tests_2data_2settings_8cpp}\index{src/shared/tests/data/settings.cpp@{src/shared/tests/data/settings.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/data/settings.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_aee3bff5d9f154d7728ebc5b894b61471}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}add -\/ valid key and value -\/ adds setting\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em add \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a4a3169c0504b84f694048cb4d4b3a20d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_ab160a5d672866f087fe1c9ce4813306f}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a76d0cddd0012b64f8c5f1cd177bc1032}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_aac192080a3cc56661e74835c9c1591fd}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+settings -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+as\+\_\+settings \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a74414c96b05aec720fc54621adff57ff}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+settings -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_ac642886d27c77b4c6847a45943b0dfa0}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+settings -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_afe35e1a3b8379355189fd8cd8cafd9e2}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+int -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+as\+\_\+int \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a4ef60e8a4af51d241225b1ae9a2c6d13}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+int -\/ invalid value -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a6f49c232df51bc1df57c0684244cfb5f}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+int -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a522fd93771f8bd095da7efc4a08592c7}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+int -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a4add857250d871603a204bc0aeedf38d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+as\+\_\+uint32\+\_\+t \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a717eaae7479fd28abcc739d21a1a73e9}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ invalid value -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a759705879c88ebb7147fa89751884bf6}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a6748da1da2da96cdf72fbb6ddc895408}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_abed941f35e7ab65f3aa2b970660119fb}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+float -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+as\+\_\+float \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_af471443841bb7ea8265950e12546b6ec}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+float -\/ invalid value -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a5bd725731536214b9889fa02cd90bb1e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+float -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a6699ec182829547068b8249c4b2c888e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+float -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_abe3347e433ae683b0eaf2d7d90efdfb2}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+bool -\/ unknown key -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get\+\_\+as\+\_\+bool \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a41454adad502ccb5ecf3b7377be33b04}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+bool -\/ invalid value -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_a73dd7675a1acc3072dbf1fa551a81ece}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+bool -\/ known key -\/ returns value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2data_2settings_8cpp_ad40363a1d549e42b407094248d4709f9}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get\+\_\+as\+\_\+bool -\/ existing key -\/ overwrites value\char`\"{}, \char`\"{}\mbox{[}shared/data\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_aee3bff5d9f154d7728ebc5b894b61471}\label{tests_2data_2settings_8cpp_aee3bff5d9f154d7728ebc5b894b61471}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}add -\/ valid key and value -\/ adds setting\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+add 
+
+
+
+Definition at line 12 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a76d0cddd0012b64f8c5f1cd177bc1032}\label{tests_2data_2settings_8cpp_a76d0cddd0012b64f8c5f1cd177bc1032}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_ab160a5d672866f087fe1c9ce4813306f}\label{tests_2data_2settings_8cpp_ab160a5d672866f087fe1c9ce4813306f}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a4a3169c0504b84f694048cb4d4b3a20d}\label{tests_2data_2settings_8cpp_a4a3169c0504b84f694048cb4d4b3a20d}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get 
+
+
+
+Definition at line 52 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_ad40363a1d549e42b407094248d4709f9}\label{tests_2data_2settings_8cpp_ad40363a1d549e42b407094248d4709f9}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+bool -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 327 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a41454adad502ccb5ecf3b7377be33b04}\label{tests_2data_2settings_8cpp_a41454adad502ccb5ecf3b7377be33b04}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+bool -\/ invalid value -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 302 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a73dd7675a1acc3072dbf1fa551a81ece}\label{tests_2data_2settings_8cpp_a73dd7675a1acc3072dbf1fa551a81ece}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+bool -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 313 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_abe3347e433ae683b0eaf2d7d90efdfb2}\label{tests_2data_2settings_8cpp_abe3347e433ae683b0eaf2d7d90efdfb2}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+bool -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+as\+\_\+bool 
+
+
+
+Definition at line 294 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a6699ec182829547068b8249c4b2c888e}\label{tests_2data_2settings_8cpp_a6699ec182829547068b8249c4b2c888e}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [9/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+float -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 275 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_af471443841bb7ea8265950e12546b6ec}\label{tests_2data_2settings_8cpp_af471443841bb7ea8265950e12546b6ec}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [10/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+float -\/ invalid value -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 250 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a5bd725731536214b9889fa02cd90bb1e}\label{tests_2data_2settings_8cpp_a5bd725731536214b9889fa02cd90bb1e}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [11/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+float -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 261 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_abed941f35e7ab65f3aa2b970660119fb}\label{tests_2data_2settings_8cpp_abed941f35e7ab65f3aa2b970660119fb}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [12/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+float -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+as\+\_\+float 
+
+
+
+Definition at line 242 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a522fd93771f8bd095da7efc4a08592c7}\label{tests_2data_2settings_8cpp_a522fd93771f8bd095da7efc4a08592c7}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [13/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+int -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a4ef60e8a4af51d241225b1ae9a2c6d13}\label{tests_2data_2settings_8cpp_a4ef60e8a4af51d241225b1ae9a2c6d13}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [14/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+int -\/ invalid value -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 146 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a6f49c232df51bc1df57c0684244cfb5f}\label{tests_2data_2settings_8cpp_a6f49c232df51bc1df57c0684244cfb5f}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [15/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+int -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_afe35e1a3b8379355189fd8cd8cafd9e2}\label{tests_2data_2settings_8cpp_afe35e1a3b8379355189fd8cd8cafd9e2}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [16/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+int -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+as\+\_\+int 
+
+
+
+Definition at line 138 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_ac642886d27c77b4c6847a45943b0dfa0}\label{tests_2data_2settings_8cpp_ac642886d27c77b4c6847a45943b0dfa0}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [17/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+settings -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 116 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a74414c96b05aec720fc54621adff57ff}\label{tests_2data_2settings_8cpp_a74414c96b05aec720fc54621adff57ff}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [18/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+settings -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 99 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_aac192080a3cc56661e74835c9c1591fd}\label{tests_2data_2settings_8cpp_aac192080a3cc56661e74835c9c1591fd}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [19/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+settings -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+as\+\_\+settings 
+
+
+
+Definition at line 91 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a6748da1da2da96cdf72fbb6ddc895408}\label{tests_2data_2settings_8cpp_a6748da1da2da96cdf72fbb6ddc895408}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [20/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ existing key -\/ overwrites value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 223 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a717eaae7479fd28abcc739d21a1a73e9}\label{tests_2data_2settings_8cpp_a717eaae7479fd28abcc739d21a1a73e9}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [21/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ invalid value -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 198 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a759705879c88ebb7147fa89751884bf6}\label{tests_2data_2settings_8cpp_a759705879c88ebb7147fa89751884bf6}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [22/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ known key -\/ returns value\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 209 of file settings.\+cpp.
+
+\mbox{\Hypertarget{tests_2data_2settings_8cpp_a4add857250d871603a204bc0aeedf38d}\label{tests_2data_2settings_8cpp_a4add857250d871603a204bc0aeedf38d}} 
+\index{settings.cpp@{settings.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!settings.cpp@{settings.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [23/23]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get\+\_\+as\+\_\+uint32\+\_\+t -\/ unknown key -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/data\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get\+\_\+as\+\_\+uint32\+\_\+t 
+
+
+
+Definition at line 190 of file settings.\+cpp.
+

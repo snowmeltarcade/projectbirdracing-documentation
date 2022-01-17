@@ -208,7 +208,23 @@ $(document).ready(function(){initNavTree('utils_2strings_8cpp_source.html',''); 
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">auto</span> res = string_to_check.substr(string_to_check.size() - <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>.size(), <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>.size());</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> res == <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#ad4d0d99c883752d37f516c2fb78dee33">  125</a></span>&#160;    std::optional&lt;int&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ad4d0d99c883752d37f516c2fb78dee33">to_int</a>(std::string_view s) noexcept {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">return</span> std::stoi(std::string(s), <span class="keyword">nullptr</span>, 10);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#ada3b783f1cc84ee82a2da8f22132b77c">  133</a></span>&#160;    std::optional&lt;float&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ada3b783f1cc84ee82a2da8f22132b77c">to_float</a>(std::string_view s) noexcept {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> std::stof(std::string(s));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ad38e90e91a1c9b0fd4e15e31eed1e401"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ad38e90e91a1c9b0fd4e15e31eed1e401">pbr::shared::utils::to_upper</a></div><div class="ttdeci">std::string to_upper(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00070">strings.cpp:70</a></div></div>
@@ -221,7 +237,9 @@ $(document).ready(function(){initNavTree('utils_2strings_8cpp_source.html',''); 
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ac7c8a83641b6782fe03eccc01ba370d7"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">pbr::shared::utils::ends_with</a></div><div class="ttdeci">bool ends_with(std::string_view string_to_check, std::string_view ends_with) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00114">strings.cpp:114</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html">pbr::shared::utils</a></div><div class="ttdef"><b>Definition:</b> <a href="utils_2program__arguments_8cpp_source.html#l00003">program_arguments.cpp:3</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_aff48a812205589f14da85ea0eb12ac73"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">pbr::shared::utils::starts_with</a></div><div class="ttdeci">bool starts_with(std::string_view string_to_check, std::string_view starts_with) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00105">strings.cpp:105</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ada3b783f1cc84ee82a2da8f22132b77c"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ada3b783f1cc84ee82a2da8f22132b77c">pbr::shared::utils::to_float</a></div><div class="ttdeci">std::optional&lt; float &gt; to_float(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00133">strings.cpp:133</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_a9526d3a7dd16b2ada210e2488d134825"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">pbr::shared::utils::trim</a></div><div class="ttdeci">std::string trim(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00019">strings.cpp:19</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ad4d0d99c883752d37f516c2fb78dee33"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ad4d0d99c883752d37f516c2fb78dee33">pbr::shared::utils::to_int</a></div><div class="ttdeci">std::optional&lt; int &gt; to_int(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00125">strings.cpp:125</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

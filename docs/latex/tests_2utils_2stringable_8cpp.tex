@@ -1,0 +1,74 @@
+\hypertarget{tests_2utils_2stringable_8cpp}{}\doxysection{src/shared/tests/utils/stringable.cpp File Reference}
+\label{tests_2utils_2stringable_8cpp}\index{src/shared/tests/utils/stringable.cpp@{src/shared/tests/utils/stringable.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/utils/stringable.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/utils/strings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tests_2utils_2stringable_8cpp_a3a2e8a184a9c7d80abf46a9e5c41e04c}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}to\+\_\+string (int) -\/ valid value -\/ returns correct result\char`\"{}, \char`\"{}\mbox{[}shared/utils/stringable\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2utils_2stringable_8cpp_a9cf030956db75acb8635541eb860a19c}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}to\+\_\+string (float) -\/ valid value -\/ returns correct result\char`\"{}, \char`\"{}\mbox{[}shared/utils/stringable\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2utils_2stringable_8cpp_a50cd97f16b4e29cea7e7d61e7556bf60}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}to\+\_\+string (bool) -\/ valid value -\/ returns correct result\char`\"{}, \char`\"{}\mbox{[}shared/utils/stringable\mbox{]}\char`\"{})
+\item 
+{\footnotesize template$<$stringable T$>$ }\\void \mbox{\hyperlink{tests_2utils_2stringable_8cpp_a9913f47bb7fe9618443599e252624b26}{stringable\+\_\+concept\+\_\+test}} (T)
+\item 
+\mbox{\hyperlink{tests_2utils_2stringable_8cpp_afed04a3ebdd7cfdd8f1e0512a2bcd00b}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}stringable -\/ constrains correct types\char`\"{}, \char`\"{}\mbox{[}shared/utils/stringable\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2utils_2stringable_8cpp_a9913f47bb7fe9618443599e252624b26}\label{tests_2utils_2stringable_8cpp_a9913f47bb7fe9618443599e252624b26}} 
+\index{stringable.cpp@{stringable.cpp}!stringable\_concept\_test@{stringable\_concept\_test}}
+\index{stringable\_concept\_test@{stringable\_concept\_test}!stringable.cpp@{stringable.cpp}}
+\doxysubsubsection{\texorpdfstring{stringable\_concept\_test()}{stringable\_concept\_test()}}
+{\footnotesize\ttfamily template$<$stringable T$>$ \\
+void stringable\+\_\+concept\+\_\+test (\begin{DoxyParamCaption}\item[{T}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{tests_2utils_2stringable_8cpp_afed04a3ebdd7cfdd8f1e0512a2bcd00b}\label{tests_2utils_2stringable_8cpp_afed04a3ebdd7cfdd8f1e0512a2bcd00b}} 
+\index{stringable.cpp@{stringable.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!stringable.cpp@{stringable.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}stringable -\/ constrains correct types\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/utils/stringable\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{tests_2utils_2stringable_8cpp_a50cd97f16b4e29cea7e7d61e7556bf60}\label{tests_2utils_2stringable_8cpp_a50cd97f16b4e29cea7e7d61e7556bf60}} 
+\index{stringable.cpp@{stringable.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!stringable.cpp@{stringable.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}to\+\_\+string (bool) -\/ valid value -\/ returns correct result\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/utils/stringable\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{tests_2utils_2stringable_8cpp_a9cf030956db75acb8635541eb860a19c}\label{tests_2utils_2stringable_8cpp_a9cf030956db75acb8635541eb860a19c}} 
+\index{stringable.cpp@{stringable.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!stringable.cpp@{stringable.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}to\+\_\+string (float) -\/ valid value -\/ returns correct result\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/utils/stringable\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{tests_2utils_2stringable_8cpp_a3a2e8a184a9c7d80abf46a9e5c41e04c}\label{tests_2utils_2stringable_8cpp_a3a2e8a184a9c7d80abf46a9e5c41e04c}} 
+\index{stringable.cpp@{stringable.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!stringable.cpp@{stringable.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}to\+\_\+string (int) -\/ valid value -\/ returns correct result\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/utils/stringable\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file stringable.\+cpp.
+

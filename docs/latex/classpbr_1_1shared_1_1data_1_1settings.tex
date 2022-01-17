@@ -1,0 +1,220 @@
+\hypertarget{classpbr_1_1shared_1_1data_1_1settings}{}\doxysection{pbr\+::shared\+::data\+::settings Class Reference}
+\label{classpbr_1_1shared_1_1data_1_1settings}\index{pbr::shared::data::settings@{pbr::shared::data::settings}}
+
+
+{\ttfamily \#include $<$settings.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$utils\+::stringable T$>$ }\\void \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a63753693908e42b61821226dab53d96a}{add}} (const std\+::string \&key, T value) noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a8389e22fddee57633060fb5452590a41}{add}} (const std\+::string \&key, const std\+::string \&value) noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a2bd58bdcf893cf0b4061ce630b06b80f}{add}} (const std\+::string \&key, const \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} \&value) noexcept
+\item 
+std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a88a6b0af038b2a91287326ef128b3e23}{get}} (const std\+::string \&key) noexcept
+\item 
+std\+::optional$<$ int $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_ae0ea3162bdbd5b1035d87ac8168efd7a}{get\+\_\+as\+\_\+int}} (const std\+::string \&key) noexcept
+\item 
+std\+::optional$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a96b2edfa73371683fd9142ec0a978631}{get\+\_\+as\+\_\+uint32\+\_\+t}} (const std\+::string \&key) noexcept
+\item 
+std\+::optional$<$ float $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a03bf3ebdab751b9b8f6aa38925bc4bf0}{get\+\_\+as\+\_\+float}} (const std\+::string \&key) noexcept
+\item 
+std\+::optional$<$ bool $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_af9944c864c08f44f9e9046f2a918a915}{get\+\_\+as\+\_\+bool}} (const std\+::string \&key) noexcept
+\item 
+std\+::optional$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a3cdb8ea74497900adc49c7fb6253a779}{get\+\_\+as\+\_\+settings}} (const std\+::string \&key) noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_aee9b8805ec62efb16cbd75c066bab368}{operator==}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} \&) const =default
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of settings. Each setting has a string key and a value. The value can be a string, an integer, a float, a boolean, another settings object or an array of one of these types. The key can be any string value, including an empty string. \textquotesingle{}Null\textquotesingle{} values are represented as an empty string, so a null value can be checked by calling {\ttfamily \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings_a88a6b0af038b2a91287326ef128b3e23}{get()}}} and seeing if the value is empty or not, then calling the respective {\ttfamily get\+\_\+as\+\_\+xxx()} function. 
+
+Definition at line 16 of file settings.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a2bd58bdcf893cf0b4061ce630b06b80f}\label{classpbr_1_1shared_1_1data_1_1settings_a2bd58bdcf893cf0b4061ce630b06b80f}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!add@{add}}
+\index{add@{add}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void pbr\+::shared\+::data\+::settings\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Adds a setting. If the key already exists, its value is overwritten 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+{\em value} & The value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file settings.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a8389e22fddee57633060fb5452590a41}\label{classpbr_1_1shared_1_1data_1_1settings_a8389e22fddee57633060fb5452590a41}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!add@{add}}
+\index{add@{add}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void pbr\+::shared\+::data\+::settings\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Adds a setting. If the key already exists, its value is overwritten 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+{\em value} & The value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 32 of file settings.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a63753693908e42b61821226dab53d96a}\label{classpbr_1_1shared_1_1data_1_1settings_a63753693908e42b61821226dab53d96a}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!add@{add}}
+\index{add@{add}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$utils\+::stringable T$>$ \\
+void pbr\+::shared\+::data\+::settings\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Adds a setting. If the key already exists, its value is overwritten 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the value to add \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+{\em value} & The value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file settings.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a88a6b0af038b2a91287326ef128b3e23}\label{classpbr_1_1shared_1_1data_1_1settings_a88a6b0af038b2a91287326ef128b3e23}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get@{get}}
+\index{get@{get}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::string $>$ pbr\+::shared\+::data\+::settings\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a setting as a string 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 5 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_af9944c864c08f44f9e9046f2a918a915}\label{classpbr_1_1shared_1_1data_1_1settings_af9944c864c08f44f9e9046f2a918a915}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get\_as\_bool@{get\_as\_bool}}
+\index{get\_as\_bool@{get\_as\_bool}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get\_as\_bool()}{get\_as\_bool()}}
+{\footnotesize\ttfamily std\+::optional$<$ bool $>$ pbr\+::shared\+::data\+::settings\+::get\+\_\+as\+\_\+bool (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a setting as a bool 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a03bf3ebdab751b9b8f6aa38925bc4bf0}\label{classpbr_1_1shared_1_1data_1_1settings_a03bf3ebdab751b9b8f6aa38925bc4bf0}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get\_as\_float@{get\_as\_float}}
+\index{get\_as\_float@{get\_as\_float}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get\_as\_float()}{get\_as\_float()}}
+{\footnotesize\ttfamily std\+::optional$<$ float $>$ pbr\+::shared\+::data\+::settings\+::get\+\_\+as\+\_\+float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a setting as a float 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_ae0ea3162bdbd5b1035d87ac8168efd7a}\label{classpbr_1_1shared_1_1data_1_1settings_ae0ea3162bdbd5b1035d87ac8168efd7a}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get\_as\_int@{get\_as\_int}}
+\index{get\_as\_int@{get\_as\_int}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get\_as\_int()}{get\_as\_int()}}
+{\footnotesize\ttfamily std\+::optional$<$ int $>$ pbr\+::shared\+::data\+::settings\+::get\+\_\+as\+\_\+int (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a setting as an int 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a3cdb8ea74497900adc49c7fb6253a779}\label{classpbr_1_1shared_1_1data_1_1settings_a3cdb8ea74497900adc49c7fb6253a779}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get\_as\_settings@{get\_as\_settings}}
+\index{get\_as\_settings@{get\_as\_settings}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get\_as\_settings()}{get\_as\_settings()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} $>$ pbr\+::shared\+::data\+::settings\+::get\+\_\+as\+\_\+settings (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a settings object 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_a96b2edfa73371683fd9142ec0a978631}\label{classpbr_1_1shared_1_1data_1_1settings_a96b2edfa73371683fd9142ec0a978631}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!get\_as\_uint32\_t@{get\_as\_uint32\_t}}
+\index{get\_as\_uint32\_t@{get\_as\_uint32\_t}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{get\_as\_uint32\_t()}{get\_as\_uint32\_t()}}
+{\footnotesize\ttfamily std\+::optional$<$ uint32\+\_\+t $>$ pbr\+::shared\+::data\+::settings\+::get\+\_\+as\+\_\+uint32\+\_\+t (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns a setting as a uint32\+\_\+t 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value, else empty if the key is not present 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file settings.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1settings_aee9b8805ec62efb16cbd75c066bab368}\label{classpbr_1_1shared_1_1data_1_1settings_aee9b8805ec62efb16cbd75c066bab368}} 
+\index{pbr::shared::data::settings@{pbr::shared::data::settings}!operator==@{operator==}}
+\index{operator==@{operator==}!pbr::shared::data::settings@{pbr::shared::data::settings}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::data\+::settings\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Equality operator. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/data/\mbox{\hyperlink{settings_8h}{settings.\+h}}\item 
+src/shared/data/\mbox{\hyperlink{data_2settings_8cpp}{settings.\+cpp}}\end{DoxyCompactItemize}

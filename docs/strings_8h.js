@@ -10,6 +10,8 @@ var strings_8h =
     [ "split", "strings_8h.html#a1977b1f5131908fe89033f8c1f9e58ca", null ],
     [ "starts_with", "strings_8h.html#aff48a812205589f14da85ea0eb12ac73", null ],
     [ "to_array", "strings_8h.html#ab51a4ab92758c5a6dab649d17943bedf", null ],
+    [ "to_float", "strings_8h.html#ada3b783f1cc84ee82a2da8f22132b77c", null ],
+    [ "to_int", "strings_8h.html#ad4d0d99c883752d37f516c2fb78dee33", null ],
     [ "to_lower", "strings_8h.html#abff975b1b4e838e46ff2bd242449f519", null ],
     [ "to_upper", "strings_8h.html#ad38e90e91a1c9b0fd4e15e31eed1e401", null ],
     [ "trim", "strings_8h.html#a9526d3a7dd16b2ada210e2488d134825", null ],

@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('server_2main_8cpp_source.html',''); in
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="game__manager_8h.html">shared/game/game_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datetime__manager_8h.html">shared/apis/datetime/datetime_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="log__manager_8h.html">shared/apis/logging/log_manager.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stdout_8h.html">shared/apis/logging/endpoints/stdout.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="std__out_8h.html">shared/apis/logging/endpoints/std_out.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="file_8h.html">shared/apis/logging/endpoints/file.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="window__manager_8h.html">shared/apis/windowing/window_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vulkan__graphics__manager_8h.html">shared/apis/graphics/vulkan_graphics_manager.h</a>&quot;</span></div>
@@ -109,12 +109,12 @@ $(document).ready(function(){initNavTree('server_2main_8cpp_source.html',''); in
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">auto</span> datetime_manager = std::make_shared&lt;apis::datetime::datetime_manager&gt;();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">auto</span> game_log_manager = std::make_shared&lt;apis::logging::log_manager&gt;(datetime_manager);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (!game_log_manager-&gt;add_endpoint(std::make_shared&lt;apis::logging::endpoints::stdout&gt;())) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (!game_log_manager-&gt;add_endpoint(std::make_shared&lt;apis::logging::endpoints::std_out&gt;())) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;Failed to add `stdout` logging endpoint.&quot;</span>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">auto</span> graphics_log_manager = std::make_shared&lt;apis::logging::log_manager&gt;(datetime_manager);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (!graphics_log_manager-&gt;add_endpoint(std::make_shared&lt;apis::logging::endpoints::stdout&gt;())) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (!graphics_log_manager-&gt;add_endpoint(std::make_shared&lt;apis::logging::endpoints::std_out&gt;())) {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;Failed to add `stdout` logging endpoint.&quot;</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('server_2main_8cpp_source.html',''); in
 <div class="ttc" id="awindow__manager_8h_html"><div class="ttname"><a href="window__manager_8h.html">window_manager.h</a></div></div>
 <div class="ttc" id="aprogram__arguments_8h_html"><div class="ttname"><a href="program__arguments_8h.html">program_arguments.h</a></div></div>
 <div class="ttc" id="adatetime__manager_8h_html"><div class="ttname"><a href="datetime__manager_8h.html">datetime_manager.h</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_html"><div class="ttname"><a href="namespacepbr_1_1shared.html">pbr::shared</a></div><div class="ttdef"><b>Definition:</b> <a href="apis_2datetime_2datetime__manager_8cpp_source.html#l00006">datetime_manager.cpp:6</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_html"><div class="ttname"><a href="namespacepbr_1_1shared.html">pbr::shared</a></div><div class="ttdef"><b>Definition:</b> <a href="apis_2datetime_2datetime__manager_8cpp_source.html#l00007">datetime_manager.cpp:7</a></div></div>
 <div class="ttc" id="aperformance__settings_8h_html"><div class="ttname"><a href="performance__settings_8h.html">performance_settings.h</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1scene_html_a509645a6a89c92e6e576ed62647478b0aa14fa2166ed698f3d04061f57e5ab9b9"><div class="ttname"><a href="namespacepbr_1_1shared_1_1scene.html#a509645a6a89c92e6e576ed62647478b0aa14fa2166ed698f3d04061f57e5ab9b9">pbr::shared::scene::scene_types::loading</a></div><div class="ttdeci">@ loading</div><div class="ttdoc">The loading scene.</div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1apis_1_1graphics_1_1application__information_html"><div class="ttname"><a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html">pbr::shared::apis::graphics::application_information</a></div><div class="ttdoc">Information about the application that the graphics API needs to know.</div><div class="ttdef"><b>Definition:</b> <a href="application__information_8h_source.html#l00008">application_information.h:8</a></div></div>
@@ -213,7 +213,6 @@ $(document).ready(function(){initNavTree('server_2main_8cpp_source.html',''); in
 <div class="ttc" id="aclasspbr_1_1shared_1_1utils_1_1program__arguments_html"><div class="ttname"><a href="classpbr_1_1shared_1_1utils_1_1program__arguments.html">pbr::shared::utils::program_arguments</a></div><div class="ttdef"><b>Definition:</b> <a href="program__arguments_8h_source.html#l00012">program_arguments.h:12</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1game_1_1game__manager_html"><div class="ttname"><a href="classpbr_1_1shared_1_1game_1_1game__manager.html">pbr::shared::game::game_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="game__manager_8h_source.html#l00019">game_manager.h:19</a></div></div>
 <div class="ttc" id="ascene__manager_8h_html"><div class="ttname"><a href="scene__manager_8h.html">scene_manager.h</a></div></div>
-<div class="ttc" id="astdout_8h_html"><div class="ttname"><a href="stdout_8h.html">stdout.h</a></div></div>
 <div class="ttc" id="agame__manager_8h_html"><div class="ttname"><a href="game__manager_8h.html">game_manager.h</a></div></div>
 <div class="ttc" id="abasic__allocators_8h_html"><div class="ttname"><a href="basic__allocators_8h.html">basic_allocators.h</a></div></div>
 <div class="ttc" id="ascene__factory_8h_html"><div class="ttname"><a href="scene__factory_8h.html">scene_factory.h</a></div></div>
@@ -225,6 +224,7 @@ $(document).ready(function(){initNavTree('server_2main_8cpp_source.html',''); in
 <div class="ttc" id="aserver_2main_8cpp_html_afeb913bf0387e835ba95f69adba4bea7"><div class="ttname"><a href="server_2main_8cpp.html#afeb913bf0387e835ba95f69adba4bea7">create_game_manager</a></div><div class="ttdeci">game::game_manager create_game_manager(const utils::program_arguments &amp;arguments)</div><div class="ttdef"><b>Definition:</b> <a href="server_2main_8cpp_source.html#l00024">main.cpp:24</a></div></div>
 <div class="ttc" id="aclient_2main_8cpp_html_a148e510f1af548e3fa6a929b9f2371ac"><div class="ttname"><a href="client_2main_8cpp.html#a148e510f1af548e3fa6a929b9f2371ac">main</a></div><div class="ttdeci">int main(int argv, char *args[])</div><div class="ttdef"><b>Definition:</b> <a href="client_2main_8cpp_source.html#l00010">main.cpp:10</a></div></div>
 <div class="ttc" id="aserver_2main_8cpp_html_ade55eb1518326aa7acd61be1b139a288"><div class="ttname"><a href="server_2main_8cpp.html#ade55eb1518326aa7acd61be1b139a288">run</a></div><div class="ttdeci">void run(const utils::program_arguments &amp;arguments)</div><div class="ttdef"><b>Definition:</b> <a href="server_2main_8cpp_source.html#l00078">main.cpp:78</a></div></div>
+<div class="ttc" id="astd__out_8h_html"><div class="ttname"><a href="std__out_8h.html">std_out.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

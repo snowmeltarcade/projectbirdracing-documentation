@@ -93,68 +93,73 @@ $(document).ready(function(){initNavTree('strings_8h_source.html',''); initResiz
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1utils.html">pbr::shared::utils</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">trim</a>(std::string_view s) noexcept;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab03afcc9bea96a03c8236a41c9d357af">ltrim</a>(std::string_view s) noexcept;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aaa9c523b9ae1448db3e7eb49ccad320a">rtrim</a>(std::string_view s) noexcept;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">trim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab03afcc9bea96a03c8236a41c9d357af">ltrim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aaa9c523b9ae1448db3e7eb49ccad320a">rtrim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#abff975b1b4e838e46ff2bd242449f519">to_lower</a>(std::string_view s) noexcept;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ad38e90e91a1c9b0fd4e15e31eed1e401">to_upper</a>(std::string_view s) noexcept;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">   61</a></span>&#160;    std::array&lt;uint8_t, N&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">to_array</a>(std::string_view s) noexcept {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::array&lt;uint8_t, N&gt; a {};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">auto</span> size = s.size();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; N; ++i) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            a[i] = (i &lt; size) ? s[i] : <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> a;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">   77</a></span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">from_array</a>(<span class="keyword">const</span> std::array&lt;uint8_t, N&gt;&amp; a) noexcept {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        std::string s;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; N; ++i) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (a[i] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            s += a[i];</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    [[nodiscard]]</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#adf54098d9ca1e4a72f4489382713fc5c">get_characters_to_trim</a>() noexcept;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::vector&lt;std::<span class="keywordtype">string</span>&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a1977b1f5131908fe89033f8c1f9e58ca">split</a>(std::string_view divisor, const std::<span class="keywordtype">string</span>&amp; string_to_split) noexcept;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">starts_with</a>(std::string_view string_to_check, std::string_view <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">starts_with</a>) noexcept;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>(std::string_view string_to_check, std::string_view <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>) noexcept;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1utils.html">pbr::shared::utils</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">trim</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab03afcc9bea96a03c8236a41c9d357af">ltrim</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aaa9c523b9ae1448db3e7eb49ccad320a">rtrim</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">trim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab03afcc9bea96a03c8236a41c9d357af">ltrim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aaa9c523b9ae1448db3e7eb49ccad320a">rtrim</a>(std::string_view s, <span class="keywordtype">char</span> c) noexcept;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#abff975b1b4e838e46ff2bd242449f519">to_lower</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ad38e90e91a1c9b0fd4e15e31eed1e401">to_upper</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">   62</a></span>&#160;    std::array&lt;uint8_t, N&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">to_array</a>(std::string_view s) noexcept {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::array&lt;uint8_t, N&gt; a {};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">auto</span> size = s.size();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; N; ++i) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            a[i] = (i &lt; size) ? s[i] : <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">   78</a></span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">from_array</a>(<span class="keyword">const</span> std::array&lt;uint8_t, N&gt;&amp; a) noexcept {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::string s;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; N; ++i) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (a[i] == <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            s += a[i];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    [[nodiscard]]</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string <a class="code" href="namespacepbr_1_1shared_1_1utils.html#adf54098d9ca1e4a72f4489382713fc5c">get_characters_to_trim</a>() noexcept;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::vector&lt;std::<span class="keywordtype">string</span>&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#a1977b1f5131908fe89033f8c1f9e58ca">split</a>(std::string_view divisor, const std::<span class="keywordtype">string</span>&amp; string_to_split) noexcept;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">starts_with</a>(std::string_view string_to_check, std::string_view <a class="code" href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">starts_with</a>) noexcept;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>(std::string_view string_to_check, std::string_view <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ac7c8a83641b6782fe03eccc01ba370d7">ends_with</a>) noexcept;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::optional&lt;<span class="keywordtype">int</span>&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ad4d0d99c883752d37f516c2fb78dee33">to_int</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::optional&lt;<span class="keywordtype">float</span>&gt; <a class="code" href="namespacepbr_1_1shared_1_1utils.html#ada3b783f1cc84ee82a2da8f22132b77c">to_float</a>(std::string_view s) noexcept;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ab51a4ab92758c5a6dab649d17943bedf"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">pbr::shared::utils::to_array</a></div><div class="ttdeci">std::array&lt; uint8_t, N &gt; to_array(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="strings_8h_source.html#l00061">strings.h:61</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ab51a4ab92758c5a6dab649d17943bedf"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ab51a4ab92758c5a6dab649d17943bedf">pbr::shared::utils::to_array</a></div><div class="ttdeci">std::array&lt; uint8_t, N &gt; to_array(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="strings_8h_source.html#l00062">strings.h:62</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ad38e90e91a1c9b0fd4e15e31eed1e401"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ad38e90e91a1c9b0fd4e15e31eed1e401">pbr::shared::utils::to_upper</a></div><div class="ttdeci">std::string to_upper(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00070">strings.cpp:70</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ab03afcc9bea96a03c8236a41c9d357af"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ab03afcc9bea96a03c8236a41c9d357af">pbr::shared::utils::ltrim</a></div><div class="ttdeci">std::string ltrim(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00027">strings.cpp:27</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_abff975b1b4e838e46ff2bd242449f519"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#abff975b1b4e838e46ff2bd242449f519">pbr::shared::utils::to_lower</a></div><div class="ttdeci">std::string to_lower(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00061">strings.cpp:61</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_a8bff7cd79b2c0975bc78af059cee3da0"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">pbr::shared::utils::from_array</a></div><div class="ttdeci">std::string from_array(const std::array&lt; uint8_t, N &gt; &amp;a) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="strings_8h_source.html#l00077">strings.h:77</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_a8bff7cd79b2c0975bc78af059cee3da0"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#a8bff7cd79b2c0975bc78af059cee3da0">pbr::shared::utils::from_array</a></div><div class="ttdeci">std::string from_array(const std::array&lt; uint8_t, N &gt; &amp;a) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="strings_8h_source.html#l00078">strings.h:78</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_aaa9c523b9ae1448db3e7eb49ccad320a"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#aaa9c523b9ae1448db3e7eb49ccad320a">pbr::shared::utils::rtrim</a></div><div class="ttdeci">std::string rtrim(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00044">strings.cpp:44</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_a1977b1f5131908fe89033f8c1f9e58ca"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#a1977b1f5131908fe89033f8c1f9e58ca">pbr::shared::utils::split</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split(std::string_view divisor, const std::string &amp;string_to_split) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00079">strings.cpp:79</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_adf54098d9ca1e4a72f4489382713fc5c"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#adf54098d9ca1e4a72f4489382713fc5c">pbr::shared::utils::get_characters_to_trim</a></div><div class="ttdeci">std::string get_characters_to_trim(char c) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00006">strings.cpp:6</a></div></div>
@@ -162,7 +167,9 @@ $(document).ready(function(){initNavTree('strings_8h_source.html',''); initResiz
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html">pbr::shared::utils</a></div><div class="ttdef"><b>Definition:</b> <a href="utils_2program__arguments_8cpp_source.html#l00003">program_arguments.cpp:3</a></div></div>
 <div class="ttc" id="abasic__allocators_8h_html"><div class="ttname"><a href="basic__allocators_8h.html">basic_allocators.h</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_aff48a812205589f14da85ea0eb12ac73"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#aff48a812205589f14da85ea0eb12ac73">pbr::shared::utils::starts_with</a></div><div class="ttdeci">bool starts_with(std::string_view string_to_check, std::string_view starts_with) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00105">strings.cpp:105</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ada3b783f1cc84ee82a2da8f22132b77c"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ada3b783f1cc84ee82a2da8f22132b77c">pbr::shared::utils::to_float</a></div><div class="ttdeci">std::optional&lt; float &gt; to_float(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00133">strings.cpp:133</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_a9526d3a7dd16b2ada210e2488d134825"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#a9526d3a7dd16b2ada210e2488d134825">pbr::shared::utils::trim</a></div><div class="ttdeci">std::string trim(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00019">strings.cpp:19</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1utils_html_ad4d0d99c883752d37f516c2fb78dee33"><div class="ttname"><a href="namespacepbr_1_1shared_1_1utils.html#ad4d0d99c883752d37f516c2fb78dee33">pbr::shared::utils::to_int</a></div><div class="ttdeci">std::optional&lt; int &gt; to_int(std::string_view s) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="utils_2strings_8cpp_source.html#l00125">strings.cpp:125</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

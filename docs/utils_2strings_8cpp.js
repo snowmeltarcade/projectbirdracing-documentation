@@ -8,6 +8,8 @@ var utils_2strings_8cpp =
     [ "rtrim", "utils_2strings_8cpp.html#a9444bd0f20ea9f0b3d3d9f1c32e0cb37", null ],
     [ "split", "utils_2strings_8cpp.html#a1977b1f5131908fe89033f8c1f9e58ca", null ],
     [ "starts_with", "utils_2strings_8cpp.html#aff48a812205589f14da85ea0eb12ac73", null ],
+    [ "to_float", "utils_2strings_8cpp.html#ada3b783f1cc84ee82a2da8f22132b77c", null ],
+    [ "to_int", "utils_2strings_8cpp.html#ad4d0d99c883752d37f516c2fb78dee33", null ],
     [ "to_lower", "utils_2strings_8cpp.html#abff975b1b4e838e46ff2bd242449f519", null ],
     [ "to_upper", "utils_2strings_8cpp.html#ad38e90e91a1c9b0fd4e15e31eed1e401", null ],
     [ "trim", "utils_2strings_8cpp.html#a9526d3a7dd16b2ada210e2488d134825", null ],

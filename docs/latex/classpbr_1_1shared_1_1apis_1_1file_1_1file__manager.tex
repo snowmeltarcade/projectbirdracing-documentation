@@ -1,0 +1,148 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager}{}\doxysection{pbr\+::shared\+::apis\+::file\+::file\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager}\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+
+
+{\ttfamily \#include $<$file\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a9a5cceb14286f327f7ba5d44b75eab9a}{file\+\_\+manager}} ()=default
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_ab1ca64897bbf2b1496579f7b700ed1fd}{$\sim$file\+\_\+manager}} () override=default
+\item 
+std\+::optional$<$ std\+::vector$<$ std\+::byte $>$ $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a6b15fbb247e45daae004c6cb2f7b106c}{read\+\_\+file\+\_\+bytes}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&uri) const noexcept override
+\item 
+std\+::future$<$ std\+::optional$<$ std\+::vector$<$ std\+::byte $>$ $>$ $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a2862e8d6f4c477e843313f03febc645e}{read\+\_\+file\+\_\+bytes\+\_\+async}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&uri) const noexcept override
+\item 
+std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a5c2062baec524fa770a1ba07a1eb146c}{read\+\_\+file\+\_\+text}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&uri) const noexcept override
+\item 
+std\+::future$<$ std\+::optional$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a217a83a8a733baae9348baf365ef7478}{read\+\_\+file\+\_\+text\+\_\+async}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&uri) const noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides the interface for the file manager. This manager handles the loading file data from various endpoints, such as the file system, the network, a zip archive etc... A file path is specified by a U\+RI. The protocol of the U\+RI details from where the file should be retrieved. The protocols are not user configurable, but all supported protocols will be provided to all users of this manager.
+
+The supported protocols are\+: file\+: 
+
+Definition at line 14 of file file\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a9a5cceb14286f327f7ba5d44b75eab9a}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a9a5cceb14286f327f7ba5d44b75eab9a}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!file\_manager@{file\_manager}}
+\index{file\_manager@{file\_manager}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{file\_manager()}{file\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::file\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_ab1ca64897bbf2b1496579f7b700ed1fd}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_ab1ca64897bbf2b1496579f7b700ed1fd}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!````~file\_manager@{$\sim$file\_manager}}
+\index{````~file\_manager@{$\sim$file\_manager}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$file\_manager()}{~file\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::$\sim$file\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a6b15fbb247e45daae004c6cb2f7b106c}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a6b15fbb247e45daae004c6cb2f7b106c}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!read\_file\_bytes@{read\_file\_bytes}}
+\index{read\_file\_bytes@{read\_file\_bytes}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_file\_bytes()}{read\_file\_bytes()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::vector$<$ std\+::byte $>$ $>$ pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::read\+\_\+file\+\_\+bytes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&}]{uri }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the bytes of the file pointed to by the passed U\+RI 
+\begin{DoxyParams}{Parameters}
+{\em uri} & The uri of the file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bytes of the file pointed to by the passed U\+RI. If this file was not found or an error occurred, an empty result is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager_a6140ee41ddb1aa07da2dd4382c2e8ec3}{pbr\+::shared\+::apis\+::file\+::ifile\+\_\+manager}}.
+
+
+
+Definition at line 7 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a2862e8d6f4c477e843313f03febc645e}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a2862e8d6f4c477e843313f03febc645e}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!read\_file\_bytes\_async@{read\_file\_bytes\_async}}
+\index{read\_file\_bytes\_async@{read\_file\_bytes\_async}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_file\_bytes\_async()}{read\_file\_bytes\_async()}}
+{\footnotesize\ttfamily std\+::future$<$ std\+::optional$<$ std\+::vector$<$ std\+::byte $>$ $>$ $>$ pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::read\+\_\+file\+\_\+bytes\+\_\+async (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&}]{uri }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the bytes of the file pointed to by the passed U\+RI 
+\begin{DoxyParams}{Parameters}
+{\em uri} & The uri of the file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bytes of the file pointed to by the passed U\+RI. If this file was not found or an error occurred, an empty result is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager_a03a7d21d74bf521f1de9749869b5e0c7}{pbr\+::shared\+::apis\+::file\+::ifile\+\_\+manager}}.
+
+
+
+Definition at line 37 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a5c2062baec524fa770a1ba07a1eb146c}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a5c2062baec524fa770a1ba07a1eb146c}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!read\_file\_text@{read\_file\_text}}
+\index{read\_file\_text@{read\_file\_text}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_file\_text()}{read\_file\_text()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::string $>$ pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::read\+\_\+file\+\_\+text (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&}]{uri }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the lines of text in the file pointed to by the passed U\+RI 
+\begin{DoxyParams}{Parameters}
+{\em uri} & The uri of the file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The the lines of text in the file pointed to by the passed U\+RI. If this file was not found or an error occurred, an empty result is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager_a5f3535641f45c81676c094fb242781d5}{pbr\+::shared\+::apis\+::file\+::ifile\+\_\+manager}}.
+
+
+
+Definition at line 47 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a217a83a8a733baae9348baf365ef7478}\label{classpbr_1_1shared_1_1apis_1_1file_1_1file__manager_a217a83a8a733baae9348baf365ef7478}} 
+\index{pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}!read\_file\_text\_async@{read\_file\_text\_async}}
+\index{read\_file\_text\_async@{read\_file\_text\_async}!pbr::shared::apis::file::file\_manager@{pbr::shared::apis::file::file\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_file\_text\_async()}{read\_file\_text\_async()}}
+{\footnotesize\ttfamily std\+::future$<$ std\+::optional$<$ std\+::string $>$ $>$ pbr\+::shared\+::apis\+::file\+::file\+\_\+manager\+::read\+\_\+file\+\_\+text\+\_\+async (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{utils\+::uri}} \&}]{uri }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the lines of text in the file pointed to by the passed U\+RI 
+\begin{DoxyParams}{Parameters}
+{\em uri} & The uri of the file to open \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The the lines of text in the file pointed to by the passed U\+RI. If this file was not found or an error occurred, an empty result is returned 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager_ae6611329b97ad0bebcd7d12be849ee48}{pbr\+::shared\+::apis\+::file\+::ifile\+\_\+manager}}.
+
+
+
+Definition at line 66 of file file\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/file/\mbox{\hyperlink{file__manager_8h}{file\+\_\+manager.\+h}}\item 
+src/shared/apis/file/\mbox{\hyperlink{apis_2file_2file__manager_8cpp}{file\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

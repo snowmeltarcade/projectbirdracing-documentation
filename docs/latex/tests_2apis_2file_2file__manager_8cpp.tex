@@ -1,0 +1,150 @@
+\hypertarget{tests_2apis_2file_2file__manager_8cpp}{}\doxysection{src/shared/tests/apis/file/file\+\_\+manager.cpp File Reference}
+\label{tests_2apis_2file_2file__manager_8cpp}\index{src/shared/tests/apis/file/file\_manager.cpp@{src/shared/tests/apis/file/file\_manager.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/file/file\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/tests/test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::byte $>$ \mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_ada3e0e6b4ea6c8f7b6f5343c3c7fbb5e}{read\+\_\+file\+\_\+bytes}} (std\+::filesystem\+::path path)
+\item 
+std\+::string \mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_a37883e6be66b2adfe66f819a80d95784}{read\+\_\+file\+\_\+text}} (std\+::filesystem\+::path path)
+\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_af2494d6e62efc7fb6162662d90ae10b6}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+bytes -\/ invalid file path -\/ returns error\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em read\+\_\+file\+\_\+bytes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_a9a889a330ea6d0d986d46a65edcde272}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+bytes -\/ file system path -\/ returns file bytes\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_aa0590f6fd7aee49f9939132309a9486b}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+bytes\+\_\+async -\/ invalid file path -\/ returns error\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em read\+\_\+file\+\_\+bytes\+\_\+async \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_a5f39c77c1b1d9473d45ce847574fe07b}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+bytes\+\_\+async -\/ file system path -\/ returns file bytes\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_ac05c94212306aa6b29066017804d9447}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+text -\/ invalid file path -\/ returns error\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em read\+\_\+file\+\_\+text \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_aee0399c81a78cf4a289b855734dd0ead}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+text -\/ file system path -\/ returns file text\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_aa3471c4fc56aa48ddb1a2e62fb4a234d}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+text\+\_\+async -\/ invalid file path -\/ returns error\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em read\+\_\+file\+\_\+text\+\_\+async \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2file_2file__manager_8cpp_af9e3fd120f725db822ed151dab698bab}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}read\+\_\+file\+\_\+text\+\_\+async -\/ file system path -\/ returns file text\char`\"{}, \char`\"{}\mbox{[}shared/apis/file\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_ada3e0e6b4ea6c8f7b6f5343c3c7fbb5e}\label{tests_2apis_2file_2file__manager_8cpp_ada3e0e6b4ea6c8f7b6f5343c3c7fbb5e}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!read\_file\_bytes@{read\_file\_bytes}}
+\index{read\_file\_bytes@{read\_file\_bytes}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_file\_bytes()}{read\_file\_bytes()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::byte$>$ read\+\_\+file\+\_\+bytes (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 11 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_a37883e6be66b2adfe66f819a80d95784}\label{tests_2apis_2file_2file__manager_8cpp_a37883e6be66b2adfe66f819a80d95784}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!read\_file\_text@{read\_file\_text}}
+\index{read\_file\_text@{read\_file\_text}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_file\_text()}{read\_file\_text()}}
+{\footnotesize\ttfamily std\+::string read\+\_\+file\+\_\+text (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_a9a889a330ea6d0d986d46a65edcde272}\label{tests_2apis_2file_2file__manager_8cpp_a9a889a330ea6d0d986d46a65edcde272}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+bytes -\/ file system path -\/ returns file bytes\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_af2494d6e62efc7fb6162662d90ae10b6}\label{tests_2apis_2file_2file__manager_8cpp_af2494d6e62efc7fb6162662d90ae10b6}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+bytes -\/ invalid file path -\/ returns error\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+read\+\_\+file\+\_\+bytes 
+
+
+
+Definition at line 46 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_a5f39c77c1b1d9473d45ce847574fe07b}\label{tests_2apis_2file_2file__manager_8cpp_a5f39c77c1b1d9473d45ce847574fe07b}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+bytes\+\_\+async -\/ file system path -\/ returns file bytes\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_aa0590f6fd7aee49f9939132309a9486b}\label{tests_2apis_2file_2file__manager_8cpp_aa0590f6fd7aee49f9939132309a9486b}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+bytes\+\_\+async -\/ invalid file path -\/ returns error\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+read\+\_\+file\+\_\+bytes\+\_\+async 
+
+
+
+Definition at line 80 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_aee0399c81a78cf4a289b855734dd0ead}\label{tests_2apis_2file_2file__manager_8cpp_aee0399c81a78cf4a289b855734dd0ead}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+text -\/ file system path -\/ returns file text\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 127 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_ac05c94212306aa6b29066017804d9447}\label{tests_2apis_2file_2file__manager_8cpp_ac05c94212306aa6b29066017804d9447}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+text -\/ invalid file path -\/ returns error\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+read\+\_\+file\+\_\+text 
+
+
+
+Definition at line 116 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_af9e3fd120f725db822ed151dab698bab}\label{tests_2apis_2file_2file__manager_8cpp_af9e3fd120f725db822ed151dab698bab}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+text\+\_\+async -\/ file system path -\/ returns file text\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file file\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2file_2file__manager_8cpp_aa3471c4fc56aa48ddb1a2e62fb4a234d}\label{tests_2apis_2file_2file__manager_8cpp_aa3471c4fc56aa48ddb1a2e62fb4a234d}} 
+\index{file\_manager.cpp@{file\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!file\_manager.cpp@{file\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}read\+\_\+file\+\_\+text\+\_\+async -\/ invalid file path -\/ returns error\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/file\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+read\+\_\+file\+\_\+text\+\_\+async 
+
+
+
+Definition at line 147 of file file\+\_\+manager.\+cpp.
+

@@ -4,9 +4,19 @@
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1program__arguments}{program\+\_\+arguments}}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{uri}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a484345d596f000257ac99373f30b6dbf}{to\+\_\+string}} (int value) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a49ed665a18c597c42b0628d69a5ce899}{to\+\_\+string}} (uint32\+\_\+t value) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_af826fb11897a07a9339f6f34190102c5}{to\+\_\+string}} (float value) noexcept
+\item 
+std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a7bcd0902c88df8711bf2a7645a52859f}{to\+\_\+string}} (bool value) noexcept
 \item 
 std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_adf54098d9ca1e4a72f4489382713fc5c}{get\+\_\+characters\+\_\+to\+\_\+trim}} (char c) noexcept
 \item 
@@ -32,15 +42,44 @@ bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aff48a812205589f14da85ea0e
 \item 
 bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}{ends\+\_\+with}} (std\+::string\+\_\+view string\+\_\+to\+\_\+check, std\+::string\+\_\+view ends\+\_\+with) noexcept
 \item 
+std\+::optional$<$ int $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ad4d0d99c883752d37f516c2fb78dee33}{to\+\_\+int}} (std\+::string\+\_\+view s) noexcept
+\item 
+std\+::optional$<$ float $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ada3b783f1cc84ee82a2da8f22132b77c}{to\+\_\+float}} (std\+::string\+\_\+view s) noexcept
+\item 
 {\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::array$<$ uint8\+\_\+t, N $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ab51a4ab92758c5a6dab649d17943bedf}{to\+\_\+array}} (std\+::string\+\_\+view s) noexcept
 \item 
 {\footnotesize template$<$size\+\_\+t N$>$ }\\std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a8bff7cd79b2c0975bc78af059cee3da0}{from\+\_\+array}} (const std\+::array$<$ uint8\+\_\+t, N $>$ \&a) noexcept
 \item 
 std\+::string \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}{get\+\_\+characters\+\_\+to\+\_\+trim}} () noexcept
+\item 
+std\+::optional$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{uri}} $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_aa321724341712f9b4bb1bada3e89c31c}{build\+\_\+uri}} (const std\+::string \&s) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\concept \mbox{\hyperlink{namespacepbr_1_1shared_1_1utils_ad36b79c00fb8c7181245e683eea5c01d}{stringable}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_aa321724341712f9b4bb1bada3e89c31c}\label{namespacepbr_1_1shared_1_1utils_aa321724341712f9b4bb1bada3e89c31c}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!build\_uri@{build\_uri}}
+\index{build\_uri@{build\_uri}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{build\_uri()}{build\_uri()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1utils_1_1uri}{uri}} $>$ pbr\+::shared\+::utils\+::build\+\_\+uri (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Builds a U\+RI from the passed string 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to build the U\+RI from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The U\+RI, or empty if the U\+RI could not be constructed 
+\end{DoxyReturn}
+
+
+Definition at line 5 of file uri.\+cpp.
+
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}\label{namespacepbr_1_1shared_1_1utils_ac7c8a83641b6782fe03eccc01ba370d7}} 
 \index{pbr::shared::utils@{pbr::shared::utils}!ends\_with@{ends\_with}}
 \index{ends\_with@{ends\_with}!pbr::shared::utils@{pbr::shared::utils}}
@@ -78,7 +117,7 @@ A string converted to from the passed array
 \end{DoxyReturn}
 
 
-Definition at line 77 of file strings.\+h.
+Definition at line 78 of file strings.\+h.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}\label{namespacepbr_1_1shared_1_1utils_a59e79cf50f4a42b1a78508c569d6fe4b}} 
 \index{pbr::shared::utils@{pbr::shared::utils}!get\_characters\_to\_trim@{get\_characters\_to\_trim}}
@@ -222,7 +261,7 @@ Definition at line 105 of file strings.\+cpp.
 {\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
 std\+::array$<$uint8\+\_\+t, N$>$ pbr\+::shared\+::utils\+::to\+\_\+array (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Converts the passed string to an {\ttfamily std\+::array$<$$>$} 
+Converts the passed string to an {\ttfamily std\+::array$<$$>$} of characters 
 \begin{DoxyParams}{Parameters}
 {\em s} & The string to convert \\
 \hline
@@ -232,7 +271,43 @@ An array converted to from the passed string
 \end{DoxyReturn}
 
 
-Definition at line 61 of file strings.\+h.
+Definition at line 62 of file strings.\+h.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ada3b783f1cc84ee82a2da8f22132b77c}\label{namespacepbr_1_1shared_1_1utils_ada3b783f1cc84ee82a2da8f22132b77c}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_float@{to\_float}}
+\index{to\_float@{to\_float}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_float()}{to\_float()}}
+{\footnotesize\ttfamily std\+::optional$<$ float $>$ pbr\+::shared\+::utils\+::to\+\_\+float (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Tries to convert the passed string to a float 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The int, else empty if an error occurred 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ad4d0d99c883752d37f516c2fb78dee33}\label{namespacepbr_1_1shared_1_1utils_ad4d0d99c883752d37f516c2fb78dee33}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_int@{to\_int}}
+\index{to\_int@{to\_int}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_int()}{to\_int()}}
+{\footnotesize\ttfamily std\+::optional$<$ int $>$ pbr\+::shared\+::utils\+::to\+\_\+int (\begin{DoxyParamCaption}\item[{std\+::string\+\_\+view}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Tries to convert the passed string to an int 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The int, else empty if an error occurred 
+\end{DoxyReturn}
+
+
+Definition at line 125 of file strings.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}\label{namespacepbr_1_1shared_1_1utils_abff975b1b4e838e46ff2bd242449f519}} 
 \index{pbr::shared::utils@{pbr::shared::utils}!to\_lower@{to\_lower}}
@@ -251,6 +326,78 @@ The passed string with all characters in lower case
 
 
 Definition at line 61 of file strings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a7bcd0902c88df8711bf2a7645a52859f}\label{namespacepbr_1_1shared_1_1utils_a7bcd0902c88df8711bf2a7645a52859f}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts a bool to a {\ttfamily std\+::string} 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string converted value 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_af826fb11897a07a9339f6f34190102c5}\label{namespacepbr_1_1shared_1_1utils_af826fb11897a07a9339f6f34190102c5}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts a float to a {\ttfamily std\+::string} 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string converted value 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a484345d596f000257ac99373f30b6dbf}\label{namespacepbr_1_1shared_1_1utils_a484345d596f000257ac99373f30b6dbf}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts an int to a {\ttfamily std\+::string} 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string converted value 
+\end{DoxyReturn}
+
+
+Definition at line 4 of file stringable.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_a49ed665a18c597c42b0628d69a5ce899}\label{namespacepbr_1_1shared_1_1utils_a49ed665a18c597c42b0628d69a5ce899}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily std\+::string pbr\+::shared\+::utils\+::to\+\_\+string (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Converts a uint32\+\_\+t to a {\ttfamily std\+::string} 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string converted value 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file stringable.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}\label{namespacepbr_1_1shared_1_1utils_ad38e90e91a1c9b0fd4e15e31eed1e401}} 
 \index{pbr::shared::utils@{pbr::shared::utils}!to\_upper@{to\_upper}}
@@ -307,4 +454,30 @@ The trimmed string
 
 
 Definition at line 23 of file strings.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1utils_ad36b79c00fb8c7181245e683eea5c01d}\label{namespacepbr_1_1shared_1_1utils_ad36b79c00fb8c7181245e683eea5c01d}} 
+\index{pbr::shared::utils@{pbr::shared::utils}!stringable@{stringable}}
+\index{stringable@{stringable}!pbr::shared::utils@{pbr::shared::utils}}
+\doxysubsubsection{\texorpdfstring{stringable}{stringable}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+concept pbr\+::shared\+::utils\+::stringable}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= requires (T t) \{}
+\DoxyCodeLine{        \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_af11fadde3aad7d32107286b383a818b7}{to\_string}}(t);}
+\DoxyCodeLine{    \} \&\& !std::is\_same\_v<T, const char*>}
+
+\end{DoxyCode}
+Ensures that this type can be converted to a string 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type to convert \\
+\hline
+\end{DoxyTemplParams}
+
+
+Definition at line 29 of file stringable.\+h.
 

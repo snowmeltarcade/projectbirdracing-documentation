@@ -1,0 +1,77 @@
+\hypertarget{classpbr_1_1shared_1_1data_1_1data__manager}{}\doxysection{pbr\+::shared\+::data\+::data\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1data_1_1data__manager}\index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}}
+
+
+{\ttfamily \#include $<$data\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_abe8b3dd2a9c25c36a3399a05dfaa2b77}{data\+\_\+manager}} (std\+::filesystem\+::path data\+\_\+path, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager}{apis\+::file\+::ifile\+\_\+manager}} $>$ file\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}{$\sim$data\+\_\+manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroys this data manager. \end{DoxyCompactList}\item 
+std\+::optional$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_a1c31ae92af15d0cecc404e58665ae0de}{read\+\_\+settings}} (const std\+::filesystem\+::path \&relative\+\_\+path) const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages read and write access to the {\ttfamily data} directory. The format of the data is agnostic to the caller and is returned in a common format. File extensions are thus not required. J\+S\+ON is used as the default data format. 
+
+Definition at line 15 of file data\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1data__manager_abe8b3dd2a9c25c36a3399a05dfaa2b77}\label{classpbr_1_1shared_1_1data_1_1data__manager_abe8b3dd2a9c25c36a3399a05dfaa2b77}} 
+\index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}!data\_manager@{data\_manager}}
+\index{data\_manager@{data\_manager}!pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}}
+\doxysubsubsection{\texorpdfstring{data\_manager()}{data\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::data\+::data\+\_\+manager\+::data\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::filesystem\+::path}]{data\+\_\+path,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1file_1_1ifile__manager}{apis\+::file\+::ifile\+\_\+manager}} $>$}]{file\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this data manager 
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+path} & The path to the {\ttfamily data} directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file data\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}\label{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}} 
+\index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}!````~data\_manager@{$\sim$data\_manager}}
+\index{````~data\_manager@{$\sim$data\_manager}!pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$data\_manager()}{~data\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::data\+::data\+\_\+manager\+::$\sim$data\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destroys this data manager. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1data__manager_a1c31ae92af15d0cecc404e58665ae0de}\label{classpbr_1_1shared_1_1data_1_1data__manager_a1c31ae92af15d0cecc404e58665ae0de}} 
+\index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}!read\_settings@{read\_settings}}
+\index{read\_settings@{read\_settings}!pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_settings()}{read\_settings()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} $>$ pbr\+::shared\+::data\+::data\+\_\+manager\+::read\+\_\+settings (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{relative\+\_\+path }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Reads a set of settings from the passed file 
+\begin{DoxyParams}{Parameters}
+{\em relative\+\_\+path} & The relative path to the settings file from the {\ttfamily data} directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The read settings, else empty if an error occurred 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file data\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/data/\mbox{\hyperlink{data__manager_8h}{data\+\_\+manager.\+h}}\item 
+src/shared/data/\mbox{\hyperlink{data_2data__manager_8cpp}{data\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

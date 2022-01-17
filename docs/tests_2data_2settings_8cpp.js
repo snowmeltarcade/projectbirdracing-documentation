@@ -1,0 +1,26 @@
+var tests_2data_2settings_8cpp =
+[
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#aee3bff5d9f154d7728ebc5b894b61471", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a76d0cddd0012b64f8c5f1cd177bc1032", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#ab160a5d672866f087fe1c9ce4813306f", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a4a3169c0504b84f694048cb4d4b3a20d", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#ad40363a1d549e42b407094248d4709f9", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a41454adad502ccb5ecf3b7377be33b04", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a73dd7675a1acc3072dbf1fa551a81ece", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#abe3347e433ae683b0eaf2d7d90efdfb2", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a6699ec182829547068b8249c4b2c888e", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#af471443841bb7ea8265950e12546b6ec", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a5bd725731536214b9889fa02cd90bb1e", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#abed941f35e7ab65f3aa2b970660119fb", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a522fd93771f8bd095da7efc4a08592c7", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a4ef60e8a4af51d241225b1ae9a2c6d13", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a6f49c232df51bc1df57c0684244cfb5f", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#afe35e1a3b8379355189fd8cd8cafd9e2", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#ac642886d27c77b4c6847a45943b0dfa0", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a74414c96b05aec720fc54621adff57ff", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#aac192080a3cc56661e74835c9c1591fd", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a6748da1da2da96cdf72fbb6ddc895408", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a717eaae7479fd28abcc739d21a1a73e9", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a759705879c88ebb7147fa89751884bf6", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a4add857250d871603a204bc0aeedf38d", null ]
+];

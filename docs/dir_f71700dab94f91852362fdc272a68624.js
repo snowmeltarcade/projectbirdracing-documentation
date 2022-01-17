@@ -4,8 +4,8 @@ var dir_f71700dab94f91852362fdc272a68624 =
     [ "file.h", "file_8h.html", [
       [ "file", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file.html", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file" ]
     ] ],
-    [ "stdout.cpp", "stdout_8cpp.html", null ],
-    [ "stdout.h", "stdout_8h.html", [
-      [ "stdout", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout.html", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1stdout" ]
+    [ "std_out.cpp", "std__out_8cpp.html", null ],
+    [ "std_out.h", "std__out_8h.html", [
+      [ "std_out", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1std__out.html", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1std__out" ]
     ] ]
 ];

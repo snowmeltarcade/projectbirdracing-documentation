@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vma_480',['vma',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma.html',1,'pbr::shared::apis::graphics::vulkan']]],
-  ['vulkan_5fgraphics_5fmanager_481',['vulkan_graphics_manager',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html',1,'pbr::shared::apis::graphics']]]
+  ['uri_531',['uri',['../structpbr_1_1shared_1_1utils_1_1uri.html',1,'pbr::shared::utils']]]
 ];
