@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('vulkan__graphics__manager_8cpp_source.
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
 <div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a4184bbb1204e21bcb2d6a3c855cb1dbd">  236</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a4184bbb1204e21bcb2d6a3c855cb1dbd">vulkan_graphics_manager::submit_renderable_entities</a>(<a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a> <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a>) noexcept {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        std::scoped_lock&lt;std::mutex&gt; lock(this-&gt;_submit_renderable_entities_mutex);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        std::unique_lock&lt;std::shared_mutex&gt; lock(this-&gt;_submit_renderable_entities_mutex);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        this-&gt;_renderable_entities = <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a>;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
@@ -465,7 +465,7 @@ $(document).ready(function(){initNavTree('vulkan__graphics__manager_8cpp_source.
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">// copy the data to avoid keeping the lock longer than needed</span></div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a> <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a>;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            std::scoped_lock&lt;std::mutex&gt; lock(this-&gt;_submit_renderable_entities_mutex);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            std::shared_lock&lt;std::shared_mutex&gt; lock(this-&gt;_submit_renderable_entities_mutex);</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <a class="code" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a> = this-&gt;_renderable_entities;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>

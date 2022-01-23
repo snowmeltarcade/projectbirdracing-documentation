@@ -1,0 +1,170 @@
+\hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set}{}\doxysection{pbr\+::shared\+::diagnostics\+::counter\+\_\+set Class Reference}
+\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set}\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+
+
+{\ttfamily \#include $<$counter\+\_\+set.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4460599bef6bfda132f7d63d4919f67f}{increment\+\_\+counter}} (const std\+::string \&key, int amount) noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a8c8145714c197fb5ec2f874e6a04e3d5}{decrement\+\_\+counter}} (const std\+::string \&key, int amount) noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a18536499793d512fa2a4342c3b7c6927}{add\+\_\+value\+\_\+to\+\_\+list}} (const std\+::string \&key, int value) noexcept
+\item 
+int \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_af42e4bdd83f4691388f0f663c5385fce}{get\+\_\+counter}} (const std\+::string \&key) noexcept
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ac241a5851656d147b442af9a3d7c1fa0}{get\+\_\+values\+\_\+for\+\_\+counter\+\_\+list}} (const std\+::string \&key) noexcept
+\item 
+int \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ad86bd058ec0aff4b663f8047d7f99c83}{get\+\_\+counter\+\_\+for\+\_\+duration}} (const std\+::string \&key, std\+::chrono\+::milliseconds duration, int \&out\+\_\+result\+\_\+at\+\_\+duration) noexcept
+\item 
+float \mbox{\hyperlink{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4f805917958125e045ea94cc77e11179}{get\+\_\+average\+\_\+for\+\_\+duration}} (const std\+::string \&key, std\+::chrono\+::milliseconds duration, float \&out\+\_\+average\+\_\+at\+\_\+duration) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A set of counters. A counter can be incremented, decremented and have various average based operations performed against it. It can also be reset. This may be useful for frame counters or number of render calls per frame etc... Counters are referenced by a string based key. If a requested key does not exist, a key is created with the default type of the counter 
+
+Definition at line 14 of file counter\+\_\+set.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a18536499793d512fa2a4342c3b7c6927}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a18536499793d512fa2a4342c3b7c6927}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!add\_value\_to\_list@{add\_value\_to\_list}}
+\index{add\_value\_to\_list@{add\_value\_to\_list}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{add\_value\_to\_list()}{add\_value\_to\_list()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::add\+\_\+value\+\_\+to\+\_\+list (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Adds a value to a counter list 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+{\em value} & The value to add \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file counter\+\_\+set.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a8c8145714c197fb5ec2f874e6a04e3d5}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a8c8145714c197fb5ec2f874e6a04e3d5}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!decrement\_counter@{decrement\_counter}}
+\index{decrement\_counter@{decrement\_counter}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{decrement\_counter()}{decrement\_counter()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::decrement\+\_\+counter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Decrements a counter 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+{\em amount} & The amount to decrement by \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file counter\+\_\+set.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4f805917958125e045ea94cc77e11179}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4f805917958125e045ea94cc77e11179}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!get\_average\_for\_duration@{get\_average\_for\_duration}}
+\index{get\_average\_for\_duration@{get\_average\_for\_duration}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{get\_average\_for\_duration()}{get\_average\_for\_duration()}}
+{\footnotesize\ttfamily float pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::get\+\_\+average\+\_\+for\+\_\+duration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{std\+::chrono\+::milliseconds}]{duration,  }\item[{float \&}]{out\+\_\+average\+\_\+at\+\_\+duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the average of a counter list indicated by the passed key. If the time since this function was last called is greater than or equal to duration, the counter list is reset 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+{\em duration} & The duration to reset the count after in milliseconds \\
+\hline
+{\em out\+\_\+average\+\_\+at\+\_\+duration} & The average at the point when {\ttfamily duration} has been reached, else this value is not set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average of the counter list 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file counter\+\_\+set.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_af42e4bdd83f4691388f0f663c5385fce}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_af42e4bdd83f4691388f0f663c5385fce}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!get\_counter@{get\_counter}}
+\index{get\_counter@{get\_counter}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{get\_counter()}{get\_counter()}}
+{\footnotesize\ttfamily int pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::get\+\_\+counter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the counter for the passed key 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The counter for the passed key 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file counter\+\_\+set.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ad86bd058ec0aff4b663f8047d7f99c83}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ad86bd058ec0aff4b663f8047d7f99c83}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!get\_counter\_for\_duration@{get\_counter\_for\_duration}}
+\index{get\_counter\_for\_duration@{get\_counter\_for\_duration}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{get\_counter\_for\_duration()}{get\_counter\_for\_duration()}}
+{\footnotesize\ttfamily int pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::get\+\_\+counter\+\_\+for\+\_\+duration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{std\+::chrono\+::milliseconds}]{duration,  }\item[{int \&}]{out\+\_\+result\+\_\+at\+\_\+duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns the count indicated by the passed key. If the time since this function was last called is greater than or equal to duration, the count is reset. The first time the duration is hit, the result will not be accurate, as a new key\textquotesingle{}s last update time will default to the default value of {\ttfamily time\+\_\+point}, call this function at last once before actual use to ensure the last update time is set correctly 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+{\em duration} & The duration to reset the count after in milliseconds \\
+\hline
+{\em out\+\_\+result\+\_\+at\+\_\+duration} & The count at the point when {\ttfamily duration} has been reached, else this value is not set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file counter\+\_\+set.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ac241a5851656d147b442af9a3d7c1fa0}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_ac241a5851656d147b442af9a3d7c1fa0}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!get\_values\_for\_counter\_list@{get\_values\_for\_counter\_list}}
+\index{get\_values\_for\_counter\_list@{get\_values\_for\_counter\_list}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{get\_values\_for\_counter\_list()}{get\_values\_for\_counter\_list()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::get\+\_\+values\+\_\+for\+\_\+counter\+\_\+list (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the values for the counter list for the passed key 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The values for the counter list for the passed key 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file counter\+\_\+set.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4460599bef6bfda132f7d63d4919f67f}\label{classpbr_1_1shared_1_1diagnostics_1_1counter__set_a4460599bef6bfda132f7d63d4919f67f}} 
+\index{pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}!increment\_counter@{increment\_counter}}
+\index{increment\_counter@{increment\_counter}!pbr::shared::diagnostics::counter\_set@{pbr::shared::diagnostics::counter\_set}}
+\doxysubsubsection{\texorpdfstring{increment\_counter()}{increment\_counter()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::diagnostics\+::counter\+\_\+set\+::increment\+\_\+counter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Increments a counter 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key of the counter \\
+\hline
+{\em amount} & The amount to increment by \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 6 of file counter\+\_\+set.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/diagnostics/\mbox{\hyperlink{counter__set_8h}{counter\+\_\+set.\+h}}\item 
+src/shared/diagnostics/\mbox{\hyperlink{diagnostics_2counter__set_8cpp}{counter\+\_\+set.\+cpp}}\end{DoxyCompactItemize}

@@ -3,6 +3,7 @@
 {\ttfamily \#include $<$atomic$>$}\newline
 {\ttfamily \#include $<$cstdint$>$}\newline
 {\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
 {\ttfamily \#include \char`\"{}basic\+\_\+allocators.\+h\char`\"{}}\newline
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -45,7 +46,7 @@ A pointer to the usable block of memory and the total allocated size, including 
 \end{DoxyReturn}
 
 
-Definition at line 13 of file basic\+\_\+allocators.\+cpp.
+Definition at line 14 of file basic\+\_\+allocators.\+cpp.
 
 \mbox{\Hypertarget{memory_2basic__allocators_8cpp_a06b8b73b0baaf1d34fda6700926aa706}\label{memory_2basic__allocators_8cpp_a06b8b73b0baaf1d34fda6700926aa706}} 
 \index{basic\_allocators.cpp@{basic\_allocators.cpp}!get\_ptr\_to\_free@{get\_ptr\_to\_free}}
@@ -63,7 +64,7 @@ The pointer to free and the size of the allocated block of memory. If the memory
 \end{DoxyReturn}
 
 
-Definition at line 31 of file basic\+\_\+allocators.\+cpp.
+Definition at line 33 of file basic\+\_\+allocators.\+cpp.
 
 \mbox{\Hypertarget{memory_2basic__allocators_8cpp_afa145befcf5e7b83424408ca503c8637}\label{memory_2basic__allocators_8cpp_afa145befcf5e7b83424408ca503c8637}} 
 \index{basic\_allocators.cpp@{basic\_allocators.cpp}!operator delete@{operator delete}}
@@ -78,7 +79,7 @@ Overrides the default {\ttfamily delete} operator. This will decrease the total 
 \end{DoxyParams}
 
 
-Definition at line 50 of file basic\+\_\+allocators.\+cpp.
+Definition at line 56 of file basic\+\_\+allocators.\+cpp.
 
 \mbox{\Hypertarget{memory_2basic__allocators_8cpp_a205ed048fdf5259c2e8e0cb60ee8f719}\label{memory_2basic__allocators_8cpp_a205ed048fdf5259c2e8e0cb60ee8f719}} 
 \index{basic\_allocators.cpp@{basic\_allocators.cpp}!operator new@{operator new}}
@@ -96,5 +97,5 @@ A pointer to the allocated memory.
 \end{DoxyReturn}
 
 
-Definition at line 42 of file basic\+\_\+allocators.\+cpp.
+Definition at line 48 of file basic\+\_\+allocators.\+cpp.
 

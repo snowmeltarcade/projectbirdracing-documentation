@@ -88,66 +88,71 @@ $(document).ready(function(){initNavTree('memory_2basic__allocators_8cpp_source.
 <a href="memory_2basic__allocators_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;tuple&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basic__allocators_8h.html">basic_allocators.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> std::atomic_uint64_t g_number_of_allocated_bytes {0};</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">   13</a></span>&#160;std::pair&lt;void*, size_t&gt; <a class="code" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a>(<span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">auto</span> total_size = size + <span class="keyword">sizeof</span>(<a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">auto</span> ptr = malloc(total_size);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> header_ptr = <span class="keyword">static_cast&lt;</span><a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>*<span class="keyword">&gt;</span>(ptr);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    header_ptr[0].<a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a69aa7276595ddf7a84b57f9321333863">key</a> = <a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a45428b73502a25a444e4d4e9d914bf09">pbr::shared::memory::memory_block_header::ID</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    header_ptr[0].size = total_size;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(&amp;header_ptr[1]), total_size };</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">   31</a></span>&#160;std::pair&lt;void*, size_t&gt; <a class="code" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a>(<span class="keywordtype">void</span>* ptr) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">auto</span> header_ptr = <span class="keyword">static_cast&lt;</span><a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>*<span class="keyword">&gt;</span>(ptr);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span> header = &amp;header_ptr[-1];</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (header-&gt;key != <a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a45428b73502a25a444e4d4e9d914bf09">pbr::shared::memory::memory_block_header::ID</a>) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> { ptr, 0 };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basic__allocators_8h.html">basic_allocators.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">static</span> std::atomic_uint64_t g_number_of_allocated_bytes {0};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">   14</a></span>&#160;std::pair&lt;void*, size_t&gt; <a class="code" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a>(<span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">auto</span> total_size = size + <span class="keyword">sizeof</span>(<a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">auto</span> ptr = malloc(total_size);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    assert((ptr));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">auto</span> header_ptr = <span class="keyword">static_cast&lt;</span><a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>*<span class="keyword">&gt;</span>(ptr);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    header_ptr[0].<a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a69aa7276595ddf7a84b57f9321333863">key</a> = <a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a45428b73502a25a444e4d4e9d914bf09">pbr::shared::memory::memory_block_header::ID</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    header_ptr[0].size = total_size;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(&amp;header_ptr[1]), total_size };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">   33</a></span>&#160;std::pair&lt;void*, size_t&gt; <a class="code" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a>(<span class="keywordtype">void</span>* ptr) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    assert((ptr));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> header_ptr = <span class="keyword">static_cast&lt;</span><a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a>*<span class="keyword">&gt;</span>(ptr);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    assert((ptr));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(header), header-&gt;<a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a259b0fc1fb1650232c61bf050665c39a">size</a> };</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="basic__allocators_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719">   42</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span> [ptr, total_size] = <a class="code" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a>(size);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> header = &amp;header_ptr[-1];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (header-&gt;key != <a class="code" href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a45428b73502a25a444e4d4e9d914bf09">pbr::shared::memory::memory_block_header::ID</a>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> { ptr, 0 };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    g_number_of_allocated_bytes += total_size;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> ptr;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="basic__allocators_8h.html#afa145befcf5e7b83424408ca503c8637">   50</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* ptr) noexcept {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span> [ptr_to_free, size] = <a class="code" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a>(ptr);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> { <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(header), header-&gt;size };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="basic__allocators_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719">   48</a></span>&#160;<span class="keywordtype">void</span>* <span class="keyword">operator</span> <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> [ptr, total_size] = <a class="code" href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a>(size);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    g_number_of_allocated_bytes += total_size;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    free(ptr_to_free);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    g_number_of_allocated_bytes -= size;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1memory.html">   58</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1memory.html">pbr::shared::memory</a> {</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">   59</a></span>&#160;    <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a> <a class="code" href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">get_number_of_allocated_bytes</a>() noexcept {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a>(g_number_of_allocated_bytes.load());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="basic__allocators_8h.html#afa145befcf5e7b83424408ca503c8637">   56</a></span>&#160;<span class="keywordtype">void</span> <span class="keyword">operator</span> <span class="keyword">delete</span>(<span class="keywordtype">void</span>* ptr) noexcept {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> [ptr_to_free, size] = <a class="code" href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a>(ptr);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    free(ptr_to_free);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    g_number_of_allocated_bytes -= size;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1memory.html">   64</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepbr_1_1shared_1_1memory.html">pbr::shared::memory</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">   65</a></span>&#160;    <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a> <a class="code" href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">get_number_of_allocated_bytes</a>() noexcept {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classpbr_1_1shared_1_1memory_1_1bytes.html">bytes</a>(g_number_of_allocated_bytes.load());</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="amemory_2basic__allocators_8cpp_html_a06b8b73b0baaf1d34fda6700926aa706"><div class="ttname"><a href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a></div><div class="ttdeci">std::pair&lt; void *, size_t &gt; get_ptr_to_free(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00031">basic_allocators.cpp:31</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1memory_html_a9e71b623ba1d8caa90fa31b832b6e0bf"><div class="ttname"><a href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">pbr::shared::memory::get_number_of_allocated_bytes</a></div><div class="ttdeci">bytes get_number_of_allocated_bytes() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00059">basic_allocators.cpp:59</a></div></div>
+<div class="ttc" id="amemory_2basic__allocators_8cpp_html_a06b8b73b0baaf1d34fda6700926aa706"><div class="ttname"><a href="memory_2basic__allocators_8cpp.html#a06b8b73b0baaf1d34fda6700926aa706">get_ptr_to_free</a></div><div class="ttdeci">std::pair&lt; void *, size_t &gt; get_ptr_to_free(void *ptr)</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00033">basic_allocators.cpp:33</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1memory_html_a9e71b623ba1d8caa90fa31b832b6e0bf"><div class="ttname"><a href="namespacepbr_1_1shared_1_1memory.html#a9e71b623ba1d8caa90fa31b832b6e0bf">pbr::shared::memory::get_number_of_allocated_bytes</a></div><div class="ttdeci">bytes get_number_of_allocated_bytes() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00065">basic_allocators.cpp:65</a></div></div>
 <div class="ttc" id="aclasspbr_1_1shared_1_1memory_1_1bytes_html"><div class="ttname"><a href="classpbr_1_1shared_1_1memory_1_1bytes.html">pbr::shared::memory::bytes</a></div><div class="ttdoc">Represents a number of bytes.</div><div class="ttdef"><b>Definition:</b> <a href="bytes_8h_source.html#l00012">bytes.h:12</a></div></div>
-<div class="ttc" id="anamespacepbr_1_1shared_1_1memory_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1memory.html">pbr::shared::memory</a></div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00058">basic_allocators.cpp:58</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1memory_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1memory.html">pbr::shared::memory</a></div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00064">basic_allocators.cpp:64</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1memory_1_1memory__block__header_html"><div class="ttname"><a href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html">pbr::shared::memory::memory_block_header</a></div><div class="ttdoc">The header of an allocated memory block.</div><div class="ttdef"><b>Definition:</b> <a href="basic__allocators_8h_source.html#l00023">basic_allocators.h:23</a></div></div>
 <div class="ttc" id="abasic__allocators_8h_html"><div class="ttname"><a href="basic__allocators_8h.html">basic_allocators.h</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1memory_1_1memory__block__header_html_a69aa7276595ddf7a84b57f9321333863"><div class="ttname"><a href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a69aa7276595ddf7a84b57f9321333863">pbr::shared::memory::memory_block_header::key</a></div><div class="ttdeci">size_t key</div><div class="ttdoc">The key identifying this block.</div><div class="ttdef"><b>Definition:</b> <a href="basic__allocators_8h_source.html#l00028">basic_allocators.h:28</a></div></div>
-<div class="ttc" id="amemory_2basic__allocators_8cpp_html_a0339ed803bdd0122612c2b0337613d57"><div class="ttname"><a href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a></div><div class="ttdeci">std::pair&lt; void *, size_t &gt; allocate_with_header(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00013">basic_allocators.cpp:13</a></div></div>
-<div class="ttc" id="astructpbr_1_1shared_1_1memory_1_1memory__block__header_html_a259b0fc1fb1650232c61bf050665c39a"><div class="ttname"><a href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a259b0fc1fb1650232c61bf050665c39a">pbr::shared::memory::memory_block_header::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> <a href="basic__allocators_8h_source.html#l00032">basic_allocators.h:32</a></div></div>
+<div class="ttc" id="amemory_2basic__allocators_8cpp_html_a0339ed803bdd0122612c2b0337613d57"><div class="ttname"><a href="memory_2basic__allocators_8cpp.html#a0339ed803bdd0122612c2b0337613d57">allocate_with_header</a></div><div class="ttdeci">std::pair&lt; void *, size_t &gt; allocate_with_header(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="memory_2basic__allocators_8cpp_source.html#l00014">basic_allocators.cpp:14</a></div></div>
 <div class="ttc" id="astructpbr_1_1shared_1_1memory_1_1memory__block__header_html_a45428b73502a25a444e4d4e9d914bf09"><div class="ttname"><a href="structpbr_1_1shared_1_1memory_1_1memory__block__header.html#a45428b73502a25a444e4d4e9d914bf09">pbr::shared::memory::memory_block_header::ID</a></div><div class="ttdeci">static const size_t ID</div><div class="ttdoc">The value that key should have.</div><div class="ttdef"><b>Definition:</b> <a href="basic__allocators_8h_source.html#l00025">basic_allocators.h:25</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -24,7 +24,7 @@ bool \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708
 \doxysubsection{Detailed Description}
 Provides the skeleton of the game. The managers to be used are first configured and then added to this manager. Both the client and server will use this manager. The game loop and threads are all handled here. 
 
-Definition at line 19 of file game\+\_\+manager.\+h.
+Definition at line 22 of file game\+\_\+manager.\+h.
 
 
 
@@ -50,7 +50,7 @@ Constructs this manager
 \end{DoxyParams}
 
 
-Definition at line 27 of file game\+\_\+manager.\+h.
+Definition at line 30 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}\label{classpbr_1_1shared_1_1game_1_1game__manager_a601c1f390231483bbaf4cddb296c8a4e}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!````~game\_manager@{$\sim$game\_manager}}
@@ -64,7 +64,7 @@ Destructs this manager. The game will be shutdown here.
 
 
 
-Definition at line 44 of file game\+\_\+manager.\+h.
+Definition at line 47 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}\label{classpbr_1_1shared_1_1game_1_1game__manager_aec97ccc9e695ba7061b1acf04d83dfe0}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
@@ -79,7 +79,7 @@ Move constructor
 \end{DoxyParams}
 
 
-Definition at line 54 of file game\+\_\+manager.\+h.
+Definition at line 57 of file game\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}\label{classpbr_1_1shared_1_1game_1_1game__manager_a081c4c78a5b6b2d88cc431c6e10b0eea}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!game\_manager@{game\_manager}}
@@ -101,7 +101,7 @@ Initializes the game \begin{DoxyReturn}{Returns}
 \end{DoxyReturn}
 
 
-Definition at line 4 of file game\+\_\+manager.\+cpp.
+Definition at line 5 of file game\+\_\+manager.\+cpp.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708bef9b1bbaa434962f3a}\label{classpbr_1_1shared_1_1game_1_1game__manager_a8b3aae50f7708bef9b1bbaa434962f3a}} 
 \index{pbr::shared::game::game\_manager@{pbr::shared::game::game\_manager}!run@{run}}
@@ -109,12 +109,12 @@ Definition at line 4 of file game\+\_\+manager.\+cpp.
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
 {\footnotesize\ttfamily bool pbr\+::shared\+::game\+::game\+\_\+manager\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
-Runs the game. This is a blocking function. It will exit when the game exits \begin{DoxyReturn}{Returns}
+Runs the game. This is a blocking function. It will exit when the game exits. Other needed threads, such as the graphics thread, are started in this function. \begin{DoxyReturn}{Returns}
 {\ttfamily true} upon success, else {\ttfamily false} 
 \end{DoxyReturn}
 
 
-Definition at line 45 of file game\+\_\+manager.\+cpp.
+Definition at line 49 of file game\+\_\+manager.\+cpp.
 
 
 

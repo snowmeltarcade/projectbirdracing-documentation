@@ -8,5 +8,6 @@ var classtest__graphics__manager =
     [ "initialize_called", "classtest__graphics__manager.html#ac10f81756717664293d1fbd3c419a747", null ],
     [ "initialize_result", "classtest__graphics__manager.html#a63f2b98bcf655453e23c10025e311853", null ],
     [ "load_api_called", "classtest__graphics__manager.html#a5d50107cd8d13f4bae9aa2ace6e1ce6e", null ],
-    [ "load_api_result", "classtest__graphics__manager.html#a8895ad04be6bf06e6f7eaaba09388ff4", null ]
+    [ "load_api_result", "classtest__graphics__manager.html#a8895ad04be6bf06e6f7eaaba09388ff4", null ],
+    [ "submit_frame_for_render_called", "classtest__graphics__manager.html#a182a3b89263ef0458f4559cdf9517682", null ]
 ];

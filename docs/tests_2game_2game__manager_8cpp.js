@@ -14,6 +14,7 @@ var tests_2game_2game__manager_8cpp =
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#a2652f937182ff994b96b37c86bde4d93", null ],
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#a4a9c8f9638eb6347936ccfc7ea8f879e", null ],
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#ad529175a8901049de90646a17fc4536e", null ],
+    [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#a266a22f9ce7a7bd0c21e441518540472", null ],
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#ae5599b094f35d8d6c650b42df179b9f2", null ],
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#a6bb54b4ed6a9edea836d09ed88822e5d", null ],
     [ "TEST_CASE", "tests_2game_2game__manager_8cpp.html#a10bbf18d5dbacafad2947e4692b8ece6", null ],

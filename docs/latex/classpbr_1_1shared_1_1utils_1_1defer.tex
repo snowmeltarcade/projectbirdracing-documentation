@@ -1,0 +1,79 @@
+\hypertarget{classpbr_1_1shared_1_1utils_1_1defer}{}\doxysection{pbr\+::shared\+::utils\+::defer Class Reference}
+\label{classpbr_1_1shared_1_1utils_1_1defer}\index{pbr::shared::utils::defer@{pbr::shared::utils::defer}}
+
+
+Runs a functor when destructed. This is designed to mimic golang\textquotesingle{}s {\ttfamily defer} keyword.  
+
+
+
+
+{\ttfamily \#include $<$defer.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}{on\+\_\+destruct\+\_\+functor\+\_\+type}} = std\+::function$<$ void(void)$>$
+\begin{DoxyCompactList}\small\item\em The type of the destruct functor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_a020bdd031c7125e91ee082d85b4ab415}{defer}} (\mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}{on\+\_\+destruct\+\_\+functor\+\_\+type}} on\+\_\+destruct)
+\begin{DoxyCompactList}\small\item\em Constructs this defer object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_a4a39479def71693438ee799558c302a5}{$\sim$defer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs a functor when destructed. This is designed to mimic golang\textquotesingle{}s {\ttfamily defer} keyword. 
+
+Definition at line 9 of file defer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}\label{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}} 
+\index{pbr::shared::utils::defer@{pbr::shared::utils::defer}!on\_destruct\_functor\_type@{on\_destruct\_functor\_type}}
+\index{on\_destruct\_functor\_type@{on\_destruct\_functor\_type}!pbr::shared::utils::defer@{pbr::shared::utils::defer}}
+\doxysubsubsection{\texorpdfstring{on\_destruct\_functor\_type}{on\_destruct\_functor\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}{pbr\+::shared\+::utils\+::defer\+::on\+\_\+destruct\+\_\+functor\+\_\+type}} =  std\+::function$<$void(void)$>$}
+
+
+
+The type of the destruct functor. 
+
+
+
+Definition at line 12 of file defer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1utils_1_1defer_a020bdd031c7125e91ee082d85b4ab415}\label{classpbr_1_1shared_1_1utils_1_1defer_a020bdd031c7125e91ee082d85b4ab415}} 
+\index{pbr::shared::utils::defer@{pbr::shared::utils::defer}!defer@{defer}}
+\index{defer@{defer}!pbr::shared::utils::defer@{pbr::shared::utils::defer}}
+\doxysubsubsection{\texorpdfstring{defer()}{defer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::utils\+::defer\+::defer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1defer_afbf136e07fc3536d5d05deb392678b45}{on\+\_\+destruct\+\_\+functor\+\_\+type}}}]{on\+\_\+destruct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs this defer object. 
+
+
+
+Definition at line 15 of file defer.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1utils_1_1defer_a4a39479def71693438ee799558c302a5}\label{classpbr_1_1shared_1_1utils_1_1defer_a4a39479def71693438ee799558c302a5}} 
+\index{pbr::shared::utils::defer@{pbr::shared::utils::defer}!````~defer@{$\sim$defer}}
+\index{````~defer@{$\sim$defer}!pbr::shared::utils::defer@{pbr::shared::utils::defer}}
+\doxysubsubsection{\texorpdfstring{$\sim$defer()}{~defer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::utils\+::defer\+::$\sim$defer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructs this object and calls the defer object, if it hasn\textquotesingle{}t already been called 
+
+Definition at line 21 of file defer.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/utils/\mbox{\hyperlink{defer_8h}{defer.\+h}}\end{DoxyCompactItemize}

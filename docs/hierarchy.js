@@ -5,8 +5,10 @@ var hierarchy =
     [ "pbr::shared::apis::graphics::color", "structpbr_1_1shared_1_1apis_1_1graphics_1_1color.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::command_buffer", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::command_pool", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool.html", null ],
+    [ "pbr::shared::diagnostics::counter_set", "classpbr_1_1shared_1_1diagnostics_1_1counter__set.html", null ],
     [ "pbr::shared::data::data_manager", "classpbr_1_1shared_1_1data_1_1data__manager.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::debug_messenger", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1debug__messenger.html", null ],
+    [ "pbr::shared::utils::defer", "classpbr_1_1shared_1_1utils_1_1defer.html", null ],
     [ "pbr::shared::apis::graphics::vulkan::device", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device.html", null ],
     [ "pbr::shared::apis::logging::endpoint", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoint.html", [
       [ "pbr::shared::apis::logging::endpoints::file", "classpbr_1_1shared_1_1apis_1_1logging_1_1endpoints_1_1file.html", null ],

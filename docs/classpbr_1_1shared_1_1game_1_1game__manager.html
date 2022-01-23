@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides the skeleton of the game. The managers to be used are first configured and then added to this manager. Both the client and server will use this manager. The game loop and threads are all handled here. </p>
 
-<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00019">19</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00022">22</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aedc4c8d12eb7ac8100f25033970ff4c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedc4c8d12eb7ac8100f25033970ff4c7">&#9670;&nbsp;</a></span>game_manager() <span class="overload">[1/3]</span></h2>
@@ -174,7 +174,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00027">27</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00030">30</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructs this manager. The game will be shutdown here. </p>
 
-<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00044">44</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00047">47</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00054">54</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game__manager_8h_source.html#l00057">57</a> of file <a class="el" href="game__manager_8h_source.html">game_manager.h</a>.</p>
 
 </div>
 </div>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Initializes the game </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="game_2game__manager_8cpp_source.html#l00004">4</a> of file <a class="el" href="game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_2game__manager_8cpp_source.html#l00005">5</a> of file <a class="el" href="game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -318,9 +318,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Runs the game. This is a blocking function. It will exit when the game exits </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
+<p>Runs the game. This is a blocking function. It will exit when the game exits. Other needed threads, such as the graphics thread, are started in this function. </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="game_2game__manager_8cpp_source.html#l00045">45</a> of file <a class="el" href="game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="game_2game__manager_8cpp_source.html#l00049">49</a> of file <a class="el" href="game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
