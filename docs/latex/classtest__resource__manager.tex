@@ -1,0 +1,96 @@
+\hypertarget{classtest__resource__manager}{}\doxysection{test\+\_\+resource\+\_\+manager Class Reference}
+\label{classtest__resource__manager}\index{test\_resource\_manager@{test\_resource\_manager}}
+Inheritance diagram for test\+\_\+resource\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtest__resource__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtest__resource__manager_a08467e985403cb770c2539b6ba3853de}{test\+\_\+resource\+\_\+manager}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+\_\+manager}})
+\item 
+std\+::shared\+\_\+ptr$<$ int $>$ \mbox{\hyperlink{classtest__resource__manager_a5d62ebc40bef0e4e8f7628ba97535131}{load}} (const std\+::filesystem\+::path \&path) noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtest__resource__manager_a47cde12d81d3f57ebc5636b0160a0520}{load\+\_\+call\+\_\+count}} \{0u\}
+\item 
+std\+::filesystem\+::path \mbox{\hyperlink{classtest__resource__manager_a910d6bb2c36980e7e4e4effbd4d11a56}{loaded\+\_\+path}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 28 of file resource\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtest__resource__manager_a08467e985403cb770c2539b6ba3853de}\label{classtest__resource__manager_a08467e985403cb770c2539b6ba3853de}} 
+\index{test\_resource\_manager@{test\_resource\_manager}!test\_resource\_manager@{test\_resource\_manager}}
+\index{test\_resource\_manager@{test\_resource\_manager}!test\_resource\_manager@{test\_resource\_manager}}
+\doxysubsubsection{\texorpdfstring{test\_resource\_manager()}{test\_resource\_manager()}}
+{\footnotesize\ttfamily test\+\_\+resource\+\_\+manager\+::test\+\_\+resource\+\_\+manager (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+\_\+manager}} $>$}]{data\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 30 of file resource\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtest__resource__manager_a5d62ebc40bef0e4e8f7628ba97535131}\label{classtest__resource__manager_a5d62ebc40bef0e4e8f7628ba97535131}} 
+\index{test\_resource\_manager@{test\_resource\_manager}!load@{load}}
+\index{load@{load}!test\_resource\_manager@{test\_resource\_manager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$int$>$ test\+\_\+resource\+\_\+manager\+::load (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+This loads a resource 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path os the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded resource 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a6174fdc8811561506bf0d15138147e6f}{pbr\+::shared\+::resource\+::resource\+\_\+manager$<$ int $>$}}.
+
+
+
+Definition at line 39 of file resource\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtest__resource__manager_a47cde12d81d3f57ebc5636b0160a0520}\label{classtest__resource__manager_a47cde12d81d3f57ebc5636b0160a0520}} 
+\index{test\_resource\_manager@{test\_resource\_manager}!load\_call\_count@{load\_call\_count}}
+\index{load\_call\_count@{load\_call\_count}!test\_resource\_manager@{test\_resource\_manager}}
+\doxysubsubsection{\texorpdfstring{load\_call\_count}{load\_call\_count}}
+{\footnotesize\ttfamily int test\+\_\+resource\+\_\+manager\+::load\+\_\+call\+\_\+count \{0u\}}
+
+
+
+Definition at line 36 of file resource\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classtest__resource__manager_a910d6bb2c36980e7e4e4effbd4d11a56}\label{classtest__resource__manager_a910d6bb2c36980e7e4e4effbd4d11a56}} 
+\index{test\_resource\_manager@{test\_resource\_manager}!loaded\_path@{loaded\_path}}
+\index{loaded\_path@{loaded\_path}!test\_resource\_manager@{test\_resource\_manager}}
+\doxysubsubsection{\texorpdfstring{loaded\_path}{loaded\_path}}
+{\footnotesize\ttfamily std\+::filesystem\+::path test\+\_\+resource\+\_\+manager\+::loaded\+\_\+path}
+
+
+
+Definition at line 37 of file resource\+\_\+manager.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/tests/resource/\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp}{resource\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('namespacepbr_1_1shared_1_1apis_1_1grap
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html">buffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the lifetime of a <code>VkBuffer</code>  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html">command_buffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command buffer.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +110,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the lifecycle of a <code>VkFence</code>  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer.html">framebuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html">graphics_manager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Vulkan graphics API and rendering processes.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image.html">image</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An image. This will also contain the image view.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image.html#details">More...</a><br /></td></tr>
@@ -146,6 +152,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac6be376202e0cca83314dba7513c7ffa"><td class="memItemLeft" align="right" valign="top">VkBufferCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#ac6be376202e0cca83314dba7513c7ffa">create_buffer_create_info</a> (uint32_t size, VkBufferUsageFlags flags)</td></tr>
+<tr class="separator:ac6be376202e0cca83314dba7513c7ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d97fbbc2f7720c73efce2d5925c10d1"><td class="memItemLeft" align="right" valign="top">VkCommandBufferBeginInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#a1d97fbbc2f7720c73efce2d5925c10d1">create_begin_info</a> () noexcept</td></tr>
 <tr class="separator:a1d97fbbc2f7720c73efce2d5925c10d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad61fb31220d28c59f2d100df1683c101"><td class="memItemLeft" align="right" valign="top">VkCommandPoolCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html#ad61fb31220d28c59f2d100df1683c101">create_command_pool_create_info</a> (uint32_t queue_index) noexcept</td></tr>
@@ -444,6 +452,44 @@ Functions</h2></td></tr>
 <p>Creates a buffer begin info struct </p><dl class="section return"><dt>Returns</dt><dd>The buffer begin info struct </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="command__buffer_8cpp_source.html#l00045">45</a> of file <a class="el" href="command__buffer_8cpp_source.html">command_buffer.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6be376202e0cca83314dba7513c7ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6be376202e0cca83314dba7513c7ffa">&#9670;&nbsp;</a></span>create_buffer_create_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkBufferCreateInfo pbr::shared::apis::graphics::vulkan::create_buffer_create_info </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkBufferUsageFlags&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a buffer create info struct </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size of the buffer to create in bytes </td></tr>
+    <tr><td class="paramname">flags</td><td>The usage flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The buffer create info struct </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="buffer_8cpp_source.html#l00012">12</a> of file <a class="el" href="buffer_8cpp_source.html">buffer.cpp</a>.</p>
 
 </div>
 </div>

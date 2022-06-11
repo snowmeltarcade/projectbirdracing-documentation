@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>get()
 : <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a88a6b0af038b2a91287326ef128b3e23">pbr::shared::data::settings</a>
+, <a class="el" href="classpbr_1_1shared_1_1resource_1_1resource__manager.html#a21bfd8dd754187faea7734253b4a1c75">pbr::shared::resource::resource_manager&lt; T &gt;</a>
 </li>
 <li>get_api_version()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a7f96fb9c69476973c274dec9f47c9d5e">pbr::shared::apis::graphics::vulkan::instance</a>
@@ -104,6 +105,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 </li>
 <li>get_as_settings()
 : <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a3cdb8ea74497900adc49c7fb6253a779">pbr::shared::data::settings</a>
+</li>
+<li>get_as_settings_array()
+: <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#abbf2d35f967589e749a3601978b8e520">pbr::shared::data::settings</a>
 </li>
 <li>get_as_uint32_t()
 : <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a96b2edfa73371683fd9142ec0a978631">pbr::shared::data::settings</a>
@@ -162,8 +166,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>get_msaa_samples()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass.html#a58405b9435c2b1ba189de65ed12e5b37">pbr::shared::apis::graphics::vulkan::render_pass</a>
 </li>
+<li>get_native_allocation_handle()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html#a67bab3d2a8f263840484c639602f8bd4">pbr::shared::apis::graphics::vulkan::buffer</a>
+</li>
 <li>get_native_handle()
-: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html#ad5758a12daa087911d033b48159b6041">pbr::shared::apis::graphics::vulkan::command_buffer</a>
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html#a1243a976958e13c9b852b1c053ed3996">pbr::shared::apis::graphics::vulkan::buffer</a>
+, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html#ad5758a12daa087911d033b48159b6041">pbr::shared::apis::graphics::vulkan::command_buffer</a>
 , <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool.html#af8f77995419240a4d30678462bf80e02">pbr::shared::apis::graphics::vulkan::command_pool</a>
 , <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device.html#aa67c2785344e400597f2855fc4e6d8f4">pbr::shared::apis::graphics::vulkan::device</a>
 , <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence.html#a0cda3e1266b4980ff70aab3a3d2a54e7">pbr::shared::apis::graphics::vulkan::fence</a>
@@ -194,6 +202,11 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 , <a class="el" href="classpbr_1_1shared_1_1scene_1_1scenes_1_1world__generation__scene.html#a7a4c5203a33943763267627ddb4bc1bc">pbr::shared::scene::scenes::world_generation_scene</a>
 , <a class="el" href="classtest__scene.html#a7a3729f9c5654fbcf2a6759590fcff92">test_scene</a>
 </li>
+<li>get_size()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a14e1c629a5b8bc0ad7157d012e1b256d">pbr::shared::apis::windowing::application_window</a>
+, <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ac589abee9400a8035355873455e3d2a6">pbr::shared::apis::windowing::iapplication_window</a>
+, <a class="el" href="classtest__application__window.html#a05516a9c09db8cbe3659f0d41d7d15b5">test_application_window</a>
+</li>
 <li>get_time_as_utc_string()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1datetime_1_1datetime__manager.html#a6441029f98f68192ad1da63f09f63210">pbr::shared::apis::datetime::datetime_manager</a>
 , <a class="el" href="classpbr_1_1shared_1_1apis_1_1datetime_1_1idatetime__manager.html#ace3987b03ee1e1e5bf360b0f89e622e9">pbr::shared::apis::datetime::idatetime_manager</a>
@@ -213,13 +226,12 @@ $(document).ready(function(){initNavTree('functions_func_g.html',''); initResiza
 <li>get_view_native_handle()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image.html#a5f96ef2b32ba1df527329fb8600e0a9f">pbr::shared::apis::graphics::vulkan::image</a>
 </li>
-<li>get_window_size()
-: <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ad01da4eb127cc64f43b92aceb8dcd512">pbr::shared::apis::windowing::application_window</a>
-, <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a25f998cf27a34b8cac655f85d0f3c5d8">pbr::shared::apis::windowing::iapplication_window</a>
-, <a class="el" href="classtest__application__window.html#a5ff569558dbe4a8ff3e911a436de5977">test_application_window</a>
-</li>
 <li>gigabytes()
-: <a class="el" href="classpbr_1_1shared_1_1memory_1_1gigabytes.html#a2eb111e7fb48a6d355a155a9a696aea3">pbr::shared::memory::gigabytes</a>
+: <a class="el" href="classpbr_1_1shared_1_1memory_1_1gigabytes.html#ad8ba8a93d2d8f146dd3fee56e3600e74">pbr::shared::memory::gigabytes</a>
+</li>
+<li>graphics_manager()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#abbf674eef858dc71cb208d747a9ced91">pbr::shared::apis::graphics::opengl::graphics_manager</a>
+, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#aa3a1a244c3dfd64459550d0c9bb9f08f">pbr::shared::apis::graphics::vulkan::graphics_manager</a>
 </li>
 </ul>
 </div><!-- contents -->

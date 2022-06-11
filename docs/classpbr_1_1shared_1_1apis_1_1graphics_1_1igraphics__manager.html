@@ -96,8 +96,9 @@ Inheritance diagram for pbr::shared::apis::graphics::igraphics_manager:</div>
  <div class="center">
   <img src="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.png" usemap="#pbr::shared::apis::graphics::igraphics_5Fmanager_map" alt=""/>
   <map id="pbr::shared::apis::graphics::igraphics_5Fmanager_map" name="pbr::shared::apis::graphics::igraphics_5Fmanager_map">
-<area href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html" title="Handles the Vulkan graphics API and rendering processes." alt="pbr::shared::apis::graphics::vulkan_graphics_manager" shape="rect" coords="0,56,315,80"/>
-<area href="classtest__graphics__manager.html" alt="test_graphics_manager" shape="rect" coords="325,56,640,80"/>
+<area href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html" title="Handles the OpenGL graphics API and rendering processes." alt="pbr::shared::apis::graphics::opengl::graphics_manager" shape="rect" coords="0,56,315,80"/>
+<area href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html" title="Handles the Vulkan graphics API and rendering processes." alt="pbr::shared::apis::graphics::vulkan::graphics_manager" shape="rect" coords="325,56,640,80"/>
+<area href="classtest__graphics__manager.html" alt="test_graphics_manager" shape="rect" coords="650,56,965,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -109,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af4cc132f3d028b9b264da6dce6fc60cf"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#af4cc132f3d028b9b264da6dce6fc60cf">~igraphics_manager</a> ()=default</td></tr>
 <tr class="memdesc:af4cc132f3d028b9b264da6dce6fc60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys this manager.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#af4cc132f3d028b9b264da6dce6fc60cf">More...</a><br /></td></tr>
 <tr class="separator:af4cc132f3d028b9b264da6dce6fc60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addeeadf091504071a6eacf76710dc88d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">apis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#addeeadf091504071a6eacf76710dc88d">implemented_api</a> () const noexcept=0</td></tr>
+<tr class="separator:addeeadf091504071a6eacf76710dc88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13da7abb902ce7dae4bc36a3cbf6425a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#a13da7abb902ce7dae4bc36a3cbf6425a">load_api</a> (const std::filesystem::path &amp;executable_path) noexcept=0</td></tr>
 <tr class="separator:a13da7abb902ce7dae4bc36a3cbf6425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a61e720d1dde674cbbd8ded822e9bb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#ae8a61e720d1dde674cbbd8ded822e9bb">initialize</a> () noexcept=0</td></tr>
@@ -120,11 +123,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a601a249cd1babc2a0c2e6bd6e36cd516"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#a601a249cd1babc2a0c2e6bd6e36cd516">submit_frame_for_render</a> () noexcept=0</td></tr>
 <tr class="memdesc:a601a249cd1babc2a0c2e6bd6e36cd516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submits a frame for rendering.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#a601a249cd1babc2a0c2e6bd6e36cd516">More...</a><br /></td></tr>
 <tr class="separator:a601a249cd1babc2a0c2e6bd6e36cd516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f13f2a8810fec39bf0ca005721e7f72"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html#a3f13f2a8810fec39bf0ca005721e7f72">run_on_separate_thread</a> () const noexcept=0</td></tr>
+<tr class="separator:a3f13f2a8810fec39bf0ca005721e7f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface to the graphics manager. This manages the graphics API instance and rendering processes. </p>
 
-<p class="definition">Definition at line <a class="el" href="igraphics__manager_8h_source.html#l00010">10</a> of file <a class="el" href="igraphics__manager_8h_source.html">igraphics_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="igraphics__manager_8h_source.html#l00011">11</a> of file <a class="el" href="igraphics__manager_8h_source.html">igraphics_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa9193449e27b6ac39ca12ab184dae5e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9193449e27b6ac39ca12ab184dae5e5">&#9670;&nbsp;</a></span>igraphics_manager()</h2>
@@ -181,6 +186,34 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="addeeadf091504071a6eacf76710dc88d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addeeadf091504071a6eacf76710dc88d">&#9670;&nbsp;</a></span>implemented_api()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">apis</a> pbr::shared::apis::graphics::igraphics_manager::implemented_api </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the api implemented by this manager </p><dl class="section return"><dt>Returns</dt><dd>The api implemented by this manager </dd></dl>
+
+<p>Implemented in <a class="el" href="classtest__graphics__manager.html#ad0bdcf2203e100caee52553a0f0a687f">test_graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a18c2bc17704199d6146a8e320a55aabf">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a4417b48639ee96b542d128a4aa58481d">pbr::shared::apis::graphics::opengl::graphics_manager</a>.</p>
+
+</div>
+</div>
 <a id="ae8a61e720d1dde674cbbd8ded822e9bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8a61e720d1dde674cbbd8ded822e9bb">&#9670;&nbsp;</a></span>initialize()</h2>
 
@@ -205,7 +238,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Initializes this manager </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a46674962c641e393740d3a3a6808b667">test_graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a1a7d9988d9eac0e3bc9b17626bc05114">pbr::shared::apis::graphics::vulkan_graphics_manager</a>.</p>
+<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a46674962c641e393740d3a3a6808b667">test_graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a3b46fe22ea220b6b2a9e62eec582cacd">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a0c78d66799e19918bfa0fd268081738d">pbr::shared::apis::graphics::opengl::graphics_manager</a>.</p>
 
 </div>
 </div>
@@ -240,7 +273,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#ac33766a9cd366a3a249ad3cd643ab2e6">pbr::shared::apis::graphics::vulkan_graphics_manager</a>, and <a class="el" href="classtest__graphics__manager.html#a3514ca5750dac3081451bf9bb57de379">test_graphics_manager</a>.</p>
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a4ae9ef274f210eb14ff86d874d1ac59d">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a6981577853d079aaf27bdf07cc5c59ad">pbr::shared::apis::graphics::opengl::graphics_manager</a>, and <a class="el" href="classtest__graphics__manager.html#a3514ca5750dac3081451bf9bb57de379">test_graphics_manager</a>.</p>
 
 </div>
 </div>
@@ -268,7 +301,35 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Refreshes any dynamic resources, such as swap chains, frame buffers etc... This is called both during initialization and when the window surface size changes </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
 
-<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a38bf258994c56db73459385ae6283b08">test_graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a44c69da9e6b4b7dd861aa7f2bcb520e2">pbr::shared::apis::graphics::vulkan_graphics_manager</a>.</p>
+<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a38bf258994c56db73459385ae6283b08">test_graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a0022f26ccf0c50904d786b2c38cf2595">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a0e4cf93317479a1a74feba3835887201">pbr::shared::apis::graphics::opengl::graphics_manager</a>.</p>
+
+</div>
+</div>
+<a id="a3f13f2a8810fec39bf0ca005721e7f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f13f2a8810fec39bf0ca005721e7f72">&#9670;&nbsp;</a></span>run_on_separate_thread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pbr::shared::apis::graphics::igraphics_manager::run_on_separate_thread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns if this graphics manager should run on a separate thread or not </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> if this should run on a separate thread, else <code>false</code> </dd></dl>
+
+<p>Implemented in <a class="el" href="classtest__graphics__manager.html#ac706982a71d65408f4ddf9b12889b6f4">test_graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a27e8d0b1dfc13d7e3f123235ec30648f">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#acdecfaea6aaca117a9698b9264495882">pbr::shared::apis::graphics::opengl::graphics_manager</a>.</p>
 
 </div>
 </div>
@@ -297,7 +358,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Submits a frame for rendering. </p>
 
-<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a3d30142bf39af1b5b49bcba75a0e8193">test_graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#ae6d5360dcb51969112e8143f2d7c74af">pbr::shared::apis::graphics::vulkan_graphics_manager</a>.</p>
+<p>Implemented in <a class="el" href="classtest__graphics__manager.html#a3d30142bf39af1b5b49bcba75a0e8193">test_graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a783dabe56fdd9de9c042958e11b175c2">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a3631b00f613148a15ee150dc1f7fe03f">pbr::shared::apis::graphics::opengl::graphics_manager</a>.</p>
 
 </div>
 </div>
@@ -331,7 +392,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a4184bbb1204e21bcb2d6a3c855cb1dbd">pbr::shared::apis::graphics::vulkan_graphics_manager</a>, and <a class="el" href="classtest__graphics__manager.html#a2e101cb6419be32c03a341ef87ba4835">test_graphics_manager</a>.</p>
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a85be77e21cdcd5ed8998a25b8b831dc8">pbr::shared::apis::graphics::vulkan::graphics_manager</a>, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a43006a9106bc8e57db979b5e1bcf3f33">pbr::shared::apis::graphics::opengl::graphics_manager</a>, and <a class="el" href="classtest__graphics__manager.html#a2e101cb6419be32c03a341ef87ba4835">test_graphics_manager</a>.</p>
 
 </div>
 </div>

@@ -107,8 +107,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4c0a26ce039eff2ac79cbe8189c79061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d29148df70ee6f0c62bffdad767850"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a73d29148df70ee6f0c62bffdad767850">~iapplication_window</a> ()=default</td></tr>
 <tr class="separator:a73d29148df70ee6f0c62bffdad767850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f998cf27a34b8cac655f85d0f3c5d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">window_size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a25f998cf27a34b8cac655f85d0f3c5d8">get_window_size</a> () const noexcept=0</td></tr>
-<tr class="separator:a25f998cf27a34b8cac655f85d0f3c5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac589abee9400a8035355873455e3d2a6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">window_size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ac589abee9400a8035355873455e3d2a6">get_size</a> () const noexcept=0</td></tr>
+<tr class="separator:ac589abee9400a8035355873455e3d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9e8498a33de35eea985c3a8881d50c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a2c9e8498a33de35eea985c3a8881d50c">set_size</a> (<a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a> width, <a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a> height, bool fullscreen) noexcept=0</td></tr>
+<tr class="separator:a2c9e8498a33de35eea985c3a8881d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4028fe0db47f07e9c9e91eb05d30ed9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ad4028fe0db47f07e9c9e91eb05d30ed9">update_display</a> () noexcept=0</td></tr>
+<tr class="memdesc:ad4028fe0db47f07e9c9e91eb05d30ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the display by swapping any buffers.  <a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ad4028fe0db47f07e9c9e91eb05d30ed9">More...</a><br /></td></tr>
+<tr class="separator:ad4028fe0db47f07e9c9e91eb05d30ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an interface to an application window. An application window can either be in windowed or full screen mode. This window will contain the render surface. Using this window after the window manager has shutdown is undefined behavior </p>
@@ -166,8 +171,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a25f998cf27a34b8cac655f85d0f3c5d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f998cf27a34b8cac655f85d0f3c5d8">&#9670;&nbsp;</a></span>get_window_size()</h2>
+<a id="ac589abee9400a8035355873455e3d2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac589abee9400a8035355873455e3d2a6">&#9670;&nbsp;</a></span>get_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +181,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">window_size</a> pbr::shared::apis::windowing::iapplication_window::get_window_size </td>
+          <td class="memname">virtual <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">window_size</a> pbr::shared::apis::windowing::iapplication_window::get_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -190,7 +195,89 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the window size </p><dl class="section return"><dt>Returns</dt><dd>The window size </dd></dl>
 
-<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ad01da4eb127cc64f43b92aceb8dcd512">pbr::shared::apis::windowing::application_window</a>, and <a class="el" href="classtest__application__window.html#a5ff569558dbe4a8ff3e911a436de5977">test_application_window</a>.</p>
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a14e1c629a5b8bc0ad7157d012e1b256d">pbr::shared::apis::windowing::application_window</a>, and <a class="el" href="classtest__application__window.html#a05516a9c09db8cbe3659f0d41d7d15b5">test_application_window</a>.</p>
+
+</div>
+</div>
+<a id="a2c9e8498a33de35eea985c3a8881d50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9e8498a33de35eea985c3a8881d50c">&#9670;&nbsp;</a></span>set_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pbr::shared::apis::windowing::iapplication_window::set_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullscreen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the window size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The window width </td></tr>
+    <tr><td class="paramname">height</td><td>The window height </td></tr>
+    <tr><td class="paramname">fullscreen</td><td>If this window should be full screen or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
+
+<p>Implemented in <a class="el" href="classtest__application__window.html#ab91458351cbdbf49760a5a27078afb42">test_application_window</a>, and <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a3412ad735dd5d65540a77c5ada6abb58">pbr::shared::apis::windowing::application_window</a>.</p>
+
+</div>
+</div>
+<a id="ad4028fe0db47f07e9c9e91eb05d30ed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4028fe0db47f07e9c9e91eb05d30ed9">&#9670;&nbsp;</a></span>update_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void pbr::shared::apis::windowing::iapplication_window::update_display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the display by swapping any buffers. </p>
+
+<p>Implemented in <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#a3954efb40c61c86c749f7597c52abf82">pbr::shared::apis::windowing::application_window</a>, and <a class="el" href="classtest__application__window.html#a0003fefa6aaf1f9b6df6b15e6d54fac2">test_application_window</a>.</p>
 
 </div>
 </div>

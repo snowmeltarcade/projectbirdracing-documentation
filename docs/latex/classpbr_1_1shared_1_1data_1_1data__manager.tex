@@ -12,13 +12,15 @@
 \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}{$\sim$data\+\_\+manager}} ()=default
 \begin{DoxyCompactList}\small\item\em Destroys this data manager. \end{DoxyCompactList}\item 
 std\+::optional$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{settings}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_a1c31ae92af15d0cecc404e58665ae0de}{read\+\_\+settings}} (const std\+::filesystem\+::path \&relative\+\_\+path) const noexcept
+\item 
+std\+::optional$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1data_1_1shader__code}{shader\+\_\+code}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager_a449d969f1259f97e08153ecfcb816fa9}{read\+\_\+shader\+\_\+code}} (const std\+::filesystem\+::path \&relative\+\_\+path, const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}{apis\+::graphics\+::shader\+\_\+types}} type\+\_\+hint=\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a}{apis\+::graphics\+::shader\+\_\+types\+::vertex}}) const noexcept
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Manages read and write access to the {\ttfamily data} directory. The format of the data is agnostic to the caller and is returned in a common format. File extensions are thus not required. J\+S\+ON is used as the default data format. 
 
-Definition at line 15 of file data\+\_\+manager.\+h.
+Definition at line 16 of file data\+\_\+manager.\+h.
 
 
 
@@ -36,7 +38,7 @@ Constructs this data manager
 \end{DoxyParams}
 
 
-Definition at line 19 of file data\+\_\+manager.\+h.
+Definition at line 20 of file data\+\_\+manager.\+h.
 
 \mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}\label{classpbr_1_1shared_1_1data_1_1data__manager_ac887d1f1ce0aecb84b13438fdb4f59b7}} 
 \index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}!````~data\_manager@{$\sim$data\_manager}}
@@ -67,7 +69,27 @@ The read settings, else empty if an error occurred
 \end{DoxyReturn}
 
 
-Definition at line 41 of file data\+\_\+manager.\+cpp.
+Definition at line 44 of file data\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1data_1_1data__manager_a449d969f1259f97e08153ecfcb816fa9}\label{classpbr_1_1shared_1_1data_1_1data__manager_a449d969f1259f97e08153ecfcb816fa9}} 
+\index{pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}!read\_shader\_code@{read\_shader\_code}}
+\index{read\_shader\_code@{read\_shader\_code}!pbr::shared::data::data\_manager@{pbr::shared::data::data\_manager}}
+\doxysubsubsection{\texorpdfstring{read\_shader\_code()}{read\_shader\_code()}}
+{\footnotesize\ttfamily std\+::optional$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1data_1_1shader__code}{shader\+\_\+code}} $>$ pbr\+::shared\+::data\+::data\+\_\+manager\+::read\+\_\+shader\+\_\+code (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{relative\+\_\+path,  }\item[{const \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}{apis\+::graphics\+::shader\+\_\+types}}}]{type\+\_\+hint = {\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a}{apis\+::graphics\+::shader\+\_\+types\+::vertex}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Reads shader code from the passed file. The file extension (not needed in the relative path), will be used to determine the type of shader this is. If the file extension is not known, the shader type will default to the passed type hint. 
+\begin{DoxyParams}{Parameters}
+{\em relative\+\_\+path} & The relative path to the shader file from the {\ttfamily data} directory \\
+\hline
+{\em type\+\_\+hint} & If the file extension is not know, this is used to identify the shader type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The read shader code, else empty if an error occurred 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file data\+\_\+manager.\+cpp.
 
 
 

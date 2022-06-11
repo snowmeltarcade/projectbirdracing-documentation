@@ -1,0 +1,104 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::vulkan\+::buffer Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer}\index{pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}}
+
+
+Manages the lifetime of a {\ttfamily Vk\+Buffer}  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a4ccfc360fd980a7e5ac03711ee319bd9}{buffer}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}}, uint32\+\_\+t size, Vk\+Buffer\+Usage\+Flags flags, Vma\+Memory\+Usage memory\+\_\+usage, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_accdf5eaa111aa28a2eb1c332355e8ecd}{$\sim$buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructs this command buffer. \end{DoxyCompactList}\item 
+Vk\+Buffer \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a1243a976958e13c9b852b1c053ed3996}{get\+\_\+native\+\_\+handle}} () const noexcept
+\item 
+Vma\+Allocation \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a67bab3d2a8f263840484c639602f8bd4}{get\+\_\+native\+\_\+allocation\+\_\+handle}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the lifetime of a {\ttfamily Vk\+Buffer} 
+
+Definition at line 10 of file buffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a4ccfc360fd980a7e5ac03711ee319bd9}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a4ccfc360fd980a7e5ac03711ee319bd9}} 
+\index{pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}!buffer@{buffer}}
+\index{buffer@{buffer}!pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::buffer\+::buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vma}} \&}]{vma,  }\item[{uint32\+\_\+t}]{size,  }\item[{Vk\+Buffer\+Usage\+Flags}]{flags,  }\item[{Vma\+Memory\+Usage}]{memory\+\_\+usage,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+Creates this buffer 
+\begin{DoxyParams}{Parameters}
+{\em vma} & The Vulkan Memory Allocator \\
+\hline
+{\em size} & The size of the buffer to create in bytes \\
+\hline
+{\em flags} & The usage flags \\
+\hline
+{\em memory\+\_\+usage} & How this buffer\textquotesingle{}s memory will be used \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file buffer.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_accdf5eaa111aa28a2eb1c332355e8ecd}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_accdf5eaa111aa28a2eb1c332355e8ecd}} 
+\index{pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}!````~buffer@{$\sim$buffer}}
+\index{````~buffer@{$\sim$buffer}!pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$buffer()}{~buffer()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::vulkan\+::buffer\+::$\sim$buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructs this command buffer. 
+
+
+
+Definition at line 43 of file buffer.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a67bab3d2a8f263840484c639602f8bd4}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a67bab3d2a8f263840484c639602f8bd4}} 
+\index{pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}!get\_native\_allocation\_handle@{get\_native\_allocation\_handle}}
+\index{get\_native\_allocation\_handle@{get\_native\_allocation\_handle}!pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}}
+\doxysubsubsection{\texorpdfstring{get\_native\_allocation\_handle()}{get\_native\_allocation\_handle()}}
+{\footnotesize\ttfamily Vma\+Allocation pbr\+::shared\+::apis\+::graphics\+::vulkan\+::buffer\+::get\+\_\+native\+\_\+allocation\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this buffer\textquotesingle{}s vma allocation \begin{DoxyReturn}{Returns}
+The native handle to this buffer\textquotesingle{}s vma allocation 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file buffer.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a1243a976958e13c9b852b1c053ed3996}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer_a1243a976958e13c9b852b1c053ed3996}} 
+\index{pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}!get\_native\_handle@{get\_native\_handle}}
+\index{get\_native\_handle@{get\_native\_handle}!pbr::shared::apis::graphics::vulkan::buffer@{pbr::shared::apis::graphics::vulkan::buffer}}
+\doxysubsubsection{\texorpdfstring{get\_native\_handle()}{get\_native\_handle()}}
+{\footnotesize\ttfamily Vk\+Buffer pbr\+::shared\+::apis\+::graphics\+::vulkan\+::buffer\+::get\+\_\+native\+\_\+handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native handle to this buffer \begin{DoxyReturn}{Returns}
+The native handle to this buffer 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file buffer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{buffer_8h}{buffer.\+h}}\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{buffer_8cpp}{buffer.\+cpp}}\end{DoxyCompactItemize}

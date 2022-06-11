@@ -1,7 +1,7 @@
 \hypertarget{render__pass_8cpp}{}\doxysection{src/shared/apis/graphics/vulkan/render\+\_\+pass.cpp File Reference}
 \label{render__pass_8cpp}\index{src/shared/apis/graphics/vulkan/render\_pass.cpp@{src/shared/apis/graphics/vulkan/render\_pass.cpp}}
 {\ttfamily \#include \char`\"{}render\+\_\+pass.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}shared/apis/graphics/vulkan\+\_\+performance\+\_\+settings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}performance\+\_\+settings.\+h\char`\"{}}\newline
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,7 +44,7 @@ Vk\+Render\+Pass\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1
 
 {\bfseries Value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, apis::logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
+\DoxyCodeLine{    this-\/>\_log\_manager-\/>log\_message(message, logging::log\_levels::fatal, \textcolor{stringliteral}{"Vulkan"}); \(\backslash\)}
 \DoxyCodeLine{    throw std::runtime\_error(message);}
 
 \end{DoxyCode}

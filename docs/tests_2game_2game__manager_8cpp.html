@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('tests_2game_2game__manager_8cpp.html',
 <code>#include &quot;<a class="el" href="datetime__manager_8h_source.html">shared/apis/datetime/datetime_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log__manager_8h_source.html">shared/apis/logging/log_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="iwindow__manager_8h_source.html">shared/apis/windowing/iwindow_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">shared/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="igraphics__manager_8h_source.html">shared/apis/graphics/igraphics_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="renderable__entities_8h_source.html">shared/apis/graphics/renderable_entities.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="iconsole__window_8h_source.html">shared/apis/windowing/iconsole_window.h</a>&quot;</code><br />
@@ -151,8 +152,10 @@ Functions</h2></td></tr>
 <tr class="separator:a10bbf18d5dbacafad2947e4692b8ece6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5599b094f35d8d6c650b42df179b9f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tests_2game_2game__manager_8cpp.html#ae5599b094f35d8d6c650b42df179b9f2">TEST_CASE</a> (&quot;run - running scene manager returns false - returns false&quot;, &quot;[shared/game]&quot;)</td></tr>
 <tr class="separator:ae5599b094f35d8d6c650b42df179b9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a266a22f9ce7a7bd0c21e441518540472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tests_2game_2game__manager_8cpp.html#a266a22f9ce7a7bd0c21e441518540472">TEST_CASE</a> (&quot;run - frame is submitted for render&quot;, &quot;[shared/game]&quot;)</td></tr>
-<tr class="separator:a266a22f9ce7a7bd0c21e441518540472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cccb4d541c8fa60ecff9764d832f41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tests_2game_2game__manager_8cpp.html#a43cccb4d541c8fa60ecff9764d832f41">TEST_CASE</a> (&quot;run - separate thread, frame is submitted for render&quot;, &quot;[shared/game]&quot;)</td></tr>
+<tr class="separator:a43cccb4d541c8fa60ecff9764d832f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da841ca1f871aecd572ee7dde053bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tests_2game_2game__manager_8cpp.html#a7da841ca1f871aecd572ee7dde053bea">TEST_CASE</a> (&quot;run - same thread, frame is submitted for render&quot;, &quot;[shared/game]&quot;)</td></tr>
+<tr class="separator:a7da841ca1f871aecd572ee7dde053bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -179,12 +182,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00115">115</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00131">131</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a9e435dbd24a28d1630c06b28193ebdec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e435dbd24a28d1630c06b28193ebdec">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[1/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e435dbd24a28d1630c06b28193ebdec">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[1/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,12 +212,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00188">188</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00204">204</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ae5b03258f5a3341992cf1c64b98c081b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5b03258f5a3341992cf1c64b98c081b">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[2/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b03258f5a3341992cf1c64b98c081b">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[2/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,12 +242,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00179">179</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00195">195</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ad9e514aeb1c21415818895f2672630a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9e514aeb1c21415818895f2672630a7">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[3/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e514aeb1c21415818895f2672630a7">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[3/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,12 +272,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00206">206</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00222">222</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ae4633ad931b080e97cb76a0704e23d0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4633ad931b080e97cb76a0704e23d0e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[4/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4633ad931b080e97cb76a0704e23d0e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[4/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,12 +302,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00170">170</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00186">186</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a549b936f9127eb24e68f63757d7fa839"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a549b936f9127eb24e68f63757d7fa839">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[5/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a549b936f9127eb24e68f63757d7fa839">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[5/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,12 +332,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00197">197</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00213">213</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a92c24378e9fbfba69578b5488bea7474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92c24378e9fbfba69578b5488bea7474">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[6/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c24378e9fbfba69578b5488bea7474">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[6/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,12 +362,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00161">161</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00177">177</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a2652f937182ff994b96b37c86bde4d93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2652f937182ff994b96b37c86bde4d93">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[7/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2652f937182ff994b96b37c86bde4d93">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[7/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,12 +392,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00152">152</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00168">168</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a4a9c8f9638eb6347936ccfc7ea8f879e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9c8f9638eb6347936ccfc7ea8f879e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[8/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9c8f9638eb6347936ccfc7ea8f879e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[8/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,12 +422,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00143">143</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00159">159</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ad529175a8901049de90646a17fc4536e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad529175a8901049de90646a17fc4536e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[9/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad529175a8901049de90646a17fc4536e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[9/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,42 +454,12 @@ Variables</h2></td></tr>
 
 <p>initialize </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00135">135</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a266a22f9ce7a7bd0c21e441518540472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a266a22f9ce7a7bd0c21e441518540472">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[10/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_CASE </td>
-          <td>(</td>
-          <td class="paramtype">&quot;run - frame is submitted for render&quot;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;&quot;&#160;</td>
-          <td class="paramname">[shared/game]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00284">284</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00151">151</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ae5599b094f35d8d6c650b42df179b9f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5599b094f35d8d6c650b42df179b9f2">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[11/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5599b094f35d8d6c650b42df179b9f2">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[10/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,12 +484,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00273">273</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00289">289</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a6bb54b4ed6a9edea836d09ed88822e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb54b4ed6a9edea836d09ed88822e5d">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[12/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb54b4ed6a9edea836d09ed88822e5d">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[11/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -543,12 +516,12 @@ Variables</h2></td></tr>
 
 <p>run </p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00219">219</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00235">235</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a10bbf18d5dbacafad2947e4692b8ece6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10bbf18d5dbacafad2947e4692b8ece6">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[13/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bbf18d5dbacafad2947e4692b8ece6">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[12/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,12 +546,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00262">262</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00278">278</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="af5f94d18666344d1da3c88771b766c3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f94d18666344d1da3c88771b766c3e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[14/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f94d18666344d1da3c88771b766c3e">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[13/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,12 +576,84 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00229">229</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00245">245</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7da841ca1f871aecd572ee7dde053bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da841ca1f871aecd572ee7dde053bea">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[14/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;run - same&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">frame is submitted for render&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">[shared/game]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00312">312</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a43cccb4d541c8fa60ecff9764d832f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cccb4d541c8fa60ecff9764d832f41">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[15/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;run - separate&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">frame is submitted for render&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">[shared/game]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00300">300</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a3a8f5a776d51b68920cbbc6c16534363"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a8f5a776d51b68920cbbc6c16534363">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[15/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a8f5a776d51b68920cbbc6c16534363">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[16/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -633,12 +678,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00240">240</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00256">256</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
 <a id="afaa1ef43552a00f3a0fa59cb54cb95b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa1ef43552a00f3a0fa59cb54cb95b3">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[16/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa1ef43552a00f3a0fa59cb54cb95b3">&#9670;&nbsp;</a></span>TEST_CASE() <span class="overload">[17/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,7 +708,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00251">251</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00267">267</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -680,7 +725,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00112">112</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00128">128</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -696,7 +741,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00113">113</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00129">129</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +757,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00111">111</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00127">127</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>

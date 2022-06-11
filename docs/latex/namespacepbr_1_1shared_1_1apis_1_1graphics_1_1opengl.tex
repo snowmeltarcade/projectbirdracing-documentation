@@ -1,0 +1,251 @@
+\hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl Namespace Reference}
+\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl}\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets}{render\+\_\+targets}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1compositor}{compositor}}
+\begin{DoxyCompactList}\small\item\em Takes submitted render targets and outputs them to a single render target. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1context}{context}}
+\begin{DoxyCompactList}\small\item\em The Open\+GL context. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1framebuffer}{framebuffer}}
+\begin{DoxyCompactList}\small\item\em Wraps a framebuffer. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager}{graphics\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em Handles the Open\+GL graphics A\+PI and rendering processes. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target}{irender\+\_\+target}}
+\begin{DoxyCompactList}\small\item\em A destination for a camera to render to. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{mesh}}
+\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}}
+\begin{DoxyCompactList}\small\item\em Wraps an Open\+GL shader. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{shader\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em Manages the creation and deletion of shaders. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program}{shader\+\_\+program}}
+\begin{DoxyCompactList}\small\item\em A set of shaders bound together to form a program. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex}{vertex}}
+\begin{DoxyCompactList}\small\item\em A vertex for a mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef G\+Lushort \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}{vertex\+\_\+index\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em A vertex index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a7fb6cf9e26aa2ca5bee537794cee3dab}{set\+\_\+api\+\_\+version}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets the api version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a2ebd75e2a2f355c80b84e6186f5beb44}{set\+\_\+clear\+\_\+color}} (\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1color}{color}} \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1color}{color}}) noexcept
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a0c1535eefb920322d97256822ca282f1}{setup\+\_\+stencil\+\_\+size}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets the stencil buffer size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a65b49d0f51264a72d164c139e6c71661}{setup\+\_\+blending}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets up blending. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ac18e20f7fb472d9d1d42229e8b49083f}{setup\+\_\+depth\+\_\+testing}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets up depth testing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_aaa1c584e49c331912fc75852a5cb6bd1}{set\+\_\+vertex\+\_\+attribute}} (int attribute\+\_\+index, int element\+\_\+count, int offset)
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a5a0b5873657b85564c456fcecfc5c293}{setup\+\_\+vertex\+\_\+attributes}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the vertex attributes based on the layout of {\ttfamily vertex} \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{mesh}} $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a1b97268b0f6df41808ef6f3088b70726}{create\+\_\+rectangle}} (float left, float top, float z, float width, float height, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager) noexcept
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{mesh}} $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_affb8c60a69c706048d87bec0aa04a1f1}{create\+\_\+cube}} (float, float, float, float, float, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager) noexcept
+\item 
+std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ad0c8cba1b05bee131075f9c8d26cd87e}{check\+\_\+opengl\+\_\+error\+\_\+internal}} (const char $\ast$file\+\_\+name, uint32\+\_\+t line\+\_\+number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!vertex\_index\_type@{vertex\_index\_type}}
+\index{vertex\_index\_type@{vertex\_index\_type}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{vertex\_index\_type}{vertex\_index\_type}}
+{\footnotesize\ttfamily typedef G\+Lushort \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::vertex\+\_\+index\+\_\+type}}}
+
+
+
+A vertex index. 
+
+
+
+Definition at line 13 of file mesh.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ad0c8cba1b05bee131075f9c8d26cd87e}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ad0c8cba1b05bee131075f9c8d26cd87e}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!check\_opengl\_error\_internal@{check\_opengl\_error\_internal}}
+\index{check\_opengl\_error\_internal@{check\_opengl\_error\_internal}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{check\_opengl\_error\_internal()}{check\_opengl\_error\_internal()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::string $>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::check\+\_\+opengl\+\_\+error\+\_\+internal (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+\_\+name,  }\item[{uint32\+\_\+t}]{line\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Definition at line 8 of file opengl\+\_\+errors.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_affb8c60a69c706048d87bec0aa04a1f1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_affb8c60a69c706048d87bec0aa04a1f1}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!create\_cube@{create\_cube}}
+\index{create\_cube@{create\_cube}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{create\_cube()}{create\_cube()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{mesh}} $>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::create\+\_\+cube (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a cube mesh 
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the center \\
+\hline
+{\em y} & The y position of the center \\
+\hline
+{\em z} & The z position of the center \\
+\hline
+{\em width} & The width \\
+\hline
+{\em height} & The height \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created mesh 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file mesh\+\_\+shapes.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a1b97268b0f6df41808ef6f3088b70726}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a1b97268b0f6df41808ef6f3088b70726}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!create\_rectangle@{create\_rectangle}}
+\index{create\_rectangle@{create\_rectangle}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{create\_rectangle()}{create\_rectangle()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{mesh}} $>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::create\+\_\+rectangle (\begin{DoxyParamCaption}\item[{float}]{top,  }\item[{float}]{left,  }\item[{float}]{z,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Creates a rectangle mesh 
+\begin{DoxyParams}{Parameters}
+{\em top} & The position of the top border \\
+\hline
+{\em left} & The position of the left border \\
+\hline
+{\em z} & The z position \\
+\hline
+{\em width} & The width \\
+\hline
+{\em height} & The height \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created mesh 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file mesh\+\_\+shapes.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a7fb6cf9e26aa2ca5bee537794cee3dab}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a7fb6cf9e26aa2ca5bee537794cee3dab}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!set\_api\_version@{set\_api\_version}}
+\index{set\_api\_version@{set\_api\_version}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{set\_api\_version()}{set\_api\_version()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::set\+\_\+api\+\_\+version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Sets the api version. 
+
+
+
+Definition at line 15 of file graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a2ebd75e2a2f355c80b84e6186f5beb44}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a2ebd75e2a2f355c80b84e6186f5beb44}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!set\_clear\_color@{set\_clear\_color}}
+\index{set\_clear\_color@{set\_clear\_color}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{set\_clear\_color()}{set\_clear\_color()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::set\+\_\+clear\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1color}{color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets the clear color 
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to clear to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_aaa1c584e49c331912fc75852a5cb6bd1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_aaa1c584e49c331912fc75852a5cb6bd1}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!set\_vertex\_attribute@{set\_vertex\_attribute}}
+\index{set\_vertex\_attribute@{set\_vertex\_attribute}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{set\_vertex\_attribute()}{set\_vertex\_attribute()}}
+{\footnotesize\ttfamily int pbr\+::shared\+::apis\+::graphics\+::opengl\+::set\+\_\+vertex\+\_\+attribute (\begin{DoxyParamCaption}\item[{int}]{attribute\+\_\+index,  }\item[{int}]{element\+\_\+count,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+Sets the attribute pointer information 
+\begin{DoxyParams}{Parameters}
+{\em attribute\+\_\+index} & The index of the attribute \\
+\hline
+{\em element\+\_\+count} & The number of elements \\
+\hline
+{\em offset} & The offset of this attribute \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The offset to use for the next attribute (discard-\/able) 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file mesh.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a65b49d0f51264a72d164c139e6c71661}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a65b49d0f51264a72d164c139e6c71661}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!setup\_blending@{setup\_blending}}
+\index{setup\_blending@{setup\_blending}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{setup\_blending()}{setup\_blending()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+blending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Sets up blending. 
+
+
+
+Definition at line 42 of file graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ac18e20f7fb472d9d1d42229e8b49083f}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ac18e20f7fb472d9d1d42229e8b49083f}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!setup\_depth\_testing@{setup\_depth\_testing}}
+\index{setup\_depth\_testing@{setup\_depth\_testing}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{setup\_depth\_testing()}{setup\_depth\_testing()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+depth\+\_\+testing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Sets up depth testing. 
+
+
+
+Definition at line 48 of file graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a0c1535eefb920322d97256822ca282f1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a0c1535eefb920322d97256822ca282f1}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!setup\_stencil\_size@{setup\_stencil\_size}}
+\index{setup\_stencil\_size@{setup\_stencil\_size}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{setup\_stencil\_size()}{setup\_stencil\_size()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+stencil\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Sets the stencil buffer size. 
+
+
+
+Definition at line 37 of file graphics\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a5a0b5873657b85564c456fcecfc5c293}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a5a0b5873657b85564c456fcecfc5c293}} 
+\index{pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}!setup\_vertex\_attributes@{setup\_vertex\_attributes}}
+\index{setup\_vertex\_attributes@{setup\_vertex\_attributes}!pbr::shared::apis::graphics::opengl@{pbr::shared::apis::graphics::opengl}}
+\doxysubsubsection{\texorpdfstring{setup\_vertex\_attributes()}{setup\_vertex\_attributes()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+vertex\+\_\+attributes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets up the vertex attributes based on the layout of {\ttfamily vertex} 
+
+
+
+Definition at line 26 of file mesh.\+cpp.
+

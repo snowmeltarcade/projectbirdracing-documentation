@@ -1,0 +1,86 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::config Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}\index{pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}}
+
+
+The graphics configuration settings.  
+
+
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a486099a9a735f31a7896c8a41bd27435}{config}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ data\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::filesystem\+::path config\+\_\+path=config\+::graphics\+\_\+config\+\_\+path)
+\item 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_af5221c1c7e9fcd6411be51943c53534c}{api}} () const noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a319e2c431c3fc7c55f4760a0c2e15130}{set\+\_\+api}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_af5221c1c7e9fcd6411be51943c53534c}{api}}) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The graphics configuration settings. 
+
+Definition at line 13 of file config.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a486099a9a735f31a7896c8a41bd27435}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a486099a9a735f31a7896c8a41bd27435}} 
+\index{pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}!config@{config}}
+\index{config@{config}!pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::config\+::config (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$}]{data\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::filesystem\+::path}]{config\+\_\+path = {\ttfamily config\+:\+:graphics\+\_\+config\+\_\+path} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates the config 
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+{\em config\+\_\+path} & The path to the config file from the data path configured in the data manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file config.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_af5221c1c7e9fcd6411be51943c53534c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_af5221c1c7e9fcd6411be51943c53534c}} 
+\index{pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}!api@{api}}
+\index{api@{api}!pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}}
+\doxysubsubsection{\texorpdfstring{api()}{api()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}} pbr\+::shared\+::apis\+::graphics\+::config\+::api (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the graphics api to use \begin{DoxyReturn}{Returns}
+The graphics api to use 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file config.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a319e2c431c3fc7c55f4760a0c2e15130}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1config_a319e2c431c3fc7c55f4760a0c2e15130}} 
+\index{pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}!set\_api@{set\_api}}
+\index{set\_api@{set\_api}!pbr::shared::apis::graphics::config@{pbr::shared::apis::graphics::config}}
+\doxysubsubsection{\texorpdfstring{set\_api()}{set\_api()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::config\+::set\+\_\+api (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}}}]{api }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Sets the graphics api to use 
+\begin{DoxyParams}{Parameters}
+{\em The} & api to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file config.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/\mbox{\hyperlink{graphics_2config_8h}{config.\+h}}\item 
+src/shared/apis/graphics/\mbox{\hyperlink{apis_2graphics_2config_8cpp}{config.\+cpp}}\end{DoxyCompactItemize}

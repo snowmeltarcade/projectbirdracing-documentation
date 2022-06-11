@@ -100,6 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8389e22fddee57633060fb5452590a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd58bdcf893cf0b4061ce630b06b80f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a2bd58bdcf893cf0b4061ce630b06b80f">add</a> (const std::string &amp;key, const <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &amp;value) noexcept</td></tr>
 <tr class="separator:a2bd58bdcf893cf0b4061ce630b06b80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41e27f4db44d4a1690d4e18089e09a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#ae41e27f4db44d4a1690d4e18089e09a9">add_to_array</a> (const std::string &amp;key, const <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &amp;value) noexcept</td></tr>
+<tr class="separator:ae41e27f4db44d4a1690d4e18089e09a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a6b0af038b2a91287326ef128b3e23"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a88a6b0af038b2a91287326ef128b3e23">get</a> (const std::string &amp;key) noexcept</td></tr>
 <tr class="separator:a88a6b0af038b2a91287326ef128b3e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0ea3162bdbd5b1035d87ac8168efd7a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#ae0ea3162bdbd5b1035d87ac8168efd7a">get_as_int</a> (const std::string &amp;key) noexcept</td></tr>
@@ -112,6 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9944c864c08f44f9e9046f2a918a915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdb8ea74497900adc49c7fb6253a779"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a3cdb8ea74497900adc49c7fb6253a779">get_as_settings</a> (const std::string &amp;key) noexcept</td></tr>
 <tr class="separator:a3cdb8ea74497900adc49c7fb6253a779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf2d35f967589e749a3601978b8e520"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#abbf2d35f967589e749a3601978b8e520">get_as_settings_array</a> (const std::string &amp;key) noexcept</td></tr>
+<tr class="separator:abbf2d35f967589e749a3601978b8e520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee9b8805ec62efb16cbd75c066bab368"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#aee9b8805ec62efb16cbd75c066bab368">operator==</a> (const <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &amp;) const =default</td></tr>
 <tr class="memdesc:aee9b8805ec62efb16cbd75c066bab368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <a href="classpbr_1_1shared_1_1data_1_1settings.html#aee9b8805ec62efb16cbd75c066bab368">More...</a><br /></td></tr>
 <tr class="separator:aee9b8805ec62efb16cbd75c066bab368"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of settings. Each setting has a string key and a value. The value can be a string, an integer, a float, a boolean, another settings object or an array of one of these types. The key can be any string value, including an empty string. 'Null' values are represented as an empty string, so a null value can be checked by calling <code><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html#a88a6b0af038b2a91287326ef128b3e23">get()</a></code> and seeing if the value is empty or not, then calling the respective <code>get_as_xxx()</code> function. </p>
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00016">16</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00017">17</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2bd58bdcf893cf0b4061ce630b06b80f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bd58bdcf893cf0b4061ce630b06b80f">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
@@ -162,7 +166,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00039">39</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00040">40</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +211,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00032">32</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00033">33</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +264,52 @@ template&lt;utils::stringable T&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00023">23</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00024">24</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
+
+</div>
+</div>
+<a id="ae41e27f4db44d4a1690d4e18089e09a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41e27f4db44d4a1690d4e18089e09a9">&#9670;&nbsp;</a></span>add_to_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pbr::shared::data::settings::add_to_array </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds a setting as an array element </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key </td></tr>
+    <tr><td class="paramname">value</td><td>The value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="settings_8h_source.html#l00047">47</a> of file <a class="el" href="settings_8h_source.html">settings.h</a>.</p>
 
 </div>
 </div>
@@ -436,6 +485,41 @@ template&lt;utils::stringable T&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The value, else empty if the key is not present </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="data_2settings_8cpp_source.html#l00066">66</a> of file <a class="el" href="data_2settings_8cpp_source.html">settings.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abbf2d35f967589e749a3601978b8e520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf2d35f967589e749a3601978b8e520">&#9670;&nbsp;</a></span>get_as_settings_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::vector&lt; <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &gt; &gt; pbr::shared::data::settings::get_as_settings_array </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a settings object array </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value, else empty if the key is not present </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="data_2settings_8cpp_source.html#l00075">75</a> of file <a class="el" href="data_2settings_8cpp_source.html">settings.cpp</a>.</p>
 
 </div>
 </div>

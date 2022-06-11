@@ -5,6 +5,8 @@
 \item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window}{application\+\_\+window}}
 \item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1config}{config}}
+\begin{DoxyCompactList}\small\item\em The windowing configuration settings. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window}{console\+\_\+window}}
 \begin{DoxyCompactList}\small\item\em A console window outputs standard output channels, such as {\ttfamily stdout}, {\ttfamily stderr} etc... \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window}{iapplication\+\_\+window}}
@@ -13,29 +15,85 @@ class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iconsole__wind
 \item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{iwindow\+\_\+manager}}
 \item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution}{resolution}}
+\begin{DoxyCompactList}\small\item\em A screen resolution. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1resolutions}{resolutions}}
+\begin{DoxyCompactList}\small\item\em Manages the resolutions available for a window. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager}{window\+\_\+manager}}
 \begin{DoxyCompactList}\small\item\em This manager creates and manages both console and application windows. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size}{window\+\_\+size}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Typedefs}
+\doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-typedef uint32\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1windowing_a1b20ffc44b2de3ca5e192cac7f72dda0}{pixels}}
-\begin{DoxyCompactList}\small\item\em Screen pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1windowing_a77e08ad97d0289d9496c0614670c340f}{api\+\_\+window\+\_\+flag}} (\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{graphics\+::apis}} api)
+\item 
+int \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1windowing_aa5b7498156d3b97aa757205bf7a3f5cb}{get\+\_\+value\+\_\+or\+\_\+default}} (\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&settings, const std\+::string \&key, int default\+\_\+value)
+\item 
+bool \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1windowing_a7ec7f0ab57851212dca763d4746e59a8}{get\+\_\+value\+\_\+or\+\_\+default}} (\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&settings, const std\+::string \&key, bool default\+\_\+value)
+\end{DoxyCompactItemize}
 
 
-\doxysubsection{Typedef Documentation}
-\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1windowing_a1b20ffc44b2de3ca5e192cac7f72dda0}\label{namespacepbr_1_1shared_1_1apis_1_1windowing_a1b20ffc44b2de3ca5e192cac7f72dda0}} 
-\index{pbr::shared::apis::windowing@{pbr::shared::apis::windowing}!pixels@{pixels}}
-\index{pixels@{pixels}!pbr::shared::apis::windowing@{pbr::shared::apis::windowing}}
-\doxysubsubsection{\texorpdfstring{pixels}{pixels}}
-{\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1windowing_a1b20ffc44b2de3ca5e192cac7f72dda0}{pbr\+::shared\+::apis\+::windowing\+::pixels}}}
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1windowing_a77e08ad97d0289d9496c0614670c340f}\label{namespacepbr_1_1shared_1_1apis_1_1windowing_a77e08ad97d0289d9496c0614670c340f}} 
+\index{pbr::shared::apis::windowing@{pbr::shared::apis::windowing}!api\_window\_flag@{api\_window\_flag}}
+\index{api\_window\_flag@{api\_window\_flag}!pbr::shared::apis::windowing@{pbr::shared::apis::windowing}}
+\doxysubsubsection{\texorpdfstring{api\_window\_flag()}{api\_window\_flag()}}
+{\footnotesize\ttfamily int pbr\+::shared\+::apis\+::windowing\+::api\+\_\+window\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{graphics\+::apis}}}]{api }\end{DoxyParamCaption})}
+
+Returns the window flag for the passed api 
+\begin{DoxyParams}{Parameters}
+{\em api} & The graphics api \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The window flag for the passed api 
+\end{DoxyReturn}
 
 
+Definition at line 14 of file application\+\_\+window.\+cpp.
 
-Screen pixels. 
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1windowing_a7ec7f0ab57851212dca763d4746e59a8}\label{namespacepbr_1_1shared_1_1apis_1_1windowing_a7ec7f0ab57851212dca763d4746e59a8}} 
+\index{pbr::shared::apis::windowing@{pbr::shared::apis::windowing}!get\_value\_or\_default@{get\_value\_or\_default}}
+\index{get\_value\_or\_default@{get\_value\_or\_default}!pbr::shared::apis::windowing@{pbr::shared::apis::windowing}}
+\doxysubsubsection{\texorpdfstring{get\_value\_or\_default()}{get\_value\_or\_default()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::windowing\+::get\+\_\+value\+\_\+or\+\_\+default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&}]{settings,  }\item[{const std\+::string \&}]{key,  }\item[{bool}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the value represented by the passed key, or the default value if the key is not found 
+\begin{DoxyParams}{Parameters}
+{\em settings} & The settings to read from \\
+\hline
+{\em key} & The key \\
+\hline
+{\em default\+\_\+value} & The default value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value represented by the key or the default value if the key is not found 
+\end{DoxyReturn}
 
 
+Definition at line 24 of file config.\+cpp.
 
-Definition at line 7 of file types.\+h.
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1windowing_aa5b7498156d3b97aa757205bf7a3f5cb}\label{namespacepbr_1_1shared_1_1apis_1_1windowing_aa5b7498156d3b97aa757205bf7a3f5cb}} 
+\index{pbr::shared::apis::windowing@{pbr::shared::apis::windowing}!get\_value\_or\_default@{get\_value\_or\_default}}
+\index{get\_value\_or\_default@{get\_value\_or\_default}!pbr::shared::apis::windowing@{pbr::shared::apis::windowing}}
+\doxysubsubsection{\texorpdfstring{get\_value\_or\_default()}{get\_value\_or\_default()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int pbr\+::shared\+::apis\+::windowing\+::get\+\_\+value\+\_\+or\+\_\+default (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&}]{settings,  }\item[{const std\+::string \&}]{key,  }\item[{int}]{default\+\_\+value }\end{DoxyParamCaption})}
+
+Returns the value represented by the passed key, or the default value if the key is not found 
+\begin{DoxyParams}{Parameters}
+{\em settings} & The settings to read from \\
+\hline
+{\em key} & The key \\
+\hline
+{\em default\+\_\+value} & The default value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value represented by the key or the default value if the key is not found 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file config.\+cpp.
 

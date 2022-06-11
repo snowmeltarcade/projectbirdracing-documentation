@@ -1,11 +1,19 @@
 var dir_816105a0d72dd8ebd6021b63a03e3a91 =
 [
+    [ "opengl", "dir_9a5a775a35bace26fa9a01e9469effb0.html", "dir_9a5a775a35bace26fa9a01e9469effb0" ],
     [ "vulkan", "dir_a9fb243b19f4ef9ea7e3eb413f171740.html", "dir_a9fb243b19f4ef9ea7e3eb413f171740" ],
+    [ "apis.h", "apis_8h.html", "apis_8h" ],
     [ "application_information.h", "application__information_8h.html", [
       [ "application_information", "structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html", "structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information" ]
     ] ],
-    [ "color.h", "color_8h.html", [
-      [ "color", "structpbr_1_1shared_1_1apis_1_1graphics_1_1color.html", "structpbr_1_1shared_1_1apis_1_1graphics_1_1color" ]
+    [ "color.h", "color_8h.html", "color_8h" ],
+    [ "config.cpp", "apis_2graphics_2config_8cpp.html", "apis_2graphics_2config_8cpp" ],
+    [ "config.h", "graphics_2config_8h.html", [
+      [ "config", "classpbr_1_1shared_1_1apis_1_1graphics_1_1config.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1config" ]
+    ] ],
+    [ "graphics_manager_factory.cpp", "apis_2graphics_2graphics__manager__factory_8cpp.html", null ],
+    [ "graphics_manager_factory.h", "graphics__manager__factory_8h.html", [
+      [ "graphics_manager_factory", "classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory.html", null ]
     ] ],
     [ "igraphics_manager.h", "igraphics__manager_8h.html", [
       [ "igraphics_manager", "classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager" ]
@@ -18,10 +26,5 @@ var dir_816105a0d72dd8ebd6021b63a03e3a91 =
       [ "renderable_entities", "classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities" ]
     ] ],
     [ "renderable_entity_2d.h", "renderable__entity__2d_8h.html", "renderable__entity__2d_8h" ],
-    [ "vulkan_graphics_manager.cpp", "vulkan__graphics__manager_8cpp.html", null ],
-    [ "vulkan_graphics_manager.h", "vulkan__graphics__manager_8h.html", [
-      [ "vulkan_graphics_manager", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager" ]
-    ] ],
-    [ "vulkan_performance_settings.cpp", "vulkan__performance__settings_8cpp.html", "vulkan__performance__settings_8cpp" ],
-    [ "vulkan_performance_settings.h", "vulkan__performance__settings_8h.html", "vulkan__performance__settings_8h" ]
+    [ "shader_types.h", "shader__types_8h.html", "shader__types_8h" ]
 ];

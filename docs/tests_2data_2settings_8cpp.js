@@ -1,6 +1,7 @@
 var tests_2data_2settings_8cpp =
 [
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#aee3bff5d9f154d7728ebc5b894b61471", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a1b1ee1cdb52cbab91d87f1ab21982bc0", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a76d0cddd0012b64f8c5f1cd177bc1032", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#ab160a5d672866f087fe1c9ce4813306f", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a4a3169c0504b84f694048cb4d4b3a20d", null ],
@@ -19,6 +20,8 @@ var tests_2data_2settings_8cpp =
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#ac642886d27c77b4c6847a45943b0dfa0", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a74414c96b05aec720fc54621adff57ff", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#aac192080a3cc56661e74835c9c1591fd", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a16e357d25652b1ba4762b7bc5f67435f", null ],
+    [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a4db655915f02b7a15cd9cba902c27210", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a6748da1da2da96cdf72fbb6ddc895408", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a717eaae7479fd28abcc739d21a1a73e9", null ],
     [ "TEST_CASE", "tests_2data_2settings_8cpp.html#a759705879c88ebb7147fa89751884bf6", null ],

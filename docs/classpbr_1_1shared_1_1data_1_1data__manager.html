@@ -100,11 +100,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac887d1f1ce0aecb84b13438fdb4f59b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c31ae92af15d0cecc404e58665ae0de"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">settings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1data__manager.html#a1c31ae92af15d0cecc404e58665ae0de">read_settings</a> (const std::filesystem::path &amp;relative_path) const noexcept</td></tr>
 <tr class="separator:a1c31ae92af15d0cecc404e58665ae0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449d969f1259f97e08153ecfcb816fa9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structpbr_1_1shared_1_1data_1_1shader__code.html">shader_code</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1data_1_1data__manager.html#a449d969f1259f97e08153ecfcb816fa9">read_shader_code</a> (const std::filesystem::path &amp;relative_path, const <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958">apis::graphics::shader_types</a> type_hint=<a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a">apis::graphics::shader_types::vertex</a>) const noexcept</td></tr>
+<tr class="separator:a449d969f1259f97e08153ecfcb816fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manages read and write access to the <code>data</code> directory. The format of the data is agnostic to the caller and is returned in a common format. File extensions are thus not required. JSON is used as the default data format. </p>
 
-<p class="definition">Definition at line <a class="el" href="data__manager_8h_source.html#l00015">15</a> of file <a class="el" href="data__manager_8h_source.html">data_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="data__manager_8h_source.html#l00016">16</a> of file <a class="el" href="data__manager_8h_source.html">data_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abe8b3dd2a9c25c36a3399a05dfaa2b77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe8b3dd2a9c25c36a3399a05dfaa2b77">&#9670;&nbsp;</a></span>data_manager()</h2>
@@ -152,7 +154,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="data__manager_8h_source.html#l00019">19</a> of file <a class="el" href="data__manager_8h_source.html">data_manager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="data__manager_8h_source.html#l00020">20</a> of file <a class="el" href="data__manager_8h_source.html">data_manager.h</a>.</p>
 
 </div>
 </div>
@@ -215,7 +217,53 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The read settings, else empty if an error occurred </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="data_2data__manager_8cpp_source.html#l00041">41</a> of file <a class="el" href="data_2data__manager_8cpp_source.html">data_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="data_2data__manager_8cpp_source.html#l00044">44</a> of file <a class="el" href="data_2data__manager_8cpp_source.html">data_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a449d969f1259f97e08153ecfcb816fa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449d969f1259f97e08153ecfcb816fa9">&#9670;&nbsp;</a></span>read_shader_code()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structpbr_1_1shared_1_1data_1_1shader__code.html">shader_code</a> &gt; pbr::shared::data::data_manager::read_shader_code </td>
+          <td>(</td>
+          <td class="paramtype">const std::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>relative_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958">apis::graphics::shader_types</a>&#160;</td>
+          <td class="paramname"><em>type_hint</em> = <code><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a">apis::graphics::shader_types::vertex</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reads shader code from the passed file. The file extension (not needed in the relative path), will be used to determine the type of shader this is. If the file extension is not known, the shader type will default to the passed type hint. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">relative_path</td><td>The relative path to the shader file from the <code>data</code> directory </td></tr>
+    <tr><td class="paramname">type_hint</td><td>If the file extension is not know, this is used to identify the shader type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The read shader code, else empty if an error occurred </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="data_2data__manager_8cpp_source.html#l00084">84</a> of file <a class="el" href="data_2data__manager_8cpp_source.html">data_manager.cpp</a>.</p>
 
 </div>
 </div>

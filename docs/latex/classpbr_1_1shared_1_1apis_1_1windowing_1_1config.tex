@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1config}{}\doxysection{pbr\+::shared\+::apis\+::windowing\+::config Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1config}\index{pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}}
+
+
+The windowing configuration settings.  
+
+
+
+
+{\ttfamily \#include $<$config.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a1ce99e3ed1a9b641a1c34486c3b7790a}{config}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ data\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::filesystem\+::path config\+\_\+path=config\+::window\+\_\+config\+\_\+path)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution}{resolution}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a924de82f5610501f65402f5804ac863a}{resolutions}} () const noexcept
+\item 
+\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution}{resolution}} \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_ace02b0d12253869cc93a95df55f22f85}{default\+\_\+resolution}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the default resolution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The windowing configuration settings. 
+
+Definition at line 14 of file config.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a1ce99e3ed1a9b641a1c34486c3b7790a}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a1ce99e3ed1a9b641a1c34486c3b7790a}} 
+\index{pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}!config@{config}}
+\index{config@{config}!pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::windowing\+::config\+::config (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$}]{data\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::filesystem\+::path}]{config\+\_\+path = {\ttfamily config\+:\+:window\+\_\+config\+\_\+path} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates the config 
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+{\em config\+\_\+path} & The path to the config file from the data path configured in the data manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file config.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_ace02b0d12253869cc93a95df55f22f85}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_ace02b0d12253869cc93a95df55f22f85}} 
+\index{pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}!default\_resolution@{default\_resolution}}
+\index{default\_resolution@{default\_resolution}!pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}}
+\doxysubsubsection{\texorpdfstring{default\_resolution()}{default\_resolution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution}{resolution}} pbr\+::shared\+::apis\+::windowing\+::config\+::default\+\_\+resolution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the default resolution. 
+
+
+
+Definition at line 43 of file config.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a924de82f5610501f65402f5804ac863a}\label{classpbr_1_1shared_1_1apis_1_1windowing_1_1config_a924de82f5610501f65402f5804ac863a}} 
+\index{pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}!resolutions@{resolutions}}
+\index{resolutions@{resolutions}!pbr::shared::apis::windowing::config@{pbr::shared::apis::windowing::config}}
+\doxysubsubsection{\texorpdfstring{resolutions()}{resolutions()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution}{resolution}}$>$ pbr\+::shared\+::apis\+::windowing\+::config\+::resolutions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the loaded resolutions \begin{DoxyReturn}{Returns}
+The loaded resolutions 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file config.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/windowing/\mbox{\hyperlink{windowing_2config_8h}{config.\+h}}\item 
+src/shared/apis/windowing/\mbox{\hyperlink{apis_2windowing_2config_8cpp}{config.\+cpp}}\end{DoxyCompactItemize}

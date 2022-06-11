@@ -89,13 +89,15 @@ $(document).ready(function(){initNavTree('server_2main_8cpp.html',''); initResiz
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="basic__allocators_8h_source.html">shared/memory/basic_allocators.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="game__manager_8h_source.html">shared/game/game_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="data__manager_8h_source.html">shared/data/data_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="datetime__manager_8h_source.html">shared/apis/datetime/datetime_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log__manager_8h_source.html">shared/apis/logging/log_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="std__out_8h_source.html">shared/apis/logging/endpoints/std_out.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="file_8h_source.html">shared/apis/logging/endpoints/file.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="window__manager_8h_source.html">shared/apis/windowing/window_manager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="vulkan__graphics__manager_8h_source.html">shared/apis/graphics/vulkan_graphics_manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="graphics__manager__factory_8h_source.html">shared/apis/graphics/graphics_manager_factory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="performance__settings_8h_source.html">shared/apis/graphics/performance_settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="file__manager_8h_source.html">shared/apis/file/file_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scene__manager_8h_source.html">shared/scene/scene_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scene__factory_8h_source.html">scene/scene_factory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="program__arguments_8h_source.html">shared/utils/program_arguments.h</a>&quot;</code><br />
@@ -107,6 +109,8 @@ $(document).ready(function(){initNavTree('server_2main_8cpp.html',''); initResiz
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a15cfef36dbbadb1d1292a193c0e4c5fc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1data_1_1data__manager.html">data::data_manager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a> (const std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager.html">apis::logging::ilog_manager</a> &gt; log_manager, const std::filesystem::path &amp;executable_path)</td></tr>
+<tr class="separator:a15cfef36dbbadb1d1292a193c0e4c5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb913bf0387e835ba95f69adba4bea7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpbr_1_1shared_1_1game_1_1game__manager.html">game::game_manager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#afeb913bf0387e835ba95f69adba4bea7">create_game_manager</a> (const <a class="el" href="classpbr_1_1shared_1_1utils_1_1program__arguments.html">utils::program_arguments</a> &amp;arguments)</td></tr>
 <tr class="separator:afeb913bf0387e835ba95f69adba4bea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade55eb1518326aa7acd61be1b139a288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_2main_8cpp.html#ade55eb1518326aa7acd61be1b139a288">run</a> (const <a class="el" href="classpbr_1_1shared_1_1utils_1_1program__arguments.html">utils::program_arguments</a> &amp;arguments)</td></tr>
@@ -115,6 +119,44 @@ Functions</h2></td></tr>
 <tr class="separator:a148e510f1af548e3fa6a929b9f2371ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a15cfef36dbbadb1d1292a193c0e4c5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cfef36dbbadb1d1292a193c0e4c5fc">&#9670;&nbsp;</a></span>create_data_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classpbr_1_1shared_1_1data_1_1data__manager.html">data::data_manager</a>&gt; create_data_manager </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager.html">apis::logging::ilog_manager</a> &gt;&#160;</td>
+          <td class="paramname"><em>log_manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>executable_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates the data manager </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log_manager</td><td>The log manager to use </td></tr>
+    <tr><td class="paramname">executable_path</td><td>The path of this executable </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The data manager </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00027">27</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
 <a id="afeb913bf0387e835ba95f69adba4bea7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afeb913bf0387e835ba95f69adba4bea7">&#9670;&nbsp;</a></span>create_game_manager()</h2>
 
@@ -138,7 +180,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The created game manager </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00024">24</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00038">38</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -176,7 +218,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Will always return <code>0</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00096">96</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00119">119</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -202,7 +244,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00078">78</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_2main_8cpp_source.html#l00101">101</a> of file <a class="el" href="server_2main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>

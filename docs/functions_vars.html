@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>_application_name
 : <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#af0447e6596700da84a74333d8d0b07b3">pbr::shared::apis::graphics::application_information</a>
 </li>
+<li>_data_manager
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager.html#aeee197304171beab4bfc29224002f809">pbr::shared::apis::graphics::opengl::shader_manager</a>
+</li>
 <li>_engine_name
 : <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information.html#ac3849aaf458b1b109b6785d068322aa5">pbr::shared::apis::graphics::application_information</a>
 </li>
@@ -94,10 +97,14 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="classtest__endpoint.html#a79bbff579f39a896936357ae4c28ae87">test_endpoint</a>
 </li>
 <li>_log_manager
-: <a class="el" href="classpbr_1_1shared_1_1scene_1_1scene__base.html#afa54166c89404312b5d990bcfbbae642">pbr::shared::scene::scene_base</a>
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager.html#aafba5aa2b775141c917b74a6b198d2c1">pbr::shared::apis::graphics::opengl::shader_manager</a>
+, <a class="el" href="classpbr_1_1shared_1_1scene_1_1scene__base.html#afa54166c89404312b5d990bcfbbae642">pbr::shared::scene::scene_base</a>
 </li>
 <li>_logged_message
 : <a class="el" href="classtest__endpoint.html#a1b37ea00c6bd0585dd5f51aea3e9836e">test_endpoint</a>
+</li>
+<li>_run_on_separate_thread
+: <a class="el" href="classtest__graphics__manager.html#ab35a98d115228e6cdfd81673ee5400d9">test_graphics_manager</a>
 </li>
 <li>_scene_type
 : <a class="el" href="classtest__scene.html#a887e2b6b3955d104e66efc2cb9198ade">test_scene</a>
@@ -133,8 +140,14 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__support__details.html#a05b98f5102ed45b423a3cf05ca14276b">pbr::shared::apis::graphics::vulkan::swap_chain_support_details</a>
 , <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1swap__chain__supported__details.html#a0fcf8dbe45dcfc46d55ff55ddce3ce42">pbr::shared::apis::graphics::vulkan::swap_chain_supported_details</a>
 </li>
+<li>code
+: <a class="el" href="structpbr_1_1shared_1_1data_1_1shader__code.html#aa43fc5d51e2c63a291debfab025c0491">pbr::shared::data::shader_code</a>
+</li>
 <li>color
-: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#adec5beb84c6f9c05741f58bfbd588038">pbr::shared::apis::graphics::renderable_entity_2d</a>
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex.html#a89ee191457e5c536e931c99aeae8a358">pbr::shared::apis::graphics::opengl::vertex</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#adec5beb84c6f9c05741f58bfbd588038">pbr::shared::apis::graphics::renderable_entity_2d</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1ubo.html#a22c23649c5bd8b1c0b8f12c0f07c572d">pbr::shared::apis::graphics::ubo</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex.html#ae98352de96cf06ffca7b0d82d93afa2e">pbr::shared::apis::graphics::vertex</a>
 </li>
 <li>create_application_window_called
 : <a class="el" href="classtest__window__manager.html#ac7c596871e9dff7d1608e3ffd05b9ee4">test_window_manager</a>
@@ -148,6 +161,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_f"></a>- f -</h3><ul>
 <li>frames_to_run_before_quit
 : <a class="el" href="classtest__window__manager.html#aa79ae14fd9fa5562db9e6598d732b8d9">test_window_manager</a>
+</li>
+<li>fullscreen
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution.html#a95df4df3d47c3ffb12aae55c086d1759">pbr::shared::apis::windowing::resolution</a>
 </li>
 </ul>
 
@@ -163,8 +179,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 
 <h3><a id="index_h"></a>- h -</h3><ul>
-<li>height_in_pixels
-: <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html#a4f38e1d539110e54ae5a2e65a6c859c9">pbr::shared::apis::windowing::window_size</a>
+<li>height
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution.html#a5041e00a918fa625d65bb6f1171c406f">pbr::shared::apis::windowing::resolution</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html#a3c319d7631f389d77b0f1c357b9cd0af">pbr::shared::apis::windowing::window_size</a>
 </li>
 </ul>
 
@@ -199,13 +216,17 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="classtest__graphics__manager.html#a8895ad04be6bf06e6f7eaaba09388ff4">test_graphics_manager</a>
 </li>
 <li>load_call_count
-: <a class="el" href="classtest__scene.html#ab55711f76ae2bfcaaba1b0d85ee8bc80">test_scene</a>
+: <a class="el" href="classtest__resource__manager.html#a47cde12d81d3f57ebc5636b0160a0520">test_resource_manager</a>
+, <a class="el" href="classtest__scene.html#ab55711f76ae2bfcaaba1b0d85ee8bc80">test_scene</a>
 </li>
 <li>load_called
 : <a class="el" href="classtest__scene.html#a8ba884c1703117230aff1ad67d1acd66">test_scene</a>
 </li>
 <li>load_result
 : <a class="el" href="classtest__scene.html#a4531a086e2c788d15fe6adfa54cce105">test_scene</a>
+</li>
+<li>loaded_path
+: <a class="el" href="classtest__resource__manager.html#a910d6bb2c36980e7e4e4effbd4d11a56">test_resource_manager</a>
 </li>
 </ul>
 
@@ -216,6 +237,13 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>msaa_samples
 : <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html#a6a8a86fcfc736586c687f43be075f859">pbr::shared::apis::graphics::performance_settings</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_1_1texture__reference.html#a232bd63220d780aae70a889639bfb02f">pbr::shared::apis::graphics::opengl::shader_program::texture_reference</a>
 </li>
 </ul>
 
@@ -231,8 +259,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>path
 : <a class="el" href="structpbr_1_1shared_1_1utils_1_1uri.html#acdca074f4516b2114cbe6bf2cec87986">pbr::shared::utils::uri</a>
 </li>
+<li>pos
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex.html#a8f630b93f3e11379f54450017b4ae709">pbr::shared::apis::graphics::vertex</a>
+</li>
 <li>position
-: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#af20c0868519086e297b7c9287ac6c1d0">pbr::shared::apis::graphics::renderable_entity_2d</a>
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex.html#a21092b39e1cf44b281c44386274c7f9c">pbr::shared::apis::graphics::opengl::vertex</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#af20c0868519086e297b7c9287ac6c1d0">pbr::shared::apis::graphics::renderable_entity_2d</a>
 </li>
 <li>prefer_vsync
 : <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html#a4d9aab4daf26eb1f2a6aaa5708625bc9">pbr::shared::apis::graphics::performance_settings</a>
@@ -285,6 +317,19 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </ul>
 
 
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>texture_coords
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex.html#a8045aac0136db72894a19452e7b918e9">pbr::shared::apis::graphics::opengl::vertex</a>
+</li>
+<li>texture_id
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_1_1texture__reference.html#a57c35acd9391b00c685f77da5d0bc697">pbr::shared::apis::graphics::opengl::shader_program::texture_reference</a>
+</li>
+<li>type
+: <a class="el" href="structpbr_1_1shared_1_1data_1_1shader__code.html#a13b0a93f82010c2626d0f595c018df79">pbr::shared::data::shader_code</a>
+</li>
+</ul>
+
+
 <h3><a id="index_u"></a>- u -</h3><ul>
 <li>update_called
 : <a class="el" href="classtest__window__manager.html#a7916710132f6d63d8a983b95fa1214f4">test_window_manager</a>
@@ -296,8 +341,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 
 <h3><a id="index_w"></a>- w -</h3><ul>
-<li>width_in_pixels
-: <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html#a921da94c83ab9d949a7a621802e4d686">pbr::shared::apis::windowing::window_size</a>
+<li>width
+: <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution.html#a52e565d978c12c68fd905fcfe64f8799">pbr::shared::apis::windowing::resolution</a>
+, <a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html#adeca5c9fc3b152e0d2417adf125bc731">pbr::shared::apis::windowing::window_size</a>
 </li>
 </ul>
 </div><!-- contents -->

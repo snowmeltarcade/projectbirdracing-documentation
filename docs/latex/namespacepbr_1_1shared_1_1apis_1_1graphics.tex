@@ -8,6 +8,10 @@ Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{
 \doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1colors}{colors}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl}{opengl}}
+\item 
  \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan}{vulkan}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Classes}
@@ -17,18 +21,39 @@ struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__
 \begin{DoxyCompactList}\small\item\em Information about the application that the graphics A\+PI needs to know. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1color}{color}}
 \begin{DoxyCompactList}\small\item\em An R\+G\+BA color. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}}
+\begin{DoxyCompactList}\small\item\em The graphics configuration settings. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory}{graphics\+\_\+manager\+\_\+factory}}
+\begin{DoxyCompactList}\small\item\em Creates a graphics manager based on the graphics config. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{igraphics\+\_\+manager}}
 \item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}
 \begin{DoxyCompactList}\small\item\em The settings the graphics engine should use. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d}{render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d}}
+\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}}
 \begin{DoxyCompactList}\small\item\em Contains entities to be submitted for render. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d}{renderable\+\_\+entity\+\_\+2d}}
 \begin{DoxyCompactList}\small\item\em A 2d entity to be rendered by the 2d render system. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager}{vulkan\+\_\+graphics\+\_\+manager}}
-\begin{DoxyCompactList}\small\item\em Handles the Vulkan graphics A\+PI and rendering processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1ubo}{ubo}}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex}{vertex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}} \{ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea6785e6b975db5d7cf223101ef1bc2f6f}{apis\+::opengl}}, 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea8473f19e6529e22157459e75b4cbf485}{apis\+::vulkan}}
+ \}
+\begin{DoxyCompactList}\small\item\em Graphics apis that are represented by implemented graphics managers. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}{shader\+\_\+types}} \{ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a}{shader\+\_\+types\+::vertex}}, 
+\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1}{shader\+\_\+types\+::fragment}}
+ \}
+\begin{DoxyCompactList}\small\item\em The types of supported shaders. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+std\+::optional$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}} $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_abbe9ab65f4a4518d1b88dd237708bde0}{read\+\_\+api}} (\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&settings)
 \item 
 Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}{get\+\_\+msaa\+\_\+samples}} (const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \&settings, Vk\+Sample\+Count\+Flag\+Bits max\+\_\+samples)
 \end{DoxyCompactItemize}
@@ -36,6 +61,57 @@ Vk\+Sample\+Count\+Flag\+Bits \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_
 
 \doxysubsection{Detailed Description}
 Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}} 
+\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!apis@{apis}}
+\index{apis@{apis}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}
+\doxysubsubsection{\texorpdfstring{apis}{apis}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{pbr\+::shared\+::apis\+::graphics\+::apis}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Graphics apis that are represented by implemented graphics managers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{opengl@{opengl}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!opengl@{opengl}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea6785e6b975db5d7cf223101ef1bc2f6f}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea6785e6b975db5d7cf223101ef1bc2f6f}} 
+opengl&Open\+GL. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vulkan@{vulkan}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!vulkan@{vulkan}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea8473f19e6529e22157459e75b4cbf485}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393ea8473f19e6529e22157459e75b4cbf485}} 
+vulkan&Vulkan. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 5 of file apis.\+h.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}} 
+\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!shader\_types@{shader\_types}}
+\index{shader\_types@{shader\_types}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}
+\doxysubsubsection{\texorpdfstring{shader\_types}{shader\_types}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958}{pbr\+::shared\+::apis\+::graphics\+::shader\+\_\+types}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+The types of supported shaders. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vertex@{vertex}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!vertex@{vertex}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a}} 
+vertex&A vertex shader. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{fragment@{fragment}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!fragment@{fragment}}}\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1}} 
+fragment&A fragment shader. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 5 of file shader\+\_\+types.\+h.
+
+
 
 \doxysubsection{Function Documentation}
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_a5c70d3b867461b5c1773f65188df4fa2}} 
@@ -56,5 +132,23 @@ The M\+S\+AA samples in Vulkan units
 \end{DoxyReturn}
 
 
-Definition at line 4 of file vulkan\+\_\+performance\+\_\+settings.\+cpp.
+Definition at line 4 of file performance\+\_\+settings.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_abbe9ab65f4a4518d1b88dd237708bde0}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_abbe9ab65f4a4518d1b88dd237708bde0}} 
+\index{pbr::shared::apis::graphics@{pbr::shared::apis::graphics}!read\_api@{read\_api}}
+\index{read\_api@{read\_api}!pbr::shared::apis::graphics@{pbr::shared::apis::graphics}}
+\doxysubsubsection{\texorpdfstring{read\_api()}{read\_api()}}
+{\footnotesize\ttfamily std\+::optional$<$\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}}$>$ pbr\+::shared\+::apis\+::graphics\+::read\+\_\+api (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1settings}{data\+::settings}} \&}]{settings }\end{DoxyParamCaption})}
+
+Reads the api from the passed settings 
+\begin{DoxyParams}{Parameters}
+{\em The} & settings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The graphics api if found, else empty 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file config.\+cpp.
 

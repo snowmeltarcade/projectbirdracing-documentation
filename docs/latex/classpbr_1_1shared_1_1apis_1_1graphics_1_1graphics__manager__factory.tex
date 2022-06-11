@@ -1,0 +1,62 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::graphics\+\_\+manager\+\_\+factory Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory}\index{pbr::shared::apis::graphics::graphics\_manager\_factory@{pbr::shared::apis::graphics::graphics\_manager\_factory}}
+
+
+Creates a graphics manager based on the graphics config.  
+
+
+
+
+{\ttfamily \#include $<$graphics\+\_\+manager\+\_\+factory.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{igraphics\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory_ada9a9647cbf973e73b95b5ea9982176a}{create}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}}, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&data\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&graphics\+\_\+log\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{windowing\+::iwindow\+\_\+manager}} $>$ \&window\+\_\+manager, const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}} \&\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}, const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \&\mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates a graphics manager based on the graphics config. 
+
+Definition at line 16 of file graphics\+\_\+manager\+\_\+factory.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory_ada9a9647cbf973e73b95b5ea9982176a}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory_ada9a9647cbf973e73b95b5ea9982176a}} 
+\index{pbr::shared::apis::graphics::graphics\_manager\_factory@{pbr::shared::apis::graphics::graphics\_manager\_factory}!create@{create}}
+\index{create@{create}!pbr::shared::apis::graphics::graphics\_manager\_factory@{pbr::shared::apis::graphics::graphics\_manager\_factory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager}{igraphics\+\_\+manager}} $>$ pbr\+::shared\+::apis\+::graphics\+::graphics\+\_\+manager\+\_\+factory\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}} \&}]{config,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&}]{data\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{graphics\+\_\+log\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{windowing\+::iwindow\+\_\+manager}} $>$ \&}]{window\+\_\+manager,  }\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}} \&}]{application\+\_\+information,  }\item[{const \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}} \&}]{performance\+\_\+settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+Creates a graphics manager based on the graphics config 
+\begin{DoxyParams}{Parameters}
+{\em config} & The graphics config \\
+\hline
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+{\em graphics\+\_\+log\+\_\+manager} & The log manager to use for the graphics manager \\
+\hline
+{\em window\+\_\+manager} & The window manager \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1application__information}{application\+\_\+information}}} & Needed application information \\
+\hline
+{\em \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} & The performance settings to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The graphics manager if the config is valid, else {\ttfamily nullptr} 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/\mbox{\hyperlink{graphics__manager__factory_8h}{graphics\+\_\+manager\+\_\+factory.\+h}}\item 
+src/shared/apis/graphics/\mbox{\hyperlink{apis_2graphics_2graphics__manager__factory_8cpp}{graphics\+\_\+manager\+\_\+factory.\+cpp}}\end{DoxyCompactItemize}

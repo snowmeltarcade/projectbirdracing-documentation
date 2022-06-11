@@ -1,0 +1,110 @@
+\hypertarget{classpbr_1_1shared_1_1resource_1_1item}{}\doxysection{pbr\+::shared\+::resource\+::item$<$ T $>$ Class Template Reference}
+\label{classpbr_1_1shared_1_1resource_1_1item}\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+
+
+A reference counted resource item.  
+
+
+
+
+{\ttfamily \#include $<$item.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item_a4704056ade18db5127ba675d9ddfa541}{item}} ()=default
+\begin{DoxyCompactList}\small\item\em Creates this item. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item_a34f400ea36b5e2b76ec8261ca7410314}{$\sim$item}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroys this item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item_a8547fc252fe69dd0a2f0253cefc293e9}{increase\+\_\+reference}} () noexcept
+\begin{DoxyCompactList}\small\item\em Increases the reference count. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item_a612d4883b3b94b47e4e1890b266b8299}{decrease\+\_\+reference}} () noexcept
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item_af520ff6456d7e20dd9fa266d75cb5e3f}{references}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class pbr\+::shared\+::resource\+::item$<$ T $>$}
+
+A reference counted resource item. 
+
+Definition at line 9 of file item.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1item_a4704056ade18db5127ba675d9ddfa541}\label{classpbr_1_1shared_1_1resource_1_1item_a4704056ade18db5127ba675d9ddfa541}} 
+\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}!item@{item}}
+\index{item@{item}!pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{item()}{item()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{pbr\+::shared\+::resource\+::item}}$<$ T $>$\+::\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates this item. 
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1item_a34f400ea36b5e2b76ec8261ca7410314}\label{classpbr_1_1shared_1_1resource_1_1item_a34f400ea36b5e2b76ec8261ca7410314}} 
+\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}!````~item@{$\sim$item}}
+\index{````~item@{$\sim$item}!pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$item()}{~item()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{pbr\+::shared\+::resource\+::item}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroys this item. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1item_a612d4883b3b94b47e4e1890b266b8299}\label{classpbr_1_1shared_1_1resource_1_1item_a612d4883b3b94b47e4e1890b266b8299}} 
+\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}!decrease\_reference@{decrease\_reference}}
+\index{decrease\_reference@{decrease\_reference}!pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{decrease\_reference()}{decrease\_reference()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{pbr\+::shared\+::resource\+::item}}$<$ T $>$\+::decrease\+\_\+reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Decreases the reference count \begin{DoxyReturn}{Returns}
+{\ttfamily true} if there are no references, else {\ttfamily false} 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file item.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1item_a8547fc252fe69dd0a2f0253cefc293e9}\label{classpbr_1_1shared_1_1resource_1_1item_a8547fc252fe69dd0a2f0253cefc293e9}} 
+\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}!increase\_reference@{increase\_reference}}
+\index{increase\_reference@{increase\_reference}!pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{increase\_reference()}{increase\_reference()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{pbr\+::shared\+::resource\+::item}}$<$ T $>$\+::increase\+\_\+reference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Increases the reference count. 
+
+
+
+Definition at line 18 of file item.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1item_af520ff6456d7e20dd9fa266d75cb5e3f}\label{classpbr_1_1shared_1_1resource_1_1item_af520ff6456d7e20dd9fa266d75cb5e3f}} 
+\index{pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}!references@{references}}
+\index{references@{references}!pbr::shared::resource::item$<$ T $>$@{pbr::shared::resource::item$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{references()}{references()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+uint32\+\_\+t \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{pbr\+::shared\+::resource\+::item}}$<$ T $>$\+::references (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the current number of references \begin{DoxyReturn}{Returns}
+The current number of references 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file item.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/resource/\mbox{\hyperlink{item_8h}{item.\+h}}\end{DoxyCompactItemize}

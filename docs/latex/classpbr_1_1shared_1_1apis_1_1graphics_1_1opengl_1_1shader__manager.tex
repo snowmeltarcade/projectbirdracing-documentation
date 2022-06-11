@@ -1,0 +1,137 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+
+
+Manages the creation and deletion of shaders.  
+
+
+
+
+{\ttfamily \#include $<$shader\+\_\+manager.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a313384813fad36295356c8d61ffeee52}{shader\+\_\+manager}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&data\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager, const std\+::filesystem\+::path \&list\+\_\+path)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aa8bcaf46221aee3151d8c80b1b4e0e91}{$\sim$shader\+\_\+manager}} () override=default
+\begin{DoxyCompactList}\small\item\em Destroys this shader manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a56ab1e25f779c66279e412532b4a5d82}{load}} (const std\+::filesystem\+::path \&path) noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aeee197304171beab4bfc29224002f809}{\+\_\+data\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em The data manager. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aafba5aa2b775141c917b74a6b198d2c1}{\+\_\+log\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em The log manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the creation and deletion of shaders. 
+
+Definition at line 8 of file shader\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a313384813fad36295356c8d61ffeee52}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a313384813fad36295356c8d61ffeee52}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}!shader\_manager@{shader\_manager}}
+\index{shader\_manager@{shader\_manager}!pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+\doxysubsubsection{\texorpdfstring{shader\_manager()}{shader\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+::shader\+\_\+manager (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&}]{data\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager,  }\item[{const std\+::filesystem\+::path \&}]{list\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates this shader manager 
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+{\em list\+\_\+path} & The path to the resource list from the {\ttfamily data} directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file shader\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aa8bcaf46221aee3151d8c80b1b4e0e91}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aa8bcaf46221aee3151d8c80b1b4e0e91}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}!````~shader\_manager@{$\sim$shader\_manager}}
+\index{````~shader\_manager@{$\sim$shader\_manager}!pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$shader\_manager()}{~shader\_manager()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+::$\sim$shader\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destroys this shader manager. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a56ab1e25f779c66279e412532b4a5d82}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a56ab1e25f779c66279e412532b4a5d82}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}!load@{load}}
+\index{load@{load}!pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}} $>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+::load (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+This loads a resource 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path os the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded resource 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a6174fdc8811561506bf0d15138147e6f}{pbr\+::shared\+::resource\+::resource\+\_\+manager$<$ shader $>$}}.
+
+
+
+Definition at line 4 of file shader\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aeee197304171beab4bfc29224002f809}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aeee197304171beab4bfc29224002f809}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}!\_data\_manager@{\_data\_manager}}
+\index{\_data\_manager@{\_data\_manager}!pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+\doxysubsubsection{\texorpdfstring{\_data\_manager}{\_data\_manager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}}$>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+::\+\_\+data\+\_\+manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The data manager. 
+
+
+
+Definition at line 35 of file shader\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aafba5aa2b775141c917b74a6b198d2c1}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_aafba5aa2b775141c917b74a6b198d2c1}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}!\_log\_manager@{\_log\_manager}}
+\index{\_log\_manager@{\_log\_manager}!pbr::shared::apis::graphics::opengl::shader\_manager@{pbr::shared::apis::graphics::opengl::shader\_manager}}
+\doxysubsubsection{\texorpdfstring{\_log\_manager}{\_log\_manager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}}$>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager\+::\+\_\+log\+\_\+manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The log manager. 
+
+
+
+Definition at line 38 of file shader\+\_\+manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader__manager_8h}{shader\+\_\+manager.\+h}}\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader__manager_8cpp}{shader\+\_\+manager.\+cpp}}\end{DoxyCompactItemize}

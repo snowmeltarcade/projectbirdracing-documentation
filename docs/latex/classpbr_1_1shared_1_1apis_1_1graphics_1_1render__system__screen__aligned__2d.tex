@@ -1,0 +1,59 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d}\index{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}}
+
+
+{\ttfamily \#include $<$render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d82db9289da536a71bd50a6cb009b8c}{render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{vulkan\+::device}} \&device, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vulkan\+::vma}} \&vma, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{vulkan\+::render\+\_\+pass}} \&render\+\_\+pass, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{vulkan\+::command\+\_\+pool}} \&command\+\_\+pool, const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{vulkan\+::queue}} \&graphics\+\_\+queue, Vk\+Extent2D swap\+\_\+chain\+\_\+extent, uint32\+\_\+t number\+\_\+of\+\_\+swap\+\_\+chain\+\_\+images, Vk\+Sample\+Count\+Flag\+Bits msaa\+\_\+samples, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a2ea8186915c5e29dd90bb708dbdde59b}{$\sim$render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d}} ()
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d9100295487237c0db050c13fa63b7b}{build\+\_\+render\+\_\+commands}} (\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}{vulkan\+::command\+\_\+buffer}} \&buffer, uint32\+\_\+t image\+\_\+index)
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a48ebba2b0330a4f4993ecea4867b2c1e}{submit\+\_\+renderable\+\_\+entities}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}} \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles rendering 2d entities that are screen aligned. The top left of the screen will be treated as position 0,0, and the bottom right will be treated as 1,1. 
+
+Definition at line 30 of file render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d82db9289da536a71bd50a6cb009b8c}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d82db9289da536a71bd50a6cb009b8c}} 
+\index{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}!render\_system\_screen\_aligned\_2d@{render\_system\_screen\_aligned\_2d}}
+\index{render\_system\_screen\_aligned\_2d@{render\_system\_screen\_aligned\_2d}!pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}}
+\doxysubsubsection{\texorpdfstring{render\_system\_screen\_aligned\_2d()}{render\_system\_screen\_aligned\_2d()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1device}{vulkan\+::device}} \&}]{device,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma}{vulkan\+::vma}} \&}]{vma,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass}{vulkan\+::render\+\_\+pass}} \&}]{render\+\_\+pass,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{vulkan\+::command\+\_\+pool}} \&}]{command\+\_\+pool,  }\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1queue}{vulkan\+::queue}} \&}]{graphics\+\_\+queue,  }\item[{Vk\+Extent2D}]{swap\+\_\+chain\+\_\+extent,  }\item[{uint32\+\_\+t}]{number\+\_\+of\+\_\+swap\+\_\+chain\+\_\+images,  }\item[{Vk\+Sample\+Count\+Flag\+Bits}]{msaa\+\_\+samples,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a2ea8186915c5e29dd90bb708dbdde59b}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a2ea8186915c5e29dd90bb708dbdde59b}} 
+\index{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}!````~render\_system\_screen\_aligned\_2d@{$\sim$render\_system\_screen\_aligned\_2d}}
+\index{````~render\_system\_screen\_aligned\_2d@{$\sim$render\_system\_screen\_aligned\_2d}!pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}}
+\doxysubsubsection{\texorpdfstring{$\sim$render\_system\_screen\_aligned\_2d()}{~render\_system\_screen\_aligned\_2d()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d\+::$\sim$render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d9100295487237c0db050c13fa63b7b}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a9d9100295487237c0db050c13fa63b7b}} 
+\index{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}!build\_render\_commands@{build\_render\_commands}}
+\index{build\_render\_commands@{build\_render\_commands}!pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}}
+\doxysubsubsection{\texorpdfstring{build\_render\_commands()}{build\_render\_commands()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d\+::build\+\_\+render\+\_\+commands (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}{vulkan\+::command\+\_\+buffer}} \&}]{buffer,  }\item[{uint32\+\_\+t}]{image\+\_\+index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a48ebba2b0330a4f4993ecea4867b2c1e}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d_a48ebba2b0330a4f4993ecea4867b2c1e}} 
+\index{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}!submit\_renderable\_entities@{submit\_renderable\_entities}}
+\index{submit\_renderable\_entities@{submit\_renderable\_entities}!pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d@{pbr::shared::apis::graphics::render\_system\_screen\_aligned\_2d}}
+\doxysubsubsection{\texorpdfstring{submit\_renderable\_entities()}{submit\_renderable\_entities()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d\+::submit\+\_\+renderable\+\_\+entities (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities}{renderable\+\_\+entities}} \&}]{renderable\+\_\+entities }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/vulkan/\mbox{\hyperlink{render__system__screen__aligned__2d_8h}{render\+\_\+system\+\_\+screen\+\_\+aligned\+\_\+2d.\+h}}\end{DoxyCompactItemize}

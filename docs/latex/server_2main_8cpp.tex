@@ -2,13 +2,15 @@
 \label{server_2main_8cpp}\index{src/server/main.cpp@{src/server/main.cpp}}
 {\ttfamily \#include \char`\"{}shared/memory/basic\+\_\+allocators.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/game/game\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/data/data\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/logging/endpoints/std\+\_\+out.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/logging/endpoints/file.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/windowing/window\+\_\+manager.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}shared/apis/graphics/vulkan\+\_\+graphics\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/graphics\+\_\+manager\+\_\+factory.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/apis/graphics/performance\+\_\+settings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/file/file\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/scene/scene\+\_\+manager.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}scene/scene\+\_\+factory.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}shared/utils/program\+\_\+arguments.\+h\char`\"{}}\newline
@@ -17,6 +19,8 @@
 {\ttfamily \#include \char`\"{}version.\+h\char`\"{}}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \mbox{\hyperlink{server_2main_8cpp_a15cfef36dbbadb1d1292a193c0e4c5fc}{create\+\_\+data\+\_\+manager}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, const std\+::filesystem\+::path \&executable\+\_\+path)
 \item 
 \mbox{\hyperlink{classpbr_1_1shared_1_1game_1_1game__manager}{game\+::game\+\_\+manager}} \mbox{\hyperlink{server_2main_8cpp_afeb913bf0387e835ba95f69adba4bea7}{create\+\_\+game\+\_\+manager}} (const \mbox{\hyperlink{classpbr_1_1shared_1_1utils_1_1program__arguments}{utils\+::program\+\_\+arguments}} \&arguments)
 \item 
@@ -27,6 +31,26 @@ int \mbox{\hyperlink{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}{main}}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{server_2main_8cpp_a15cfef36dbbadb1d1292a193c0e4c5fc}\label{server_2main_8cpp_a15cfef36dbbadb1d1292a193c0e4c5fc}} 
+\index{main.cpp@{main.cpp}!create\_data\_manager@{create\_data\_manager}}
+\index{create\_data\_manager@{create\_data\_manager}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{create\_data\_manager()}{create\_data\_manager()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}}$>$ create\+\_\+data\+\_\+manager (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{const std\+::filesystem\+::path \&}]{executable\+\_\+path }\end{DoxyParamCaption})}
+
+Creates the data manager 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager to use \\
+\hline
+{\em executable\+\_\+path} & The path of this executable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data manager 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file main.\+cpp.
+
 \mbox{\Hypertarget{server_2main_8cpp_afeb913bf0387e835ba95f69adba4bea7}\label{server_2main_8cpp_afeb913bf0387e835ba95f69adba4bea7}} 
 \index{main.cpp@{main.cpp}!create\_game\_manager@{create\_game\_manager}}
 \index{create\_game\_manager@{create\_game\_manager}!main.cpp@{main.cpp}}
@@ -43,7 +67,7 @@ The created game manager
 \end{DoxyReturn}
 
 
-Definition at line 24 of file main.\+cpp.
+Definition at line 38 of file main.\+cpp.
 
 \mbox{\Hypertarget{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}\label{server_2main_8cpp_a148e510f1af548e3fa6a929b9f2371ac}} 
 \index{main.cpp@{main.cpp}!main@{main}}
@@ -63,7 +87,7 @@ Will always return {\ttfamily 0}
 \end{DoxyReturn}
 
 
-Definition at line 96 of file main.\+cpp.
+Definition at line 119 of file main.\+cpp.
 
 \mbox{\Hypertarget{server_2main_8cpp_ade55eb1518326aa7acd61be1b139a288}\label{server_2main_8cpp_ade55eb1518326aa7acd61be1b139a288}} 
 \index{main.cpp@{main.cpp}!run@{run}}
@@ -78,5 +102,5 @@ Sets up and runs the game
 \end{DoxyParams}
 
 
-Definition at line 78 of file main.\+cpp.
+Definition at line 101 of file main.\+cpp.
 

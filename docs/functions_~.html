@@ -87,6 +87,9 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~application_window()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html#ae258cb123b461b80e6f0391789831e05">pbr::shared::apis::windowing::application_window</a>
 </li>
+<li>~buffer()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html#accdf5eaa111aa28a2eb1c332355e8ecd">pbr::shared::apis::graphics::vulkan::buffer</a>
+</li>
 <li>~bytes()
 : <a class="el" href="classpbr_1_1shared_1_1memory_1_1bytes.html#a5d4bafab334273fe5e314cab0351cf7a">pbr::shared::memory::bytes</a>
 </li>
@@ -96,8 +99,14 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~command_pool()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool.html#a43ca5834cbf08fff86a749690ac7fb4c">pbr::shared::apis::graphics::vulkan::command_pool</a>
 </li>
+<li>~compositor()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1compositor.html#a99e4d2ba3a9ae6f32f8ea60083f3011e">pbr::shared::apis::graphics::opengl::compositor</a>
+</li>
 <li>~console_window()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window.html#abb506ce5431aac5c2e18316f2871069e">pbr::shared::apis::windowing::console_window</a>
+</li>
+<li>~context()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1context.html#a3e32bf95e6ed19974e1f6a5749d73806">pbr::shared::apis::graphics::opengl::context</a>
 </li>
 <li>~data_manager()
 : <a class="el" href="classpbr_1_1shared_1_1data_1_1data__manager.html#ac887d1f1ce0aecb84b13438fdb4f59b7">pbr::shared::data::data_manager</a>
@@ -127,13 +136,18 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1file_1_1file__manager.html#ab1ca64897bbf2b1496579f7b700ed1fd">pbr::shared::apis::file::file_manager</a>
 </li>
 <li>~framebuffer()
-: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer.html#a07ba41431be4bb61c59407f8bae073cd">pbr::shared::apis::graphics::vulkan::framebuffer</a>
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1framebuffer.html#a14a120faec102544028e47ca48acad7b">pbr::shared::apis::graphics::opengl::framebuffer</a>
+, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer.html#a07ba41431be4bb61c59407f8bae073cd">pbr::shared::apis::graphics::vulkan::framebuffer</a>
 </li>
 <li>~game_manager()
 : <a class="el" href="classpbr_1_1shared_1_1game_1_1game__manager.html#a601c1f390231483bbaf4cddb296c8a4e">pbr::shared::game::game_manager</a>
 </li>
 <li>~gigabytes()
 : <a class="el" href="classpbr_1_1shared_1_1memory_1_1gigabytes.html#a41fb0713e5c45eb7bfcd0e1b5a4e9944">pbr::shared::memory::gigabytes</a>
+</li>
+<li>~graphics_manager()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1graphics__manager.html#a67661bbc5fc6102d36d844292c3c10eb">pbr::shared::apis::graphics::opengl::graphics_manager</a>
+, <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html#a6888851634ec2c72410f12470e308357">pbr::shared::apis::graphics::vulkan::graphics_manager</a>
 </li>
 <li>~iapplication_window()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a73d29148df70ee6f0c62bffdad767850">pbr::shared::apis::windowing::iapplication_window</a>
@@ -162,11 +176,17 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~instance()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html#a4e2b9feaf87dda6abf7ac30bd7853544">pbr::shared::apis::graphics::vulkan::instance</a>
 </li>
+<li>~irender_target()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target.html#a8eef4b81529329e8562a0d932c1cacb2">pbr::shared::apis::graphics::opengl::irender_target</a>
+</li>
 <li>~iscene_factory()
 : <a class="el" href="classpbr_1_1shared_1_1scene_1_1iscene__factory.html#afce65e4fe7c630c64f91054d09b8808f">pbr::shared::scene::iscene_factory</a>
 </li>
 <li>~iscene_manager()
 : <a class="el" href="classpbr_1_1shared_1_1scene_1_1iscene__manager.html#aae1da263b00a939edc83c0ca4cc692c4">pbr::shared::scene::iscene_manager</a>
+</li>
+<li>~item()
+: <a class="el" href="classpbr_1_1shared_1_1resource_1_1item.html#a34f400ea36b5e2b76ec8261ca7410314">pbr::shared::resource::item&lt; T &gt;</a>
 </li>
 <li>~iwindow_manager()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html#a7a94b846733ba86e95f1d85613cc6071">pbr::shared::apis::windowing::iwindow_manager</a>
@@ -183,6 +203,9 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~megabytes()
 : <a class="el" href="classpbr_1_1shared_1_1memory_1_1megabytes.html#a980e1125e54e96e89ce910be88d617b7">pbr::shared::memory::megabytes</a>
 </li>
+<li>~mesh()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh.html#a2ffdd89709dd8170e6e4da671a02c952">pbr::shared::apis::graphics::opengl::mesh</a>
+</li>
 <li>~physical_device()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device.html#a85ef8116f2b4e074c027282519c3f1f7">pbr::shared::apis::graphics::vulkan::physical_device</a>
 </li>
@@ -191,6 +214,12 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 </li>
 <li>~render_pass()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass.html#af4c4ffc9a02362f1e51e18810e44a94f">pbr::shared::apis::graphics::vulkan::render_pass</a>
+</li>
+<li>~render_system_screen_aligned_2d()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d.html#a2ea8186915c5e29dd90bb708dbdde59b">pbr::shared::apis::graphics::render_system_screen_aligned_2d</a>
+</li>
+<li>~resource_manager()
+: <a class="el" href="classpbr_1_1shared_1_1resource_1_1resource__manager.html#aa82d2ef35d6b4b8dab75b71df6b2d7d3">pbr::shared::resource::resource_manager&lt; T &gt;</a>
 </li>
 <li>~scene_base()
 : <a class="el" href="classpbr_1_1shared_1_1scene_1_1scene__base.html#af730ae1fca6126988478a66bd7956f8f">pbr::shared::scene::scene_base</a>
@@ -201,8 +230,20 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~scene_manager()
 : <a class="el" href="classpbr_1_1shared_1_1scene_1_1scene__manager.html#a7955684a74d38bccff7843c28905a567">pbr::shared::scene::scene_manager</a>
 </li>
+<li>~screen()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen.html#a2604ed3684b31b2e1cbe3ad2a6dff63f">pbr::shared::apis::graphics::opengl::render_targets::screen</a>
+</li>
 <li>~semaphore()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1semaphore.html#ab5c27f7ad34773de889722ff1e6ec2ac">pbr::shared::apis::graphics::vulkan::semaphore</a>
+</li>
+<li>~shader()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader.html#a7d59ed3b2f9e09cf6168baf4ab65d4da">pbr::shared::apis::graphics::opengl::shader</a>
+</li>
+<li>~shader_manager()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager.html#aa8bcaf46221aee3151d8c80b1b4e0e91">pbr::shared::apis::graphics::opengl::shader_manager</a>
+</li>
+<li>~shader_program()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program.html#ae2c062ee31fe606a2cd7dcb643ad3ef2">pbr::shared::apis::graphics::opengl::shader_program</a>
 </li>
 <li>~splash_screen_scene()
 : <a class="el" href="classpbr_1_1shared_1_1scene_1_1scenes_1_1splash__screen__scene.html#a6bd6576118fb0e231429af7f6862d4bb">pbr::shared::scene::scenes::splash_screen_scene</a>
@@ -216,11 +257,11 @@ $(document).ready(function(){initNavTree('functions_~.html',''); initResizable()
 <li>~test_endpoint()
 : <a class="el" href="classtest__endpoint.html#ace4d6f5894228c9454e70562e1bba0f3">test_endpoint</a>
 </li>
+<li>~texture()
+: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture.html#a1c4623bb4b82b4f3f74cc60ef5a0f98d">pbr::shared::apis::graphics::opengl::render_targets::texture</a>
+</li>
 <li>~vma()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1vma.html#a609bf9110f26539068f7123e9807eb15">pbr::shared::apis::graphics::vulkan::vma</a>
-</li>
-<li>~vulkan_graphics_manager()
-: <a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#a663f1d0bdbcc2a49d8f11a7d57d003af">pbr::shared::apis::graphics::vulkan_graphics_manager</a>
 </li>
 <li>~window_manager()
 : <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#a304b54ee08a1c5ff6120c9387201a2ff">pbr::shared::apis::windowing::window_manager</a>

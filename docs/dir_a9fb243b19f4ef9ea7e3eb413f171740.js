@@ -1,5 +1,9 @@
 var dir_a9fb243b19f4ef9ea7e3eb413f171740 =
 [
+    [ "buffer.cpp", "buffer_8cpp.html", "buffer_8cpp" ],
+    [ "buffer.h", "buffer_8h.html", [
+      [ "buffer", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer" ]
+    ] ],
     [ "command_buffer.cpp", "command__buffer_8cpp.html", "command__buffer_8cpp" ],
     [ "command_buffer.h", "command__buffer_8h.html", [
       [ "command_buffer", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer" ]
@@ -20,9 +24,13 @@ var dir_a9fb243b19f4ef9ea7e3eb413f171740 =
     [ "fence.h", "fence_8h.html", [
       [ "fence", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence" ]
     ] ],
-    [ "framebuffer.cpp", "framebuffer_8cpp.html", "framebuffer_8cpp" ],
-    [ "framebuffer.h", "framebuffer_8h.html", [
+    [ "framebuffer.cpp", "vulkan_2framebuffer_8cpp.html", "vulkan_2framebuffer_8cpp" ],
+    [ "framebuffer.h", "vulkan_2framebuffer_8h.html", [
       [ "framebuffer", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer" ]
+    ] ],
+    [ "graphics_manager.cpp", "vulkan_2graphics__manager_8cpp.html", null ],
+    [ "graphics_manager.h", "vulkan_2graphics__manager_8h.html", [
+      [ "graphics_manager", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager" ]
     ] ],
     [ "image.cpp", "image_8cpp.html", "image_8cpp" ],
     [ "image.h", "image_8h.html", [
@@ -36,6 +44,8 @@ var dir_a9fb243b19f4ef9ea7e3eb413f171740 =
     [ "instance.h", "instance_8h.html", [
       [ "instance", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1instance" ]
     ] ],
+    [ "performance_settings.cpp", "performance__settings_8cpp.html", "performance__settings_8cpp" ],
+    [ "performance_settings.h", "vulkan_2performance__settings_8h.html", "vulkan_2performance__settings_8h" ],
     [ "physical_device.cpp", "physical__device_8cpp.html", "physical__device_8cpp" ],
     [ "physical_device.h", "physical__device_8h.html", [
       [ "physical_device", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device" ],
@@ -48,6 +58,12 @@ var dir_a9fb243b19f4ef9ea7e3eb413f171740 =
     [ "render_pass.cpp", "render__pass_8cpp.html", "render__pass_8cpp" ],
     [ "render_pass.h", "render__pass_8h.html", [
       [ "render_pass", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1render__pass" ]
+    ] ],
+    [ "render_system_screen_aligned_2d.cpp", "render__system__screen__aligned__2d_8cpp.html", null ],
+    [ "render_system_screen_aligned_2d.h", "render__system__screen__aligned__2d_8h.html", [
+      [ "ubo", "structpbr_1_1shared_1_1apis_1_1graphics_1_1ubo.html", "structpbr_1_1shared_1_1apis_1_1graphics_1_1ubo" ],
+      [ "vertex", "structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex.html", "structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex" ],
+      [ "render_system_screen_aligned_2d", "classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d.html", "classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d" ]
     ] ],
     [ "semaphore.cpp", "semaphore_8cpp.html", "semaphore_8cpp" ],
     [ "semaphore.h", "semaphore_8h.html", [

@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('namespacepbr_1_1shared_1_1apis_1_1grap
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pbr::shared::apis::graphics Namespace Reference</div>  </div>
@@ -95,6 +96,10 @@ $(document).ready(function(){initNavTree('namespacepbr_1_1shared_1_1apis_1_1grap
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics_1_1colors"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1colors.html">colors</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl.html">opengl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan.html">vulkan</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -106,10 +111,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1color.html">color</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RGBA color.  <a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1color.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1config.html">config</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The graphics configuration settings.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory.html">graphics_manager_factory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a graphics manager based on the graphics config.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1graphics__manager__factory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1igraphics__manager.html">igraphics_manager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html">performance_settings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings the graphics engine should use.  <a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1render__system__screen__aligned__2d.html">render_system_screen_aligned_2d</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html">renderable_entities</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains entities to be submitted for render.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entities.html#details">More...</a><br /></td></tr>
@@ -117,18 +130,99 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html">renderable_entity_2d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2d entity to be rendered by the 2d render system.  <a href="structpbr_1_1shared_1_1apis_1_1graphics_1_1renderable__entity__2d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html">vulkan_graphics_manager</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Vulkan graphics API and rendering processes.  <a href="classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan__graphics__manager.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1ubo.html">ubo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1vertex.html">vertex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:af88dccbcd9fcc6a05396c6e33582393e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">apis</a> { <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393ea6785e6b975db5d7cf223101ef1bc2f6f">apis::opengl</a>, 
+<a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393ea8473f19e6529e22157459e75b4cbf485">apis::vulkan</a>
+ }</td></tr>
+<tr class="memdesc:af88dccbcd9fcc6a05396c6e33582393e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics apis that are represented by implemented graphics managers.  <a href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">More...</a><br /></td></tr>
+<tr class="separator:af88dccbcd9fcc6a05396c6e33582393e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cdd3e350d36cd64970a2179cffe958"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958">shader_types</a> { <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a">shader_types::vertex</a>, 
+<a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1">shader_types::fragment</a>
+ }</td></tr>
+<tr class="memdesc:aa2cdd3e350d36cd64970a2179cffe958"><td class="mdescLeft">&#160;</td><td class="mdescRight">The types of supported shaders.  <a href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958">More...</a><br /></td></tr>
+<tr class="separator:aa2cdd3e350d36cd64970a2179cffe958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:abbe9ab65f4a4518d1b88dd237708bde0"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">apis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#abbe9ab65f4a4518d1b88dd237708bde0">read_api</a> (<a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;settings)</td></tr>
+<tr class="separator:abbe9ab65f4a4518d1b88dd237708bde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c70d3b867461b5c1773f65188df4fa2"><td class="memItemLeft" align="right" valign="top">VkSampleCountFlagBits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#a5c70d3b867461b5c1773f65188df4fa2">get_msaa_samples</a> (const <a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html">performance_settings</a> &amp;settings, VkSampleCountFlagBits max_samples)</td></tr>
 <tr class="separator:a5c70d3b867461b5c1773f65188df4fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Separate out any Vulkan specific conversions needed to use the <code><a class="el" href="structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings.html" title="The settings the graphics engine should use.">performance_settings</a></code> struct. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="af88dccbcd9fcc6a05396c6e33582393e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88dccbcd9fcc6a05396c6e33582393e">&#9670;&nbsp;</a></span>apis</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">pbr::shared::apis::graphics::apis</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Graphics apis that are represented by implemented graphics managers. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af88dccbcd9fcc6a05396c6e33582393ea6785e6b975db5d7cf223101ef1bc2f6f"></a>opengl&#160;</td><td class="fielddoc"><p>OpenGL. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af88dccbcd9fcc6a05396c6e33582393ea8473f19e6529e22157459e75b4cbf485"></a>vulkan&#160;</td><td class="fielddoc"><p>Vulkan. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="apis_8h_source.html#l00005">5</a> of file <a class="el" href="apis_8h_source.html">apis.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2cdd3e350d36cd64970a2179cffe958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cdd3e350d36cd64970a2179cffe958">&#9670;&nbsp;</a></span>shader_types</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958">pbr::shared::apis::graphics::shader_types</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The types of supported shaders. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a"></a>vertex&#160;</td><td class="fielddoc"><p>A vertex shader. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1"></a>fragment&#160;</td><td class="fielddoc"><p>A fragment shader. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="shader__types_8h_source.html#l00005">5</a> of file <a class="el" href="shader__types_8h_source.html">shader_types.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a5c70d3b867461b5c1773f65188df4fa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c70d3b867461b5c1773f65188df4fa2">&#9670;&nbsp;</a></span>get_msaa_samples()</h2>
 
@@ -163,7 +257,34 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The MSAA samples in Vulkan units </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vulkan__performance__settings_8cpp_source.html#l00004">4</a> of file <a class="el" href="vulkan__performance__settings_8cpp_source.html">vulkan_performance_settings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="performance__settings_8cpp_source.html#l00004">4</a> of file <a class="el" href="performance__settings_8cpp_source.html">performance_settings.cpp</a>.</p>
+
+</div>
+</div>
+<a id="abbe9ab65f4a4518d1b88dd237708bde0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe9ab65f4a4518d1b88dd237708bde0">&#9670;&nbsp;</a></span>read_api()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;<a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">apis</a>&gt; pbr::shared::apis::graphics::read_api </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reads the api from the passed settings </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The graphics api if found, else empty </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="apis_2graphics_2config_8cpp_source.html#l00009">9</a> of file <a class="el" href="apis_2graphics_2config_8cpp_source.html">config.cpp</a>.</p>
 
 </div>
 </div>

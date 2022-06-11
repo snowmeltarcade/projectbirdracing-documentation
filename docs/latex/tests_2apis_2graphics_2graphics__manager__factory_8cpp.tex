@@ -1,0 +1,86 @@
+\hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp}{}\doxysection{src/shared/tests/apis/graphics/graphics\+\_\+manager\+\_\+factory.cpp File Reference}
+\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp}\index{src/shared/tests/apis/graphics/graphics\_manager\_factory.cpp@{src/shared/tests/apis/graphics/graphics\_manager\_factory.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/graphics\+\_\+manager\+\_\+factory.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/windowing/iwindow\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/file/file\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/vulkan/graphics\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/opengl/graphics\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/tests/test\+\_\+utils.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdummy__window}{dummy\+\_\+window}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}} \mbox{\hyperlink{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a1c3f7bf6494b83c28bff3c235c930a2f}{create\+\_\+config}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{windowing\+::iwindow\+\_\+manager}} $>$ \mbox{\hyperlink{tests_2apis_2graphics_2graphics__manager__factory_8cpp_acd169431887a2414761f7ae2cc0bb499}{create\+\_\+window\+\_\+manager}} ()
+\item 
+\mbox{\hyperlink{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a9f5f58ebb2bbbaf27ea799ccad82ca77}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}create -\/ invalid api name -\/ returns empty\char`\"{}, \char`\"{}\mbox{[}shared/\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}}/graphics/graphics\+\_\+manager\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em create \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2apis_2graphics_2graphics__manager__factory_8cpp_ad75681d29ad2d44eef5b199d27b19691}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}create -\/ vulkan api name -\/ returns vulkan manager\char`\"{}, \char`\"{}\mbox{[}shared/\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}}/graphics/graphics\+\_\+manager\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a680c0d14b2c9912333f1a733c6698705}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}create -\/ opengl api name -\/ returns opengl manager\char`\"{}, \char`\"{}\mbox{[}shared/\mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_af88dccbcd9fcc6a05396c6e33582393e}{apis}}/graphics/graphics\+\_\+manager\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a1c3f7bf6494b83c28bff3c235c930a2f}\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a1c3f7bf6494b83c28bff3c235c930a2f}} 
+\index{graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}!create\_config@{create\_config}}
+\index{create\_config@{create\_config}!graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}}
+\doxysubsubsection{\texorpdfstring{create\_config()}{create\_config()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1config}{config}} create\+\_\+config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp_acd169431887a2414761f7ae2cc0bb499}\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp_acd169431887a2414761f7ae2cc0bb499}} 
+\index{graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}!create\_window\_manager@{create\_window\_manager}}
+\index{create\_window\_manager@{create\_window\_manager}!graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}}
+\doxysubsubsection{\texorpdfstring{create\_window\_manager()}{create\_window\_manager()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager}{windowing\+::iwindow\+\_\+manager}}$>$ create\+\_\+window\+\_\+manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a9f5f58ebb2bbbaf27ea799ccad82ca77}\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a9f5f58ebb2bbbaf27ea799ccad82ca77}} 
+\index{graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}create -\/ invalid api name -\/ returns empty\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/graphics/graphics\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+create 
+
+
+
+Definition at line 54 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a680c0d14b2c9912333f1a733c6698705}\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp_a680c0d14b2c9912333f1a733c6698705}} 
+\index{graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}create -\/ opengl api name -\/ returns opengl manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/graphics/graphics\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 91 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+
+\mbox{\Hypertarget{tests_2apis_2graphics_2graphics__manager__factory_8cpp_ad75681d29ad2d44eef5b199d27b19691}\label{tests_2apis_2graphics_2graphics__manager__factory_8cpp_ad75681d29ad2d44eef5b199d27b19691}} 
+\index{graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!graphics\_manager\_factory.cpp@{graphics\_manager\_factory.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}create -\/ vulkan api name -\/ returns vulkan manager\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/apis/graphics/graphics\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file graphics\+\_\+manager\+\_\+factory.\+cpp.
+

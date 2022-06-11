@@ -1,0 +1,81 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::mesh Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh}\index{pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}}
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a8fd5f73d4c9826c1c1142179e9d12b70}{mesh}} (const std\+::vector$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex}{vertex}} $>$ \&vertices, const std\+::vector$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}{vertex\+\_\+index\+\_\+type}} $>$ \&indices, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a2ffdd89709dd8170e6e4da671a02c952}{$\sim$mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a4d25982d8b054274ac7f3e9e7333d2de}{render}} () noexcept
+\begin{DoxyCompactList}\small\item\em Renders this mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A mesh of vertices, containing an index and vertex buffer. The vertex and index data is not saved. 
+
+Definition at line 17 of file mesh.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a8fd5f73d4c9826c1c1142179e9d12b70}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a8fd5f73d4c9826c1c1142179e9d12b70}} 
+\index{pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}!mesh@{mesh}}
+\index{mesh@{mesh}!pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}}
+\doxysubsubsection{\texorpdfstring{mesh()}{mesh()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::mesh\+::mesh (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1vertex}{vertex}} $>$ \&}]{vertices,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a9143eb1e4e4bf47ecbe6bfc75aa043ac}{vertex\+\_\+index\+\_\+type}} $>$ \&}]{indices,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this mesh 
+\begin{DoxyParams}{Parameters}
+{\em vertices} & The vertex data \\
+\hline
+{\em indices} & The index data \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file mesh.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a2ffdd89709dd8170e6e4da671a02c952}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a2ffdd89709dd8170e6e4da671a02c952}} 
+\index{pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}!````~mesh@{$\sim$mesh}}
+\index{````~mesh@{$\sim$mesh}!pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$mesh()}{~mesh()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::mesh\+::$\sim$mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys this mesh. 
+
+
+
+Definition at line 36 of file mesh.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a4d25982d8b054274ac7f3e9e7333d2de}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1mesh_a4d25982d8b054274ac7f3e9e7333d2de}} 
+\index{pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}!render@{render}}
+\index{render@{render}!pbr::shared::apis::graphics::opengl::mesh@{pbr::shared::apis::graphics::opengl::mesh}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::mesh\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Renders this mesh. 
+
+
+
+Definition at line 87 of file mesh.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{mesh_8h}{mesh.\+h}}\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{mesh_8cpp}{mesh.\+cpp}}\end{DoxyCompactItemize}

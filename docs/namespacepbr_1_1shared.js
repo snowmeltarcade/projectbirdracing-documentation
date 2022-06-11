@@ -5,6 +5,7 @@ var namespacepbr_1_1shared =
     [ "diagnostics", "namespacepbr_1_1shared_1_1diagnostics.html", "namespacepbr_1_1shared_1_1diagnostics" ],
     [ "game", "namespacepbr_1_1shared_1_1game.html", "namespacepbr_1_1shared_1_1game" ],
     [ "memory", "namespacepbr_1_1shared_1_1memory.html", "namespacepbr_1_1shared_1_1memory" ],
+    [ "resource", "namespacepbr_1_1shared_1_1resource.html", "namespacepbr_1_1shared_1_1resource" ],
     [ "scene", "namespacepbr_1_1shared_1_1scene.html", "namespacepbr_1_1shared_1_1scene" ],
     [ "utils", "namespacepbr_1_1shared_1_1utils.html", "namespacepbr_1_1shared_1_1utils" ]
 ];

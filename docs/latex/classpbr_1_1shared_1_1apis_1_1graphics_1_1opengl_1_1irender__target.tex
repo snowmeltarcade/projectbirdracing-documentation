@@ -1,0 +1,144 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target}\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+
+
+A destination for a camera to render to.  
+
+
+
+
+{\ttfamily \#include $<$irender\+\_\+target.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.618497cm]{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_acfa48764f89451b12f62f9eea4f47bba}{irender\+\_\+target}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructs this render target. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a8eef4b81529329e8562a0d932c1cacb2}{$\sim$irender\+\_\+target}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroys this render target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_abbcce9cbe264e9ff8ec720e4110f3281}{bind}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Binds this render target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a732fd5c2f8b3bfffa0dc8728a25d28d0}{unbind}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Unbinds this render target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_aadc45a555cc9e1765b7f5e18bef1ee56}{clear}} () const noexcept=0
+\begin{DoxyCompactList}\small\item\em Clears this render target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad03eaff153faa4dadba2ea832f01400a}{resize}} (\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} width, \mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} height) noexcept=0
+\item 
+virtual G\+Luint \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad4542104aac98aea9799d4d3ad9d94a0}{texture\+\_\+id}} () const noexcept=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A destination for a camera to render to. 
+
+Definition at line 10 of file irender\+\_\+target.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_acfa48764f89451b12f62f9eea4f47bba}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_acfa48764f89451b12f62f9eea4f47bba}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!irender\_target@{irender\_target}}
+\index{irender\_target@{irender\_target}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{irender\_target()}{irender\_target()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::irender\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Constructs this render target. 
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a8eef4b81529329e8562a0d932c1cacb2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a8eef4b81529329e8562a0d932c1cacb2}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!````~irender\_target@{$\sim$irender\_target}}
+\index{````~irender\_target@{$\sim$irender\_target}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{$\sim$irender\_target()}{~irender\_target()}}
+{\footnotesize\ttfamily virtual pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::$\sim$irender\+\_\+target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroys this render target. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_abbcce9cbe264e9ff8ec720e4110f3281}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_abbcce9cbe264e9ff8ec720e4110f3281}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!bind@{bind}}
+\index{bind@{bind}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Binds this render target. 
+
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a13203592da7eee0c8589ea7e77fdc4d2}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen_a603a31a95b6bff7766abc36a581c9ca8}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::screen}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_aadc45a555cc9e1765b7f5e18bef1ee56}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_aadc45a555cc9e1765b7f5e18bef1ee56}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!clear@{clear}}
+\index{clear@{clear}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Clears this render target. 
+
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_ac89b62f4fc755f12f3c5b69c88844660}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen_a2b9842549ed3a2f735b2fcba097bebcd}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::screen}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad03eaff153faa4dadba2ea832f01400a}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad03eaff153faa4dadba2ea832f01400a}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!resize@{resize}}
+\index{resize@{resize}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{width,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Resizes this render target 
+\begin{DoxyParams}{Parameters}
+{\em width} & The width \\
+\hline
+{\em height} & The height \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_add490ab4671205f30d90ddc8c4872b11}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen_aad637a1a672eb9d98596fccfcecc106a}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::screen}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad4542104aac98aea9799d4d3ad9d94a0}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad4542104aac98aea9799d4d3ad9d94a0}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{texture\_id()}{texture\_id()}}
+{\footnotesize\ttfamily virtual G\+Luint pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::texture\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+Returns the backing texture id for this target \begin{DoxyReturn}{Returns}
+The texture id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a00134cf6c36a897ffb59f4ecac14db52}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen_aa0739c5361ee5ea800d342092446e16c}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::screen}}.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a732fd5c2f8b3bfffa0dc8728a25d28d0}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a732fd5c2f8b3bfffa0dc8728a25d28d0}} 
+\index{pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}!unbind@{unbind}}
+\index{unbind@{unbind}!pbr::shared::apis::graphics::opengl::irender\_target@{pbr::shared::apis::graphics::opengl::irender\_target}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily virtual void pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Unbinds this render target. 
+
+
+
+Implemented in \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1b4cf98b4b48182ef7eb9829b6cc95c2}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1screen_a905fa3e56bb82ec82372704775cf9c20}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::screen}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{irender__target_8h}{irender\+\_\+target.\+h}}\end{DoxyCompactItemize}

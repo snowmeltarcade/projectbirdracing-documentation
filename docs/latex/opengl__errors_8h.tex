@@ -1,0 +1,52 @@
+\hypertarget{opengl__errors_8h}{}\doxysection{src/shared/apis/graphics/opengl/opengl\+\_\+errors.h File Reference}
+\label{opengl__errors_8h}\index{src/shared/apis/graphics/opengl/opengl\_errors.h@{src/shared/apis/graphics/opengl/opengl\_errors.h}}
+{\ttfamily \#include $<$optional$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl}{pbr\+::shared\+::apis\+::graphics\+::opengl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{opengl__errors_8h_a20b9c498b4c9d69831af0fccfe203caa}{C\+H\+E\+C\+K\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+E\+R\+R\+OR}}
+\item 
+\#define \mbox{\hyperlink{opengl__errors_8h_a701ad1b3c1f56ca75125da271611a916}{C\+H\+E\+C\+K\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+R\+E\+T\+U\+RN}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ad0c8cba1b05bee131075f9c8d26cd87e}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::check\+\_\+opengl\+\_\+error\+\_\+internal}} (const char $\ast$file\+\_\+name, uint32\+\_\+t line\+\_\+number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{opengl__errors_8h_a20b9c498b4c9d69831af0fccfe203caa}\label{opengl__errors_8h_a20b9c498b4c9d69831af0fccfe203caa}} 
+\index{opengl\_errors.h@{opengl\_errors.h}!CHECK\_OPENGL\_ERROR@{CHECK\_OPENGL\_ERROR}}
+\index{CHECK\_OPENGL\_ERROR@{CHECK\_OPENGL\_ERROR}!opengl\_errors.h@{opengl\_errors.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_OPENGL\_ERROR}{CHECK\_OPENGL\_ERROR}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+E\+R\+R\+OR}
+
+
+
+Definition at line 24 of file opengl\+\_\+errors.\+h.
+
+\mbox{\Hypertarget{opengl__errors_8h_a701ad1b3c1f56ca75125da271611a916}\label{opengl__errors_8h_a701ad1b3c1f56ca75125da271611a916}} 
+\index{opengl\_errors.h@{opengl\_errors.h}!CHECK\_OPENGL\_ERROR\_NO\_RETURN@{CHECK\_OPENGL\_ERROR\_NO\_RETURN}}
+\index{CHECK\_OPENGL\_ERROR\_NO\_RETURN@{CHECK\_OPENGL\_ERROR\_NO\_RETURN}!opengl\_errors.h@{opengl\_errors.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_OPENGL\_ERROR\_NO\_RETURN}{CHECK\_OPENGL\_ERROR\_NO\_RETURN}}
+{\footnotesize\ttfamily \#define C\+H\+E\+C\+K\+\_\+\+O\+P\+E\+N\+G\+L\+\_\+\+E\+R\+R\+O\+R\+\_\+\+N\+O\+\_\+\+R\+E\+T\+U\+RN}
+
+
+
+Definition at line 25 of file opengl\+\_\+errors.\+h.
+

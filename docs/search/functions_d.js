@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['physical_5fdevice_834',['physical_device',['../classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1physical__device.html#aaf44d03f25201748d4bae9fcf17dba8e',1,'pbr::shared::apis::graphics::vulkan::physical_device']]],
-  ['program_5farguments_835',['program_arguments',['../classpbr_1_1shared_1_1utils_1_1program__arguments.html#a6157a546f14769750e2067e175e5859f',1,'pbr::shared::utils::program_arguments']]]
+  ['operator_1085',['operator',['../classpbr_1_1shared_1_1memory_1_1bytes.html#ad8d65b3d1e2e84b2e25cbe95cac38414',1,'pbr::shared::memory::bytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1gigabytes.html#a2bb6c81664c9bc71c3c7b368cc066619',1,'pbr::shared::memory::gigabytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1kilobytes.html#a957931b5d3905654bb52ada167da77a1',1,'pbr::shared::memory::kilobytes::operator()'],['../classpbr_1_1shared_1_1memory_1_1megabytes.html#a9366a8ad49a1c58ac334227485230ca2',1,'pbr::shared::memory::megabytes::operator()']]],
+  ['operator_20delete_1086',['operator delete',['../memory_2basic__allocators_8cpp.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#afa145befcf5e7b83424408ca503c8637',1,'operator delete(void *ptr) noexcept:&#160;basic_allocators.cpp']]],
+  ['operator_20new_1087',['operator new',['../memory_2basic__allocators_8cpp.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp'],['../basic__allocators_8h.html#a205ed048fdf5259c2e8e0cb60ee8f719',1,'operator new(size_t size):&#160;basic_allocators.cpp']]],
+  ['operator_2b_1088',['operator+',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a46ec1ce87c6c43715b9b26c627333edc',1,'pbr::shared::memory::bytes']]],
+  ['operator_2d_1089',['operator-',['../classpbr_1_1shared_1_1memory_1_1bytes.html#a78e9843538f3eb31c8300bbf5610ab2c',1,'pbr::shared::memory::bytes']]],
+  ['operator_3d_3d_1090',['operator==',['../classpbr_1_1shared_1_1data_1_1settings.html#aee9b8805ec62efb16cbd75c066bab368',1,'pbr::shared::data::settings::operator==()'],['../structpbr_1_1shared_1_1utils_1_1uri.html#a99715a4047df2f44ac7ca4bb4bb4e88e',1,'pbr::shared::utils::uri::operator==()']]]
 ];

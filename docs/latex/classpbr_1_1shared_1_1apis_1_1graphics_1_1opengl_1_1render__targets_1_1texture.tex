@@ -1,0 +1,178 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture}\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+
+
+An in-\/memory texture.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a39a8c6cb39176857d2761e6f6422bd90}{texture}} (\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} width, \mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} height, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1c4623bb4b82b4f3f74cc60ef5a0f98d}{$\sim$texture}} () override
+\begin{DoxyCompactList}\small\item\em Destroys this texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a13203592da7eee0c8589ea7e77fdc4d2}{bind}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Binds this render target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1b4cf98b4b48182ef7eb9829b6cc95c2}{unbind}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Unbinds this render target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_ac89b62f4fc755f12f3c5b69c88844660}{clear}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Clears this texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_add490ab4671205f30d90ddc8c4872b11}{resize}} (\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} width, \mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}} height) noexcept override
+\item 
+G\+Luint \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a00134cf6c36a897ffb59f4ecac14db52}{texture\+\_\+id}} () const noexcept override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An in-\/memory texture. 
+
+Definition at line 12 of file texture.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a39a8c6cb39176857d2761e6f6422bd90}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a39a8c6cb39176857d2761e6f6422bd90}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!texture@{texture}}
+\index{texture@{texture}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{texture()}{texture()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{width,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{height,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs this texture 
+\begin{DoxyParams}{Parameters}
+{\em width} & The width of the texture \\
+\hline
+{\em height} & The height of the texture \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file texture.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1c4623bb4b82b4f3f74cc60ef5a0f98d}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1c4623bb4b82b4f3f74cc60ef5a0f98d}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!````~texture@{$\sim$texture}}
+\index{````~texture@{$\sim$texture}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{$\sim$texture()}{~texture()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::$\sim$texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Destroys this texture. 
+
+
+
+Definition at line 30 of file texture.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a13203592da7eee0c8589ea7e77fdc4d2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a13203592da7eee0c8589ea7e77fdc4d2}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!bind@{bind}}
+\index{bind@{bind}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Binds this render target. 
+
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_abbcce9cbe264e9ff8ec720e4110f3281}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target}}.
+
+
+
+Definition at line 7 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_ac89b62f4fc755f12f3c5b69c88844660}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_ac89b62f4fc755f12f3c5b69c88844660}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!clear@{clear}}
+\index{clear@{clear}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Clears this texture. 
+
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_aadc45a555cc9e1765b7f5e18bef1ee56}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target}}.
+
+
+
+Definition at line 17 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_add490ab4671205f30d90ddc8c4872b11}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_add490ab4671205f30d90ddc8c4872b11}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!resize@{resize}}
+\index{resize@{resize}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{width,  }\item[{\mbox{\hyperlink{namespacepbr_1_1shared_a91b3f529403e68c9c766ad9fdb7b5b28}{pixels}}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Resizes this render target 
+\begin{DoxyParams}{Parameters}
+{\em width} & The width \\
+\hline
+{\em height} & The height \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad03eaff153faa4dadba2ea832f01400a}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target}}.
+
+
+
+Definition at line 22 of file texture.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a00134cf6c36a897ffb59f4ecac14db52}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a00134cf6c36a897ffb59f4ecac14db52}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!texture\_id@{texture\_id}}
+\index{texture\_id@{texture\_id}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{texture\_id()}{texture\_id()}}
+{\footnotesize\ttfamily G\+Luint pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::texture\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+Returns the backing texture id for this target \begin{DoxyReturn}{Returns}
+The texture id 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_ad4542104aac98aea9799d4d3ad9d94a0}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target}}.
+
+
+
+Definition at line 52 of file texture.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1b4cf98b4b48182ef7eb9829b6cc95c2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1render__targets_1_1texture_a1b4cf98b4b48182ef7eb9829b6cc95c2}} 
+\index{pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}!unbind@{unbind}}
+\index{unbind@{unbind}!pbr::shared::apis::graphics::opengl::render\_targets::texture@{pbr::shared::apis::graphics::opengl::render\_targets::texture}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::render\+\_\+targets\+::texture\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Unbinds this render target. 
+
+
+
+Implements \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1irender__target_a732fd5c2f8b3bfffa0dc8728a25d28d0}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::irender\+\_\+target}}.
+
+
+
+Definition at line 13 of file texture.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/render\+\_\+targets/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+src/shared/apis/graphics/opengl/render\+\_\+targets/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

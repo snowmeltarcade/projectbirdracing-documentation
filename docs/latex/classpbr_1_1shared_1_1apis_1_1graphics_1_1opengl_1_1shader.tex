@@ -1,0 +1,85 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}\index{pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}}
+
+
+Wraps an Open\+GL shader.  
+
+
+
+
+{\ttfamily \#include $<$shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae117cc8bf46da33cd00225711fb1806f}{shader}} (const std\+::filesystem\+::path \&path, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&data\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_a7d59ed3b2f9e09cf6168baf4ab65d4da}{$\sim$shader}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this shader. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae2da7a6cfd8f744517ad4dda7415be78}{native\+\_\+id}} () const noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wraps an Open\+GL shader. 
+
+Definition at line 13 of file shader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae117cc8bf46da33cd00225711fb1806f}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae117cc8bf46da33cd00225711fb1806f}} 
+\index{pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}!shader@{shader}}
+\index{shader@{shader}!pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}}
+\doxysubsubsection{\texorpdfstring{shader()}{shader()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+::shader (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&}]{data\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates this shader 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the shader \\
+\hline
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file shader.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_a7d59ed3b2f9e09cf6168baf4ab65d4da}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_a7d59ed3b2f9e09cf6168baf4ab65d4da}} 
+\index{pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}!````~shader@{$\sim$shader}}
+\index{````~shader@{$\sim$shader}!pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}}
+\doxysubsubsection{\texorpdfstring{$\sim$shader()}{~shader()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+::$\sim$shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys this shader. 
+
+
+
+Definition at line 30 of file shader.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae2da7a6cfd8f744517ad4dda7415be78}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader_ae2da7a6cfd8f744517ad4dda7415be78}} 
+\index{pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}!native\_id@{native\_id}}
+\index{native\_id@{native\_id}!pbr::shared::apis::graphics::opengl::shader@{pbr::shared::apis::graphics::opengl::shader}}
+\doxysubsubsection{\texorpdfstring{native\_id()}{native\_id()}}
+{\footnotesize\ttfamily G\+Luint pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+::native\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns the native id \begin{DoxyReturn}{Returns}
+The native id 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file shader.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader_8h}{shader.\+h}}\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader_8cpp}{shader.\+cpp}}\end{DoxyCompactItemize}

@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('tests_2data_2data__manager_8cpp_source
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacepbr_1_1shared.html">pbr::shared</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacepbr_1_1shared_1_1data.html">pbr::shared::data</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">   11</a></span>&#160;<a class="code" href="classpbr_1_1shared_1_1data_1_1data__manager.html">data_manager</a> <a class="code" href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">create_data_manager</a>() {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">static</span> <a class="code" href="classpbr_1_1shared_1_1data_1_1data__manager.html">data_manager</a> <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>() {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">auto</span> datetime_manager = std::make_shared&lt;apis::datetime::datetime_manager&gt;();</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> log_manager = std::make_shared&lt;apis::logging::log_manager&gt;(datetime_manager);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">auto</span> file_manager = std::make_shared&lt;apis::file::file_manager&gt;();</div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('tests_2data_2data__manager_8cpp_source
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">   28</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_settings - invalid path - returns empty&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">create_data_manager</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">auto</span> path = <span class="stringliteral">&quot;invalid&quot;</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('tests_2data_2data__manager_8cpp_source
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#a03f176350606d8c70cdc0b4c9ae52436">   38</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_settings - invalid settings file - returns empty&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">create_data_manager</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">auto</span> path = <span class="stringliteral">&quot;invalid_settings&quot;</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('tests_2data_2data__manager_8cpp_source
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#aa3b72c17a03e5679d2b1c69abe4e56e0">   48</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_settings - valid settings file - returns valid settings&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">create_data_manager</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">auto</span> path = <span class="stringliteral">&quot;settings&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -156,19 +156,77 @@ $(document).ready(function(){initNavTree('tests_2data_2data__manager_8cpp_source
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    REQUIRE(settings2);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    REQUIRE(settings2-&gt;get_as_float(<span class="stringliteral">&quot;float3&quot;</span>) == 987.654f);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    REQUIRE(settings2-&gt;get_as_float(<span class="stringliteral">&quot;float4&quot;</span>) == 123.123f);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> array1 = result-&gt;get_as_settings_array(<span class="stringliteral">&quot;array1&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    REQUIRE(array1);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    REQUIRE(array1-&gt;size() == 2);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    REQUIRE((*array1)[0].get(<span class="stringliteral">&quot;string1&quot;</span>) == <span class="stringliteral">&quot;value1&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    REQUIRE((*array1)[0].get(<span class="stringliteral">&quot;string2&quot;</span>) == <span class="stringliteral">&quot;value2&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    REQUIRE((*array1)[1].get(<span class="stringliteral">&quot;string3&quot;</span>) == <span class="stringliteral">&quot;value3&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    REQUIRE((*array1)[1].get(<span class="stringliteral">&quot;string4&quot;</span>) == <span class="stringliteral">&quot;value4&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#adab3f2db29269eb1f72d551d234584e5">   89</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_shader_code - invalid path - returns empty&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">auto</span> path = <span class="stringliteral">&quot;invalid&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">auto</span> result = dm.read_shader_code(path);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    REQUIRE_FALSE(result);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#a63fb12d914b1a8da48715731d7cfbdb8">   99</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_shader_code - valid path - returns shader code&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">auto</span> path = <span class="stringliteral">&quot;shader_vertex&quot;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">auto</span> result = dm.read_shader_code(path);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    REQUIRE(result);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">auto</span> expected = <span class="stringliteral">&quot;#version 330 core\n&quot;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="stringliteral">&quot;layout (location = 0) in vec2 aPos;\n&quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    <span class="stringliteral">&quot;void main()\n&quot;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="stringliteral">&quot;{\n&quot;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="stringliteral">&quot;    gl_Position = vec4(aPos, 0, 1);\n&quot;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="stringliteral">&quot;}\n&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    REQUIRE(result-&gt;code == expected);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="tests_2data_2data__manager_8cpp.html#a5d512948732eb8746b69298cd93bb285">  119</a></span>&#160;<a class="code" href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a>(<span class="stringliteral">&quot;read_shader_code - valid path - returns correct shader types&quot;</span>, <span class="stringliteral">&quot;[shared/data]&quot;</span>) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">auto</span> dm = <a class="code" href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::vector&lt;std::pair&lt;std::string, apis::graphics::shader_types&gt;&gt; test_data {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        { <span class="stringliteral">&quot;shader_vertex&quot;</span>, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a">apis::graphics::shader_types::vertex</a>, },</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        { <span class="stringliteral">&quot;shader_fragment&quot;</span>, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1">apis::graphics::shader_types::fragment</a>, },</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        { <span class="stringliteral">&quot;shader_unknown&quot;</span>, <a class="code" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1">apis::graphics::shader_types::fragment</a>, },</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    };</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [path, expected] : test_data) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">auto</span> result = dm.read_shader_code(path, expected);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        REQUIRE(result);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        REQUIRE(result-&gt;type == expected);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="afile__manager_8h_html"><div class="ttname"><a href="file__manager_8h.html">file_manager.h</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_1_1data_html"><div class="ttname"><a href="namespacepbr_1_1shared_1_1data.html">pbr::shared::data</a></div><div class="ttdef"><b>Definition:</b> <a href="data_2data__manager_8cpp_source.html#l00005">data_manager.cpp:5</a></div></div>
-<div class="ttc" id="atests_2data_2data__manager_8cpp_html_a2bd1713f830eecb36b53ee70859a2df0"><div class="ttname"><a href="tests_2data_2data__manager_8cpp.html#a2bd1713f830eecb36b53ee70859a2df0">create_data_manager</a></div><div class="ttdeci">data_manager create_data_manager()</div><div class="ttdef"><b>Definition:</b> <a href="tests_2data_2data__manager_8cpp_source.html#l00011">data_manager.cpp:11</a></div></div>
 <div class="ttc" id="atest__utils_8h_html"><div class="ttname"><a href="test__utils_8h.html">test_utils.h</a></div></div>
 <div class="ttc" id="adatetime__manager_8h_html"><div class="ttname"><a href="datetime__manager_8h.html">datetime_manager.h</a></div></div>
 <div class="ttc" id="adata__manager_8h_html"><div class="ttname"><a href="data__manager_8h.html">data_manager.h</a></div></div>
 <div class="ttc" id="atest__utils_8cpp_html_ae85d71ee2d3b4fa81477f2eae9628d73"><div class="ttname"><a href="test__utils_8cpp.html#ae85d71ee2d3b4fa81477f2eae9628d73">get_test_data_file_path</a></div><div class="ttdeci">std::filesystem::path get_test_data_file_path(std::filesystem::path relative_path) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="test__utils_8cpp_source.html#l00005">test_utils.cpp:5</a></div></div>
 <div class="ttc" id="anamespacepbr_1_1shared_html"><div class="ttname"><a href="namespacepbr_1_1shared.html">pbr::shared</a></div><div class="ttdef"><b>Definition:</b> <a href="apis_2datetime_2datetime__manager_8cpp_source.html#l00007">datetime_manager.cpp:7</a></div></div>
-<div class="ttc" id="aclasspbr_1_1shared_1_1data_1_1data__manager_html"><div class="ttname"><a href="classpbr_1_1shared_1_1data_1_1data__manager.html">pbr::shared::data::data_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="data__manager_8h_source.html#l00015">data_manager.h:15</a></div></div>
+<div class="ttc" id="aclasspbr_1_1shared_1_1data_1_1data__manager_html"><div class="ttname"><a href="classpbr_1_1shared_1_1data_1_1data__manager.html">pbr::shared::data::data_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="data__manager_8h_source.html#l00016">data_manager.h:16</a></div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_html_aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a02e918fc72837d7c2689be88684dceb1">pbr::shared::apis::graphics::shader_types::fragment</a></div><div class="ttdeci">@ fragment</div><div class="ttdoc">A fragment shader.</div></div>
+<div class="ttc" id="anamespacepbr_1_1shared_1_1apis_1_1graphics_html_aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a"><div class="ttname"><a href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#aa2cdd3e350d36cd64970a2179cffe958a2b5bc093b09bd81f51de433bde9d202a">pbr::shared::apis::graphics::shader_types::vertex</a></div><div class="ttdeci">@ vertex</div><div class="ttdoc">A vertex shader.</div></div>
 <div class="ttc" id="alog__manager_8h_html"><div class="ttname"><a href="log__manager_8h.html">log_manager.h</a></div></div>
+<div class="ttc" id="aserver_2main_8cpp_html_a15cfef36dbbadb1d1292a193c0e4c5fc"><div class="ttname"><a href="server_2main_8cpp.html#a15cfef36dbbadb1d1292a193c0e4c5fc">create_data_manager</a></div><div class="ttdeci">std::shared_ptr&lt; data::data_manager &gt; create_data_manager(const std::shared_ptr&lt; apis::logging::ilog_manager &gt; log_manager, const std::filesystem::path &amp;executable_path)</div><div class="ttdef"><b>Definition:</b> <a href="server_2main_8cpp_source.html#l00027">main.cpp:27</a></div></div>
 <div class="ttc" id="atests_2data_2data__manager_8cpp_html_a0979e5adfe1073ce6fd11f39c9c21c0a"><div class="ttname"><a href="tests_2data_2data__manager_8cpp.html#a0979e5adfe1073ce6fd11f39c9c21c0a">TEST_CASE</a></div><div class="ttdeci">TEST_CASE(&quot;read_settings - invalid path - returns empty&quot;, &quot;[shared/data]&quot;)</div><div class="ttdoc">read_settings</div><div class="ttdef"><b>Definition:</b> <a href="tests_2data_2data__manager_8cpp_source.html#l00028">data_manager.cpp:28</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

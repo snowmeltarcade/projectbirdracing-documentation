@@ -1,0 +1,36 @@
+\hypertarget{opengl_2graphics__manager_8cpp}{}\doxysection{src/shared/apis/graphics/opengl/graphics\+\_\+manager.cpp File Reference}
+\label{opengl_2graphics__manager_8cpp}\index{src/shared/apis/graphics/opengl/graphics\_manager.cpp@{src/shared/apis/graphics/opengl/graphics\_manager.cpp}}
+{\ttfamily \#include \char`\"{}opengl\+\_\+dependencies.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/windowing/application\+\_\+window.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}graphics\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opengl\+\_\+errors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/graphics/color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mesh\+\_\+shapes.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacepbr}{pbr}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared}{pbr\+::shared}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis}{pbr\+::shared\+::apis}}
+\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics}{pbr\+::shared\+::apis\+::graphics}}
+\begin{DoxyCompactList}\small\item\em Separate out any Vulkan specific conversions needed to use the {\ttfamily \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1performance__settings}{performance\+\_\+settings}}} struct. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl}{pbr\+::shared\+::apis\+::graphics\+::opengl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a7fb6cf9e26aa2ca5bee537794cee3dab}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::set\+\_\+api\+\_\+version}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets the api version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a2ebd75e2a2f355c80b84e6186f5beb44}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::set\+\_\+clear\+\_\+color}} (color color) noexcept
+\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a0c1535eefb920322d97256822ca282f1}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+stencil\+\_\+size}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets the stencil buffer size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_a65b49d0f51264a72d164c139e6c71661}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+blending}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets up blending. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1opengl_ac18e20f7fb472d9d1d42229e8b49083f}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::setup\+\_\+depth\+\_\+testing}} () noexcept
+\begin{DoxyCompactList}\small\item\em Sets up depth testing. \end{DoxyCompactList}\end{DoxyCompactItemize}

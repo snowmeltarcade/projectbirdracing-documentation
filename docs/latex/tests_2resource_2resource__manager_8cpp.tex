@@ -1,0 +1,102 @@
+\hypertarget{tests_2resource_2resource__manager_8cpp}{}\doxysection{src/shared/tests/resource/resource\+\_\+manager.cpp File Reference}
+\label{tests_2resource_2resource__manager_8cpp}\index{src/shared/tests/resource/resource\_manager.cpp@{src/shared/tests/resource/resource\_manager.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test\+\_\+utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/resource/resource\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/datetime/datetime\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/logging/log\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}shared/apis/file/file\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtest__resource__manager}{test\+\_\+resource\+\_\+manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_ab17d464d8891d3fb0833b4dd87dd28f3}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ invalid name -\/ returns nullptr\char`\"{}, \char`\"{}\mbox{[}shared/resource/\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}}\mbox{]}\char`\"{})
+\begin{DoxyCompactList}\small\item\em get \end{DoxyCompactList}\item 
+\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_acbd3dfa0a3f17728799774a1176a645e}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} not loaded -\/ loads \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}}\char`\"{}, \char`\"{}\mbox{[}shared/resource/\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}}\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_ad241eb75fba0abf8d9654cbd20339b6a}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} loaded -\/ loads \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} only once\char`\"{}, \char`\"{}\mbox{[}shared/resource/\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}}\mbox{]}\char`\"{})
+\item 
+\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_a680bf2a44500e44d1632c955da9f4f74}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} not loaded -\/ passes correct path to load\char`\"{}, \char`\"{}\mbox{[}shared/resource/\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}}\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+auto \mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_ae33cfc02f16864551eafa544f626a214}{g\+\_\+datetime\+\_\+manager}} = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1datetime_1_1datetime__manager}{apis\+::datetime\+::datetime\+\_\+manager}}$>$()
+\item 
+auto \mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_a71d5361767e3724d4e014c31dcae71dc}{g\+\_\+log\+\_\+manager}} = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}{apis\+::logging\+::log\+\_\+manager}}$>$(\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_ae33cfc02f16864551eafa544f626a214}{g\+\_\+datetime\+\_\+manager}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_ab17d464d8891d3fb0833b4dd87dd28f3}\label{tests_2resource_2resource__manager_8cpp_ab17d464d8891d3fb0833b4dd87dd28f3}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ invalid name -\/ returns nullptr\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/resource/resource\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+get 
+
+
+
+Definition at line 50 of file resource\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_ad241eb75fba0abf8d9654cbd20339b6a}\label{tests_2resource_2resource__manager_8cpp_ad241eb75fba0abf8d9654cbd20339b6a}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} loaded -\/ loads \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} only once\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/resource/resource\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file resource\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_acbd3dfa0a3f17728799774a1176a645e}\label{tests_2resource_2resource__manager_8cpp_acbd3dfa0a3f17728799774a1176a645e}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} not loaded -\/ loads \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}}\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/resource/resource\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file resource\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_a680bf2a44500e44d1632c955da9f4f74}\label{tests_2resource_2resource__manager_8cpp_a680bf2a44500e44d1632c955da9f4f74}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}get -\/ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1item}{item}} not loaded -\/ passes correct path to load\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}shared/resource/resource\+\_\+manager\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file resource\+\_\+manager.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_ae33cfc02f16864551eafa544f626a214}\label{tests_2resource_2resource__manager_8cpp_ae33cfc02f16864551eafa544f626a214}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!g\_datetime\_manager@{g\_datetime\_manager}}
+\index{g\_datetime\_manager@{g\_datetime\_manager}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_datetime\_manager}{g\_datetime\_manager}}
+{\footnotesize\ttfamily auto g\+\_\+datetime\+\_\+manager = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1datetime_1_1datetime__manager}{apis\+::datetime\+::datetime\+\_\+manager}}$>$()}
+
+
+
+Definition at line 14 of file resource\+\_\+manager.\+cpp.
+
+\mbox{\Hypertarget{tests_2resource_2resource__manager_8cpp_a71d5361767e3724d4e014c31dcae71dc}\label{tests_2resource_2resource__manager_8cpp_a71d5361767e3724d4e014c31dcae71dc}} 
+\index{resource\_manager.cpp@{resource\_manager.cpp}!g\_log\_manager@{g\_log\_manager}}
+\index{g\_log\_manager@{g\_log\_manager}!resource\_manager.cpp@{resource\_manager.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_log\_manager}{g\_log\_manager}}
+{\footnotesize\ttfamily auto g\+\_\+log\+\_\+manager = std\+::make\+\_\+shared$<$\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1log__manager}{apis\+::logging\+::log\+\_\+manager}}$>$(\mbox{\hyperlink{tests_2resource_2resource__manager_8cpp_ae33cfc02f16864551eafa544f626a214}{g\+\_\+datetime\+\_\+manager}})}
+
+
+
+Definition at line 15 of file resource\+\_\+manager.\+cpp.
+

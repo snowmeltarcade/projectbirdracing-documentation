@@ -83,7 +83,7 @@ $(document).ready(function(){initNavTree('namespacepbr_1_1shared_1_1apis_1_1wind
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">pbr::shared::apis::windowing Namespace Reference</div>  </div>
 </div><!--header-->
@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('namespacepbr_1_1shared_1_1apis_1_1wind
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1application__window.html">application_window</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1config.html">config</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The windowing configuration settings.  <a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window.html">console_window</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A console window outputs standard output channels, such as <code>stdout</code>, <code>stderr</code> etc...  <a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1console__window.html#details">More...</a><br /></td></tr>
@@ -102,34 +105,142 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iwindow__manager.html">iwindow_manager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution.html">resolution</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A screen resolution.  <a href="structpbr_1_1shared_1_1apis_1_1windowing_1_1resolution.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1resolutions.html">resolutions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages the resolutions available for a window.  <a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1resolutions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html">window_manager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This manager creates and manages both console and application windows.  <a href="classpbr_1_1shared_1_1apis_1_1windowing_1_1window__manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">window_size</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a1b20ffc44b2de3ca5e192cac7f72dda0"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#a1b20ffc44b2de3ca5e192cac7f72dda0">pixels</a></td></tr>
-<tr class="memdesc:a1b20ffc44b2de3ca5e192cac7f72dda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Screen pixels.  <a href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#a1b20ffc44b2de3ca5e192cac7f72dda0">More...</a><br /></td></tr>
-<tr class="separator:a1b20ffc44b2de3ca5e192cac7f72dda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a77e08ad97d0289d9496c0614670c340f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#a77e08ad97d0289d9496c0614670c340f">api_window_flag</a> (<a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">graphics::apis</a> api)</td></tr>
+<tr class="separator:a77e08ad97d0289d9496c0614670c340f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b7498156d3b97aa757205bf7a3f5cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#aa5b7498156d3b97aa757205bf7a3f5cb">get_value_or_default</a> (<a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;settings, const std::string &amp;key, int default_value)</td></tr>
+<tr class="separator:aa5b7498156d3b97aa757205bf7a3f5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec7f0ab57851212dca763d4746e59a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#a7ec7f0ab57851212dca763d4746e59a8">get_value_or_default</a> (<a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;settings, const std::string &amp;key, bool default_value)</td></tr>
+<tr class="separator:a7ec7f0ab57851212dca763d4746e59a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a1b20ffc44b2de3ca5e192cac7f72dda0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b20ffc44b2de3ca5e192cac7f72dda0">&#9670;&nbsp;</a></span>pixels</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a77e08ad97d0289d9496c0614670c340f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e08ad97d0289d9496c0614670c340f">&#9670;&nbsp;</a></span>api_window_flag()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint32_t <a class="el" href="namespacepbr_1_1shared_1_1apis_1_1windowing.html#a1b20ffc44b2de3ca5e192cac7f72dda0">pbr::shared::apis::windowing::pixels</a></td>
+          <td class="memname">int pbr::shared::apis::windowing::api_window_flag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared_1_1apis_1_1graphics.html#af88dccbcd9fcc6a05396c6e33582393e">graphics::apis</a>&#160;</td>
+          <td class="paramname"><em>api</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Returns the window flag for the passed api </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">api</td><td>The graphics api </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The window flag for the passed api </dd></dl>
 
-<p>Screen pixels. </p>
+<p class="definition">Definition at line <a class="el" href="application__window_8cpp_source.html#l00014">14</a> of file <a class="el" href="application__window_8cpp_source.html">application_window.cpp</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="types_8h_source.html#l00007">7</a> of file <a class="el" href="types_8h_source.html">types.h</a>.</p>
+</div>
+</div>
+<a id="a7ec7f0ab57851212dca763d4746e59a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec7f0ab57851212dca763d4746e59a8">&#9670;&nbsp;</a></span>get_value_or_default() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pbr::shared::apis::windowing::get_value_or_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value represented by the passed key, or the default value if the key is not found </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>The settings to read from </td></tr>
+    <tr><td class="paramname">key</td><td>The key </td></tr>
+    <tr><td class="paramname">default_value</td><td>The default value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value represented by the key or the default value if the key is not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="apis_2windowing_2config_8cpp_source.html#l00024">24</a> of file <a class="el" href="apis_2windowing_2config_8cpp_source.html">config.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa5b7498156d3b97aa757205bf7a3f5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b7498156d3b97aa757205bf7a3f5cb">&#9670;&nbsp;</a></span>get_value_or_default() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pbr::shared::apis::windowing::get_value_or_default </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classpbr_1_1shared_1_1data_1_1settings.html">data::settings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the value represented by the passed key, or the default value if the key is not found </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>The settings to read from </td></tr>
+    <tr><td class="paramname">key</td><td>The key </td></tr>
+    <tr><td class="paramname">default_value</td><td>The default value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value represented by the key or the default value if the key is not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="apis_2windowing_2config_8cpp_source.html#l00011">11</a> of file <a class="el" href="apis_2windowing_2config_8cpp_source.html">config.cpp</a>.</p>
 
 </div>
 </div>

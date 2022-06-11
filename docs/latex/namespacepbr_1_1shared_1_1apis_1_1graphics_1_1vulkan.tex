@@ -3,6 +3,8 @@
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1buffer}{buffer}}
+\begin{DoxyCompactList}\small\item\em Manages the lifetime of a {\ttfamily Vk\+Buffer} \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__buffer}{command\+\_\+buffer}}
 \begin{DoxyCompactList}\small\item\em A command buffer. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1command__pool}{command\+\_\+pool}}
@@ -15,6 +17,8 @@ class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1fence
 \begin{DoxyCompactList}\small\item\em Manages the lifecycle of a {\ttfamily Vk\+Fence} \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1framebuffer}{framebuffer}}
 \item 
+class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1graphics__manager}{graphics\+\_\+manager}}
+\begin{DoxyCompactList}\small\item\em Handles the Vulkan graphics A\+PI and rendering processes. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image}{image}}
 \begin{DoxyCompactList}\small\item\em An image. This will also contain the image view. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1image__view}{image\+\_\+view}}
@@ -41,6 +45,8 @@ class \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_1_1windo
 \begin{DoxyCompactList}\small\item\em A renderable surface created from a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
+\item 
+Vk\+Buffer\+Create\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ac6be376202e0cca83314dba7513c7ffa}{create\+\_\+buffer\+\_\+create\+\_\+info}} (uint32\+\_\+t size, Vk\+Buffer\+Usage\+Flags flags)
 \item 
 Vk\+Command\+Buffer\+Begin\+Info \mbox{\hyperlink{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_a1d97fbbc2f7720c73efce2d5925c10d1}{create\+\_\+begin\+\_\+info}} () noexcept
 \item 
@@ -212,6 +218,26 @@ The buffer begin info struct
 
 
 Definition at line 45 of file command\+\_\+buffer.\+cpp.
+
+\mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ac6be376202e0cca83314dba7513c7ffa}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ac6be376202e0cca83314dba7513c7ffa}} 
+\index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_buffer\_create\_info@{create\_buffer\_create\_info}}
+\index{create\_buffer\_create\_info@{create\_buffer\_create\_info}!pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}}
+\doxysubsubsection{\texorpdfstring{create\_buffer\_create\_info()}{create\_buffer\_create\_info()}}
+{\footnotesize\ttfamily Vk\+Buffer\+Create\+Info pbr\+::shared\+::apis\+::graphics\+::vulkan\+::create\+\_\+buffer\+\_\+create\+\_\+info (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{size,  }\item[{Vk\+Buffer\+Usage\+Flags}]{flags }\end{DoxyParamCaption})}
+
+Creates a buffer create info struct 
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the buffer to create in bytes \\
+\hline
+{\em flags} & The usage flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The buffer create info struct 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file buffer.\+cpp.
 
 \mbox{\Hypertarget{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}\label{namespacepbr_1_1shared_1_1apis_1_1graphics_1_1vulkan_ad61fb31220d28c59f2d100df1683c101}} 
 \index{pbr::shared::apis::graphics::vulkan@{pbr::shared::apis::graphics::vulkan}!create\_command\_pool\_create\_info@{create\_command\_pool\_create\_info}}

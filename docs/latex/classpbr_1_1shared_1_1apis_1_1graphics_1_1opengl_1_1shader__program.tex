@@ -1,0 +1,242 @@
+\hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program}{}\doxysection{pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program Class Reference}
+\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program}\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+
+
+A set of shaders bound together to form a program.  
+
+
+
+
+{\ttfamily \#include $<$shader\+\_\+program.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_1_1texture__reference}{texture\+\_\+reference}}
+\begin{DoxyCompactList}\small\item\em Binds a texture to a uniform name in this shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ad9bd96c9cf703f99d296bebd07f006e4}{shader\+\_\+program}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager)
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ae2c062ee31fe606a2cd7dcb643ad3ef2}{$\sim$shader\+\_\+program}} ()
+\begin{DoxyCompactList}\small\item\em Destroys this shader program. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a486203ce7d6cbacdadbe047725fac28a}{attach\+\_\+shader}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}} $>$ \&\mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}}) noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ada88911e949630ec5932c87b8f2c697f}{link}} () noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_af756ee03a914e2abf7ee46a2a3fe28ca}{use}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Uses this program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a4fb8166b58c93363dbbc9cb66a5b3940}{clear\+\_\+use}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Resets the used program. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a979ad3aac81040620e0499361d92f2b7}{id}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the native id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a73af97b6fceaae78dfb2e0320d4432dc}{bind\+\_\+textures}} (const std\+::vector$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_1_1texture__reference}{texture\+\_\+reference}} $>$ \&textures) noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a392fc182c3f2bd10e18c6bcbade2b739}{set\+\_\+uniform}} (const std\+::string \&name, int value) const noexcept
+\item 
+bool \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a6e379966929e98a84e1021d4e61e3b30}{set\+\_\+uniform}} (const std\+::string \&name, const glm\+::mat4 \&value) const noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program}{shader\+\_\+program}} $>$ $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_aba1f37fafaa063c1a46871255c4a2af2}{create}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$ log\+\_\+manager, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{shader\+\_\+manager}} $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{shader\+\_\+manager}}, std\+::initializer\+\_\+list$<$ std\+::string $>$ names) noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A set of shaders bound together to form a program. 
+
+Definition at line 13 of file shader\+\_\+program.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ad9bd96c9cf703f99d296bebd07f006e4}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ad9bd96c9cf703f99d296bebd07f006e4}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!shader\_program@{shader\_program}}
+\index{shader\_program@{shader\_program}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{shader\_program()}{shader\_program()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::shader\+\_\+program (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates this shader program 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file shader\+\_\+program.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ae2c062ee31fe606a2cd7dcb643ad3ef2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ae2c062ee31fe606a2cd7dcb643ad3ef2}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!````~shader\_program@{$\sim$shader\_program}}
+\index{````~shader\_program@{$\sim$shader\_program}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{$\sim$shader\_program()}{~shader\_program()}}
+{\footnotesize\ttfamily pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::$\sim$shader\+\_\+program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroys this shader program. 
+
+
+
+Definition at line 23 of file shader\+\_\+program.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a486203ce7d6cbacdadbe047725fac28a}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a486203ce7d6cbacdadbe047725fac28a}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!attach\_shader@{attach\_shader}}
+\index{attach\_shader@{attach\_shader}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{attach\_shader()}{attach\_shader()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::attach\+\_\+shader (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader}{shader}} $>$ \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Attaches a shader to this program 
+\begin{DoxyParams}{Parameters}
+{\em shader} & The shader to attach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} if this shader is already linked 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a73af97b6fceaae78dfb2e0320d4432dc}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a73af97b6fceaae78dfb2e0320d4432dc}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!bind\_textures@{bind\_textures}}
+\index{bind\_textures@{bind\_textures}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{bind\_textures()}{bind\_textures()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::bind\+\_\+textures (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_1_1texture__reference}{texture\+\_\+reference}} $>$ \&}]{textures }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Binds the texture names to their locations. The location is set to the index of the name in the vector. This clears any previously set textures. 
+\begin{DoxyParams}{Parameters}
+{\em textures} & The texture references \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a4fb8166b58c93363dbbc9cb66a5b3940}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a4fb8166b58c93363dbbc9cb66a5b3940}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!clear\_use@{clear\_use}}
+\index{clear\_use@{clear\_use}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{clear\_use()}{clear\_use()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::clear\+\_\+use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Resets the used program. 
+
+
+
+Definition at line 53 of file shader\+\_\+program.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_aba1f37fafaa063c1a46871255c4a2af2}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_aba1f37fafaa063c1a46871255c4a2af2}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!create@{create}}
+\index{create@{create}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily std\+::optional$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program}{shader\+\_\+program}} $>$ $>$ pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::create (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{logging\+::ilog\+\_\+manager}} $>$}]{log\+\_\+manager,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{shader\+\_\+manager}} $>$}]{shader\+\_\+manager,  }\item[{std\+::initializer\+\_\+list$<$ std\+::string $>$}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+Creates a shader program from the passed shader names 
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+manager} & The log manager \\
+\hline
+{\em \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager}{shader\+\_\+manager}}} & The shader manager \\
+\hline
+{\em names} & The names of the shaders to attach \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created shader program, else empty on error. If there are no names, empty is also returned. 
+\end{DoxyReturn}
+
+
+Definition at line 7 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a979ad3aac81040620e0499361d92f2b7}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a979ad3aac81040620e0499361d92f2b7}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!id@{id}}
+\index{id@{id}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily G\+Luint pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Returns the native id. 
+
+
+
+Definition at line 59 of file shader\+\_\+program.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ada88911e949630ec5932c87b8f2c697f}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_ada88911e949630ec5932c87b8f2c697f}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!link@{link}}
+\index{link@{link}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Links this program \begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} if this shader is already linked 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a6e379966929e98a84e1021d4e61e3b30}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a6e379966929e98a84e1021d4e61e3b30}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!set\_uniform@{set\_uniform}}
+\index{set\_uniform@{set\_uniform}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{set\_uniform()}{set\_uniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::set\+\_\+uniform (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::mat4 \&}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets a uniform with the passed name 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the uniform \\
+\hline
+{\em value} & The value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} if the uniform is not found 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a392fc182c3f2bd10e18c6bcbade2b739}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_a392fc182c3f2bd10e18c6bcbade2b739}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!set\_uniform@{set\_uniform}}
+\index{set\_uniform@{set\_uniform}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{set\_uniform()}{set\_uniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::set\+\_\+uniform (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{value }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Sets a uniform with the passed name 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the uniform \\
+\hline
+{\em value} & The value to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} upon success, else {\ttfamily false} if the uniform is not found 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file shader\+\_\+program.\+cpp.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_af756ee03a914e2abf7ee46a2a3fe28ca}\label{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__program_af756ee03a914e2abf7ee46a2a3fe28ca}} 
+\index{pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}!use@{use}}
+\index{use@{use}!pbr::shared::apis::graphics::opengl::shader\_program@{pbr::shared::apis::graphics::opengl::shader\_program}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Uses this program. 
+
+
+
+Definition at line 89 of file shader\+\_\+program.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader__program_8h}{shader\+\_\+program.\+h}}\item 
+src/shared/apis/graphics/opengl/\mbox{\hyperlink{shader__program_8cpp}{shader\+\_\+program.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager}{}\doxysection{pbr\+::shared\+::resource\+::resource\+\_\+manager$<$ T $>$ Class Template Reference}
+\label{classpbr_1_1shared_1_1resource_1_1resource__manager}\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+
+
+{\ttfamily \#include $<$resource\+\_\+manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a70f9ee4020b975cec27df678a348aa82}{resource\+\_\+manager}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&data\+\_\+manager, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ \&log\+\_\+manager, const std\+::filesystem\+::path \&list\+\_\+path)
+\item 
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_aa82d2ef35d6b4b8dab75b71df6b2d7d3}{$\sim$resource\+\_\+manager}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroys this resource manager. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a21bfd8dd754187faea7734253b4a1c75}{get}} (const std\+::string \&name) noexcept
+\item 
+void \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a5a7bb07c9c9c9612de4577d111947899}{free}} (std\+::shared\+\_\+ptr$<$ T $>$ \&resource) noexcept
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager_a6174fdc8811561506bf0d15138147e6f}{load}} (const std\+::filesystem\+::path \&path) noexcept=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class pbr\+::shared\+::resource\+::resource\+\_\+manager$<$ T $>$}
+
+Manages resources that need allocating and deallocating. When a resource is requested, if it does not exist, it is loaded. When it is returned to the caller, a reference count to it is increased. When that resource is no longer needed, it is returned to this manager. A reference count to it is then decreased. When the reference count is equal to zero, it is deallocated. Resources are loaded using the data manager. 
+
+Definition at line 20 of file resource\+\_\+manager.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager_a70f9ee4020b975cec27df678a348aa82}\label{classpbr_1_1shared_1_1resource_1_1resource__manager_a70f9ee4020b975cec27df678a348aa82}} 
+\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}!resource\_manager@{resource\_manager}}
+\index{resource\_manager@{resource\_manager}!pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resource\_manager()}{resource\_manager()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{pbr\+::shared\+::resource\+::resource\+\_\+manager}}$<$ T $>$\+::\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}} (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1data_1_1data__manager}{data\+::data\+\_\+manager}} $>$ \&}]{data\+\_\+manager,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1logging_1_1ilog__manager}{apis\+::logging\+::ilog\+\_\+manager}} $>$ \&}]{log\+\_\+manager,  }\item[{const std\+::filesystem\+::path \&}]{list\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates this resource manager 
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+manager} & The data manager \\
+\hline
+{\em log\+\_\+manager} & The log manager \\
+\hline
+{\em list\+\_\+path} & The path to the resource list from the {\ttfamily data} directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file resource\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager_aa82d2ef35d6b4b8dab75b71df6b2d7d3}\label{classpbr_1_1shared_1_1resource_1_1resource__manager_aa82d2ef35d6b4b8dab75b71df6b2d7d3}} 
+\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}!````~resource\_manager@{$\sim$resource\_manager}}
+\index{````~resource\_manager@{$\sim$resource\_manager}!pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$resource\_manager()}{~resource\_manager()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{pbr\+::shared\+::resource\+::resource\+\_\+manager}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{resource\+\_\+manager}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroys this resource manager. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager_a5a7bb07c9c9c9612de4577d111947899}\label{classpbr_1_1shared_1_1resource_1_1resource__manager_a5a7bb07c9c9c9612de4577d111947899}} 
+\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}!free@{free}}
+\index{free@{free}!pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{free()}{free()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{pbr\+::shared\+::resource\+::resource\+\_\+manager}}$<$ T $>$\+::free (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T $>$ \&}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Frees the passed resource. If all references to this resource as freed, this resource will be destructed -\/ thus, only call this function when you are sure you no longer want to use the resource. If the resource is freed, the passed ptr will be set to {\ttfamily nullptr}. 
+\begin{DoxyParams}{Parameters}
+{\em resource} & The resource to free \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file resource\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager_a21bfd8dd754187faea7734253b4a1c75}\label{classpbr_1_1shared_1_1resource_1_1resource__manager_a21bfd8dd754187faea7734253b4a1c75}} 
+\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}!get@{get}}
+\index{get@{get}!pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{pbr\+::shared\+::resource\+::resource\+\_\+manager}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Returns a resource 
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the resource to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The item to get. If not found, returns {\ttfamily nullptr} 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file resource\+\_\+manager.\+h.
+
+\mbox{\Hypertarget{classpbr_1_1shared_1_1resource_1_1resource__manager_a6174fdc8811561506bf0d15138147e6f}\label{classpbr_1_1shared_1_1resource_1_1resource__manager_a6174fdc8811561506bf0d15138147e6f}} 
+\index{pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}!load@{load}}
+\index{load@{load}!pbr::shared::resource::resource\_manager$<$ T $>$@{pbr::shared::resource::resource\_manager$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+virtual std\+::shared\+\_\+ptr$<$T$>$ \mbox{\hyperlink{classpbr_1_1shared_1_1resource_1_1resource__manager}{pbr\+::shared\+::resource\+::resource\+\_\+manager}}$<$ T $>$\+::load (\begin{DoxyParamCaption}\item[{const std\+::filesystem\+::path \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}, {\ttfamily [noexcept]}}
+
+This loads a resource 
+\begin{DoxyParams}{Parameters}
+{\em path} & The path os the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The loaded resource 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classtest__resource__manager_a5d62ebc40bef0e4e8f7628ba97535131}{test\+\_\+resource\+\_\+manager}}, and \mbox{\hyperlink{classpbr_1_1shared_1_1apis_1_1graphics_1_1opengl_1_1shader__manager_a56ab1e25f779c66279e412532b4a5d82}{pbr\+::shared\+::apis\+::graphics\+::opengl\+::shader\+\_\+manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/shared/resource/\mbox{\hyperlink{resource__manager_8h}{resource\+\_\+manager.\+h}}\end{DoxyCompactItemize}

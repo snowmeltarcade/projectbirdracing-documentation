@@ -100,8 +100,13 @@ Inheritance diagram for test_application_window:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5ff569558dbe4a8ff3e911a436de5977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">apis::windowing::window_size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__application__window.html#a5ff569558dbe4a8ff3e911a436de5977">get_window_size</a> () const noexcept</td></tr>
-<tr class="separator:a5ff569558dbe4a8ff3e911a436de5977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05516a9c09db8cbe3659f0d41d7d15b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">apis::windowing::window_size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__application__window.html#a05516a9c09db8cbe3659f0d41d7d15b5">get_size</a> () const noexcept override</td></tr>
+<tr class="separator:a05516a9c09db8cbe3659f0d41d7d15b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab91458351cbdbf49760a5a27078afb42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__application__window.html#ab91458351cbdbf49760a5a27078afb42">set_size</a> (<a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>, <a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>, bool) noexcept override</td></tr>
+<tr class="separator:ab91458351cbdbf49760a5a27078afb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0003fefa6aaf1f9b6df6b15e6d54fac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest__application__window.html#a0003fefa6aaf1f9b6df6b15e6d54fac2">update_display</a> () noexcept override</td></tr>
+<tr class="memdesc:a0003fefa6aaf1f9b6df6b15e6d54fac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the display by swapping any buffers.  <a href="classtest__application__window.html#a0003fefa6aaf1f9b6df6b15e6d54fac2">More...</a><br /></td></tr>
+<tr class="separator:a0003fefa6aaf1f9b6df6b15e6d54fac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html">pbr::shared::apis::windowing::iapplication_window</a></td></tr>
 <tr class="memitem:a4c0a26ce039eff2ac79cbe8189c79061 inherit pub_methods_classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a4c0a26ce039eff2ac79cbe8189c79061">iapplication_window</a> ()=default</td></tr>
 <tr class="separator:a4c0a26ce039eff2ac79cbe8189c79061 inherit pub_methods_classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,10 +115,10 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00018">18</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00019">19</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5ff569558dbe4a8ff3e911a436de5977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff569558dbe4a8ff3e911a436de5977">&#9670;&nbsp;</a></span>get_window_size()</h2>
+<a id="a05516a9c09db8cbe3659f0d41d7d15b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05516a9c09db8cbe3659f0d41d7d15b5">&#9670;&nbsp;</a></span>get_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +127,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">apis::windowing::window_size</a> test_application_window::get_window_size </td>
+          <td class="memname"><a class="el" href="structpbr_1_1shared_1_1apis_1_1windowing_1_1window__size.html">apis::windowing::window_size</a> test_application_window::get_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -130,15 +135,101 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the window size </p><dl class="section return"><dt>Returns</dt><dd>The window size </dd></dl>
 
-<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a25f998cf27a34b8cac655f85d0f3c5d8">pbr::shared::apis::windowing::iapplication_window</a>.</p>
+<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ac589abee9400a8035355873455e3d2a6">pbr::shared::apis::windowing::iapplication_window</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00020">20</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00021">21</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab91458351cbdbf49760a5a27078afb42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91458351cbdbf49760a5a27078afb42">&#9670;&nbsp;</a></span>set_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool test_application_window::set_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacepbr_1_1shared.html#a91b3f529403e68c9c766ad9fdb7b5b28">pixels</a>&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullscreen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the window size </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The window width </td></tr>
+    <tr><td class="paramname">height</td><td>The window height </td></tr>
+    <tr><td class="paramname">fullscreen</td><td>If this window should be full screen or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> upon success, else <code>false</code> </dd></dl>
+
+<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#a2c9e8498a33de35eea985c3a8881d50c">pbr::shared::apis::windowing::iapplication_window</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00025">25</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0003fefa6aaf1f9b6df6b15e6d54fac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0003fefa6aaf1f9b6df6b15e6d54fac2">&#9670;&nbsp;</a></span>update_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void test_application_window::update_display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the display by swapping any buffers. </p>
+
+<p>Implements <a class="el" href="classpbr_1_1shared_1_1apis_1_1windowing_1_1iapplication__window.html#ad4028fe0db47f07e9c9e91eb05d30ed9">pbr::shared::apis::windowing::iapplication_window</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="tests_2game_2game__manager_8cpp_source.html#l00029">29</a> of file <a class="el" href="tests_2game_2game__manager_8cpp_source.html">game_manager.cpp</a>.</p>
 
 </div>
 </div>
